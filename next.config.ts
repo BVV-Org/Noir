@@ -22,6 +22,14 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
+    // The mock fixtures ship local SVG placeholders from `public/mock` (real
+    // media arrives as raster from the Shopify CDN). SVG is disabled by default
+    // because a hostile SVG can carry script; these are first-party build
+    // artifacts, and the sandbox CSP below neutralises the class of attack
+    // regardless. Remove this block once the live provider is the only source.
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "attachment",
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   experimental: {
     // Keep large icon/animation packages tree-shaken by default.

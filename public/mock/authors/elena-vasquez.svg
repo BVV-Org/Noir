@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img">
+  
+  <defs>
+    <radialGradient id="gaelena-vasquez" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#00C27A" stop-opacity="0.20"/>
+      <stop offset="55%" stop-color="#00C27A" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#111111" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="baelena-vasquez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="#111111"/>
+  <rect width="200" height="200" fill="url(#gaelena-vasquez)"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#00C27A" stroke-opacity="0.30"/>
+  <text x="100" y="100" fill="#00C27A" fill-opacity="0.85" font-family="ui-sans-serif,system-ui,sans-serif"
+    font-size="58" font-weight="600" letter-spacing="2" text-anchor="middle" dominant-baseline="central">EV</text>
+</svg>

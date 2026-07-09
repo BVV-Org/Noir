@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+  
+  <defs>
+    <radialGradient id="gjbuilding-a-five-bottle-wardrobe" cx="32%" cy="30%" r="78%">
+      <stop offset="0%" stop-color="#6A4CFF" stop-opacity="0.20"/>
+      <stop offset="55%" stop-color="#6A4CFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#111111" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bjbuilding-a-five-bottle-wardrobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#111111"/>
+  <rect width="1600" height="900" fill="url(#gjbuilding-a-five-bottle-wardrobe)"/>
+  <circle cx="1184" cy="648" r="270" fill="#6A4CFF" fill-opacity="0.07"/>
+  <circle cx="1184" cy="648" r="270" fill="none" stroke="#6A4CFF" stroke-opacity="0.20"/>
+  <circle cx="480" cy="306" r="144" fill="none" stroke="#6A4CFF" stroke-opacity="0.14"/>
+  <rect x="24" y="24" width="1552" height="852" fill="none" stroke="#FFFFFF" stroke-opacity="0.05"/>
+</svg>

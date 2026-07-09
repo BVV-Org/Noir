@@ -28,6 +28,23 @@ export function formatMoney(
   }).format(Number.isFinite(value) ? value : 0);
 }
 
+/**
+ * Format an ISO timestamp for display.
+ *
+ * The timezone is pinned to UTC deliberately. Without it the server formats in
+ * the container's zone and the client in the visitor's, and a date near
+ * midnight renders differently in each — a hydration mismatch that only appears
+ * for some readers, at some hours.
+ */
+export function formatDate(iso: string, locale = "en-US"): string {
+  return new Intl.DateTimeFormat(locale, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(iso));
+}
+
 /** Convert an arbitrary string into a URL-safe slug/handle. */
 export function slugify(input: string): string {
   return input

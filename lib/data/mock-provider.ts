@@ -1,92 +1,187 @@
 import type { DataProvider } from "./provider";
 import type {
-  Product,
-  Paginated,
-  Collection,
-  Kit,
-  JournalArticle,
-  HomepageSection,
   Cart,
+  CartLineInput,
+  CartLineUpdateInput,
+  Collection,
+  Filters,
+  HomepageSection,
+  JournalArticle,
+  Kit,
+  Paginated,
+  Product,
+  ProductQuery,
 } from "@/types";
+import {
+  collections,
+  collectionTagRules,
+  homepageSections,
+  journalArticles,
+  kits,
+  products,
+} from "@/lib/mock/data";
+import {
+  applyFilters,
+  applySort,
+  paginate,
+  searchItems,
+} from "@/lib/mock/query";
+import { money } from "@/lib/mock/data/media";
+import { PRODUCTS_PER_PAGE } from "@/lib/constants";
 
 /**
- * Mock data provider — the zero-config default (runs when Shopify credentials
- * are absent). It guarantees "mock parity": identical normalized shapes to the
- * live provider, so the UI cannot break when providers swap.
+ * Mock data provider — full parity with the live Shopify provider.
  *
- * Foundation milestone: the structure and empty-state behavior are in place and
- * production-safe (no throws). The hand-authored fixtures (~12 fragrances, 4
- * collections, 3 kits, 4 articles, homepage sections) and in-memory
- * pagination/filter/sort/search are populated in Milestone 2
- * (`lib/mock/data/*`). Until then every read returns an empty result.
+ * Every method returns the same normalized domain types the Storefront
+ * normalizer will produce, so the storefront is completely explorable with no
+ * Shopify credentials. Two rules keep the parity honest:
+ *
+ *   1. Nothing here leaks a mock-only shape. Cursors stay opaque, collections
+ *      resolve by tag rule rather than a hand-written membership list.
+ *   2. Reads are cloned before being handed out. The fixtures are module-level
+ *      singletons shared across requests in a warm server process; returning
+ *      them by reference would let one request mutate another's data.
+ *
+ * Cart mutations are in-memory and per-process. They exist so the contract is
+ * satisfiable; the real cart arrives with the Storefront Cart API (TDD §9).
  */
 
-const emptyPage = <T>(): Paginated<T> => ({
-  items: [],
-  pageInfo: { hasNextPage: false, endCursor: null },
-});
+/** Defensive copy — see rule 2 above. `structuredClone` is Node 17+. */
+const clone = <T>(value: T): T => structuredClone(value);
 
-const emptyCart = (id = "mock-cart"): Cart => ({
+/** Resolve a smart collection's members from its tag rule (TDD §6.5). */
+function productsInCollection(handle: string): Product[] {
+  const tag = collectionTagRules[handle];
+  if (!tag) return [];
+  return products.filter((p) =>
+    p.tags.some((t) => t.toLowerCase() === tag.toLowerCase())
+  );
+}
+
+const emptyCart = (id: string): Cart => ({
   id,
-  checkoutUrl: "#",
+  checkoutUrl: `https://noir-vault.myshopify.com/cart/c/${id}`,
   totalQuantity: 0,
   lines: [],
   cost: {
-    subtotal: { amount: "0.00", currencyCode: "USD" },
-    total: { amount: "0.00", currencyCode: "USD" },
+    subtotal: money("0.00"),
+    total: money("0.00"),
+    totalTax: money("0.00"),
   },
 });
 
 export const mockProvider: DataProvider = {
-  // Content
+  // --- Homepage composition ---
   async getHomepageSections(): Promise<HomepageSection[]> {
-    return [];
-  },
-  async getProducts(): Promise<Paginated<Product>> {
-    return emptyPage<Product>();
-  },
-  async getProductByHandle(): Promise<Product | null> {
-    return null;
-  },
-  async getAllProductHandles(): Promise<string[]> {
-    return [];
-  },
-  async searchProducts(): Promise<Paginated<Product>> {
-    return emptyPage<Product>();
-  },
-  async getCollections(): Promise<Collection[]> {
-    return [];
-  },
-  async getCollectionByHandle(): Promise<Collection | null> {
-    return null;
-  },
-  async getDiscoveryKits(): Promise<Kit[]> {
-    return [];
-  },
-  async getDiscoveryKitByHandle(): Promise<Kit | null> {
-    return null;
-  },
-  async getJournalArticles(): Promise<JournalArticle[]> {
-    return [];
-  },
-  async getJournalArticleByHandle(): Promise<JournalArticle | null> {
-    return null;
+    // Shopify returns metaobjects unordered; ordering is the consumer's job.
+    return clone(homepageSections)
+      .filter((s) => s.enabled)
+      .sort((a, b) => a.order - b.order);
   },
 
-  // Cart
+  // --- Products ---
+  async getProducts(opts: ProductQuery = {}): Promise<Paginated<Product>> {
+    const filtered = applyFilters(products, opts.filters);
+    const sorted = applySort(filtered, opts.sort);
+    return clone(
+      paginate(sorted, opts.first ?? PRODUCTS_PER_PAGE, opts.cursor)
+    );
+  },
+
+  async getProductByHandle(handle: string): Promise<Product | null> {
+    const found = products.find((p) => p.handle === handle);
+    return found ? clone(found) : null;
+  },
+
+  async getAllProductHandles(): Promise<string[]> {
+    return products.map((p) => p.handle);
+  },
+
+  async searchProducts(
+    query: string,
+    filters?: Filters
+  ): Promise<Paginated<Product>> {
+    const matched = searchItems(products, query);
+    const filtered = applyFilters(matched, filters);
+    // Search results keep their relevance order — no re-sort.
+    return clone(paginate(filtered, PRODUCTS_PER_PAGE));
+  },
+
+  // --- Collections ---
+  async getCollections(): Promise<Collection[]> {
+    return collections.map((c) => ({
+      ...clone(c),
+      productCount: productsInCollection(c.handle).length,
+    }));
+  },
+
+  async getCollectionByHandle(
+    handle: string,
+    opts: ProductQuery = {}
+  ): Promise<Collection | null> {
+    const collection = collections.find((c) => c.handle === handle);
+    if (!collection) return null;
+
+    const members = productsInCollection(handle);
+    const filtered = applyFilters(members, opts.filters);
+    const sorted = applySort(filtered, opts.sort);
+
+    return {
+      ...clone(collection),
+      productCount: members.length,
+      products: clone(sorted),
+    };
+  },
+
+  // --- Discovery Kits ---
+  async getDiscoveryKits(): Promise<Kit[]> {
+    return clone(kits);
+  },
+
+  async getDiscoveryKitByHandle(handle: string): Promise<Kit | null> {
+    const kit = kits.find((k) => k.handle === handle);
+    if (!kit) return null;
+
+    // `nv.kit_products` is a product-reference list; the live provider resolves
+    // it in the same query. Unresolvable handles are dropped, not faked.
+    const contents = kit.productHandles
+      .map((h) => products.find((p) => p.handle === h))
+      .filter((p): p is Product => Boolean(p));
+
+    return { ...clone(kit), products: clone(contents) };
+  },
+
+  // --- Journal ---
+  async getJournalArticles(): Promise<JournalArticle[]> {
+    return clone(journalArticles).sort(
+      (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)
+    );
+  },
+
+  async getJournalArticleByHandle(
+    handle: string
+  ): Promise<JournalArticle | null> {
+    const found = journalArticles.find((a) => a.handle === handle);
+    return found ? clone(found) : null;
+  },
+
+  // --- Cart (in-memory; replaced by the Storefront Cart API in TDD §9) ---
   async createCart(): Promise<Cart> {
-    return emptyCart();
+    return emptyCart(`mock-cart-${Date.now()}`);
   },
   async getCart(cartId: string): Promise<Cart | null> {
     return emptyCart(cartId);
   },
-  async addToCart(cartId: string): Promise<Cart> {
+  async addToCart(cartId: string, _lines: CartLineInput[]): Promise<Cart> {
     return emptyCart(cartId);
   },
-  async updateCart(cartId: string): Promise<Cart> {
+  async updateCart(
+    cartId: string,
+    _lines: CartLineUpdateInput[]
+  ): Promise<Cart> {
     return emptyCart(cartId);
   },
-  async removeFromCart(cartId: string): Promise<Cart> {
+  async removeFromCart(cartId: string, _lineIds: string[]): Promise<Cart> {
     return emptyCart(cartId);
   },
 };
