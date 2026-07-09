@@ -3,7 +3,7 @@ import { MotionProvider } from "@/components/motion/motion-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { WishlistProvider } from "@/components/providers/wishlist-provider";
 import { CartProvider } from "@/components/providers/cart-provider";
-import { CartDrawer } from "@/components/commerce/cart-drawer";
+import { CartDrawerMount } from "@/components/commerce/cart-drawer-mount";
 
 /**
  * Providers — the single global context boundary, mounted once in the root
@@ -19,10 +19,10 @@ import { CartDrawer } from "@/components/commerce/cart-drawer";
  * today, so the list stays ordered by concern: theme (visual), storage
  * (wishlist, cart), then motion (behavioural).
  *
- * `CartDrawer` is mounted here, inside `CartProvider` and beside `children`,
+ * The cart drawer is mounted here, inside `CartProvider` and beside `children`,
  * rather than in the layout: it is opened from context by any "add to bag"
  * button on any page, so it must live above every page and below the provider
- * that drives it.
+ * that drives it. `CartDrawerMount` defers its code until first open.
  *
  * Extension point (documented, not implemented — technical-rules.md):
  *   AnalyticsProvider — PostHog + GA, loaded `afterInteractive` (TDD §13)
@@ -33,7 +33,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       <WishlistProvider>
         <CartProvider>
           <MotionProvider>{children}</MotionProvider>
-          <CartDrawer />
+          <CartDrawerMount />
         </CartProvider>
       </WishlistProvider>
     </ThemeProvider>

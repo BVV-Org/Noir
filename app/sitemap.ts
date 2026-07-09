@@ -16,11 +16,13 @@ import { siteConfig } from "@/lib/config/site";
  */
 export const revalidate = 3600;
 
-const url = (path: string): string =>
-  new URL(path, siteConfig.url).toString();
+const url = (path: string): string => new URL(path, siteConfig.url).toString();
 
 /** Resolve, or log and yield nothing. Never rejects. */
-async function safely<T>(label: string, read: () => Promise<T[]>): Promise<T[]> {
+async function safely<T>(
+  label: string,
+  read: () => Promise<T[]>
+): Promise<T[]> {
   try {
     return await read();
   } catch (error) {
@@ -37,12 +39,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // marked `noindex`. Listing them would ask a crawler to index a private page.
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: url("/"), lastModified: now, changeFrequency: "daily", priority: 1 },
-    { url: url("/shop"), lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: url("/collections"), lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: url("/discovery-kits"), lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: url("/journal"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: url("/about"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
-    { url: url("/contact"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    {
+      url: url("/shop"),
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: url("/collections"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: url("/discovery-kits"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: url("/journal"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: url("/about"),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: url("/contact"),
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
   ];
 
   const [productHandles, collections, kits, articles] = await Promise.all([

@@ -44,36 +44,3 @@ export function formatDate(iso: string, locale = "en-US"): string {
     timeZone: "UTC",
   }).format(new Date(iso));
 }
-
-/** Convert an arbitrary string into a URL-safe slug/handle. */
-export function slugify(input: string): string {
-  return input
-    .toLowerCase()
-    .trim()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "") // strip accents
-    .replace(/[^a-z0-9]+/g, "-") // non-alphanumerics → hyphen
-    .replace(/^-+|-+$/g, ""); // trim leading/trailing hyphens
-}
-
-/** Split an array into fixed-size chunks (e.g. for grid/row layouts). */
-export function chunk<T>(items: readonly T[], size: number): T[][] {
-  if (size <= 0) return [items.slice()];
-  const result: T[][] = [];
-  for (let i = 0; i < items.length; i += size) {
-    result.push(items.slice(i, i + size));
-  }
-  return result;
-}
-
-/** Truncate text to a length on a word boundary, appending an ellipsis. */
-export function truncate(text: string, max: number): string {
-  if (text.length <= max) return text;
-  return `${text.slice(0, text.lastIndexOf(" ", max)).trimEnd()}…`;
-}
-
-/** Absolute URL against the configured site origin (for canonicals / OG). */
-export function absoluteUrl(path: string): string {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://noirvault.com";
-  return new URL(path, base).toString();
-}

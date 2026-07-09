@@ -29,8 +29,6 @@ import { CommerceError } from "@/lib/data/errors";
  */
 const carts = new Map<string, Cart>();
 
-const CURRENCY = "USD";
-
 /** Money as integer cents — floats accumulate error across a cart's lines. */
 const toCents = (amount: string): number =>
   Math.round(Number.parseFloat(amount) * 100);
@@ -202,5 +200,3 @@ export function removeFromMockCart(cartId: string, lineIds: string[]): Cart {
   carts.set(cartId, updated);
   return updated;
 }
-
-export { CURRENCY };

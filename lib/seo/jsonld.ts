@@ -15,12 +15,7 @@ import { absoluteImage } from "./metadata";
  * and the `<JsonLd>` component serializes whatever it is handed.
  */
 export type JsonLdValue =
-  | string
-  | number
-  | boolean
-  | null
-  | JsonLdObject
-  | JsonLdValue[];
+  string | number | boolean | null | JsonLdObject | JsonLdValue[];
 
 export interface JsonLdObject {
   [key: string]: JsonLdValue | undefined;
@@ -88,9 +83,7 @@ export function breadcrumbJsonLd(crumbs: Crumb[]): JsonLdObject {
 
 /** Availability, in the vocabulary Google expects. */
 const availability = (inStock: boolean): string =>
-  inStock
-    ? "https://schema.org/InStock"
-    : "https://schema.org/OutOfStock";
+  inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock";
 
 /**
  * Product + Offer.

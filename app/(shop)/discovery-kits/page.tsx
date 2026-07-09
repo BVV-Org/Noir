@@ -53,7 +53,7 @@ export default async function DiscoveryKitsPage() {
           >
             {kits.map((kit, index) => (
               <StaggerItem as="li" key={kit.id} className="flex">
-                <KitCard kit={kit} priority={index < 3} className="w-full" />
+                <KitCard kit={kit} priority={index < 2} className="w-full" />
               </StaggerItem>
             ))}
           </Stagger>

@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: [{ url: siteConfig.ogImage, width: 1200, height: 630 }],
+    // `images` omitted: `app/opengraph-image.tsx` supplies it, and declaring it
+    // here would shadow the generated card with a hand-written URL.
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: [siteConfig.ogImage],
   },
   robots: {
     // Preview deployments must never be indexed (TDD §11).

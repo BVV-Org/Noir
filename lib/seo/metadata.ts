@@ -58,7 +58,11 @@ export function buildMetadata({
     ? `${title} — ${siteConfig.name}`
     : `${siteConfig.name} — ${siteConfig.tagline}`;
 
-  const ogImage = absoluteImage(image ?? undefined);
+  // When a route has real imagery — a bottle, a hero, an article — it wins.
+  // When it does not, `images` is omitted entirely and Next fills it from the
+  // `app/opengraph-image.tsx` file convention. Hardcoding a fallback URL here
+  // would shadow that generated card.
+  const ogImage = image ? absoluteImage(image) : undefined;
 
   return {
     title: title ?? undefined,
@@ -74,14 +78,20 @@ export function buildMetadata({
       url: path ?? siteConfig.url,
       title: resolvedTitle,
       description,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: resolvedTitle }],
+      ...(ogImage
+        ? {
+            images: [
+              { url: ogImage, width: 1200, height: 630, alt: resolvedTitle },
+            ],
+          }
+        : {}),
       ...(type === "article" ? { publishedTime, authors } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: resolvedTitle,
       description,
-      images: [ogImage],
+      ...(ogImage ? { images: [ogImage] } : {}),
     },
   };
 }

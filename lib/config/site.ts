@@ -8,7 +8,12 @@ export const siteConfig = {
   description:
     "A premium fragrance discovery platform. Explore, collect, and level up your scent.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://noirvault.com",
-  ogImage: "/og-default.jpg",
+  /**
+   * Generated at build time by `app/opengraph-image.tsx` rather than committed
+   * as a static file — an asset nobody remembers to add is an asset that 404s.
+   * Used for the Organization logo in JSON-LD and as the social-card fallback.
+   */
+  ogImage: "/opengraph-image",
   locale: "en_US",
   currency: "USD",
 } as const;

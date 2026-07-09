@@ -11,10 +11,23 @@ import { ProductCard } from "@/components/commerce/product-card";
  * here and passed through as children, so they stay on the server (React sends
  * them as serialized element trees, not as code).
  *
- * The grid flows 1 → 2 → 3 → 4 columns (TDD §14). `priorityCount` marks the
- * first row as LCP candidates; anything more and `priority` stops meaning
- * anything because every image is competing for the same bandwidth.
+ * The grid flows 1 → 2 → 3 → 4 columns (TDD §14).
+ *
+ * ## `priorityCount` is capped, deliberately
+ *
+ * `priority` emits a `<link rel=preload>` and `fetchpriority="high"`. The grid
+ * is mobile-first: at 390px exactly *one* card is above the fold. Marking a
+ * desktop row of four as priority therefore issues three high-priority preloads
+ * for images the phone cannot see, competing for bandwidth with the one image
+ * that actually determines LCP.
+ *
+ * Two is the ceiling: it covers the two-column tablet breakpoint and no more.
+ * The remaining cards lazy-load, and any that are already in the viewport begin
+ * fetching on the first intersection callback — a few milliseconds, not a
+ * regression.
  */
+const MAX_PRIORITY_IMAGES = 2;
+
 export function ProductGrid({
   products,
   priorityCount = 0,
@@ -27,6 +40,9 @@ export function ProductGrid({
   renderAction?: (product: Product) => React.ReactNode;
   className?: string;
 }) {
+  // Callers ask for a first row; the grid decides what is defensible.
+  const priorityLimit = Math.min(priorityCount, MAX_PRIORITY_IMAGES);
+
   return (
     <Stagger
       as="ul"
@@ -39,7 +55,7 @@ export function ProductGrid({
         <StaggerItem as="li" key={product.id} className="flex">
           <ProductCard
             product={product}
-            priority={index < priorityCount}
+            priority={index < priorityLimit}
             action={renderAction?.(product)}
             className="w-full"
           />

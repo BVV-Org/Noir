@@ -101,7 +101,7 @@ export default async function JournalPage({
               <StaggerItem as="li" key={article.id} className="flex">
                 <JournalCard
                   article={article}
-                  priority={index < 3}
+                  priority={index < 2}
                   className="w-full"
                 />
               </StaggerItem>

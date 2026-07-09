@@ -15,9 +15,4 @@ export function getProvider(): DataProvider {
   return isShopifyConfigured ? shopifyProvider : mockProvider;
 }
 
-/** Which data source is active — handy for debugging / a build-time banner. */
-export const dataSourceMode: "shopify" | "mock" = isShopifyConfigured
-  ? "shopify"
-  : "mock";
-
 export type { DataProvider } from "./provider";
