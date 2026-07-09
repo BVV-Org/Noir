@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Layers } from "lucide-react";
 import { getProvider } from "@/lib/data";
@@ -10,11 +11,12 @@ import { EmptyState } from "@/components/commerce/empty-state";
 
 export const revalidate = 3600;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Collections",
   description:
     "Curated ways through the catalogue — by season, by hour, by scarcity.",
-};
+  path: "/collections",
+});
 
 export default async function CollectionsPage() {
   const collections = await getProvider().getCollections();

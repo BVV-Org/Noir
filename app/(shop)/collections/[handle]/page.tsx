@@ -12,6 +12,9 @@ import { EmptyState } from "@/components/commerce/empty-state";
 import { SortSelect } from "@/components/shop/sort-select";
 import { CollectionNav } from "@/components/shop/collection-nav";
 import { QuickViewDialog } from "@/components/shop/quick-view-dialog";
+import { JsonLd } from "@/components/seo/json-ld";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { collectionJsonLd } from "@/lib/seo/jsonld";
 
 export const revalidate = 3600;
 
@@ -27,22 +30,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { handle } = await params;
   const collection = await getProvider().getCollectionByHandle(handle);
-  if (!collection) return { title: "Not found" };
+  if (!collection) return buildMetadata({ title: "Not found", noIndex: true });
 
-  const title = collection.seo?.title ?? collection.title;
-  const description =
-    collection.seo?.description ?? collection.tagline ?? collection.description;
-
-  return {
-    title,
-    description,
-    alternates: { canonical: `/collections/${collection.handle}` },
-    openGraph: {
-      title,
-      description,
-      images: collection.image ? [{ url: collection.image.url }] : undefined,
-    },
-  };
+  return buildMetadata({
+    title: collection.seo?.title ?? collection.title,
+    description:
+      collection.seo?.description ??
+      collection.tagline ??
+      collection.description,
+    // Canonical omits `?sort=` — a sorted collection is the same page of the
+    // same products, and four sort orders must not become four indexed URLs.
+    path: `/collections/${collection.handle}`,
+    image: collection.image?.url,
+  });
 }
 
 /**
@@ -74,6 +74,10 @@ export default async function CollectionPage({
 
   return (
     <Container className="py-8 sm:py-12">
+      <JsonLd
+        data={collectionJsonLd(collection, `/collections/${collection.handle}`)}
+      />
+
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },

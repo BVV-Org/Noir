@@ -2,6 +2,8 @@ import * as React from "react";
 import { MotionProvider } from "@/components/motion/motion-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { WishlistProvider } from "@/components/providers/wishlist-provider";
+import { CartProvider } from "@/components/providers/cart-provider";
+import { CartDrawer } from "@/components/commerce/cart-drawer";
 
 /**
  * Providers — the single global context boundary, mounted once in the root
@@ -14,19 +16,25 @@ import { WishlistProvider } from "@/components/providers/wishlist-provider";
  * force it into the client bundle.
  *
  * Order matters only where a provider reads another's context. It does not
- * today, so the list stays alphabetical-by-concern: theme first (visual), then
- * motion (behavioural).
+ * today, so the list stays ordered by concern: theme (visual), storage
+ * (wishlist, cart), then motion (behavioural).
  *
- * Extension points (documented, not implemented — technical-rules.md):
- *   CartProvider     — wraps the Storefront Cart API (TDD §9)
- *   AnalyticsProvider— PostHog + GA, loaded `afterInteractive` (TDD §13)
- * Each slots in here without touching the root layout.
+ * `CartDrawer` is mounted here, inside `CartProvider` and beside `children`,
+ * rather than in the layout: it is opened from context by any "add to bag"
+ * button on any page, so it must live above every page and below the provider
+ * that drives it.
+ *
+ * Extension point (documented, not implemented — technical-rules.md):
+ *   AnalyticsProvider — PostHog + GA, loaded `afterInteractive` (TDD §13)
  */
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <ThemeProvider>
       <WishlistProvider>
-        <MotionProvider>{children}</MotionProvider>
+        <CartProvider>
+          <MotionProvider>{children}</MotionProvider>
+          <CartDrawer />
+        </CartProvider>
       </WishlistProvider>
     </ThemeProvider>
   );

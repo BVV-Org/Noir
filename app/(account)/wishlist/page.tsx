@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo/metadata";
 import { getProvider } from "@/lib/data";
 import { Container } from "@/components/layout/container";
 import { WishlistContent } from "@/components/commerce/wishlist-content";
 
-export const metadata: Metadata = {
+/** Private to the visitor's browser; never indexed. */
+export const metadata: Metadata = buildMetadata({
   title: "Wishlist",
   description: "The fragrances you have saved.",
-  robots: { index: false, follow: false },
-};
+  noIndex: true,
+});
 
 /**
  * Wishlist.

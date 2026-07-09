@@ -1,4 +1,5 @@
 import "server-only";
+import { CommerceError } from "@/lib/data/errors";
 
 /**
  * Shopify Storefront API client.
@@ -40,14 +41,20 @@ export interface ShopifyFetchResult<TData> {
   data: TData;
 }
 
-/** Error thrown when a Storefront request fails or returns GraphQL errors. */
-export class ShopifyError extends Error {
+/**
+ * Error thrown when a Storefront request fails, returns GraphQL errors, or
+ * reports `userErrors` on a cart mutation.
+ *
+ * Extends `CommerceError` so the cart route can handle a shopper-actionable
+ * failure identically whichever provider raised it.
+ */
+export class ShopifyError extends CommerceError {
   constructor(
     message: string,
     readonly status?: number,
-    readonly details?: unknown
+    details?: unknown
   ) {
-    super(message);
+    super(message, details);
     this.name = "ShopifyError";
   }
 }

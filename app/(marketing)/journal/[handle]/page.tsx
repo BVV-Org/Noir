@@ -11,6 +11,9 @@ import { Badge } from "@/components/ui/badge";
 import { Stagger, StaggerItem } from "@/components/motion/stagger";
 import { ProductGrid } from "@/components/commerce/product-grid";
 import { JournalCard } from "@/components/commerce/journal-card";
+import { JsonLd } from "@/components/seo/json-ld";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { articleJsonLd } from "@/lib/seo/jsonld";
 
 export const revalidate = 3600;
 
@@ -26,24 +29,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { handle } = await params;
   const article = await getProvider().getJournalArticleByHandle(handle);
-  if (!article) return { title: "Not found" };
+  if (!article) return buildMetadata({ title: "Not found", noIndex: true });
 
-  const title = article.seo?.title ?? article.title;
-  const description = article.seo?.description ?? article.excerpt;
-
-  return {
-    title,
-    description,
-    alternates: { canonical: `/journal/${article.handle}` },
-    openGraph: {
-      type: "article",
-      title,
-      description,
-      publishedTime: article.publishedAt,
-      authors: article.author ? [article.author.name] : undefined,
-      images: article.heroImage ? [{ url: article.heroImage.url }] : undefined,
-    },
-  };
+  return buildMetadata({
+    title: article.seo?.title ?? article.title,
+    description: article.seo?.description ?? article.excerpt,
+    path: `/journal/${article.handle}`,
+    image: article.seo?.ogImage ?? article.heroImage?.url,
+    type: "article",
+    publishedTime: article.publishedAt,
+    authors: article.author ? [article.author.name] : undefined,
+  });
 }
 
 export default async function ArticlePage({
@@ -70,6 +66,8 @@ export default async function ArticlePage({
 
   return (
     <>
+      <JsonLd data={articleJsonLd(article, `/journal/${article.handle}`)} />
+
       <Container className="pt-8">
         <Breadcrumbs
           items={[

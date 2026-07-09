@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Container } from "@/components/layout/container";
 import { ContactForm } from "@/components/sections/contact-form";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Contact",
   description: "Questions about a fragrance, an order, or a tier. Ask us.",
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

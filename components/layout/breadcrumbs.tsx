@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { breadcrumbJsonLd } from "@/lib/seo/jsonld";
+import { JsonLd } from "@/components/seo/json-ld";
 
 /**
  * Breadcrumbs — where you are, and the way back up.
@@ -8,6 +10,11 @@ import { cn } from "@/lib/utils";
  * An ordered list inside a labelled `nav`, which is the pattern assistive tech
  * expects. The final crumb is the current page: it is not a link, and it carries
  * `aria-current="page"`. Separators are decorative and hidden.
+ *
+ * The `BreadcrumbList` structured data is emitted from here rather than from
+ * each page. Google penalises a breadcrumb schema that disagrees with the
+ * visible trail, and the only way to guarantee they agree is to derive both
+ * from the same array.
  */
 export interface Crumb {
   label: string;
@@ -23,6 +30,11 @@ export function Breadcrumbs({
 }) {
   return (
     <nav aria-label="Breadcrumb" className={cn("w-full", className)}>
+      <JsonLd
+        data={breadcrumbJsonLd(
+          items.map((item) => ({ name: item.label, path: item.href }))
+        )}
+      />
       <ol className="flex flex-wrap items-center gap-1.5 text-caption text-muted-foreground">
         {items.map((item, index) => {
           const last = index === items.length - 1;

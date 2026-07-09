@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Package } from "lucide-react";
 import { getProvider } from "@/lib/data";
@@ -10,11 +11,12 @@ import { EmptyState } from "@/components/commerce/empty-state";
 
 export const revalidate = 3600;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Discovery Kits",
   description:
     "Sample before you commit. Curated 2ml atomisers across every direction the vault holds.",
-};
+  path: "/discovery-kits",
+});
 
 export default async function DiscoveryKitsPage() {
   const kits = await getProvider().getDiscoveryKits();

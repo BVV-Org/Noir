@@ -9,6 +9,7 @@ import { useScrolled } from "@/hooks/use-scrolled";
 import { Container } from "@/components/layout/container";
 import { Logo } from "@/components/layout/logo";
 import { MobileMenu } from "@/components/layout/mobile-menu";
+import { CartTrigger } from "@/components/commerce/cart-trigger";
 
 /**
  * Navbar — the sticky global header (DESIGN_SYSTEM.md §4).
@@ -19,10 +20,9 @@ import { MobileMenu } from "@/components/layout/mobile-menu";
  * glass surface and hairline fade in over 150ms, giving the "vault" a sense of
  * depth without a hard edge at first paint.
  *
- * Extension point (do not implement in V1): the cart trigger mounts in
- * `navActions` below, beside Wishlist. It arrives with `CartSheet` and
- * `useCart` in the cart milestone (TDD §9) — until the Storefront Cart API is
- * wired there is nothing for a cart button to open.
+ * The cart trigger is the last action and is always visible, including on
+ * mobile where Wishlist and Account fold into the bottom bar — a shopper must
+ * be able to reach their bag from any screen at any width.
  */
 const navActions = [
   // Search lives on /shop, which owns the query params (TDD §9).
@@ -98,6 +98,7 @@ export function Navbar() {
                 <Icon className="size-5" />
               </Link>
             ))}
+            <CartTrigger />
           </div>
         </div>
       </Container>

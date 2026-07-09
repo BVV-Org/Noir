@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo/metadata";
 import { getCustomer } from "@/lib/auth/customer";
 import {
   Card,
@@ -7,10 +8,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Account",
-  robots: { index: false, follow: false },
-};
+  noIndex: true,
+});
 
 /**
  * Account overview. Only reached when `getCustomer()` returns a customer — the

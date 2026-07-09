@@ -17,22 +17,22 @@ const sizes = (
   handle: string,
   ml50: string,
   ml100: string,
-  soldOut: "none" | "50ml" | "100ml" = "none"
+  soldOut: "none" | "50ml" | "100ml" | "all" = "none"
 ): ProductVariant[] => [
   {
     id: `gid://shopify/ProductVariant/${handle}-50`,
     title: "50ml",
     price: money(ml50),
-    availableForSale: soldOut !== "50ml",
-    quantityAvailable: soldOut === "50ml" ? 0 : 24,
+    availableForSale: soldOut !== "50ml" && soldOut !== "all",
+    quantityAvailable: soldOut === "50ml" || soldOut === "all" ? 0 : 24,
     selectedOptions: [{ name: "Size", value: "50ml" }],
   },
   {
     id: `gid://shopify/ProductVariant/${handle}-100`,
     title: "100ml",
     price: money(ml100),
-    availableForSale: soldOut !== "100ml",
-    quantityAvailable: soldOut === "100ml" ? 0 : 11,
+    availableForSale: soldOut !== "100ml" && soldOut !== "all",
+    quantityAvailable: soldOut === "100ml" || soldOut === "all" ? 0 : 11,
     selectedOptions: [{ name: "Size", value: "100ml" }],
   },
 ];
@@ -501,9 +501,13 @@ export const products: Product[] = [
       "An aquatic that refuses the usual clichés. Salt, iris, and ambergris over driftwood — closer to a tidal cave than a swimming pool.",
     price: money("265.00"),
     compareAtPrice: null,
+    // Shopify derives `availableForSale` from the variants: it is true when any
+    // variant can be bought. A product marked unavailable while one of its sizes
+    // is in stock cannot exist upstream, so it must not exist in the fixtures —
+    // it would render a "Sold out" badge above a working "Add to bag" button.
     availableForSale: false,
     images: bottleImages("azure-reliquary", "Azure Reliquary"),
-    variants: sizes("azure-reliquary", "265.00", "355.00", "50ml"),
+    variants: sizes("azure-reliquary", "265.00", "355.00", "all"),
     performance: {
       longevity: 70,
       projection: 60,

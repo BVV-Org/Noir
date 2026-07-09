@@ -12,6 +12,10 @@ import { VariantSelector } from "@/components/product/variant-selector";
 import { PerformancePanel } from "@/components/product/performance-panel";
 import { ClassificationPanel } from "@/components/product/classification-panel";
 import { NotesPyramid } from "@/components/product/notes-pyramid";
+import { Reviews } from "@/components/product/reviews";
+import { JsonLd } from "@/components/seo/json-ld";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { productJsonLd } from "@/lib/seo/jsonld";
 
 export const revalidate = 3600;
 
@@ -28,24 +32,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { handle } = await params;
   const product = await getProvider().getProductByHandle(handle);
-  if (!product) return { title: "Not found" };
+  // Metadata for a handle that 404s is never rendered, but Next still calls
+  // this — return something valid rather than throwing.
+  if (!product) return buildMetadata({ title: "Not found", noIndex: true });
 
-  const title = product.seo?.title ?? product.title;
-  const description =
-    product.seo?.description ?? product.tagline ?? product.description;
-  const image = product.images[0]?.url;
-
-  return {
-    title,
-    description,
-    alternates: { canonical: `/products/${product.handle}` },
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      images: image ? [{ url: image }] : undefined,
-    },
-  };
+  return buildMetadata({
+    title: product.seo?.title ?? product.title,
+    description:
+      product.seo?.description ?? product.tagline ?? product.description,
+    path: `/products/${product.handle}`,
+    image: product.images[0]?.url,
+  });
 }
 
 /** Resolve `nv` product-reference lists into products, dropping dead handles. */
@@ -74,7 +71,10 @@ export default async function ProductPage({
 
   return (
     <>
+      <JsonLd data={productJsonLd(product, `/products/${product.handle}`)} />
+
       <Container className="pt-8">
+        {/* Also emits the BreadcrumbList schema — one source, no drift. */}
         <Breadcrumbs
           items={[
             { label: "Home", href: "/" },
@@ -86,7 +86,11 @@ export default async function ProductPage({
 
       <Container className="py-10 sm:py-14">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-          <ProductGallery images={product.images} title={product.title} />
+          <ProductGallery
+            images={product.images}
+            title={product.title}
+            videoUrl={product.heroVideoUrl}
+          />
 
           <div className="flex flex-col gap-8">
             <div>
@@ -127,6 +131,10 @@ export default async function ProductPage({
 
       <Container className="py-16">
         <NotesPyramid notes={product.notes} />
+      </Container>
+
+      <Container className="pb-16">
+        <Reviews product={product} />
       </Container>
 
       {similar.length > 0 && (

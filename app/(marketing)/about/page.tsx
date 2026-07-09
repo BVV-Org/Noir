@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { getProvider } from "@/lib/data";
 import { RARITIES, RARITY_LABELS, siteConfig } from "@/lib/config/site";
@@ -11,11 +12,12 @@ import { FadeIn } from "@/components/motion/fade-in";
 
 export const revalidate = 3600;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "About",
   description:
     "Why Noir Vault tiers fragrances by rarity, and what those tiers actually mean.",
-};
+  path: "/about",
+});
 
 /**
  * About — the page that explains the rarity progression.

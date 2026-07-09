@@ -6,12 +6,18 @@ import { Providers } from "@/components/providers";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
+import { JsonLd } from "@/components/seo/json-ld";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/jsonld";
+import { IS_PRODUCTION } from "@/lib/seo/metadata";
 import "./globals.css";
 
 /**
  * Root metadata. Per-route `generateMetadata` exports override the title via
- * the template and supply entity-specific descriptions and OG images from
- * Shopify data (TDD §11).
+ * the template and supply entity-specific descriptions, canonicals, and OG
+ * images from Shopify data (TDD §11).
+ *
+ * `metadataBase` is what makes a route's relative `alternates.canonical`
+ * resolve to an absolute URL — it is set here, once, and nowhere else.
  */
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -21,6 +27,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: siteConfig.name,
@@ -28,16 +35,18 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
+    images: [{ url: siteConfig.ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
+    images: [siteConfig.ogImage],
   },
   robots: {
     // Preview deployments must never be indexed (TDD §11).
-    index: process.env.VERCEL_ENV === "production",
-    follow: process.env.VERCEL_ENV === "production",
+    index: IS_PRODUCTION,
+    follow: IS_PRODUCTION,
   },
 };
 
@@ -54,6 +63,9 @@ export default function RootLayout({
     // correct in the first byte of HTML — no flash, no blocking theme script.
     <html lang="en" className={cn("dark", fontVariables)}>
       <body className="min-h-dvh bg-background text-foreground">
+        {/* Site-wide identity + the sitelinks search box target. Rendered once. */}
+        <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
+
         <a
           href="#main-content"
           className="sr-only z-50 rounded-md bg-primary px-4 py-2 text-small font-medium text-primary-foreground focus:not-sr-only focus:absolute focus:left-4 focus:top-4"

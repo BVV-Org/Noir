@@ -24,5 +24,17 @@ export const PRODUCTS_PER_PAGE = 24;
 export const STORAGE_KEYS = {
   wishlist: "nv:wishlist",
   recentlyViewed: "nv:recently-viewed",
-  cartId: "nv:cart-id",
 } as const;
+
+/**
+ * The cart id cookie.
+ *
+ * httpOnly — client JavaScript never reads it. The browser only ever talks to
+ * `/api/cart`, which resolves the id server-side, so a stolen XSS payload cannot
+ * exfiltrate a cart or replay it. The name uses underscores because a cookie
+ * name is an RFC 6265 token and may not contain `:`.
+ */
+export const CART_COOKIE = "nv_cart_id";
+
+/** Carts outlive a session but not forever; Shopify expires them at ~10 days. */
+export const CART_COOKIE_MAX_AGE = 60 * 60 * 24 * 14;

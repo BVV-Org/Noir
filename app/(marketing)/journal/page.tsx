@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Newspaper } from "lucide-react";
 import { getProvider } from "@/lib/data";
@@ -11,11 +12,13 @@ import { EmptyState } from "@/components/commerce/empty-state";
 
 export const revalidate = 3600;
 
-export const metadata: Metadata = {
+/** Canonical omits `?category=` — a filtered view of the same article list. */
+export const metadata: Metadata = buildMetadata({
   title: "Journal",
   description:
     "Writing on scent, scarcity, and how to build a collection worth keeping.",
-};
+  path: "/journal",
+});
 
 /**
  * Journal index, filterable by category.

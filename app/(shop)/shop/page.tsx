@@ -1,9 +1,9 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { SearchX } from "lucide-react";
 import { getProvider } from "@/lib/data";
-import { PRODUCTS_PER_PAGE } from "@/lib/constants";
 import {
   FACET_KEYS,
   parseShopQuery,
@@ -22,12 +22,19 @@ import { ActiveFilters } from "@/components/shop/active-filters";
 import { CollectionNav } from "@/components/shop/collection-nav";
 import { QuickViewDialog } from "@/components/shop/quick-view-dialog";
 import { ProductGridSkeleton } from "@/components/shop/product-grid-skeleton";
+import { LoadMoreProducts } from "@/components/shop/load-more-products";
 
-export const metadata: Metadata = {
+/**
+ * The canonical is the bare `/shop`. Facet and sort params produce the same
+ * catalogue in a different order or subset; letting each combination become its
+ * own indexed URL would split the page's authority thousands of ways.
+ */
+export const metadata: Metadata = buildMetadata({
   title: "Shop",
   description:
     "Every fragrance in the vault. Filter by rarity, house, season, notes, and price.",
-};
+  path: "/shop",
+});
 
 /**
  * Shop — the catalogue.
@@ -136,7 +143,6 @@ export default async function ShopPage({
                 filters={filters}
                 show={show}
                 hasFilters={hasFilters}
-                params={params}
               />
             </Suspense>
           </div>
@@ -156,14 +162,12 @@ async function ShopResults({
   filters,
   show,
   hasFilters,
-  params,
 }: {
   query: string;
   sort: ReturnType<typeof parseShopQuery>["sort"];
   filters: ReturnType<typeof parseShopQuery>["filters"];
   show: number;
   hasFilters: boolean;
-  params: RawSearchParams;
 }) {
   const provider = getProvider();
 
@@ -199,19 +203,6 @@ async function ShopResults({
     );
   }
 
-  const canLoadMore = !query && page.pageInfo.hasNextPage;
-
-  // Every active param is carried forward. A `href={{ query }}` object would
-  // replace the whole query string and silently drop the visitor's filters.
-  const loadMoreParams = new URLSearchParams();
-  for (const [key, value] of Object.entries(params)) {
-    if (!value) continue;
-    for (const item of ([] as string[]).concat(value)) {
-      loadMoreParams.append(key, item);
-    }
-  }
-  loadMoreParams.set("show", String(show + PRODUCTS_PER_PAGE));
-
   return (
     <>
       <p aria-live="polite" className="sr-only">
@@ -224,20 +215,21 @@ async function ShopResults({
         renderAction={(product) => <QuickViewDialog product={product} />}
       />
 
-      {canLoadMore && (
-        <div className="mt-14 flex justify-center">
-          <Button asChild variant="outline" size="lg">
-            {/* A link, not a button: the next page is a URL, and it is shareable.
-                `replace` keeps "load more" out of the back-button history. */}
-            <Link
-              href={`/shop?${loadMoreParams.toString()}`}
-              scroll={false}
-              replace
-            >
-              Load more
-            </Link>
-          </Button>
-        </div>
+      {/*
+        Pagination appends rather than navigates, through `use-infinite-products`
+        and a Server Action. The first page above stays server-rendered — this
+        only ever adds to it.
+
+        Not rendered during search: `searchProducts(query, filters)` takes no
+        cursor by contract, so a search result set has no page two to fetch.
+      */}
+      {!query && (
+        <LoadMoreProducts
+          initialItems={page.items}
+          initialPageInfo={page.pageInfo}
+          sort={sort}
+          filters={filters}
+        />
       )}
     </>
   );

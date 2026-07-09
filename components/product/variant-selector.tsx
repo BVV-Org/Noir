@@ -5,22 +5,23 @@ import type { Product } from "@/types";
 import { cn } from "@/lib/utils";
 import { PriceTag } from "@/components/commerce/price-tag";
 import { WishlistButton } from "@/components/commerce/wishlist-button";
+import { AddToCartButton } from "@/components/product/add-to-cart-button";
+import { StickyAddToCart } from "@/components/product/sticky-add-to-cart";
 
 /**
- * VariantSelector — size, and the price that follows from it.
+ * VariantSelector — size, the price that follows from it, and the purchase.
  *
  * Native radios inside a fieldset, visually replaced by the labels. This is the
  * one control shape that gets group semantics, arrow-key navigation, and form
  * submission correct without a line of ARIA. Sold-out sizes are `disabled` and
  * say so, rather than being hidden — a shopper needs to know the 100ml exists.
  *
- * The selected variant drives the displayed price, so the number on screen is
- * always the number for the size that is chosen.
+ * The selected variant drives the displayed price, the add-to-bag button, and
+ * the mobile sticky bar. All three read the same `variant`, so the price on
+ * screen, the price in the bar, and the line Shopify creates cannot disagree.
  *
- * Extension point (do not implement in V1): the "Add to bag" control mounts
- * beneath this and, on mobile, in `StickyAddToCart`. Both arrive with the
- * Storefront Cart API and `useCart` (TDD §9). Until a cart exists there is
- * nothing for the button to add to, so none is rendered.
+ * `StickyAddToCart` is rendered from here rather than from the page because the
+ * selected variant is state, and the bar must reflect it.
  */
 export function VariantSelector({ product }: { product: Product }) {
   // Open on a size the shopper can actually buy; fall back to the first when
@@ -78,17 +79,21 @@ export function VariantSelector({ product }: { product: Product }) {
       </fieldset>
 
       <div className="flex items-center gap-3">
+        <AddToCartButton variant={variant} className="flex-1" />
         <WishlistButton
           handle={product.handle}
           title={product.title}
-          className="border border-border bg-transparent"
+          className="shrink-0 border border-border bg-transparent"
         />
-        <p className="text-small text-muted-foreground">
-          {variant.availableForSale
-            ? "In stock — save it to your wishlist."
-            : "This size is sold out."}
-        </p>
       </div>
+
+      <p className="text-small text-muted-foreground">
+        {variant.availableForSale
+          ? `${variant.title} in stock. Taxes and shipping calculated at checkout.`
+          : "This size is sold out. Try another, or save it for later."}
+      </p>
+
+      <StickyAddToCart product={product} variant={variant} />
     </div>
   );
 }

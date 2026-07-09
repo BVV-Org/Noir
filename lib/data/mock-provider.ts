@@ -26,7 +26,13 @@ import {
   paginate,
   searchItems,
 } from "@/lib/mock/query";
-import { money } from "@/lib/mock/data/media";
+import {
+  addToMockCart,
+  createMockCart,
+  getMockCart,
+  removeFromMockCart,
+  updateMockCart,
+} from "@/lib/mock/cart";
 import { PRODUCTS_PER_PAGE } from "@/lib/constants";
 
 /**
@@ -57,18 +63,6 @@ function productsInCollection(handle: string): Product[] {
     p.tags.some((t) => t.toLowerCase() === tag.toLowerCase())
   );
 }
-
-const emptyCart = (id: string): Cart => ({
-  id,
-  checkoutUrl: `https://noir-vault.myshopify.com/cart/c/${id}`,
-  totalQuantity: 0,
-  lines: [],
-  cost: {
-    subtotal: money("0.00"),
-    total: money("0.00"),
-    totalTax: money("0.00"),
-  },
-});
 
 export const mockProvider: DataProvider = {
   // --- Homepage composition ---
@@ -165,23 +159,27 @@ export const mockProvider: DataProvider = {
     return found ? clone(found) : null;
   },
 
-  // --- Cart (in-memory; replaced by the Storefront Cart API in TDD §9) ---
+  // --- Cart ---
+  // A working in-memory implementation of the Storefront Cart API's semantics
+  // (line merging, quantity-0 removal, derived totals). See `lib/mock/cart.ts`
+  // for the two limitations it is honest about: per-process storage, and no
+  // checkout URL.
   async createCart(): Promise<Cart> {
-    return emptyCart(`mock-cart-${Date.now()}`);
+    return createMockCart();
   },
   async getCart(cartId: string): Promise<Cart | null> {
-    return emptyCart(cartId);
+    return getMockCart(cartId);
   },
-  async addToCart(cartId: string, _lines: CartLineInput[]): Promise<Cart> {
-    return emptyCart(cartId);
+  async addToCart(cartId: string, lines: CartLineInput[]): Promise<Cart> {
+    return addToMockCart(cartId, lines);
   },
   async updateCart(
     cartId: string,
-    _lines: CartLineUpdateInput[]
+    lines: CartLineUpdateInput[]
   ): Promise<Cart> {
-    return emptyCart(cartId);
+    return updateMockCart(cartId, lines);
   },
-  async removeFromCart(cartId: string, _lineIds: string[]): Promise<Cart> {
-    return emptyCart(cartId);
+  async removeFromCart(cartId: string, lineIds: string[]): Promise<Cart> {
+    return removeFromMockCart(cartId, lineIds);
   },
 };

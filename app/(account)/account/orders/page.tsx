@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Receipt } from "lucide-react";
 import { getCustomer } from "@/lib/auth/customer";
 import { Button } from "@/components/ui/button";
 import { EmptyState } from "@/components/commerce/empty-state";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Orders",
-  robots: { index: false, follow: false },
-};
+  noIndex: true,
+});
 
 /**
  * Order history.

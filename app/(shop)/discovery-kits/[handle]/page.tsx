@@ -9,6 +9,9 @@ import { Badge } from "@/components/ui/badge";
 import { PriceTag } from "@/components/commerce/price-tag";
 import { ProductGrid } from "@/components/commerce/product-grid";
 import { QuickViewDialog } from "@/components/shop/quick-view-dialog";
+import { JsonLd } from "@/components/seo/json-ld";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { kitJsonLd } from "@/lib/seo/jsonld";
 
 export const revalidate = 3600;
 
@@ -24,21 +27,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { handle } = await params;
   const kit = await getProvider().getDiscoveryKitByHandle(handle);
-  if (!kit) return { title: "Not found" };
+  if (!kit) return buildMetadata({ title: "Not found", noIndex: true });
 
-  const title = kit.seo?.title ?? kit.title;
-  const description = kit.seo?.description ?? kit.tagline ?? kit.description;
-
-  return {
-    title,
-    description,
-    alternates: { canonical: `/discovery-kits/${kit.handle}` },
-    openGraph: {
-      title,
-      description,
-      images: kit.image ? [{ url: kit.image.url }] : undefined,
-    },
-  };
+  return buildMetadata({
+    title: kit.seo?.title ?? kit.title,
+    description: kit.seo?.description ?? kit.tagline ?? kit.description,
+    path: `/discovery-kits/${kit.handle}`,
+    image: kit.image?.url,
+  });
 }
 
 /**
@@ -62,6 +58,8 @@ export default async function KitPage({
 
   return (
     <>
+      <JsonLd data={kitJsonLd(kit, `/discovery-kits/${kit.handle}`)} />
+
       <Container className="pt-8">
         <Breadcrumbs
           items={[
