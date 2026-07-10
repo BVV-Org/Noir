@@ -11,7 +11,10 @@
  * for exactly the same fields, which is what makes a kit renderable as a
  * product.
  */
-export const NV_NAMESPACE = "nv";
+// Shopify requires metafield-definition namespaces to be >= 3 characters, so the
+// original two-letter `nv` cannot be used as a real definition namespace. `noir`
+// is the live namespace; every product/collection metafield is stored under it.
+export const NV_NAMESPACE = "noir";
 
 /** Basic identity. */
 const BASIC = ["brand", "release_year", "tagline"] as const;

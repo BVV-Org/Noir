@@ -126,7 +126,7 @@ Then complete the store configuration below, or pages will render empty.
 The live provider expects a specific store shape. `lib/shopify/metafields.ts` is
 the authoritative key list; this is the operator's summary.
 
-### Metafields — namespace `nv`, on Product
+### Metafields — namespace `noir`, on Product
 
 Type them in Admin so the Storefront API returns them cleanly.
 
@@ -143,13 +143,13 @@ Type them in Admin so the Storefront API returns them cleanly.
 | Media (optional) | `hero_video` (`file_reference` → Video), `rotation_360` | file refs |
 | Kits | `is_kit` (`boolean`), `kit_products` (`list.product_reference`) | |
 
-`nv.rarity` must be one of `Common`, `Rare`, `Epic`, `Legendary`, `Mythic`
+`noir.rarity` must be one of `Common`, `Rare`, `Epic`, `Legendary`, `Mythic`
 (case-insensitive). Anything else is ignored rather than guessed at.
 
 ### Two things that are easy to get wrong
 
 **1. Discovery kits need a tag as well as a flag.**
-A kit is a Product with `nv.is_kit = true` **and** the product tag
+A kit is a Product with `noir.is_kit = true` **and** the product tag
 `discovery-kit`. The flag carries the meaning; the tag makes it findable and —
 critically — lets the main catalogue *exclude* it. A product with the tag but not
 the flag is dropped rather than rendered as a kit.
@@ -157,9 +157,9 @@ the flag is dropped rather than rendered as a kit.
 **2. Facet values must be mirrored onto product tags.**
 The Storefront `products(query:)` argument searches native fields and tags only.
 **It cannot filter on metafields.** So the shop's rarity / season / mood / class /
-DNA / note filters read *tags*. A fragrance must carry tags matching its `nv`
+DNA / note filters read *tags*. A fragrance must carry tags matching its `noir`
 values — `Mythic`, `Winter`, `Evening`, `Oud`. A Shopify Flow rule on product
-publish keeps the two in sync. `nv.*` remains the source of truth for what is
+publish keeps the two in sync. `noir.*` remains the source of truth for what is
 *displayed*; tags exist so Shopify's index can find things.
 
 Full reasoning in the header of `lib/shopify/search-query.ts`.
@@ -187,8 +187,8 @@ hrefs to `http(s)` / `mailto`.
 ### Collections
 
 Use **automated (smart) collections** keyed on tags. Membership is Shopify's job:
-tag a product and it appears. Optional collection metafields: `nv.tagline`,
-`nv.theme`.
+tag a product and it appears. Optional collection metafields: `noir.tagline`,
+`noir.theme`.
 
 ### Webhooks → on-demand ISR
 
@@ -278,7 +278,7 @@ Stated plainly rather than buried.
 - **Journal author avatars are `null` on live data.** The avatar is a file
   reference nested two levels deep, which the Storefront API will not resolve in
   one query.
-- **Hero video is implemented but unexercised.** `nv.hero_video` normalizes and
+- **Hero video is implemented but unexercised.** `noir.hero_video` normalizes and
   the gallery renders it; there is no mock video asset to prove it against.
 - **Customer accounts are a shell.** `getCustomer()` returns `null` until the
   Customer Account API is configured — and *throws* if the env vars are set but
