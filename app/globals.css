@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Noir Vault — design tokens.
+ * Dark-only luxury theme. Values are HSL channels so they compose with
+ * Tailwind's `hsl(var(--token) / <alpha>)` and shadcn/ui conventions.
+ */
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 0 0% 7%; /* #111111 */
+    --foreground: 0 0% 96%; /* #F5F5F5 */
+    --card: 0 0% 9%; /* #171717 */
+    --card-foreground: 0 0% 96%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 96%;
+
+    /* Brand accents */
+    --primary: 158 100% 38%; /* Emerald #00C27A */
+    --primary-foreground: 0 0% 7%;
+    --accent: 250 100% 65%; /* Purple #6A4CFF */
+    --accent-foreground: 0 0% 98%;
+    --gold: 46 65% 52%; /* #D4AF37 */
+    --gold-foreground: 0 0% 7%;
+
+    /* Neutrals */
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 64%;
+
+    /* Feedback */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Lines & focus */
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 158 100% 38%;
+
+    /* Rarity progression (signature system) */
+    --rarity-common: 0 0% 62%; /* neutral gray */
+    --rarity-rare: 158 100% 38%; /* emerald */
+    --rarity-epic: 250 100% 65%; /* purple */
+    --rarity-legendary: 46 65% 52%; /* gold */
+    --rarity-mythic: 349 90% 66%; /* crimson-rose */
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background font-sans text-base text-foreground antialiased;
+  }
+
+  /* Headings default to the display face */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+
+  /* Consistent, on-brand focus treatment */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+  }
+
+  /* Themed, unobtrusive scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(0 0% 24%) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: hsl(0 0% 22%);
+    border-radius: 9999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: hsl(0 0% 30%);
+    background-clip: content-box;
+  }
+}
+
+@layer utilities {
+  /* Uppercase metadata label used for eyebrows / section kickers */
+  .overline {
+    @apply text-overline font-medium uppercase text-muted-foreground;
+  }
+
+  /* Hairline divider that fades at both ends */
+  .hairline {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--border)) 20%,
+      hsl(var(--border)) 80%,
+      transparent
+    );
+  }
+
+  /* Tasteful glass surface — used only where it earns its place */
+  .glass {
+    background: hsl(0 0% 100% / 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(0 0% 100% / 0.06);
+  }
+
+  /* Gentle text gradient for hero emphasis */
+  .text-gradient-emerald {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--foreground)),
+      hsl(var(--primary))
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Honor reduced-motion everywhere, regardless of component-level handling */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
