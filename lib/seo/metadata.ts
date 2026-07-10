@@ -17,11 +17,27 @@ import { siteConfig } from "@/lib/config/site";
  *
  * ## Indexing
  *
- * Only production is indexable. Vercel sets `VERCEL_ENV` to `preview` on every
- * branch deploy; without this guard, preview URLs compete with production for
- * the same content and split its authority.
+ * Public pages emit **no** `robots` meta tag. They are indexable by default, and
+ * whether a *deployment* may be crawled is decided by `robots.txt` — which is
+ * evaluated per request.
+ *
+ * This is not a stylistic choice. `robots` meta tags are rendered into
+ * statically prerendered HTML at **build** time, so gating them on
+ * `process.env.VERCEL_ENV` bakes the build machine's environment into every
+ * product page. A build performed without that variable (a local `next build`,
+ * a prebuilt artifact, any CI that forgets it) would publish the entire
+ * catalogue as `noindex`, and nothing in the test suite would notice. Worse, the
+ * one dynamic route (`/shop`) *would* re-evaluate at request time, so the site
+ * would disagree with itself page by page.
+ *
+ * `noIndex: true` is different: it is a property of the page, not of the
+ * environment, and is therefore safe to bake.
+ *
+ * There is deliberately no exported `IS_PRODUCTION` constant here. It existed,
+ * and it was a trap: importing it into anything that gets prerendered silently
+ * captures the build environment. `app/robots.ts` reads `process.env` inside its
+ * handler instead.
  */
-export const IS_PRODUCTION = process.env.VERCEL_ENV === "production";
 
 /** OG images must be absolute — crawlers do not resolve relative paths. */
 export function absoluteImage(path: string | undefined): string {
@@ -68,9 +84,9 @@ export function buildMetadata({
     title: title ?? undefined,
     description,
     alternates: path ? { canonical: path } : undefined,
-    robots: noIndex
-      ? { index: false, follow: false }
-      : { index: IS_PRODUCTION, follow: IS_PRODUCTION },
+    // Omitted for public pages — see the indexing note above. `robots.txt` is
+    // the per-deployment gate, and it is computed per request.
+    robots: noIndex ? { index: false, follow: false } : undefined,
     openGraph: {
       type,
       siteName: siteConfig.name,

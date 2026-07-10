@@ -8,7 +8,6 @@ import { Footer } from "@/components/layout/footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/jsonld";
-import { IS_PRODUCTION } from "@/lib/seo/metadata";
 import "./globals.css";
 
 /**
@@ -43,11 +42,9 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
   },
-  robots: {
-    // Preview deployments must never be indexed (TDD §11).
-    index: IS_PRODUCTION,
-    follow: IS_PRODUCTION,
-  },
+  // No `robots` here. A meta tag baked into statically prerendered HTML cannot
+  // describe the environment it is served from; `app/robots.ts` gates the
+  // deployment at request time instead. See lib/seo/metadata.ts.
 };
 
 export const viewport: Viewport = {
