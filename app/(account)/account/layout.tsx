@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Lock } from "lucide-react";
-import { getCustomer } from "@/lib/auth/customer";
+import { getCustomer, isCustomerAccountConfigured } from "@/lib/auth/customer";
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
 import { EmptyState } from "@/components/commerce/empty-state";
@@ -10,8 +10,8 @@ import { EmptyState } from "@/components/commerce/empty-state";
  *
  * Every route beneath `/account` renders through here, so there is exactly one
  * place that decides whether a visitor is signed in. Signed out, the shell
- * explains the state instead of redirecting into a login page that does not
- * exist yet.
+ * either offers the real Shopify sign-in (when the Customer Account API is
+ * configured) or explains that accounts are not connected.
  *
  * `/wishlist` deliberately sits outside this folder: it is browser-local and
  * needs no account.
@@ -29,10 +29,20 @@ export default async function AccountLayout({
         <EmptyState
           icon={Lock}
           title="Sign in to see your account"
-          description="Accounts are powered by Shopify's Customer Account API, which is not connected in this environment. Your wishlist works without an account."
+          description={
+            isCustomerAccountConfigured
+              ? "Sign in with your Noir Vault account to see your orders. Your wishlist works with or without an account."
+              : "Accounts are powered by Shopify's Customer Account API, which is not connected in this environment. Your wishlist works without an account."
+          }
           action={
             <div className="flex flex-wrap justify-center gap-3">
-              <Button asChild>
+              {isCustomerAccountConfigured && (
+                <Button asChild>
+                  {/* A Route Handler, not a page — a full navigation, not client routing. */}
+                  <a href="/api/auth/login">Sign in</a>
+                </Button>
+              )}
+              <Button asChild variant={isCustomerAccountConfigured ? "outline" : "default"}>
                 <Link href="/wishlist">Go to wishlist</Link>
               </Button>
               <Button asChild variant="outline">
@@ -47,11 +57,16 @@ export default async function AccountLayout({
 
   return (
     <Container className="py-12 sm:py-16">
-      <header>
-        <p className="overline">Account</p>
-        <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
-          {customer.firstName ? `Hello, ${customer.firstName}` : "Your account"}
-        </h1>
+      <header className="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p className="overline">Account</p>
+          <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
+            {customer.firstName ? `Hello, ${customer.firstName}` : "Your account"}
+          </h1>
+        </div>
+        <Button asChild variant="outline">
+          <a href="/api/auth/logout">Sign out</a>
+        </Button>
       </header>
 
       <nav aria-label="Account" className="mt-10 border-b border-border">
