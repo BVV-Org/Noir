@@ -97,7 +97,10 @@ export function Hero({
                   src={media.url}
                   alt={media.altText}
                   fill
-                  priority
+                  // Not `priority`: this figure sits a full scroll-track below
+                  // the fold, so eager-loading it stole bandwidth from the hero
+                  // frames and slowed first paint on phones. Let it lazy-load.
+                  loading="lazy"
                   sizes="(min-width: 1440px) 1380px, 95vw"
                   className="object-cover"
                 />
