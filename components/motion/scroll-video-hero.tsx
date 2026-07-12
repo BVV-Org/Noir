@@ -29,6 +29,12 @@ import { MOTION_CONFIG } from "@/lib/animations/config";
  * laptop and a 144Hz monitor scrub at the same speed. Track height and chase
  * speed live in `MOTION_CONFIG` (heroTrackVh / heroScrubEase).
  *
+ * Touch devices (coarse pointer — phones, tablets): no scrubbing. iOS Safari
+ * refuses to decode or paint a paused, seek-only <video>, so scroll-scrubbing
+ * there leaves the whole hero blank ("the site won't load"). Instead the clip
+ * autoplays as a normal muted, inline, looping background in a single-viewport
+ * stage — which every phone renders smoothly.
+ *
  * Reduced-motion: no scrubbing and no tall track — the stage is one viewport and
  * the video holds on its first frame as a still poster.
  */
@@ -56,6 +62,20 @@ export function ScrollVideoHero({
   const lastTsRef = React.useRef<number | null>(null);
   const rafRef = React.useRef<number | null>(null);
   const reduce = useReducedMotion();
+
+  // Coarse pointer = touch device. Detected after mount (SSR renders the
+  // desktop scrub path); phones then switch to the autoplay background below.
+  const [coarse, setCoarse] = React.useState(false);
+  React.useEffect(() => {
+    const mq = window.matchMedia("(pointer: coarse)");
+    const update = () => setCoarse(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
+  // Scroll-scrub only where it renders reliably: fine pointer, motion allowed.
+  const scrub = !reduce && !coarse;
 
   // Ease the playhead toward the scroll target so a fast scroll still glides.
   const runScrub = React.useCallback(() => {
@@ -102,7 +122,7 @@ export function ScrollVideoHero({
   }, []);
 
   React.useEffect(() => {
-    if (reduce) return;
+    if (!scrub) return;
 
     // The video may already be loaded (from cache) before React attaches the
     // onLoadedMetadata handler, so capture the duration here too — otherwise the
@@ -140,9 +160,12 @@ export function ScrollVideoHero({
       window.removeEventListener("resize", onScroll);
       if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
     };
-  }, [reduce, runScrub]);
+  }, [scrub, runScrub]);
 
   const handleLoadedMetadata = () => {
+    // Only the scrub path drives the playhead by hand; when the video autoplays
+    // as a background (touch/reduced-motion) leave it to play untouched.
+    if (!scrub) return;
     const video = videoRef.current;
     if (!video) return;
     // A hair under duration: seeking exactly to the end can blank some decoders.
@@ -154,7 +177,7 @@ export function ScrollVideoHero({
     <div
       ref={trackRef}
       className={cn("relative", className)}
-      style={{ height: reduce ? "100svh" : `${trackVh}svh` }}
+      style={{ height: scrub ? `${trackVh}svh` : "100svh" }}
     >
       <div className="sticky top-0 h-[100svh] w-full overflow-hidden">
         <video
@@ -163,6 +186,10 @@ export function ScrollVideoHero({
           poster={poster}
           muted
           playsInline
+          // Touch / reduced-motion: play the clip as a normal background so it
+          // actually renders on iOS. Scrub path stays paused and seek-driven.
+          autoPlay={!scrub}
+          loop={!scrub}
           preload="auto"
           onLoadedMetadata={handleLoadedMetadata}
           className="absolute inset-0 h-full w-full object-cover"
@@ -180,8 +207,8 @@ export function ScrollVideoHero({
           {children}
         </div>
 
-        {/* Scroll affordance. */}
-        {!reduce && (
+        {/* Scroll affordance — only when scroll actually drives the clip. */}
+        {scrub && (
           <div className="pointer-events-none absolute inset-x-0 bottom-8 flex justify-center">
             <span className="overline text-white/60">Scroll</span>
           </div>
