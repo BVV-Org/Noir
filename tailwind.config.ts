@@ -114,23 +114,24 @@ const config: Config = {
         // Body
         base: ["1.0625rem", { lineHeight: "1.55" }],
         lg: ["1.25rem", { lineHeight: "1.5" }],
-        // Headings — compressed leading turns glyphs into architecture
+        // Headings — leading stays tight, but never below the point where
+        // Anton's tall caps collide with the line above (~0.95).
         h6: ["1rem", { lineHeight: "1.15" }],
         h5: ["1.1875rem", { lineHeight: "1.1" }],
-        h4: ["1.5rem", { lineHeight: "1.05" }],
-        h3: ["clamp(1.875rem, 3vw, 2.75rem)", { lineHeight: "0.98" }],
+        h4: ["1.5rem", { lineHeight: "1.1" }],
+        h3: ["clamp(1.875rem, 3vw, 2.75rem)", { lineHeight: "1" }],
         h2: [
           "clamp(2.75rem, 6.5vw, 5.75rem)",
-          { lineHeight: "0.92", letterSpacing: "-0.01em" },
+          { lineHeight: "0.98", letterSpacing: "-0.01em" },
         ],
         h1: [
           "clamp(3.5rem, 9vw, 8.5rem)",
-          { lineHeight: "0.88", letterSpacing: "-0.01em" },
+          { lineHeight: "0.96", letterSpacing: "-0.01em" },
         ],
         // The viewport-bleeding hero scale
         display: [
           "clamp(4.25rem, 12.5vw, 13rem)",
-          { lineHeight: "0.85", letterSpacing: "-0.01em" },
+          { lineHeight: "0.95", letterSpacing: "-0.01em" },
         ],
       },
       letterSpacing: {
