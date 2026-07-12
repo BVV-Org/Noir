@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import ReactDOM from "react-dom";
 import { useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { MOTION_CONFIG } from "@/lib/animations/config";
@@ -58,6 +59,14 @@ export function ScrollFrameHero({
     (i: number) => `${frameDir}/f-${String(i + 1).padStart(3, "0")}.webp`,
     [frameDir]
   );
+
+  // Start downloading the very first frame during render — this emits a
+  // <link rel="preload"> into the SSR HTML, so a phone begins fetching the
+  // hero's first painted frame before any JS runs. It's the LCP element.
+  ReactDOM.preload(`${frameDir}/f-001.webp`, {
+    as: "image",
+    fetchPriority: "high",
+  });
 
   // Nearest already-loaded frame to `idx`, searching outward — so a frame that
   // hasn't downloaded yet borrows its closest neighbour instead of blanking.
@@ -119,9 +128,12 @@ export function ScrollFrameHero({
     imagesRef.current = new Array(frameCount);
     loadedRef.current = new Array(frameCount).fill(false);
 
-    const load = (i: number) => {
+    let cancelled = false;
+
+    const load = (i: number, priority: "high" | "low") => {
       const img = new Image();
       img.decoding = "async";
+      img.setAttribute("fetchpriority", priority);
       img.onload = () => {
         loadedRef.current[i] = true;
         // Repaint if this frame is the one we currently want to show.
@@ -133,17 +145,27 @@ export function ScrollFrameHero({
       imagesRef.current[i] = img;
     };
 
-    // First frame with priority, then the remainder in order.
-    load(0);
-    let cancelled = false;
+    // Frame 0 immediately (it paints the hero); the rest stream in behind first
+    // paint, so on a phone they never compete with the page's critical work.
+    load(0, "high");
+
     let next = 1;
     const pump = () => {
       if (cancelled) return;
-      const batchEnd = Math.min(next + 6, frameCount);
-      for (; next < batchEnd; next++) load(next);
+      const batchEnd = Math.min(next + 4, frameCount);
+      for (; next < batchEnd; next++) load(next, "low");
       if (next < frameCount) requestAnimationFrame(pump);
     };
-    requestAnimationFrame(pump);
+    // Defer the bulk fetch until the browser is idle (falls back to a short
+    // timeout) so the hero appears fast even on a slow connection.
+    const w = window as typeof window & {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+    };
+    if (typeof w.requestIdleCallback === "function") {
+      w.requestIdleCallback(() => pump(), { timeout: 1200 });
+    } else {
+      window.setTimeout(() => pump(), 250);
+    }
 
     return () => {
       cancelled = true;

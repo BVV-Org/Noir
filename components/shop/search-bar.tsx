@@ -21,10 +21,17 @@ export function SearchBar({ initialQuery }: { initialQuery: string }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [value, setValue] = React.useState(initialQuery);
+  const inputRef = React.useRef<HTMLInputElement>(null);
 
-  // The URL can change beneath us (a cleared chip, the back button). Follow it.
+  // The URL can change beneath us (a cleared chip, the back button). Follow it —
+  // but never while the field is focused. Our own debounced `router.replace`
+  // pushes the just-typed query back down as `initialQuery`; re-adopting it
+  // mid-type overwrote the characters typed since, so fast typing dropped and
+  // "ghosted" letters. While the user is in the box, their local value wins.
   React.useEffect(() => {
-    setValue(initialQuery);
+    if (document.activeElement !== inputRef.current) {
+      setValue(initialQuery);
+    }
   }, [initialQuery]);
 
   const commit = React.useCallback(
@@ -66,6 +73,7 @@ export function SearchBar({ initialQuery }: { initialQuery: string }) {
         className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
       />
       <Input
+        ref={inputRef}
         id="shop-search"
         name="q"
         type="search"
