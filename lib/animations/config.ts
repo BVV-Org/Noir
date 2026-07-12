@@ -10,6 +10,20 @@ export const MOTION_CONFIG = {
   /** Scroll speed multiplier for the wheel. */
   wheelMultiplier: 1,
 
+  /**
+   * Height of the scroll-video hero's scroll track, in viewport units.
+   * The clip scrubs across `heroTrackVh - 100` vh of scrolling, so lower =
+   * the whole intro completes in a single scroll gesture. 300 felt like three
+   * flicks; ~160 lets one swoop finish it.
+   */
+  heroTrackVh: 160,
+  /**
+   * How fast the hero playhead chases the scroll target, per 60fps frame
+   * (0–1). Higher = snappier / less lag; the easing is frame-rate-independent
+   * so 120Hz Windows monitors behave the same as 60Hz laptops.
+   */
+  heroScrubEase: 0.24,
+
   /** Seconds between words in a WordReveal. */
   wordStagger: 0.03,
   /** Seconds a masked line takes to rise. */
