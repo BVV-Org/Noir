@@ -89,8 +89,10 @@ export function Navbar() {
           <div className="flex items-center gap-1">
             <ThemeToggle
               className={cn(
-                navItemClass,
-                "mr-2 hidden py-2 text-muted-foreground hover:text-foreground md:inline-block"
+                // Always visible — including mobile, where it's the only way to
+                // reach dark mode. Matches the icon actions' ≥44px target.
+                "inline-flex size-11 items-center justify-center rounded-md text-muted-foreground",
+                "transition-colors duration-150 ease-premium hover:bg-accent hover:text-foreground"
               )}
             />
             {navActions.map(({ label, href, icon: Icon }) => (
