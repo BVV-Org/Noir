@@ -3,7 +3,6 @@ import Link from "next/link";
 import type { HomepageSection, Product } from "@/types";
 import { RARITY_LABELS } from "@/lib/config/site";
 import { Container } from "@/components/layout/container";
-import { Button } from "@/components/ui/button";
 import { RarityBadge } from "@/components/ui/badge";
 import { FadeIn } from "@/components/motion/fade-in";
 import { Magnetic } from "@/components/motion/magnetic";
@@ -60,22 +59,27 @@ export function Hero({
           </MaskRise>
         )}
 
+        {/*
+          The hero CTAs wear the headline's own type: Anton display, uppercase —
+          the same face as "ENTER THE VAULT" above. Palette is inverted over the
+          dark video for legibility: a solid white primary and a light outline
+          secondary.
+        */}
         <FadeIn delay={0.25}>
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
             {section.ctaLabel && section.ctaUrl && (
               <Magnetic>
-                <Button
-                  asChild
-                  size="lg"
-                  className="border border-white/20 bg-white/10 text-white backdrop-blur-xl hover:bg-white/20"
+                <Link
+                  href={section.ctaUrl}
+                  className="inline-flex h-12 items-center justify-center rounded-[8px] bg-white px-8 font-display text-lg uppercase leading-none tracking-wide text-[#222] transition-colors duration-200 hover:bg-white/90"
                 >
-                  <Link href={section.ctaUrl}>{section.ctaLabel}</Link>
-                </Button>
+                  {section.ctaLabel}
+                </Link>
               </Magnetic>
             )}
             <Link
               href="/discovery-kits"
-              className="rounded-sm border border-white/15 bg-white/5 px-6 py-3 text-white backdrop-blur-xl transition-all hover:bg-white/15"
+              className="inline-flex h-12 items-center justify-center rounded-[8px] bg-transparent px-8 font-display text-lg uppercase leading-none tracking-wide text-white transition-colors duration-200 hover:bg-white/10"
             >
               Start with samples
             </Link>
