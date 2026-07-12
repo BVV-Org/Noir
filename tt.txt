@@ -1,0 +1,110 @@
+import Link from "next/link";
+import type { HomepageSection, Product } from "@/types";
+import { Container } from "@/components/layout/container";
+import { Button } from "@/components/ui/button";
+import { FadeIn } from "@/components/motion/fade-in";
+import { Magnetic } from "@/components/motion/magnetic";
+import { MaskRise } from "@/components/motion/mask-rise";
+
+export function Hero({
+  section,
+}: {
+  section: HomepageSection;
+  product: Product | null;
+}) {
+  return (
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover"
+      >
+        <source src="/background.mp4" type="video/mp4" />
+      </video>
+
+      {/* Cinematic Overlay */}
+      <div className="absolute inset-0 bg-black/55" />
+
+      {/* Optional gradient for a premium look */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/70" />
+
+      {/* Hero Content */}
+      <Container className="relative z-10 flex min-h-screen items-center justify-center">
+        <div className="flex max-w-4xl flex-col items-center text-center">
+
+          <MaskRise mode="mount" as="p">
+            <span className="overline text-white/80 tracking-[0.4em]">
+              THE VAULT
+            </span>
+          </MaskRise>
+
+          <MaskRise mode="mount" delay={0.08}>
+            <h1 className="mt-6 text-balance text-display text-white drop-shadow-2xl">
+              {section.title ?? "Enter The Vault"}
+            </h1>
+          </MaskRise>
+
+          {section.subtitle && (
+            <MaskRise
+              mode="mount"
+              delay={0.16}
+              as="p"
+              className="mt-8"
+            >
+              <span className="block max-w-2xl text-lg text-white/85">
+                {section.subtitle}
+              </span>
+            </MaskRise>
+          )}
+
+          <FadeIn delay={0.25}>
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
+
+              {section.ctaLabel && section.ctaUrl && (
+                <Magnetic>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="
+                      border border-white/20
+                      bg-white/10
+                      backdrop-blur-xl
+                      hover:bg-white/20
+                      text-white
+                    "
+                  >
+                    <Link href={section.ctaUrl}>
+                      {section.ctaLabel}
+                    </Link>
+                  </Button>
+                </Magnetic>
+              )}
+
+              <Link
+                href="/discovery-kits"
+                className="
+                  rounded-sm
+                  border border-white/15
+                  bg-white/5
+                  px-6
+                  py-3
+                  text-white
+                  backdrop-blur-xl
+                  transition-all
+                  hover:bg-white/15
+                "
+              >
+                Start with samples
+              </Link>
+
+            </div>
+          </FadeIn>
+
+        </div>
+      </Container>
+    </section>
+  );
+}
