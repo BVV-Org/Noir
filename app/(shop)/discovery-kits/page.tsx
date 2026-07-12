@@ -25,7 +25,7 @@ export default async function DiscoveryKitsPage() {
     <Container className="py-12 sm:py-16">
       <header className="max-w-2xl">
         <p className="overline">The Vault</p>
-        <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
+        <h1 className="mt-4 text-h1 font-semibold text-foreground">
           Discovery Kits
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">

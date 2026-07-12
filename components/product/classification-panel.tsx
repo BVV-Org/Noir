@@ -51,10 +51,7 @@ export function ClassificationPanel({
 
   return (
     <section aria-labelledby="classification-heading">
-      <h2
-        id="classification-heading"
-        className="text-h4 font-semibold tracking-tight"
-      >
+      <h2 id="classification-heading" className="text-h4 font-semibold">
         Classification
       </h2>
 

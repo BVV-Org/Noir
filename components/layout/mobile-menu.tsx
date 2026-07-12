@@ -69,7 +69,7 @@ export function MobileMenu() {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "flex min-h-11 items-center border-b border-border/60 py-3 font-display text-h4 tracking-tight",
+                    "flex min-h-11 items-center border-b border-border/60 py-3 font-display text-h4",
                     "transition-colors duration-150 ease-premium",
                     active
                       ? "text-primary"
@@ -92,7 +92,7 @@ export function MobileMenu() {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "flex min-h-11 items-center text-small",
+                    "flex min-h-11 items-center font-mono text-caption uppercase tracking-[0.08em]",
                     "transition-colors duration-150 ease-premium",
                     active
                       ? "text-foreground"

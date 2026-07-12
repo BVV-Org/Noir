@@ -18,7 +18,7 @@ const schema = z.object({
   email: z.email("Enter a valid email address."),
   message: z
     .string()
-    .min(10, "A little more detail, please — at least 10 characters.")
+    .min(10, "A little more detail, please: at least 10 characters.")
     .max(4000),
 });
 

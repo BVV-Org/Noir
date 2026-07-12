@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 import { Container } from "@/components/layout/container";
 import { Logo } from "@/components/layout/logo";
 import { footerNav } from "@/lib/config/nav";
@@ -8,15 +9,16 @@ import { siteConfig } from "@/lib/config/site";
  * Footer — the closing landmark of every page (DESIGN_SYSTEM.md §4).
  *
  * A Server Component: nothing here is interactive, so it ships zero JS.
- *
- * Extension point (do not implement in V1): the newsletter form belongs in the
- * slot above the nav columns. It is a client component posting to
- * `/api/newsletter` (TDD §10) and lands with that route handler. Social and
- * legal links are omitted rather than stubbed — no such destinations exist yet.
+ * Set entirely in the telemetry layer: mono caps columns over a full-width
+ * ink rule, the way a print document ends. The root layout positions it as
+ * a curtain reveal (sticky under the page content), so it must keep an
+ * opaque background of its own.
  */
-export function Footer() {
+export function Footer({ className }: { className?: string }) {
   return (
-    <footer className="border-t border-border/60 bg-card/30">
+    <footer
+      className={cn("border-t border-foreground/20 bg-background", className)}
+    >
       <Container>
         <div className="grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_2fr] lg:gap-16">
           <div className="max-w-sm">
@@ -31,7 +33,10 @@ export function Footer() {
               // The landmark borrows the visible heading as its accessible name,
               // rather than repeating it in an aria-label.
               <nav key={group.title} aria-labelledby={`footer-${group.title}`}>
-                <h2 id={`footer-${group.title}`} className="overline">
+                <h2
+                  id={`footer-${group.title}`}
+                  className="font-bold text-foreground overline"
+                >
                   {group.title}
                 </h2>
                 <ul className="mt-5 flex flex-col gap-3">
@@ -39,7 +44,7 @@ export function Footer() {
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="text-small text-muted-foreground transition-colors duration-150 ease-premium hover:text-foreground"
+                        className="font-mono text-caption uppercase tracking-[0.08em] text-muted-foreground transition-colors duration-150 ease-premium hover:text-foreground"
                       >
                         {item.label}
                       </Link>
@@ -51,10 +56,10 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="hairline" />
+        <div className="rule" />
 
         <div className="flex flex-col items-start justify-between gap-2 py-8 sm:flex-row sm:items-center">
-          <p className="text-caption text-muted-foreground">
+          <p className="font-mono text-caption uppercase tracking-[0.08em] text-muted-foreground">
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
           <p className="overline">{siteConfig.tagline}</p>

@@ -28,7 +28,7 @@ const TIERS = [
 export function NotesPyramid({ notes }: { notes: ProductNotes }) {
   return (
     <section aria-labelledby="notes-heading">
-      <h2 id="notes-heading" className="text-h4 font-semibold tracking-tight">
+      <h2 id="notes-heading" className="text-h4 font-semibold">
         The pyramid
       </h2>
 

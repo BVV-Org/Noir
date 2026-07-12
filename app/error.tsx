@@ -27,7 +27,7 @@ export default function Error({
   return (
     <Section spacing="lg" className="text-center">
       <p className="overline">Something went wrong</p>
-      <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
+      <h1 className="mt-4 text-h1 font-semibold text-foreground">
         The vault didn&rsquo;t respond
       </h1>
       <p className="mx-auto mt-4 max-w-md text-lg text-muted-foreground">

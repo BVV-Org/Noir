@@ -44,17 +44,11 @@ export function KitCard({
             )}
           />
         )}
-        <div className="absolute left-3 top-3">
-          {kit.availableForSale ? (
-            <Badge variant="emerald">{count} fragrances</Badge>
-          ) : (
-            <Badge variant="outline">Sold out</Badge>
-          )}
-        </div>
       </div>
 
       <div className="flex flex-1 flex-col gap-3 p-6">
-        <h3 className="text-h5 font-semibold tracking-tight text-foreground">
+        <p className="overline">{count} fragrances</p>
+        <h3 className="text-h5 font-semibold text-foreground">
           <Link
             href={`/discovery-kits/${kit.handle}`}
             className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none"
@@ -65,7 +59,10 @@ export function KitCard({
         {kit.tagline && (
           <p className="text-small text-muted-foreground">{kit.tagline}</p>
         )}
-        <PriceTag price={kit.price} className="mt-auto pt-2" />
+        <div className="mt-auto flex items-center justify-between gap-3 pt-2">
+          <PriceTag price={kit.price} />
+          {!kit.availableForSale && <Badge variant="outline">Sold out</Badge>}
+        </div>
       </div>
     </Card>
   );

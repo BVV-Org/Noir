@@ -42,7 +42,10 @@ export default async function AccountLayout({
                   <a href="/api/auth/login">Sign in</a>
                 </Button>
               )}
-              <Button asChild variant={isCustomerAccountConfigured ? "outline" : "default"}>
+              <Button
+                asChild
+                variant={isCustomerAccountConfigured ? "outline" : "default"}
+              >
                 <Link href="/wishlist">Go to wishlist</Link>
               </Button>
               <Button asChild variant="outline">
@@ -60,8 +63,10 @@ export default async function AccountLayout({
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="overline">Account</p>
-          <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
-            {customer.firstName ? `Hello, ${customer.firstName}` : "Your account"}
+          <h1 className="mt-4 text-h1 font-semibold text-foreground">
+            {customer.firstName
+              ? `Hello, ${customer.firstName}`
+              : "Your account"}
           </h1>
         </div>
         <Button asChild variant="outline">

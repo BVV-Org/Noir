@@ -16,7 +16,7 @@ export default function ContactPage() {
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
         <header>
           <p className="overline">Contact</p>
-          <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
+          <h1 className="mt-4 text-h1 font-semibold text-foreground">
             Ask us anything
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
@@ -29,7 +29,7 @@ export default function ContactPage() {
               <dt className="overline">Before you write</dt>
               <dd className="mt-3 text-base text-muted-foreground">
                 Most questions about how a fragrance wears are answered on its
-                page — longevity, projection, and the full pyramid are published
+                page: longevity, projection, and the full pyramid are published
                 for every bottle.{" "}
                 <Link
                   href="/shop"

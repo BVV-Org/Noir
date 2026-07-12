@@ -4,50 +4,97 @@
 
 /*
  * Noir Vault — design tokens.
- * Dark-only luxury theme. Values are HSL channels so they compose with
- * Tailwind's `hsl(var(--token) / <alpha>)` and shadcn/ui conventions.
+ * Swiss-print brutalism, dual theme. Values are HSL channels so they compose
+ * with Tailwind's `hsl(var(--token) / <alpha>)` and shadcn/ui conventions.
+ *
+ * Light (default): unbleached-paper gray `#e4e4e4` with carbon ink `#111`.
+ * Dark (`.dark` on <html>): the noir inverse, same structure.
+ * `primary` is the ink block (foreground-on-background inverted), so CTAs
+ * flip correctly with the theme. ONE pop accent: signal yellow `#f9fe02`,
+ * rationed to selection, the scarcity badge, and nothing else. Emerald and
+ * violet exist ONLY inside the rarity scale, where color carries tier data.
  */
 @layer base {
   :root {
-    /* Surfaces */
-    --background: 0 0% 7%; /* #111111 */
-    --foreground: 0 0% 96%; /* #F5F5F5 */
-    --card: 0 0% 9%; /* #171717 */
-    --card-foreground: 0 0% 96%;
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 96%;
+    /* Substrate — matte documentation paper */
+    --background: 0 0% 89%; /* #e4e4e4 */
+    --foreground: 0 0% 7%; /* #111 carbon ink */
+    --card: 0 0% 94%;
+    --card-foreground: 0 0% 7%;
+    --popover: 0 0% 94%;
+    --popover-foreground: 0 0% 7%;
 
-    /* Brand accents */
-    --primary: 158 100% 38%; /* Emerald #00C27A */
-    --primary-foreground: 0 0% 7%;
-    --accent: 250 100% 65%; /* Purple #6A4CFF */
-    --accent-foreground: 0 0% 98%;
-    --gold: 46 65% 52%; /* #D4AF37 */
-    --gold-foreground: 0 0% 7%;
+    /* Ink block — the CTA surface, always the theme's inverse */
+    --primary: 0 0% 7%;
+    --primary-foreground: 0 0% 89%;
+    /* Pop accent — signal yellow, used sparingly */
+    --yellow: 61 98% 50%; /* #f9fe02 */
+    --yellow-foreground: 0 0% 7%;
+    /* shadcn convention: `accent` is the muted hover surface, not a hue */
+    --accent: 0 0% 84%;
+    --accent-foreground: 0 0% 7%;
 
     /* Neutrals */
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 0 0% 96%;
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 64%;
+    --secondary: 0 0% 82%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 0 0% 82%;
+    --muted-foreground: 0 0% 38%;
 
     /* Feedback */
-    --destructive: 0 72% 51%;
+    --destructive: 0 72% 42%;
     --destructive-foreground: 0 0% 98%;
 
     /* Lines & focus */
-    --border: 0 0% 16%;
-    --input: 0 0% 16%;
-    --ring: 158 100% 38%;
+    --border: 0 0% 62%;
+    --input: 0 0% 55%;
+    --ring: 0 0% 7%;
 
-    /* Rarity progression (signature system) */
-    --rarity-common: 0 0% 62%; /* neutral gray */
-    --rarity-rare: 158 100% 38%; /* emerald */
-    --rarity-epic: 250 100% 65%; /* purple */
-    --rarity-legendary: 46 65% 52%; /* gold */
-    --rarity-mythic: 349 90% 66%; /* crimson-rose */
+    /* Rarity progression (semantic tier data, not UI accents) */
+    --rarity-common: 0 0% 38%;
+    --rarity-rare: 158 65% 26%; /* emerald ink */
+    --rarity-epic: 250 55% 45%; /* violet ink */
+    --rarity-legendary: 38 70% 32%; /* amber ink */
+    --rarity-mythic: 350 70% 38%; /* crimson ink */
 
-    --radius: 0.75rem;
+    --radius: 0.4rem;
+
+    color-scheme: light;
+  }
+
+  .dark {
+    --background: 0 0% 7%; /* #111 */
+    --foreground: 0 0% 89%; /* #e4e4e4 */
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 89%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 89%;
+
+    --primary: 0 0% 89%;
+    --primary-foreground: 0 0% 7%;
+    --yellow: 61 98% 50%;
+    --yellow-foreground: 0 0% 7%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 89%;
+
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 89%;
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 60%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 30%;
+    --input: 0 0% 34%;
+    --ring: 0 0% 89%;
+
+    --rarity-common: 0 0% 62%;
+    --rarity-rare: 158 55% 48%;
+    --rarity-epic: 250 60% 70%;
+    --rarity-legendary: 45 80% 60%;
+    --rarity-mythic: 350 65% 62%;
+
+    color-scheme: dark;
   }
 
   * {
@@ -64,14 +111,15 @@
     @apply bg-background font-sans text-base text-foreground antialiased;
   }
 
-  /* Headings default to the display face */
+  /* Headings are structural: the condensed grotesque, always uppercase.
+     Hierarchy comes from scale (Anton has one weight). */
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply font-display;
+    @apply font-display font-normal uppercase;
   }
 
   /* Consistent, on-brand focus treatment */
@@ -80,35 +128,37 @@
   }
 
   ::selection {
-    background: hsl(var(--primary) / 0.3);
-    color: hsl(var(--foreground));
+    background: hsl(var(--yellow));
+    color: hsl(var(--yellow-foreground));
   }
 
   /* Themed, unobtrusive scrollbar */
   * {
     scrollbar-width: thin;
-    scrollbar-color: hsl(0 0% 24%) transparent;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.5) transparent;
   }
   *::-webkit-scrollbar {
     width: 10px;
     height: 10px;
   }
   *::-webkit-scrollbar-thumb {
-    background: hsl(0 0% 22%);
+    background: hsl(var(--muted-foreground) / 0.45);
     border-radius: 9999px;
     border: 3px solid transparent;
     background-clip: content-box;
   }
   *::-webkit-scrollbar-thumb:hover {
-    background: hsl(0 0% 30%);
+    background: hsl(var(--muted-foreground) / 0.7);
     background-clip: content-box;
   }
 }
 
 @layer utilities {
-  /* Uppercase metadata label used for eyebrows / section kickers */
+  /* Uppercase mono metadata label — the telemetry layer: eyebrows, brands,
+     tier labels, nav. `no-underline` beats Tailwind's built-in `overline`
+     text-decoration utility, which shares this class name. */
   .overline {
-    @apply text-overline font-medium uppercase text-muted-foreground;
+    @apply font-mono text-overline uppercase text-muted-foreground no-underline;
   }
 
   /* Hairline divider that fades at both ends */
@@ -123,24 +173,26 @@
     );
   }
 
-  /* Tasteful glass surface — used only where it earns its place */
-  .glass {
-    background: hsl(0 0% 100% / 0.03);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid hsl(0 0% 100% / 0.06);
+  /* Full-width ink rule — the print divider between operational zones */
+  .rule {
+    height: 1px;
+    background: hsl(var(--foreground) / 0.25);
   }
 
-  /* Gentle text gradient for hero emphasis */
-  .text-gradient-emerald {
-    background: linear-gradient(
-      180deg,
-      hsl(var(--foreground)),
-      hsl(var(--primary))
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  /* Tasteful glass surface — used only where it earns its place */
+  .glass {
+    background: hsl(var(--background) / 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--foreground) / 0.08);
+  }
+
+  /* Hide scrollbars on scroll-snap rails without disabling scroll */
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
   }
 }
 

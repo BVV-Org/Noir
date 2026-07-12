@@ -99,7 +99,7 @@ export default async function ProductPage({
                 <ProductBadge product={product} />
               </div>
 
-              <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
+              <h1 className="mt-4 text-h1 font-semibold text-foreground">
                 {product.title}
               </h1>
 

@@ -1,5 +1,7 @@
 import * as React from "react";
 import { MotionProvider } from "@/components/motion/motion-provider";
+import { SmoothScroll } from "@/components/motion/smooth-scroll";
+import { ProgressBar } from "@/components/motion/progress-bar";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { WishlistProvider } from "@/components/providers/wishlist-provider";
 import { CartProvider } from "@/components/providers/cart-provider";
@@ -32,7 +34,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <ThemeProvider>
       <WishlistProvider>
         <CartProvider>
-          <MotionProvider>{children}</MotionProvider>
+          <MotionProvider>
+            <SmoothScroll />
+            <ProgressBar />
+            {children}
+          </MotionProvider>
           <CartDrawerMount />
         </CartProvider>
       </WishlistProvider>

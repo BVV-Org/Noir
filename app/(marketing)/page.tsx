@@ -1,8 +1,20 @@
 import { getProvider } from "@/lib/data";
+import { cn } from "@/lib/utils";
+import { RARITIES, RARITY_LABELS, type Rarity } from "@/lib/config/site";
+import { Marquee } from "@/components/motion/marquee";
 import {
   SectionRenderer,
   type SectionData,
 } from "@/components/sections/section-renderer";
+
+/** Static map so Tailwind's compiler sees every rarity text class. */
+const RARITY_TEXT: Record<Rarity, string> = {
+  common: "text-rarity-common",
+  rare: "text-rarity-rare",
+  epic: "text-rarity-epic",
+  legendary: "text-rarity-legendary",
+  mythic: "text-rarity-mythic",
+};
 
 /**
  * Home — a Server Component that renders whatever Shopify says the homepage is.
@@ -50,6 +62,26 @@ export default async function HomePage() {
       {sections.map((section) => (
         <SectionRenderer key={section.id} section={section} data={data} />
       ))}
+
+      {/*
+        The page's one marquee: the rarity ladder as a closing brand strip.
+        Tier names carry their tier colors — the scale IS the content, so
+        the color is data, not decoration. Classes are spelled out because
+        Tailwind cannot see interpolated names.
+      */}
+      <Marquee className="border-y border-foreground/15 py-8 sm:py-10">
+        {RARITIES.map((tier) => (
+          <span
+            key={tier}
+            className={cn(
+              "font-display text-h2 uppercase leading-none",
+              RARITY_TEXT[tier]
+            )}
+          >
+            {RARITY_LABELS[tier]}
+          </span>
+        ))}
+      </Marquee>
     </>
   );
 }

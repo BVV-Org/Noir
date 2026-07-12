@@ -62,7 +62,8 @@ async function customerAccountFetch<T>(query: string): Promise<T | null> {
 
     const body = (await response.json()) as { data?: T; errors?: unknown };
     if (body.errors || !body.data) {
-      if (body.errors) console.error("Customer Account API errors", body.errors);
+      if (body.errors)
+        console.error("Customer Account API errors", body.errors);
       return null;
     }
     return body.data;

@@ -151,7 +151,7 @@ export function FilterSidebar({
             />
           </div>
           <span aria-hidden className="text-muted-foreground">
-            –
+            -
           </span>
           <div className="flex-1">
             <Label htmlFor="filter-max" className="sr-only">

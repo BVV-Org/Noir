@@ -31,7 +31,7 @@ export default async function NotFound() {
   return (
     <Section spacing="lg" className="text-center">
       <p className="overline">404</p>
-      <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
+      <h1 className="mt-4 text-h1 font-semibold text-foreground">
         This door doesn&rsquo;t open
       </h1>
       <p className="mx-auto mt-4 max-w-md text-lg text-muted-foreground">
