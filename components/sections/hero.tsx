@@ -8,16 +8,17 @@ import { FadeIn } from "@/components/motion/fade-in";
 import { Magnetic } from "@/components/motion/magnetic";
 import { MaskRise } from "@/components/motion/mask-rise";
 import { ParallaxMedia } from "@/components/motion/parallax-media";
-import { ScrollVideoHero } from "@/components/motion/scroll-video-hero";
+import { ScrollFrameHero } from "@/components/motion/scroll-frame-hero";
 
 /**
  * Hero — the homepage thesis, set like a poster.
  *
- * The intro is a scroll-scrubbed video: its playhead follows scroll progress
- * through a tall pinned track, so the clip plays forward as the visitor scrolls
- * in and reverses on the way up, and the rest of the page is only reached once
- * they have scrolled the animation through. A dark cinematic scrim keeps the
- * white headline legible over any frame.
+ * The intro is a scroll-scrubbed image sequence (see ScrollFrameHero): frames
+ * follow scroll progress through a tall pinned track, so the clip plays forward
+ * as the visitor scrolls in and reverses on the way up, and the rest of the
+ * page is only reached once they have scrolled the animation through — the same
+ * on phones as on desktop. A dark cinematic scrim keeps the headline legible
+ * over any frame.
  *
  * The featured bottle then reveals below as a full-width plate — its name and
  * tier in a mono caption row beneath the photograph, never on it. The featured
@@ -38,7 +39,7 @@ export function Hero({
     // hero's `position: sticky` stage and break the pin, leaving the tall scroll
     // track empty. ParallaxMedia clips its own frame, so the clip isn't needed.
     <section className="relative">
-      <ScrollVideoHero src="/background.mp4">
+      <ScrollFrameHero>
         <MaskRise mode="mount" as="p">
           <span className="overline tracking-[0.4em] text-white/80">
             The Vault
@@ -85,7 +86,7 @@ export function Hero({
             </Link>
           </div>
         </FadeIn>
-      </ScrollVideoHero>
+      </ScrollFrameHero>
 
       <Container>
         {media && (
