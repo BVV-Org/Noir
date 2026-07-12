@@ -9,18 +9,20 @@ import { FadeIn } from "@/components/motion/fade-in";
 import { Magnetic } from "@/components/motion/magnetic";
 import { MaskRise } from "@/components/motion/mask-rise";
 import { ParallaxMedia } from "@/components/motion/parallax-media";
+import { ScrollVideoHero } from "@/components/motion/scroll-video-hero";
 
 /**
  * Hero — the homepage thesis, set like a poster.
  *
- * The claim the brand makes is that a fragrance is a decision, and that some
- * are rare. The hero states it at viewport scale: the headline is the design,
- * stacked condensed caps with nothing competing against it. The featured
- * bottle follows as a full-width plate with its name and tier in a mono
- * caption row below the photograph, never on it.
+ * The intro is a scroll-scrubbed video: its playhead follows scroll progress
+ * through a tall pinned track, so the clip plays forward as the visitor scrolls
+ * in and reverses on the way up, and the rest of the page is only reached once
+ * they have scrolled the animation through. A dark cinematic scrim keeps the
+ * white headline legible over any frame.
  *
- * The featured product is `nv`-driven (`productHandles[0]` on the hero
- * metaobject) — editors change the bottle without a deploy.
+ * The featured bottle then reveals below as a full-width plate — its name and
+ * tier in a mono caption row beneath the photograph, never on it. The featured
+ * product is `nv`-driven (`productHandles[0]` on the hero metaobject).
  */
 export function Hero({
   section,
@@ -33,55 +35,63 @@ export function Hero({
   const media = product?.images[0] ?? section.media;
 
   return (
-    <section className="relative overflow-hidden">
+    // No `overflow-hidden` here: it would become the scroll container for the
+    // hero's `position: sticky` stage and break the pin, leaving the tall scroll
+    // track empty. ParallaxMedia clips its own frame, so the clip isn't needed.
+    <section className="relative">
+      <ScrollVideoHero src="/background.mp4">
+        <MaskRise mode="mount" as="p">
+          <span className="overline tracking-[0.4em] text-white/80">
+            The Vault
+          </span>
+        </MaskRise>
+
+        <MaskRise mode="mount" delay={0.08} className="mt-6">
+          <h1 className="max-w-[14ch] text-balance text-display text-white drop-shadow-2xl">
+            {section.title ?? "Enter The Vault"}
+          </h1>
+        </MaskRise>
+
+        {section.subtitle && (
+          <MaskRise mode="mount" delay={0.16} as="p" className="mt-8">
+            <span className="block max-w-2xl text-lg text-white/85">
+              {section.subtitle}
+            </span>
+          </MaskRise>
+        )}
+
+        <FadeIn delay={0.25}>
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
+            {section.ctaLabel && section.ctaUrl && (
+              <Magnetic>
+                <Button
+                  asChild
+                  size="lg"
+                  className="border border-white/20 bg-white/10 text-white backdrop-blur-xl hover:bg-white/20"
+                >
+                  <Link href={section.ctaUrl}>{section.ctaLabel}</Link>
+                </Button>
+              </Magnetic>
+            )}
+            <Link
+              href="/discovery-kits"
+              className="rounded-sm border border-white/15 bg-white/5 px-6 py-3 text-white backdrop-blur-xl transition-all hover:bg-white/15"
+            >
+              Start with samples
+            </Link>
+          </div>
+        </FadeIn>
+      </ScrollVideoHero>
+
       <Container>
-        <div className="flex flex-col items-center pb-16 pt-14 text-center sm:pt-20 lg:pb-24">
-          <MaskRise mode="mount" as="p">
-            <span className="overline">The Vault</span>
-          </MaskRise>
-
-          <MaskRise mode="mount" delay={0.08} className="mt-8">
-            <h1 className="max-w-[12ch] text-balance text-display text-foreground">
-              {section.title ?? "Enter The Vault"}
-            </h1>
-          </MaskRise>
-
-          {section.subtitle && (
-            <MaskRise mode="mount" delay={0.18} as="p" className="mt-8">
-              <span className="block max-w-md text-lg text-muted-foreground">
-                {section.subtitle}
-              </span>
-            </MaskRise>
-          )}
-
-          <FadeIn delay={0.18}>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
-              {section.ctaLabel && section.ctaUrl && (
-                <Magnetic>
-                  <Button asChild size="lg">
-                    <Link href={section.ctaUrl}>{section.ctaLabel}</Link>
-                  </Button>
-                </Magnetic>
-              )}
-              <Link
-                href="/discovery-kits"
-                className="rounded-sm text-foreground underline overline decoration-foreground/30 underline-offset-4 transition-colors duration-150 ease-premium hover:decoration-foreground"
-              >
-                Start with samples
-              </Link>
-            </div>
-          </FadeIn>
-        </div>
-
         {media && (
           <FadeIn delay={0.1}>
-            <figure className="pb-16 lg:pb-24">
+            <figure className="pb-16 pt-16 lg:pb-24 lg:pt-24">
               <ParallaxMedia className="aspect-[4/5] w-full rounded-lg sm:aspect-[16/9]">
                 <Image
                   src={media.url}
                   alt={media.altText}
                   fill
-                  // The LCP element. Nothing else on the page gets `priority`.
                   priority
                   sizes="(min-width: 1440px) 1380px, 95vw"
                   className="object-cover"
