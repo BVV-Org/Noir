@@ -14,7 +14,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = buildMetadata({
   title: "Collections",
   description:
-    "Curated ways through the catalogue — by season, by hour, by scarcity.",
+    "Curated ways through the catalogue: by season, by hour, by scarcity.",
   path: "/collections",
 });
 
@@ -25,7 +25,7 @@ export default async function CollectionsPage() {
     <Container className="py-12 sm:py-16">
       <header className="max-w-2xl">
         <p className="overline">The Vault</p>
-        <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
+        <h1 className="mt-4 text-h1 font-semibold text-foreground">
           Collections
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">

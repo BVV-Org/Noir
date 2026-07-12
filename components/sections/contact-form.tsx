@@ -75,7 +75,7 @@ export function ContactForm() {
         tabIndex={-1}
         className="rounded-lg border border-border bg-card p-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
-        <h2 className="text-h5 font-semibold tracking-tight text-foreground">
+        <h2 className="text-h5 font-semibold text-foreground">
           Message received
         </h2>
         <p className="mt-3 text-small text-muted-foreground">

@@ -4,17 +4,15 @@ import { cn } from "@/lib/utils";
 import type { Rarity } from "@/lib/config/site";
 
 const badgeVariants = cva(
-  "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-caption font-medium transition-colors",
+  "inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1 font-mono text-caption uppercase tracking-[0.06em] transition-colors",
   {
     variants: {
       variant: {
         default: "border-transparent bg-secondary text-secondary-foreground",
-        outline: "border-border text-foreground",
-        emerald:
-          "border-transparent bg-primary/15 text-primary ring-1 ring-inset ring-primary/25",
-        gold: "border-transparent bg-gold/15 text-gold ring-1 ring-inset ring-gold/25",
-        purple:
-          "border-transparent bg-accent/15 text-accent ring-1 ring-inset ring-accent/30",
+        outline: "border-foreground/35 text-foreground",
+        // The single pop accent — reserved for the one flag that matters
+        // most on a card (scarcity). Everything else stays neutral.
+        accent: "border-transparent bg-yellow text-yellow-foreground",
       },
     },
     defaultVariants: {
@@ -37,14 +35,15 @@ function Badge({ className, variant, ...props }: BadgeProps) {
 /**
  * RarityBadge — the signature progression cue. Colors come from the rarity
  * token scale so a "Legendary" fragrance reads the same in every context.
+ * These are the only places emerald/violet/crimson appear: the color IS the
+ * tier data, so the dot and hue are semantic, not decoration.
  */
 const rarityClasses: Record<Rarity, string> = {
-  common: "bg-rarity-common/12 text-rarity-common ring-rarity-common/25",
-  rare: "bg-rarity-rare/12 text-rarity-rare ring-rarity-rare/30",
-  epic: "bg-rarity-epic/15 text-rarity-epic ring-rarity-epic/35",
-  legendary:
-    "bg-rarity-legendary/15 text-rarity-legendary ring-rarity-legendary/35",
-  mythic: "bg-rarity-mythic/15 text-rarity-mythic ring-rarity-mythic/40",
+  common: "text-rarity-common ring-rarity-common/40",
+  rare: "text-rarity-rare ring-rarity-rare/40",
+  epic: "text-rarity-epic ring-rarity-epic/40",
+  legendary: "text-rarity-legendary ring-rarity-legendary/40",
+  mythic: "text-rarity-mythic ring-rarity-mythic/40",
 };
 
 function RarityBadge({
@@ -59,7 +58,7 @@ function RarityBadge({
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-overline uppercase ring-1 ring-inset",
+        "inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-mono text-overline uppercase ring-1 ring-inset",
         rarityClasses[rarity],
         className
       )}

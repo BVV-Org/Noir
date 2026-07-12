@@ -54,7 +54,7 @@ export const journalArticles: JournalArticle[] = [
     publishedAt: "2025-02-11T09:00:00.000Z",
     seo: {
       title: "How to read a fragrance pyramid",
-      description: "Top, heart, base — and why the counter test misleads you.",
+      description: "Top, heart, base, and why the counter test misleads you.",
     },
   },
   {

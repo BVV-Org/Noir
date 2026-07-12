@@ -25,7 +25,7 @@ import { EmptyState } from "@/components/commerce/empty-state";
 export function Reviews({ product }: { product: Product }) {
   return (
     <section aria-labelledby="reviews-heading">
-      <h2 id="reviews-heading" className="text-h4 font-semibold tracking-tight">
+      <h2 id="reviews-heading" className="text-h4 font-semibold">
         Reviews
       </h2>
 

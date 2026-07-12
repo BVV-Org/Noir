@@ -93,7 +93,7 @@ export default async function CollectionPage({
             {collection.productCount === 1 ? "fragrance" : "fragrances"}
           </p>
         )}
-        <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
+        <h1 className="mt-4 text-h1 font-semibold text-foreground">
           {collection.title}
         </h1>
         {collection.tagline && (

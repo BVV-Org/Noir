@@ -5,13 +5,22 @@ import animate from "tailwindcss-animate";
  * Noir Vault design tokens.
  *
  * Colors are exposed as HSL CSS variables (see app/globals.css) so shadcn/ui
- * primitives resolve against the same source of truth. Raw brand hexes:
- *   Background #111111 · Foreground #F5F5F5
- *   Emerald   #00C27A (primary) · Gold #D4AF37 · Purple #6A4CFF (accent)
+ * primitives resolve against the same source of truth. Raw brand values:
+ *   Light substrate #e4e4e4 · Carbon ink #111 · Signal yellow #f9fe02
+ *   Dark theme inverts substrate and ink; yellow is constant.
  *
  * The rarity scale is the platform's signature progression system
  * (Common → Rare → Epic → Legendary → Mythic) and is treated as a
- * first-class token set, not ad-hoc styling.
+ * first-class token set, not ad-hoc styling. Its colors carry tier
+ * semantics only; they never appear as generic UI accents.
+ *
+ * Type is the structure: a condensed grotesque (Anton) deployed at
+ * viewport-scale for headings, a grotesque (Archivo) for reading, and a
+ * monospace (Space Mono) for the small uppercase telemetry layer.
+ *
+ * Corner-radius system (one rule, applied everywhere): plates and cards
+ * 0.4rem (`rounded-lg`), controls near-square (`rounded-md`), tier badges
+ * pill.
  */
 const config: Config = {
   darkMode: ["class"],
@@ -21,7 +30,6 @@ const config: Config = {
     "./lib/**/*.{ts,tsx}",
   ],
   theme: {
-    // Consistent, generous content width — the "vault" breathes.
     container: {
       center: true,
       padding: {
@@ -31,7 +39,7 @@ const config: Config = {
         xl: "2.5rem",
       },
       screens: {
-        "2xl": "1360px",
+        "2xl": "1440px",
       },
     },
     extend: {
@@ -69,10 +77,10 @@ const config: Config = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
-        // Brand signals
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          foreground: "hsl(var(--gold-foreground))",
+        // The single pop accent — signal yellow
+        yellow: {
+          DEFAULT: "hsl(var(--yellow))",
+          foreground: "hsl(var(--yellow-foreground))",
         },
         // Signature rarity progression
         rarity: {
@@ -91,56 +99,48 @@ const config: Config = {
         "2xl": "calc(var(--radius) + 8px)",
       },
       fontFamily: {
-        // Display / headings — set with restraint for the "vault" identity.
-        display: [
-          "var(--font-display)",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-        ],
+        // Structural display — condensed, heavy, always uppercase
+        display: ["var(--font-display)", "Impact", "sans-serif"],
         // Body / UI
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        // Telemetry — uppercase mono metadata
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       fontSize: {
-        // Utility / metadata
-        overline: ["0.6875rem", { lineHeight: "1", letterSpacing: "0.18em" }],
+        // Telemetry / metadata
+        overline: ["0.75rem", { lineHeight: "1.1", letterSpacing: "0.08em" }],
         caption: ["0.75rem", { lineHeight: "1.4", letterSpacing: "0.01em" }],
-        small: ["0.8125rem", { lineHeight: "1.5" }],
+        small: ["0.875rem", { lineHeight: "1.5" }],
         // Body
-        base: ["0.9375rem", { lineHeight: "1.65" }],
-        lg: ["1.0625rem", { lineHeight: "1.6" }],
-        // Headings — tight tracking for the display face
-        h6: ["1rem", { lineHeight: "1.35", letterSpacing: "-0.01em" }],
-        h5: ["1.1875rem", { lineHeight: "1.3", letterSpacing: "-0.01em" }],
-        h4: ["1.4375rem", { lineHeight: "1.25", letterSpacing: "-0.015em" }],
-        h3: ["1.8125rem", { lineHeight: "1.2", letterSpacing: "-0.02em" }],
-        h2: ["2.25rem", { lineHeight: "1.12", letterSpacing: "-0.02em" }],
-        h1: ["2.875rem", { lineHeight: "1.05", letterSpacing: "-0.025em" }],
-        // Fluid hero display
+        base: ["1.0625rem", { lineHeight: "1.55" }],
+        lg: ["1.25rem", { lineHeight: "1.5" }],
+        // Headings — compressed leading turns glyphs into architecture
+        h6: ["1rem", { lineHeight: "1.15" }],
+        h5: ["1.1875rem", { lineHeight: "1.1" }],
+        h4: ["1.5rem", { lineHeight: "1.05" }],
+        h3: ["clamp(1.875rem, 3vw, 2.75rem)", { lineHeight: "0.98" }],
+        h2: [
+          "clamp(2.75rem, 6.5vw, 5.75rem)",
+          { lineHeight: "0.92", letterSpacing: "-0.01em" },
+        ],
+        h1: [
+          "clamp(3.5rem, 9vw, 8.5rem)",
+          { lineHeight: "0.88", letterSpacing: "-0.01em" },
+        ],
+        // The viewport-bleeding hero scale
         display: [
-          "clamp(2.75rem, 6vw + 1rem, 5rem)",
-          { lineHeight: "1.0", letterSpacing: "-0.03em" },
+          "clamp(4.25rem, 12.5vw, 13rem)",
+          { lineHeight: "0.85", letterSpacing: "-0.01em" },
         ],
       },
       letterSpacing: {
-        overline: "0.18em",
+        overline: "0.08em",
       },
       boxShadow: {
-        // Soft, matte-black-appropriate elevation
-        subtle: "0 1px 2px 0 hsl(0 0% 0% / 0.4)",
-        card: "0 8px 30px -12px hsl(0 0% 0% / 0.6)",
-        lift: "0 18px 50px -18px hsl(0 0% 0% / 0.75)",
-        // Tasteful accent glows (used sparingly)
-        "glow-emerald":
-          "0 0 0 1px hsl(var(--primary) / 0.35), 0 8px 40px -12px hsl(var(--primary) / 0.35)",
-        "glow-gold":
-          "0 0 0 1px hsl(var(--gold) / 0.35), 0 8px 40px -12px hsl(var(--gold) / 0.35)",
-      },
-      backgroundImage: {
-        "vault-radial":
-          "radial-gradient(120% 120% at 50% 0%, hsl(0 0% 12%) 0%, hsl(var(--background)) 55%)",
-        hairline:
-          "linear-gradient(90deg, transparent, hsl(var(--border)) 20%, hsl(var(--border)) 80%, transparent)",
+        // Flat system: no soft elevation. Kept minimal for overlays only.
+        subtle: "0 1px 2px 0 hsl(0 0% 0% / 0.25)",
+        card: "none",
+        lift: "none",
       },
       keyframes: {
         "fade-in": {
@@ -166,7 +166,6 @@ const config: Config = {
         shimmer: "shimmer 1.6s infinite",
       },
       transitionTimingFunction: {
-        // Premium ease-out (feels expensive without being slow)
         premium: "cubic-bezier(0.16, 1, 0.3, 1)",
       },
     },

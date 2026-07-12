@@ -17,7 +17,7 @@ import { siteConfig } from "@/lib/config/site";
  * only, no `gap` on some versions, no external fonts without loading them. The
  * design is kept simple for that reason, not for lack of ambition.
  */
-export const alt = `${siteConfig.name} — ${siteConfig.tagline}`;
+export const alt = `${siteConfig.name} · ${siteConfig.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

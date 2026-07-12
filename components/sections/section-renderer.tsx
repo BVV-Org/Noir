@@ -54,7 +54,13 @@ export function SectionRenderer({
       return <ProductSection section={section} products={data.bestSellers} />;
 
     case "new_arrivals":
-      return <ProductSection section={section} products={data.newArrivals} />;
+      return (
+        <ProductSection
+          section={section}
+          products={data.newArrivals}
+          layout="rail"
+        />
+      );
 
     case "discovery_kits":
       return <DiscoveryKitsStrip section={section} kits={data.kits} />;

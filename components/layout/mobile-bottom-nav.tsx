@@ -53,7 +53,9 @@ export function MobileBottomNav() {
                 )}
               >
                 <Icon className="size-5 shrink-0" aria-hidden />
-                <span className="text-caption leading-none">{item.label}</span>
+                <span className="font-mono text-[0.625rem] uppercase leading-none tracking-[0.08em]">
+                  {item.label}
+                </span>
               </Link>
             </li>
           );

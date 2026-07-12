@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import type { Collection } from "@/types";
 import { cn } from "@/lib/utils";
 import { Card } from "@/components/ui/card";
+import { ParallaxMedia } from "@/components/motion/parallax-media";
 
 /**
  * CollectionCard — a door into the catalogue.
@@ -32,14 +33,16 @@ export function CollectionCard({
     >
       <div className="relative aspect-[4/3] sm:aspect-[16/10]">
         {image && (
-          <Image
-            src={image.url}
-            alt={image.altText}
-            fill
-            priority={priority}
-            sizes="(min-width: 1024px) 45vw, 90vw"
-            className="object-cover transition-transform duration-150 ease-premium group-hover/card:scale-[1.02]"
-          />
+          <ParallaxMedia className="absolute inset-0">
+            <Image
+              src={image.url}
+              alt={image.altText}
+              fill
+              priority={priority}
+              sizes="(min-width: 1024px) 45vw, 90vw"
+              className="object-cover"
+            />
+          </ParallaxMedia>
         )}
 
         {/* Decorative: the heading below carries the meaning. */}
@@ -55,7 +58,7 @@ export function CollectionCard({
                 {productCount} {productCount === 1 ? "fragrance" : "fragrances"}
               </p>
             )}
-            <h3 className="mt-2 text-h3 font-semibold tracking-tight text-foreground">
+            <h3 className="mt-2 text-h3 font-semibold text-foreground">
               <Link
                 href={`/collections/${handle}`}
                 className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none"

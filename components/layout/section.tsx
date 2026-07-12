@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/layout/container";
+import { MaskRise } from "@/components/motion/mask-rise";
 
 /**
  * Section — the vertical building block for pages. Provides consistent spacing
@@ -26,8 +27,8 @@ export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
 
 const spacingMap = {
   sm: "py-12 sm:py-16",
-  md: "py-16 sm:py-24",
-  lg: "py-24 sm:py-32",
+  md: "py-20 sm:py-28",
+  lg: "py-28 sm:py-36",
 } as const;
 
 export function Section({
@@ -48,16 +49,16 @@ export function Section({
     <section className={cn(spacingMap[spacing], className)} {...props}>
       <Body>
         {hasHeader && (
-          <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
-            <div className="max-w-2xl">
-              {eyebrow && <p className="mb-3 overline">{eyebrow}</p>}
+          <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
+            <div className="max-w-4xl">
+              {eyebrow && <p className="mb-4 overline">{eyebrow}</p>}
               {title && (
-                <h2 className="text-h2 font-semibold tracking-tight text-foreground">
-                  {title}
-                </h2>
+                <MaskRise>
+                  <h2 className="text-h2 text-foreground">{title}</h2>
+                </MaskRise>
               )}
               {description && (
-                <p className="mt-3 text-lg text-muted-foreground">
+                <p className="mt-4 max-w-xl text-lg text-muted-foreground">
                   {description}
                 </p>
               )}
@@ -66,10 +67,10 @@ export function Section({
             {action && (
               <Link
                 href={action.href}
-                className="group inline-flex items-center gap-1.5 text-small font-medium text-foreground transition-colors hover:text-primary"
+                className="group inline-flex items-center gap-1.5 pb-2 text-foreground overline transition-opacity hover:opacity-70"
               >
                 {action.label}
-                <ArrowRight className="size-4 transition-transform duration-150 ease-premium group-hover:translate-x-0.5" />
+                <ArrowRight className="size-3.5 transition-transform duration-150 ease-premium group-hover:translate-x-0.5" />
               </Link>
             )}
           </div>

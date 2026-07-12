@@ -5,13 +5,16 @@ import { Stagger, StaggerItem } from "@/components/motion/stagger";
 import { ProductCard } from "@/components/commerce/product-card";
 
 /**
- * ProductGrid — the one grid every product listing uses.
+ * ProductGrid — the one product listing every surface uses.
  *
  * Server Component. `Stagger` is a client boundary, but the cards are rendered
  * here and passed through as children, so they stay on the server (React sends
  * them as serialized element trees, not as code).
  *
- * The grid flows 1 → 2 → 3 → 4 columns (TDD §14).
+ * Two layouts, one component:
+ *   `grid` — flows 1 → 2 → 3 → 4 columns (TDD §14). Catalogue pages.
+ *   `rail` — a horizontal scroll-snap strip. Homepage secondary sections use
+ *   it so two product sections on one page never share a layout family.
  *
  * ## `priorityCount` is capped, deliberately
  *
@@ -30,11 +33,13 @@ const MAX_PRIORITY_IMAGES = 2;
 
 export function ProductGrid({
   products,
+  layout = "grid",
   priorityCount = 0,
   renderAction,
   className,
 }: {
   products: Product[];
+  layout?: "grid" | "rail";
   priorityCount?: number;
   /** Overlay control per card, e.g. Quick View. Evaluated on the server. */
   renderAction?: (product: Product) => React.ReactNode;
@@ -47,12 +52,22 @@ export function ProductGrid({
     <Stagger
       as="ul"
       className={cn(
-        "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
+        layout === "grid"
+          ? "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          : "scrollbar-none -mb-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4",
         className
       )}
     >
       {products.map((product, index) => (
-        <StaggerItem as="li" key={product.id} className="flex">
+        <StaggerItem
+          as="li"
+          key={product.id}
+          className={cn(
+            "flex",
+            layout === "rail" &&
+              "w-[72vw] shrink-0 snap-start sm:w-[44vw] lg:w-[30%]"
+          )}
+        >
           <ProductCard
             product={product}
             priority={index < priorityLimit}

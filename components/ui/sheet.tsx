@@ -37,7 +37,7 @@ SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
 
 const sheetVariants = cva(
   // 300ms slide sits inside the 250–350ms page-transition band.
-  "fixed z-50 flex flex-col gap-4 bg-card p-6 shadow-lift transition ease-premium data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-300",
+  "fixed z-50 flex flex-col gap-4 border-border bg-card p-6 transition ease-premium data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-300",
   {
     variants: {
       side: {

@@ -16,7 +16,7 @@ export const kits: Kit[] = [
     title: "The Initiation",
     tagline: "Five ways in.",
     description:
-      "The starting point. Five 2ml atomisers spanning citrus, floral, wood, and musk — enough to find out which direction is yours before committing to a bottle.",
+      "The starting point. Five 2ml atomisers spanning citrus, floral, wood, and musk: enough to find out which direction is yours before committing to a bottle.",
     price: money("60.00"),
     image: image(
       "/mock/kits/the-initiation.svg",

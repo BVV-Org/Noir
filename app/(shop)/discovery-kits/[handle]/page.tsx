@@ -90,7 +90,7 @@ export default async function KitPage({
               <div className="flex flex-wrap items-center gap-3">
                 <p className="overline">Discovery Kit</p>
                 {kit.availableForSale ? (
-                  <Badge variant="emerald">
+                  <Badge variant="outline">
                     {kit.productHandles.length} fragrances
                   </Badge>
                 ) : (
@@ -98,7 +98,7 @@ export default async function KitPage({
                 )}
               </div>
 
-              <h1 className="mt-4 text-h1 font-semibold tracking-tight text-foreground">
+              <h1 className="mt-4 text-h1 font-semibold text-foreground">
                 {kit.title}
               </h1>
 

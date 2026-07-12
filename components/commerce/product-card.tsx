@@ -63,8 +63,7 @@ export function ProductCard({
           />
         )}
 
-        <div className="absolute inset-x-3 top-3 z-10 flex items-start justify-between gap-2">
-          <ProductBadge product={product} />
+        <div className="absolute right-3 top-3 z-10">
           <WishlistButton
             handle={product.handle}
             title={product.title}
@@ -90,7 +89,7 @@ export function ProductCard({
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
             {product.brand && <p className="overline">{product.brand}</p>}
-            <h3 className="mt-2 text-h6 font-semibold tracking-tight text-foreground">
+            <h3 className="mt-2 text-h6 font-semibold text-foreground">
               <Link
                 href={`/products/${product.handle}`}
                 className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none"
@@ -108,11 +107,13 @@ export function ProductCard({
           )}
         </div>
 
-        <PriceTag
-          price={product.price}
-          compareAtPrice={product.compareAtPrice}
-          className="mt-auto"
-        />
+        <div className="mt-auto flex items-center justify-between gap-3">
+          <PriceTag
+            price={product.price}
+            compareAtPrice={product.compareAtPrice}
+          />
+          <ProductBadge product={product} />
+        </div>
       </div>
     </Card>
   );

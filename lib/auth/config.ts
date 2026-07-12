@@ -18,7 +18,10 @@
  * signed-out-shell to the real flow (see lib/auth/customer.ts).
  */
 
-const API_URL = process.env.SHOPIFY_CUSTOMER_ACCOUNT_API_URL?.replace(/\/$/, "");
+const API_URL = process.env.SHOPIFY_CUSTOMER_ACCOUNT_API_URL?.replace(
+  /\/$/,
+  ""
+);
 const CLIENT_ID = process.env.SHOPIFY_CUSTOMER_ACCOUNT_CLIENT_ID;
 /**
  * Only set for a *Confidential* client. A Public/Web client uses PKCE with no
@@ -59,7 +62,9 @@ export interface CustomerAccountConfig {
  * (`https://shopify.com/authentication/100708057402/...`) carry it.
  */
 function shopIdFrom(apiUrl: string): string | null {
-  const match = apiUrl.match(/shopify\.com\/(?:authentication\/)?(\d+)(?:\/|$)/);
+  const match = apiUrl.match(
+    /shopify\.com\/(?:authentication\/)?(\d+)(?:\/|$)/
+  );
   return match?.[1] ?? null;
 }
 

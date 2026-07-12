@@ -12,11 +12,12 @@ import { cn } from "@/lib/utils";
  * the transition duration for anyone who asks.
  */
 const cardVariants = cva(
+  // Flat print surface: hairline compartment, no soft elevation.
   "rounded-lg border border-border bg-card text-card-foreground",
   {
     variants: {
       interactive: {
-        true: "group/card transition-[transform,box-shadow,border-color] duration-150 ease-premium hover:-translate-y-0.5 hover:border-border/80 hover:shadow-lift focus-within:border-border/80",
+        true: "group/card transition-[transform,border-color] duration-150 ease-premium hover:-translate-y-0.5 hover:border-foreground focus-within:border-foreground",
         false: "",
       },
     },
@@ -55,12 +56,7 @@ export function CardTitle({
   className,
   ...props
 }: React.HTMLAttributes<HTMLHeadingElement>) {
-  return (
-    <h3
-      className={cn("text-h5 font-semibold tracking-tight", className)}
-      {...props}
-    />
-  );
+  return <h3 className={cn("text-h5 font-semibold", className)} {...props} />;
 }
 
 export function CardDescription({

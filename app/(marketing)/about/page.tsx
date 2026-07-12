@@ -43,7 +43,7 @@ export default async function AboutPage() {
 
   return (
     <>
-      <section className="bg-vault-radial">
+      <section>
         <Container>
           <div className="max-w-3xl py-20 sm:py-28">
             <FadeIn>
@@ -69,7 +69,7 @@ export default async function AboutPage() {
       <Section
         eyebrow="The system"
         title="Five tiers"
-        description="Every fragrance in the vault carries one. It is assigned from how the liquid is made and how much of it exists — never from what it costs."
+        description="Every fragrance in the vault carries one. It is assigned from how the liquid is made and how much of it exists, never from what it costs."
       >
         <dl className="flex flex-col divide-y divide-border border-y border-border">
           {RARITIES.map((tier) => (
@@ -94,7 +94,7 @@ export default async function AboutPage() {
       >
         <div className="grid gap-10 lg:grid-cols-3">
           <Reveal>
-            <h3 className="text-h5 font-semibold tracking-tight text-foreground">
+            <h3 className="text-h5 font-semibold text-foreground">
               Price is not rarity
             </h3>
             <p className="mt-3 text-base text-muted-foreground">
@@ -103,7 +103,7 @@ export default async function AboutPage() {
             </p>
           </Reveal>
           <Reveal>
-            <h3 className="text-h5 font-semibold tracking-tight text-foreground">
+            <h3 className="text-h5 font-semibold text-foreground">
               Scarcity can be manufactured
             </h3>
             <p className="mt-3 text-base text-muted-foreground">
@@ -113,7 +113,7 @@ export default async function AboutPage() {
             </p>
           </Reveal>
           <Reveal>
-            <h3 className="text-h5 font-semibold tracking-tight text-foreground">
+            <h3 className="text-h5 font-semibold text-foreground">
               Samples before bottles
             </h3>
             <p className="mt-3 text-base text-muted-foreground">
@@ -125,9 +125,9 @@ export default async function AboutPage() {
       </Section>
 
       <Section spacing="sm">
-        <div className="flex flex-col items-start justify-between gap-6 rounded-xl border border-border bg-card px-6 py-12 sm:px-10 lg:flex-row lg:items-center">
+        <div className="flex flex-col items-start justify-between gap-6 rounded-lg border border-border bg-card px-6 py-12 sm:px-10 lg:flex-row lg:items-center">
           <div className="max-w-xl">
-            <h2 className="text-h3 font-semibold tracking-tight text-foreground">
+            <h2 className="text-h3 font-semibold text-foreground">
               Start where everyone should
             </h2>
             <p className="mt-3 text-base text-muted-foreground">

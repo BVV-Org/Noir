@@ -4,9 +4,10 @@ import { cn, formatMoney } from "@/lib/utils";
 /**
  * PriceTag — money, and the price it used to be.
  *
- * When `compareAtPrice` is higher, the old price is struck through and the
- * current price takes the emerald accent. The struck price is wrapped in `<s>`
- * so assistive tech announces it as no longer applicable, and the pairing is
+ * Prices live in the telemetry layer: mono, tabular. When `compareAtPrice`
+ * is higher, the old price is struck through; the strike itself is the sale
+ * signal, no accent color needed. The struck price is wrapped in `<s>` so
+ * assistive tech announces it as no longer applicable, and the pairing is
  * given a single accessible label — otherwise a screen reader reads two bare
  * numbers with no indication of which one you pay.
  */
@@ -37,9 +38,8 @@ export function PriceTag({
       <span
         aria-hidden={Boolean(previous)}
         className={cn(
-          "font-display font-medium tabular-nums",
-          size === "lg" ? "text-h3" : "text-base",
-          wasDiscounted ? "text-primary" : "text-foreground"
+          "font-mono tabular-nums text-foreground",
+          size === "lg" ? "text-h4 font-bold" : "text-small font-bold"
         )}
       >
         {current}

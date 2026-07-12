@@ -18,11 +18,13 @@ function resolve(product: Product): BadgeSpec | null {
   if (!product.availableForSale) {
     return { label: "Sold out", variant: "outline" };
   }
-  if (product.flags.limitedDrop) return { label: "Limited", variant: "gold" };
-  if (product.flags.editorsPick) {
-    return { label: "Editor's pick", variant: "purple" };
+  if (product.flags.limitedDrop) {
+    return { label: "Limited", variant: "accent" };
   }
-  if (product.flags.newArrival) return { label: "New", variant: "emerald" };
+  if (product.flags.editorsPick) {
+    return { label: "Editor's pick", variant: "default" };
+  }
+  if (product.flags.newArrival) return { label: "New", variant: "outline" };
   if (product.flags.bestSeller) {
     return { label: "Best seller", variant: "default" };
   }

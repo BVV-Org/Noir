@@ -46,7 +46,7 @@ export const products: Product[] = [
     releaseYear: 2021,
     tagline: "A flower opening in the dark.",
     description:
-      "Jasmine and tuberose pressed against black amber. The florals arrive bright, then cool as the resin closes over them — the reason it wears heavier at midnight than at noon.",
+      "Jasmine and tuberose pressed against black amber. The florals arrive bright, then cool as the resin closes over them. That is the reason it wears heavier at midnight than at noon.",
     price: money("245.00"),
     compareAtPrice: null,
     availableForSale: true,
@@ -106,7 +106,7 @@ export const products: Product[] = [
     releaseYear: 2023,
     tagline: "Warmth held just before it burns.",
     description:
-      "Cinnamon and saffron over a bed of labdanum. Sweet at the opening, dry by the second hour — a spiced amber that never tips into dessert.",
+      "Cinnamon and saffron over a bed of labdanum. Sweet at the opening, dry by the second hour: a spiced amber that never tips into dessert.",
     price: money("185.00"),
     compareAtPrice: money("220.00"),
     availableForSale: true,
@@ -498,7 +498,7 @@ export const products: Product[] = [
     releaseYear: 2022,
     tagline: "Water kept somewhere sacred.",
     description:
-      "An aquatic that refuses the usual clichés. Salt, iris, and ambergris over driftwood — closer to a tidal cave than a swimming pool.",
+      "An aquatic that refuses the usual clichés. Salt, iris, and ambergris over driftwood, closer to a tidal cave than a swimming pool.",
     price: money("265.00"),
     compareAtPrice: null,
     // Shopify derives `availableForSale` from the variants: it is true when any

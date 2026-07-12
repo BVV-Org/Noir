@@ -59,7 +59,7 @@ export const collections: Collection[] = [
     title: "The Rare Room",
     tagline: "Small houses. Smaller runs.",
     description:
-      "Independent perfumery and limited releases. What ships here is what remains — nothing is reissued.",
+      "Independent perfumery and limited releases. What ships here is what remains. Nothing is reissued.",
     image: image(
       "/mock/collections/the-rare-room.svg",
       "The Rare Room collection",

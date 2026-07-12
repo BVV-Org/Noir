@@ -26,10 +26,7 @@ export function PerformancePanel({
 
   return (
     <section aria-labelledby="performance-heading">
-      <h2
-        id="performance-heading"
-        className="text-h4 font-semibold tracking-tight"
-      >
+      <h2 id="performance-heading" className="text-h4 font-semibold">
         Performance
       </h2>
 
