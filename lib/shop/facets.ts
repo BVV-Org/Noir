@@ -69,7 +69,6 @@ export function buildFacets(products: Product[]): FacetGroup[] {
       .map((p) => p.classification.dna)
       .filter((d): d is string => Boolean(d))
   );
-  const tags = tally(products.flatMap((p) => p.tags));
 
   // Rarity is ordered by tier, never alphabetically — the progression is the
   // point, and "Common, Epic, Legendary, Mythic, Rare" destroys it.
@@ -98,7 +97,6 @@ export function buildFacets(products: Product[]): FacetGroup[] {
     },
     { key: "class", label: FACET_LABELS.class, options: toOptions(classes) },
     { key: "dna", label: FACET_LABELS.dna, options: toOptions(dna) },
-    { key: "tag", label: FACET_LABELS.tag, options: toOptions(tags) },
   ];
 
   return groups.filter((g) => g.options.length > 0);
