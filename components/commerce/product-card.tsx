@@ -65,6 +65,16 @@ export function ProductCard({
           />
         )}
 
+        {/* Sold-out mark: same tracked sans as the tags, on a legible chip over
+            the dimmed image. Top-left, opposite the wishlist. */}
+        {!product.availableForSale && (
+          <div className="absolute left-2 top-2 z-10">
+            <span className="rounded-md bg-background/85 px-2.5 py-1 font-sans text-[0.68rem] font-medium uppercase tracking-[0.16em] text-foreground backdrop-blur-sm">
+              Sold out
+            </span>
+          </div>
+        )}
+
         {/* Wishlist: quiet by default, revealed on intent at pointer sizes;
             always visible on touch where there is no hover. */}
         <div
