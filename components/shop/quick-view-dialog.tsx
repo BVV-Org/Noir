@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Eye } from "lucide-react";
 import type { Product } from "@/types";
 import { RARITY_LABELS } from "@/lib/config/site";
 import { Button } from "@/components/ui/button";
@@ -41,10 +40,9 @@ export function QuickViewDialog({ product }: { product: Product }) {
         <Button
           variant="secondary"
           size="sm"
-          className="w-full backdrop-blur-sm"
+          className="w-full border border-white/15 bg-black/35 font-sans text-[0.7rem] font-normal tracking-[0.2em] text-white backdrop-blur-md hover:bg-black/55"
         >
-          <Eye />
-          Quick view
+          Quick View
         </Button>
       </DialogTrigger>
 

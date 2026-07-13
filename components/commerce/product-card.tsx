@@ -2,28 +2,34 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/types";
-import { cn } from "@/lib/utils";
-import { RARITY_LABELS } from "@/lib/config/site";
-import { Card } from "@/components/ui/card";
-import { RarityBadge } from "@/components/ui/badge";
-import { PriceTag } from "@/components/commerce/price-tag";
-import { ProductBadge } from "@/components/commerce/product-badge";
+import type { Rarity } from "@/lib/config/site";
+import { cn, formatMoney } from "@/lib/utils";
 import { WishlistButton } from "@/components/commerce/wishlist-button";
 
 /**
- * ProductCard — the catalogue's atom.
+ * ProductCard — the catalogue's atom, pared to essentials.
  *
- * A Server Component: only the wishlist toggle and whatever `action` supplies
- * are client leaves, so a grid of twenty-four cards ships almost no JavaScript.
+ * Editorial and quiet: the product image carries the card, and only the name,
+ * price, and a single rarity dot sit beneath it. Brand line, compare-at price,
+ * and the promotional badges were removed — the grid reads as a gallery, not a
+ * spec sheet. The rarity dot is the one place a tier color appears here; the
+ * color IS the data, so it stays even in the minimal layout.
  *
- * The title link is stretched over the whole card with `after:inset-0`, giving a
- * card-sized click target from a single, correctly-labelled anchor rather than
- * wrapping the card and swallowing the buttons inside it. The overlay controls
- * sit in a higher stacking context so they stay clickable above it.
- *
- * `sizes` is not optional in a responsive grid — without it `next/image`
- * downloads a viewport-width source for a quarter-width slot.
+ * Still a Server Component: only the wishlist toggle and any `action` are client
+ * leaves. The title link stretches over the whole card via `after:inset-0`, so
+ * the entire tile is one correctly-labelled target; overlay controls sit above
+ * it in a higher stacking context.
  */
+
+/** Rarity token colors — kept as a single understated dot + label. */
+const RARITY_TEXT: Record<Rarity, string> = {
+  common: "text-rarity-common",
+  rare: "text-rarity-rare",
+  epic: "text-rarity-epic",
+  legendary: "text-rarity-legendary",
+  mythic: "text-rarity-mythic",
+};
+
 export function ProductCard({
   product,
   priority = false,
@@ -39,14 +45,11 @@ export function ProductCard({
 }) {
   const cover = product.images[0];
   const rarity = product.classification.rarity;
+  const price = formatMoney(product.price.amount, product.price.currencyCode);
 
   return (
-    <Card
-      as="article"
-      interactive
-      className={cn("relative flex flex-col overflow-hidden", className)}
-    >
-      <div className="relative aspect-[4/5] overflow-hidden bg-background">
+    <article className={cn("group/card relative flex flex-col", className)}>
+      <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-secondary/40">
         {cover && (
           <Image
             src={cover.url}
@@ -55,27 +58,29 @@ export function ProductCard({
             priority={priority}
             sizes="(min-width: 1280px) 22vw, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
             className={cn(
-              "object-cover transition-transform duration-150 ease-premium",
-              // Gentle scale, capped at 1.02 per animation-guidelines.md.
-              "group-hover/card:scale-[1.02]",
+              "object-cover transition-transform duration-500 ease-premium",
+              "group-hover/card:scale-[1.03]",
               !product.availableForSale && "opacity-60"
             )}
           />
         )}
 
-        <div className="absolute right-3 top-3 z-10">
-          <WishlistButton
-            handle={product.handle}
-            title={product.title}
-            className="-mr-2 -mt-2"
-          />
+        {/* Wishlist: quiet by default, revealed on intent at pointer sizes;
+            always visible on touch where there is no hover. */}
+        <div
+          className={cn(
+            "absolute right-2 top-2 z-10",
+            "lg:opacity-0 lg:transition-opacity lg:duration-200 lg:ease-premium",
+            "lg:group-hover/card:opacity-100 lg:focus-within:opacity-100"
+          )}
+        >
+          <WishlistButton handle={product.handle} title={product.title} />
         </div>
 
         {action && (
           <div
             className={cn(
               "absolute inset-x-3 bottom-3 z-10",
-              // Always reachable on touch, revealed on intent at pointer sizes.
               "lg:opacity-0 lg:transition-opacity lg:duration-150 lg:ease-premium",
               "lg:focus-within:opacity-100 lg:group-hover/card:opacity-100"
             )}
@@ -85,36 +90,32 @@ export function ProductCard({
         )}
       </div>
 
-      <div className="flex flex-1 flex-col gap-3 p-5">
-        <div className="flex items-start justify-between gap-3">
-          <div className="min-w-0">
-            {product.brand && <p className="overline">{product.brand}</p>}
-            <h3 className="mt-2 text-h6 font-semibold text-foreground">
-              <Link
-                href={`/products/${product.handle}`}
-                className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none"
-              >
-                {product.title}
-              </Link>
-            </h3>
-          </div>
-          {rarity && (
-            <RarityBadge
-              rarity={rarity}
-              label={RARITY_LABELS[rarity]}
-              className="shrink-0"
-            />
-          )}
+      <div className="flex items-start justify-between gap-3 pt-4">
+        <div className="min-w-0">
+          <h3 className="text-base leading-tight text-foreground">
+            <Link
+              href={`/products/${product.handle}`}
+              className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none"
+            >
+              {product.title}
+            </Link>
+          </h3>
+          <p className="mt-2 font-mono text-small tabular-nums text-muted-foreground">
+            {price}
+          </p>
         </div>
 
-        <div className="mt-auto flex items-center justify-between gap-3">
-          <PriceTag
-            price={product.price}
-            compareAtPrice={product.compareAtPrice}
-          />
-          <ProductBadge product={product} />
-        </div>
+        {rarity && (
+          <span
+            className={cn(
+              "mt-1.5 shrink-0 font-sans text-[0.7rem] font-normal uppercase tracking-[0.16em]",
+              RARITY_TEXT[rarity]
+            )}
+          >
+            {rarity}
+          </span>
+        )}
       </div>
-    </Card>
+    </article>
   );
 }
