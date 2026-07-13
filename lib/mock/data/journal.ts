@@ -1,5 +1,6 @@
 import type { JournalArticle, JournalAuthor } from "@/types";
 import { image } from "./media";
+import { seoJournalArticles } from "./journal-seo";
 
 /**
  * Journal fixtures — `nv_journal_article` metaobjects (TDD §8).
@@ -168,4 +169,6 @@ export const journalArticles: JournalArticle[] = [
       description: "Cover the year in five fragrances, without redundancy.",
     },
   },
+  // The Dupe-vs-Inspiration SEO engine: 3 Hubs × 3 Spokes (see journal-seo.ts).
+  ...seoJournalArticles,
 ];
