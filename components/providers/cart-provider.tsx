@@ -28,6 +28,8 @@ interface CartContextValue {
   isOpen: boolean;
   setOpen: (open: boolean) => void;
   addItem: (merchandiseId: string, quantity?: number) => Promise<boolean>;
+  /** Add the item, then redirect straight to Shopify's hosted checkout. */
+  buyNow: (merchandiseId: string, quantity?: number) => Promise<boolean>;
   updateItem: (lineId: string, quantity: number) => Promise<void>;
   removeItem: (lineId: string) => Promise<void>;
 }
@@ -71,7 +73,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   /** Every mutation shares one request path, so error handling is written once. */
   const mutate = React.useCallback(
-    async (payload: Record<string, unknown>): Promise<boolean> => {
+    async (payload: Record<string, unknown>): Promise<Cart | null | false> => {
       setPending(true);
       setError(null);
 
@@ -88,8 +90,9 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
           return false;
         }
 
-        setCart(data.cart ?? null);
-        return true;
+        const next = data.cart ?? null;
+        setCart(next);
+        return next;
       } catch {
         setError("Could not reach the server. Check your connection.");
         return false;
@@ -110,14 +113,31 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       isOpen,
       setOpen,
       addItem: async (merchandiseId, quantity = 1) => {
-        const ok = await mutate({
+        const result = await mutate({
           action: "add",
           lines: [{ merchandiseId, quantity }],
         });
+        const ok = result !== false;
         // Only reveal the drawer on success — opening it onto an unchanged cart
         // reads as a bug.
         if (ok) setOpen(true);
         return ok;
+      },
+      buyNow: async (merchandiseId, quantity = 1) => {
+        const result = await mutate({
+          action: "add",
+          lines: [{ merchandiseId, quantity }],
+        });
+        if (result === false) return false;
+        // Live Shopify returns a hosted checkout URL — hand off directly.
+        if (result?.checkoutUrl) {
+          window.location.href = result.checkoutUrl;
+          return true;
+        }
+        // No checkout URL (mock/unconfigured env) — fall back to the drawer so
+        // the click is never a dead end.
+        setOpen(true);
+        return true;
       },
       updateItem: async (lineId, quantity) => {
         await mutate({ action: "update", lines: [{ id: lineId, quantity }] });

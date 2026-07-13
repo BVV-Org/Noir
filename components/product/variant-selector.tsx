@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { PriceTag } from "@/components/commerce/price-tag";
 import { WishlistButton } from "@/components/commerce/wishlist-button";
 import { AddToCartButton } from "@/components/product/add-to-cart-button";
+import { BuyNowButton } from "@/components/product/buy-now-button";
 import { StickyAddToCart } from "@/components/product/sticky-add-to-cart";
 
 /**
@@ -86,6 +87,8 @@ export function VariantSelector({ product }: { product: Product }) {
           className="shrink-0 border border-border bg-transparent"
         />
       </div>
+
+      <BuyNowButton variant={variant} className="w-full" />
 
       <p className="text-small text-muted-foreground">
         {variant.availableForSale

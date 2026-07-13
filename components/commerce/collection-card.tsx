@@ -59,12 +59,7 @@ export function CollectionCard({
               </p>
             )}
             <h3 className="mt-2 text-h3 font-semibold text-foreground">
-              <Link
-                href={`/collections/${handle}`}
-                className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none"
-              >
-                {title}
-              </Link>
+              {title}
             </h3>
             {tagline && (
               <p className="mt-2 line-clamp-1 text-small text-muted-foreground">
@@ -79,6 +74,15 @@ export function CollectionCard({
           />
         </div>
       </div>
+
+      {/* One click target over the whole box, not just the title. The card has
+          no other interactive children, so a full-bleed overlay link is the
+          simplest correct hit area. */}
+      <Link
+        href={`/collections/${handle}`}
+        aria-label={title}
+        className="absolute inset-0 z-10 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+      />
     </Card>
   );
 }
