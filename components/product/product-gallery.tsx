@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
+import { AnimatePresence, m } from "framer-motion";
 import { Play } from "lucide-react";
 import type { ShopImage } from "@/types";
 import { cn } from "@/lib/utils";
@@ -10,27 +11,35 @@ import { useReducedMotion } from "@/hooks/use-reduced-motion";
 /**
  * ProductGallery — the bottle, from its angles, plus the hero video.
  *
- * The thumbnails are a `tablist`: they select which panel is visible, which is
- * exactly what tabs are for, and it gives arrow-key navigation for free through
- * roving `tabIndex`. A list of buttons would be announced as "button, button"
- * with no sense of position or total.
+ * The main stage is swipeable: drag/flick left or right (touch or mouse) moves
+ * between slides, and the slide animates in from the direction of travel. The
+ * thumbnails remain a `tablist` for pointer + keyboard selection and to announce
+ * position; swipe and taps drive the same `active` index.
+ *
+ * On open, once and only if the visitor has not already interacted, the gallery
+ * auto-advances a single step after a beat — a hint that there is more than one
+ * angle. It never loops on a timer, and reduced-motion users get neither the
+ * slide transform (Framer's `reducedMotion="user"`) nor the auto-advance.
  *
  * ## Video
  *
- * `nv.hero_video` is an optional `file_reference` (TDD §7). When absent the tab
- * is simply not rendered — the component degrades to images with no branching at
- * the call site. When present it leads the gallery, because a fragrance video is
- * the most characteristic thing a product page can open with.
- *
- * The video autoplays muted and looping *only* when the visitor has not asked
- * for reduced motion; otherwise it is a still poster with visible controls.
- * Looping video is motion the visitor never initiated, and the animation
- * guidelines forbid it outright — this is the one place it can appear, so it
- * defers to the media query.
+ * `nv.hero_video` leads the gallery when present. It autoplays muted+looping
+ * only without a reduced-motion request; otherwise it is a still poster with
+ * controls. Only the active slide is mounted, so an off-screen video never
+ * plays.
  */
 type Slide =
   | { kind: "image"; image: ShopImage }
   | { kind: "video"; url: string; poster: ShopImage | undefined };
+
+const AUTO_ADVANCE_MS = 3200;
+const SWIPE_THRESHOLD_PX = 40;
+
+const slideVariants = {
+  enter: (dir: number) => ({ x: dir >= 0 ? "100%" : "-100%", opacity: 0 }),
+  center: { x: "0%", opacity: 1 },
+  exit: (dir: number) => ({ x: dir >= 0 ? "-100%" : "100%", opacity: 0 }),
+};
 
 export function ProductGallery({
   images,
@@ -42,8 +51,12 @@ export function ProductGallery({
   videoUrl?: string | null;
 }) {
   const reduced = useReducedMotion();
-  const [active, setActive] = React.useState(0);
+  const [[active, direction], setState] = React.useState<[number, number]>([
+    0, 0,
+  ]);
+  const [interacted, setInteracted] = React.useState(false);
   const tabRefs = React.useRef<(HTMLButtonElement | null)[]>([]);
+  const pointerStartX = React.useRef<number | null>(null);
 
   const slides: Slide[] = React.useMemo(() => {
     const imageSlides: Slide[] = images.map((image) => ({
@@ -51,59 +64,129 @@ export function ProductGallery({
       image,
     }));
     if (!videoUrl) return imageSlides;
-    return [
-      { kind: "video", url: videoUrl, poster: images[0] },
-      ...imageSlides,
-    ];
+    return [{ kind: "video", url: videoUrl, poster: images[0] }, ...imageSlides];
   }, [images, videoUrl]);
 
-  if (slides.length === 0) return null;
-  const current = slides[active] ?? slides[0]!;
+  const count = slides.length;
+  const wrap = React.useCallback(
+    (i: number) => (count === 0 ? 0 : ((i % count) + count) % count),
+    [count]
+  );
+
+  const paginate = React.useCallback(
+    (dir: number) => setState(([a]) => [wrap(a + dir), dir]),
+    [wrap]
+  );
+
+  const goTo = React.useCallback(
+    (index: number) => {
+      setInteracted(true);
+      setState(([a]) => [wrap(index), index >= a ? 1 : -1]);
+    },
+    [wrap]
+  );
+
+  // One-time hint: nudge to the next slide shortly after open.
+  React.useEffect(() => {
+    if (reduced || count < 2 || interacted) return;
+    const timer = setTimeout(() => paginate(1), AUTO_ADVANCE_MS);
+    return () => clearTimeout(timer);
+  }, [reduced, count, interacted, paginate]);
+
+  if (count === 0) return null;
+  const current = slides[wrap(active)]!;
 
   function onKeyDown(event: React.KeyboardEvent) {
-    const last = slides.length - 1;
-    let next: number | null = null;
-    if (event.key === "ArrowRight") next = active === last ? 0 : active + 1;
-    if (event.key === "ArrowLeft") next = active === 0 ? last : active - 1;
-    if (next === null) return;
-
+    if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
     event.preventDefault();
-    setActive(next);
+    setInteracted(true);
+    const dir = event.key === "ArrowRight" ? 1 : -1;
+    const next = wrap(active + dir);
+    setState([next, dir]);
     tabRefs.current[next]?.focus();
+  }
+
+  function onPointerDown(event: React.PointerEvent) {
+    pointerStartX.current = event.clientX;
+  }
+
+  function onPointerUp(event: React.PointerEvent) {
+    if (pointerStartX.current === null) return;
+    const dx = event.clientX - pointerStartX.current;
+    pointerStartX.current = null;
+    if (Math.abs(dx) <= SWIPE_THRESHOLD_PX) return;
+    setInteracted(true);
+    paginate(dx < 0 ? 1 : -1);
   }
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-border bg-card">
-        {current.kind === "video" ? (
-          <video
-            key={current.url}
-            src={current.url}
-            poster={current.poster?.url}
-            // Muted is required for autoplay to be permitted at all.
-            muted
-            playsInline
-            autoPlay={!reduced}
-            loop={!reduced}
-            controls={reduced}
-            aria-label={`${title}, video`}
-            className="size-full object-cover"
-          />
-        ) : (
-          <Image
-            key={current.image.url}
-            src={current.image.url}
-            alt={current.image.altText}
-            fill
-            // The LCP element on this route; only the first slide gets it.
-            priority
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover"
-          />
+      <div
+        className="relative aspect-[4/5] touch-pan-y select-none overflow-hidden rounded-lg border border-border bg-card"
+        onPointerDown={onPointerDown}
+        onPointerUp={onPointerUp}
+        onPointerCancel={() => (pointerStartX.current = null)}
+      >
+        <AnimatePresence initial={false} custom={direction}>
+          <m.div
+            key={active}
+            custom={direction}
+            variants={slideVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{
+              x: { type: "spring", stiffness: 320, damping: 34 },
+              opacity: { duration: 0.18 },
+            }}
+            className="absolute inset-0"
+          >
+            {current.kind === "video" ? (
+              <video
+                key={current.url}
+                src={current.url}
+                poster={current.poster?.url}
+                muted
+                playsInline
+                autoPlay={!reduced}
+                loop={!reduced}
+                controls={reduced}
+                aria-label={`${title}, video`}
+                className="pointer-events-none size-full object-cover"
+              />
+            ) : (
+              <Image
+                src={current.image.url}
+                alt={current.image.altText}
+                fill
+                // LCP only on the first slide shown at open.
+                priority={active === 0}
+                draggable={false}
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="pointer-events-none object-cover"
+              />
+            )}
+          </m.div>
+        </AnimatePresence>
+
+        {/* Progress dots — a quiet signal that the stage is swipeable. */}
+        {count > 1 && (
+          <div className="pointer-events-none absolute inset-x-0 bottom-3 z-10 flex justify-center gap-1.5">
+            {slides.map((slide, index) => (
+              <span
+                key={slide.kind === "video" ? slide.url : slide.image.url}
+                aria-hidden
+                className={cn(
+                  "h-1.5 rounded-full bg-foreground transition-all duration-200 ease-premium",
+                  index === wrap(active) ? "w-4 opacity-90" : "w-1.5 opacity-40"
+                )}
+              />
+            ))}
+          </div>
         )}
       </div>
 
-      {slides.length > 1 && (
+      {count > 1 && (
         <div
           role="tablist"
           aria-label={`${title} media`}
@@ -120,13 +203,13 @@ export function ProductGallery({
                 }}
                 role="tab"
                 type="button"
-                aria-selected={index === active}
-                tabIndex={index === active ? 0 : -1}
-                onClick={() => setActive(index)}
+                aria-selected={index === wrap(active)}
+                tabIndex={index === wrap(active) ? 0 : -1}
+                onClick={() => goTo(index)}
                 className={cn(
                   "relative aspect-square w-20 overflow-hidden rounded-md border transition-colors duration-150 ease-premium",
                   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
-                  index === active
+                  index === wrap(active)
                     ? "border-primary"
                     : "border-border hover:border-border/80"
                 )}
@@ -145,10 +228,7 @@ export function ProductGallery({
                     aria-hidden
                     className="absolute inset-0 flex items-center justify-center bg-background/50"
                   >
-                    <Play
-                      className="size-5 text-foreground"
-                      fill="currentColor"
-                    />
+                    <Play className="size-5 text-foreground" fill="currentColor" />
                   </span>
                 )}
                 <span className="sr-only">

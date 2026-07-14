@@ -23,13 +23,14 @@ const ThemeContext = React.createContext<ThemeContextValue | null>(null);
  * persists to localStorage; consumers read and switch through `useTheme()`.
  */
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setThemeState] = React.useState<Theme>("light");
+  const [theme, setThemeState] = React.useState<Theme>("dark");
 
-  // Sync initial state with what the pre-paint script applied.
+  // Sync initial state with whatever the pre-paint script actually applied —
+  // both directions, so a user who chose light isn't left on a stale dark state.
   React.useEffect(() => {
-    if (document.documentElement.classList.contains("dark")) {
-      setThemeState("dark");
-    }
+    setThemeState(
+      document.documentElement.classList.contains("dark") ? "dark" : "light"
+    );
   }, []);
 
   const setTheme = React.useCallback((next: Theme) => {

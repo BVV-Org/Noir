@@ -33,7 +33,7 @@ const navActions = [
 ];
 
 const navItemClass =
-  "font-mono text-overline uppercase tracking-[0.08em] transition-colors duration-150 ease-premium";
+  "font-mono text-overline uppercase tracking-[0.08em] [word-spacing:-0.22em] transition-colors duration-150 ease-premium";
 
 export function Navbar() {
   const scrolled = useScrolled();

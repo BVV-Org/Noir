@@ -8,7 +8,7 @@ import { fontVariables } from "@/lib/fonts";
  * wrong theme. Kept here as a plain string: a Server Component cannot import
  * non-component values from a "use client" module.
  */
-const themeInitScript = `(function(){try{var t=localStorage.getItem("nv-theme");if(t==="dark")document.documentElement.classList.add("dark")}catch(e){}})();`;
+const themeInitScript = `(function(){try{var t=localStorage.getItem("nv-theme");if(t!=="light")document.documentElement.classList.add("dark")}catch(e){document.documentElement.classList.add("dark")}})();`;
 import { siteConfig } from "@/lib/config/site";
 import { Providers } from "@/components/providers";
 import { Navbar } from "@/components/layout/navbar";
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#e4e4e4",
-  colorScheme: "light dark",
+  colorScheme: "dark light",
 };
 
 export default function RootLayout({
