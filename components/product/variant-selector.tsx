@@ -81,14 +81,13 @@ export function VariantSelector({ product }: { product: Product }) {
 
       <div className="flex items-center gap-3">
         <AddToCartButton variant={variant} className="flex-1" />
+        <BuyNowButton variant={variant} className="flex-1" />
         <WishlistButton
           handle={product.handle}
           title={product.title}
           className="shrink-0 border border-border bg-transparent"
         />
       </div>
-
-      <BuyNowButton variant={variant} className="w-full" />
 
       <p className="text-small text-muted-foreground">
         {variant.availableForSale
