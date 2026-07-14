@@ -57,9 +57,18 @@ export default async function HomePage() {
     articles: articles.slice(0, 3),
   };
 
+  // Keep the CMS order, but pull "Most Collected" (best_sellers) up to lead the
+  // content directly after the hero — the single featured-product plate that
+  // used to sit there was removed for reading as a lonely placeholder.
+  const ordered = [
+    ...sections.filter((s) => s.type === "hero"),
+    ...sections.filter((s) => s.type === "best_sellers"),
+    ...sections.filter((s) => s.type !== "hero" && s.type !== "best_sellers"),
+  ];
+
   return (
     <>
-      {sections.map((section) => (
+      {ordered.map((section) => (
         <SectionRenderer key={section.id} section={section} data={data} />
       ))}
 
