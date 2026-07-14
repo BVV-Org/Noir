@@ -1,4 +1,22 @@
 /**
+ * EASE — the curves the whole site moves on (see docs/motion-language.md).
+ *
+ * `signature` holds still for a beat, snaps through the middle, then glides a
+ * long way into rest. That long tail is what gives motion apparent mass, and
+ * it is the default for anything a visitor is meant to watch: headlines,
+ * wipes, media. `exit` is its counterpart for things leaving. `settle` is the
+ * short, near-linear curve for UI that must not feel slow — above all the CTA,
+ * which has to be clickable the instant it is visible.
+ *
+ * Tuples, not strings: this is Framer Motion's cubic-bezier form.
+ */
+export const EASE = {
+  signature: [0.496, 0.004, 0, 1],
+  exit: [0.79, 0.19, 0.24, 0.98],
+  settle: [0.16, 1, 0.3, 1],
+} as const;
+
+/**
  * MOTION_CONFIG — the one place to tune the scroll-animation kit.
  *
  * Consumed by the components in `components/motion/`. Numbers only; no
@@ -28,6 +46,18 @@ export const MOTION_CONFIG = {
   wordStagger: 0.03,
   /** Seconds a masked line takes to rise. */
   maskRiseDuration: 0.9,
+
+  /**
+   * CharReveal — the hero's two-speed headline (docs/motion-language.md §2).
+   * Characters arrive fast; the line they sit in keeps drifting slowly behind
+   * them, which is what manufactures depth from flat type. Keep `charDuration`
+   * well under `lineDuration` or the two layers collapse into one.
+   */
+  charStagger: 0.04,
+  charDuration: 0.8,
+  lineDriftDuration: 1.4,
+  /** How far the whole line drifts, in percent of its own width. */
+  lineDrift: 12,
 
   /** Parallax travel of media inside its frame, in percent (± each way). */
   parallaxTravel: 6,
