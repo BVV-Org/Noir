@@ -1,0 +1,96 @@
+[
+  {
+    "id": "al_haramain",
+    "name": "Al Haramain",
+    "kind": "clone",
+    "aliases": []
+  },
+  {
+    "id": "armaf",
+    "name": "Armaf",
+    "kind": "clone",
+    "aliases": [
+      "armaf"
+    ]
+  },
+  {
+    "id": "by_kilian",
+    "name": "By Kilian",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "chanel",
+    "name": "Chanel",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "creed",
+    "name": "Creed",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "dior",
+    "name": "Dior",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "fragrance_world",
+    "name": "Fragrance World",
+    "kind": "clone",
+    "aliases": [
+      "FRAGRANCE WORLD"
+    ]
+  },
+  {
+    "id": "initio",
+    "name": "Initio",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "lattafa",
+    "name": "Lattafa",
+    "kind": "clone",
+    "aliases": [
+      "lattafa"
+    ]
+  },
+  {
+    "id": "louis_vuitton",
+    "name": "Louis Vuitton",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "maison_alhambra",
+    "name": "Maison Alhambra",
+    "kind": "clone",
+    "aliases": [
+      "maison alhambra"
+    ]
+  },
+  {
+    "id": "maison_francis_kurkdjian",
+    "name": "Maison Francis Kurkdjian",
+    "kind": "original",
+    "aliases": [
+      "MFK"
+    ]
+  },
+  {
+    "id": "parfums_de_marly",
+    "name": "Parfums de Marly",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "yves_saint_laurent",
+    "name": "Yves Saint Laurent",
+    "kind": "original",
+    "aliases": []
+  }
+]

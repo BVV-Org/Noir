@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fragrancekb.local/schema/clone_relationship.schema.json",
+  "title": "CloneRelationship",
+  "description": "A deduplicated (original, clone) dupe pair. Superset of the required record schema: adds provenance (claims[]) and canonical fragrance ids.",
+  "type": "object",
+  "required": ["id", "original", "clone", "match", "performance", "price",
+               "category", "confidence", "whyItMatches", "differences",
+               "sources", "verified", "claims"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string"},
+    "original": {"$ref": "#/$defs/fragranceRef"},
+    "clone": {"$ref": "#/$defs/fragranceRef"},
+    "match": {
+      "type": "object",
+      "required": ["opening", "heart", "drydown", "overall"],
+      "additionalProperties": false,
+      "properties": {
+        "opening": {"$ref": "#/$defs/score"},
+        "heart": {"$ref": "#/$defs/score"},
+        "drydown": {"$ref": "#/$defs/score"},
+        "overall": {"$ref": "#/$defs/score"}
+      }
+    },
+    "performance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "longevityComparison": {"type": "string"},
+        "projectionComparison": {"type": "string"},
+        "sillageComparison": {"type": "string"}
+      }
+    },
+    "price": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "originalApproxUSD": {"type": "number", "minimum": 0},
+        "cloneApproxUSD": {"type": "number", "minimum": 0}
+      }
+    },
+    "category": {"type": "string"},
+    "confidence": {"type": "integer", "minimum": 80, "maximum": 100},
+    "whyItMatches": {"type": "array", "items": {"type": "string"}},
+    "differences": {"type": "array", "items": {"type": "string"}},
+    "sources": {"type": "array", "items": {"type": "string", "format": "uri"}},
+    "verified": {"type": "boolean"},
+    "originalFragranceId": {"type": "string"},
+    "cloneFragranceId": {"type": "string"},
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Provenance: at least one attributed claim is REQUIRED. A relationship cannot exist without a source.",
+      "items": {
+        "type": "object",
+        "required": ["sourceId", "sourceName", "url", "confidence"],
+        "additionalProperties": false,
+        "properties": {
+          "sourceId": {"type": "string"},
+          "sourceName": {"type": "string"},
+          "url": {"type": ["string", "null"], "format": "uri"},
+          "confidence": {"$ref": "#/$defs/score"},
+          "reportedSimilarity": {"type": ["integer", "null"]},
+          "note": {"type": ["string", "null"]},
+          "trustWeight": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "fragranceRef": {
+      "type": "object",
+      "required": ["brand", "name"],
+      "additionalProperties": false,
+      "properties": {"brand": {"type": "string"}, "name": {"type": "string"}}
+    },
+    "score": {"type": "integer", "minimum": 0, "maximum": 100}
+  }
+}

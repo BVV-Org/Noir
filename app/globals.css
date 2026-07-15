@@ -56,6 +56,12 @@
     --rarity-legendary: 38 70% 32%; /* amber ink */
     --rarity-mythic: 350 70% 38%; /* crimson ink */
 
+    /* Gold — the Dupe Finder's single highlight. Deepened here so it holds AA
+       contrast against the light substrate; the .dark override goes champagne. */
+    --gold: 36 58% 32%;
+    --gold-strong: 36 62% 26%;
+    --gold-contrast: 0 0% 98%; /* text on a gold fill */
+
     --radius: 0.4rem;
 
     color-scheme: light;
@@ -93,6 +99,11 @@
     --rarity-epic: 250 60% 70%;
     --rarity-legendary: 45 80% 60%;
     --rarity-mythic: 350 65% 62%;
+
+    /* Champagne gold on carbon. */
+    --gold: 40 52% 68%;
+    --gold-strong: 40 60% 80%;
+    --gold-contrast: 0 0% 9%;
 
     color-scheme: dark;
   }
