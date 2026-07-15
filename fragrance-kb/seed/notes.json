@@ -1,0 +1,312 @@
+[
+  {
+    "id": "amber",
+    "name": "Amber",
+    "aliases": []
+  },
+  {
+    "id": "ambergris",
+    "name": "Ambergris",
+    "aliases": []
+  },
+  {
+    "id": "amberwood",
+    "name": "Amberwood",
+    "aliases": []
+  },
+  {
+    "id": "ambroxan",
+    "name": "Ambroxan",
+    "aliases": []
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "aliases": []
+  },
+  {
+    "id": "benzoin",
+    "name": "Benzoin",
+    "aliases": []
+  },
+  {
+    "id": "bergamot",
+    "name": "Bergamot",
+    "aliases": []
+  },
+  {
+    "id": "birch",
+    "name": "Birch",
+    "aliases": []
+  },
+  {
+    "id": "black_tea",
+    "name": "Black Tea",
+    "aliases": []
+  },
+  {
+    "id": "blackcurrant",
+    "name": "Blackcurrant",
+    "aliases": []
+  },
+  {
+    "id": "cardamom",
+    "name": "Cardamom",
+    "aliases": []
+  },
+  {
+    "id": "cedar",
+    "name": "Cedar",
+    "aliases": []
+  },
+  {
+    "id": "cinnamon",
+    "name": "Cinnamon",
+    "aliases": []
+  },
+  {
+    "id": "cistus",
+    "name": "Cistus",
+    "aliases": []
+  },
+  {
+    "id": "citron",
+    "name": "Citron",
+    "aliases": []
+  },
+  {
+    "id": "cognac",
+    "name": "Cognac",
+    "aliases": []
+  },
+  {
+    "id": "dates",
+    "name": "Dates",
+    "aliases": []
+  },
+  {
+    "id": "fir_resin",
+    "name": "Fir Resin",
+    "aliases": []
+  },
+  {
+    "id": "galbanum",
+    "name": "Galbanum",
+    "aliases": []
+  },
+  {
+    "id": "geranium",
+    "name": "Geranium",
+    "aliases": []
+  },
+  {
+    "id": "ginger",
+    "name": "Ginger",
+    "aliases": []
+  },
+  {
+    "id": "grapefruit",
+    "name": "Grapefruit",
+    "aliases": []
+  },
+  {
+    "id": "green_tea",
+    "name": "Green Tea",
+    "aliases": []
+  },
+  {
+    "id": "guaiac_wood",
+    "name": "Guaiac Wood",
+    "aliases": []
+  },
+  {
+    "id": "incense",
+    "name": "Incense",
+    "aliases": []
+  },
+  {
+    "id": "jasmine",
+    "name": "Jasmine",
+    "aliases": []
+  },
+  {
+    "id": "juniper",
+    "name": "Juniper",
+    "aliases": []
+  },
+  {
+    "id": "labdanum",
+    "name": "Labdanum",
+    "aliases": []
+  },
+  {
+    "id": "lavender",
+    "name": "Lavender",
+    "aliases": []
+  },
+  {
+    "id": "lemon",
+    "name": "Lemon",
+    "aliases": []
+  },
+  {
+    "id": "licorice",
+    "name": "Licorice",
+    "aliases": []
+  },
+  {
+    "id": "mahogany",
+    "name": "Mahogany",
+    "aliases": []
+  },
+  {
+    "id": "mandarin_orange",
+    "name": "Mandarin Orange",
+    "aliases": []
+  },
+  {
+    "id": "mint",
+    "name": "Mint",
+    "aliases": []
+  },
+  {
+    "id": "musk",
+    "name": "Musk",
+    "aliases": []
+  },
+  {
+    "id": "myrrh",
+    "name": "Myrrh",
+    "aliases": []
+  },
+  {
+    "id": "neroli",
+    "name": "Neroli",
+    "aliases": []
+  },
+  {
+    "id": "nutmeg",
+    "name": "Nutmeg",
+    "aliases": []
+  },
+  {
+    "id": "oak",
+    "name": "Oak",
+    "aliases": []
+  },
+  {
+    "id": "oakmoss",
+    "name": "Oakmoss",
+    "aliases": []
+  },
+  {
+    "id": "olibanum",
+    "name": "Olibanum",
+    "aliases": []
+  },
+  {
+    "id": "orange",
+    "name": "Orange",
+    "aliases": []
+  },
+  {
+    "id": "oud",
+    "name": "Oud",
+    "aliases": []
+  },
+  {
+    "id": "patchouli",
+    "name": "Patchouli",
+    "aliases": []
+  },
+  {
+    "id": "pepper",
+    "name": "Pepper",
+    "aliases": []
+  },
+  {
+    "id": "petitgrain",
+    "name": "Petitgrain",
+    "aliases": []
+  },
+  {
+    "id": "pineapple",
+    "name": "Pineapple",
+    "aliases": []
+  },
+  {
+    "id": "pink_pepper",
+    "name": "Pink Pepper",
+    "aliases": []
+  },
+  {
+    "id": "praline",
+    "name": "Praline",
+    "aliases": []
+  },
+  {
+    "id": "raspberry",
+    "name": "Raspberry",
+    "aliases": []
+  },
+  {
+    "id": "rose",
+    "name": "Rose",
+    "aliases": []
+  },
+  {
+    "id": "saffron",
+    "name": "Saffron",
+    "aliases": []
+  },
+  {
+    "id": "sage",
+    "name": "Sage",
+    "aliases": []
+  },
+  {
+    "id": "sandalwood",
+    "name": "Sandalwood",
+    "aliases": []
+  },
+  {
+    "id": "sichuan_pepper",
+    "name": "Sichuan Pepper",
+    "aliases": []
+  },
+  {
+    "id": "star_anise",
+    "name": "Star Anise",
+    "aliases": []
+  },
+  {
+    "id": "tobacco_leaf",
+    "name": "Tobacco Leaf",
+    "aliases": []
+  },
+  {
+    "id": "tonka_bean",
+    "name": "Tonka Bean",
+    "aliases": []
+  },
+  {
+    "id": "tuberose",
+    "name": "Tuberose",
+    "aliases": []
+  },
+  {
+    "id": "vanilla",
+    "name": "Vanilla",
+    "aliases": []
+  },
+  {
+    "id": "vetiver",
+    "name": "Vetiver",
+    "aliases": []
+  },
+  {
+    "id": "violet",
+    "name": "Violet",
+    "aliases": []
+  }
+]

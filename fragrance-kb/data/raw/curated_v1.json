@@ -1,0 +1,380 @@
+{
+  "source_meta": {
+    "source_id": "curated_v1",
+    "source_name": "Curated Clone Database v1 (verified 2026-07)",
+    "source_type": "curated",
+    "trust_weight": 1.0,
+    "notes": "Hand-curated, web-verified high-consensus luxury->clone relationships. Every relationship carries at least one attributed community source. Match/price/performance figures are community-reported estimates, not lab measurements."
+  },
+  "fragrances": {
+    "creed__aventus": {
+      "brand": "Creed", "name": "Aventus", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Fruity Chypre", "kind": "original",
+      "approxPriceUSD": 340,
+      "notes": {"top": ["Bergamot", "Blackcurrant", "Apple", "Pineapple", "Lemon"], "heart": ["Birch", "Patchouli", "Rose", "Jasmine"], "base": ["Musk", "Oakmoss", "Ambergris", "Vanilla"]},
+      "accords": ["Fruity", "Woody", "Smoky", "Chypre"]
+    },
+    "armaf__club_de_nuit_intense_man": {
+      "brand": "Armaf", "name": "Club de Nuit Intense Man", "concentration": "Eau de Toilette",
+      "gender": "masculine", "category": "Fruity Chypre", "kind": "clone",
+      "approxPriceUSD": 30,
+      "notes": {"top": ["Pineapple", "Lemon", "Blackcurrant", "Bergamot"], "heart": ["Birch", "Jasmine", "Rose"], "base": ["Musk", "Ambergris", "Vanilla", "Sandalwood"]},
+      "accords": ["Fruity", "Woody", "Smoky"]
+    },
+    "mfk__baccarat_rouge_540": {
+      "brand": "Maison Francis Kurkdjian", "name": "Baccarat Rouge 540", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Woody", "kind": "original",
+      "approxPriceUSD": 325,
+      "notes": {"top": ["Saffron", "Jasmine"], "heart": ["Amberwood", "Ambergris"], "base": ["Fir Resin", "Cedar"]},
+      "accords": ["Amber", "Woody", "Sweet", "Floral"]
+    },
+    "fragrance_world__barakkat_rouge_540": {
+      "brand": "Fragrance World", "name": "Barakkat Rouge 540", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Woody", "kind": "clone",
+      "approxPriceUSD": 25,
+      "notes": {"top": ["Saffron", "Jasmine"], "heart": ["Amberwood", "Ambergris"], "base": ["Cedar", "Fir Resin"]},
+      "accords": ["Amber", "Woody", "Sweet"]
+    },
+    "lattafa__ana_abiyedh_rouge": {
+      "brand": "Lattafa", "name": "Ana Abiyedh Rouge", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Woody", "kind": "clone",
+      "approxPriceUSD": 30,
+      "notes": {"top": ["Saffron", "Jasmine"], "heart": ["Amberwood"], "base": ["Cedar"]},
+      "accords": ["Amber", "Woody", "Sweet"]
+    },
+    "armaf__club_de_nuit_untold": {
+      "brand": "Armaf", "name": "Club de Nuit Untold", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Woody", "kind": "clone",
+      "approxPriceUSD": 35,
+      "notes": {"top": ["Saffron", "Jasmine"], "heart": ["Amberwood", "Ambergris"], "base": ["Cedar"]},
+      "accords": ["Amber", "Woody", "Sweet"]
+    },
+    "parfums_de_marly__layton": {
+      "brand": "Parfums de Marly", "name": "Layton", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Vanilla", "kind": "original",
+      "approxPriceUSD": 355,
+      "notes": {"top": ["Apple", "Bergamot", "Mandarin Orange", "Lavender"], "heart": ["Geranium", "Violet", "Jasmine"], "base": ["Vanilla", "Cardamom", "Sandalwood", "Guaiac Wood", "Pepper", "Cinnamon"]},
+      "accords": ["Sweet", "Vanilla", "Spicy", "Powdery"]
+    },
+    "al_haramain__detour_noir": {
+      "brand": "Al Haramain", "name": "Detour Noir", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Vanilla", "kind": "clone",
+      "approxPriceUSD": 35,
+      "notes": {"top": ["Apple", "Bergamot", "Lavender"], "heart": ["Geranium", "Violet"], "base": ["Vanilla", "Guaiac Wood", "Cardamom"]},
+      "accords": ["Sweet", "Vanilla", "Spicy"]
+    },
+    "louis_vuitton__imagination": {
+      "brand": "Louis Vuitton", "name": "Imagination", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Citrus Aromatic", "kind": "original",
+      "approxPriceUSD": 290,
+      "notes": {"top": ["Bergamot", "Orange", "Black Tea"], "heart": ["Ginger", "Cinnamon", "Neroli"], "base": ["Ambroxan", "Guaiac Wood"]},
+      "accords": ["Citrus", "Aromatic", "Tea", "Woody"]
+    },
+    "lattafa__art_of_arabia_i": {
+      "brand": "Lattafa", "name": "Art of Arabia I", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Citrus Aromatic", "kind": "clone",
+      "approxPriceUSD": 25,
+      "notes": {"top": ["Bergamot", "Orange", "Black Tea"], "heart": ["Ginger", "Neroli"], "base": ["Ambroxan", "Guaiac Wood"]},
+      "accords": ["Citrus", "Aromatic", "Tea"]
+    },
+    "maison_alhambra__jean_lowe_fantasme": {
+      "brand": "Maison Alhambra", "name": "Jean Lowe Fantasme", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Citrus Aromatic", "kind": "clone",
+      "approxPriceUSD": 22,
+      "notes": {"top": ["Citron", "Bergamot", "Orange"], "heart": ["Neroli", "Cinnamon", "Ginger"], "base": ["Black Tea", "Ambroxan", "Guaiac Wood", "Olibanum"]},
+      "accords": ["Citrus", "Aromatic", "Tea", "Woody"]
+    },
+    "initio__oud_for_greatness": {
+      "brand": "Initio", "name": "Oud for Greatness", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Woody", "kind": "original",
+      "approxPriceUSD": 325,
+      "notes": {"top": ["Saffron", "Nutmeg", "Lavender"], "heart": ["Oud", "Patchouli"], "base": ["Musk"]},
+      "accords": ["Woody", "Amber", "Aromatic", "Oud"]
+    },
+    "lattafa__badee_al_oud_oud_for_glory": {
+      "brand": "Lattafa", "name": "Bade'e Al Oud Oud for Glory", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Woody", "kind": "clone",
+      "approxPriceUSD": 28,
+      "notes": {"top": ["Saffron", "Nutmeg", "Lavender"], "heart": ["Oud", "Patchouli"], "base": ["Oud", "Patchouli", "Musk"]},
+      "accords": ["Woody", "Amber", "Oud"]
+    },
+    "dior__sauvage": {
+      "brand": "Dior", "name": "Sauvage", "concentration": "Eau de Toilette",
+      "gender": "masculine", "category": "Aromatic Fougere", "kind": "original",
+      "approxPriceUSD": 110,
+      "notes": {"top": ["Bergamot", "Pepper"], "heart": ["Lavender", "Sichuan Pepper", "Star Anise"], "base": ["Ambroxan", "Cedar"]},
+      "accords": ["Aromatic", "Fresh Spicy", "Woody"]
+    },
+    "maison_alhambra__salvo": {
+      "brand": "Maison Alhambra", "name": "Salvo", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Aromatic Fougere", "kind": "clone",
+      "approxPriceUSD": 20,
+      "notes": {"top": ["Bergamot", "Pepper"], "heart": ["Lavender", "Sichuan Pepper"], "base": ["Ambroxan", "Cedar"]},
+      "accords": ["Aromatic", "Fresh Spicy", "Woody"]
+    },
+    "dior__sauvage_elixir": {
+      "brand": "Dior", "name": "Sauvage Elixir", "concentration": "Parfum",
+      "gender": "masculine", "category": "Amber Spicy", "kind": "original",
+      "approxPriceUSD": 165,
+      "notes": {"top": ["Cinnamon", "Nutmeg", "Cardamom", "Grapefruit", "Lavender"], "heart": ["Licorice", "Sage"], "base": ["Amber", "Patchouli", "Sandalwood"]},
+      "accords": ["Amber", "Spicy", "Woody", "Aromatic"]
+    },
+    "lattafa__asad": {
+      "brand": "Lattafa", "name": "Asad", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Amber Spicy", "kind": "clone",
+      "approxPriceUSD": 28,
+      "notes": {"top": ["Cinnamon", "Nutmeg", "Cardamom", "Grapefruit", "Lavender"], "heart": ["Licorice", "Sage"], "base": ["Amber", "Patchouli", "Sandalwood"]},
+      "accords": ["Amber", "Spicy", "Woody"]
+    },
+    "chanel__bleu_de_chanel": {
+      "brand": "Chanel", "name": "Bleu de Chanel", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Woody Aromatic", "kind": "original",
+      "approxPriceUSD": 135,
+      "notes": {"top": ["Grapefruit", "Lemon", "Mint", "Pink Pepper"], "heart": ["Ginger", "Nutmeg", "Jasmine"], "base": ["Incense", "Amberwood", "Sandalwood", "Patchouli", "Cedar"]},
+      "accords": ["Woody", "Aromatic", "Citrus", "Amber"]
+    },
+    "armaf__club_de_nuit_blue_iconic": {
+      "brand": "Armaf", "name": "Club de Nuit Blue Iconic", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Woody Aromatic", "kind": "clone",
+      "approxPriceUSD": 30,
+      "notes": {"top": ["Grapefruit", "Lemon", "Mint", "Pink Pepper"], "heart": ["Ginger", "Nutmeg"], "base": ["Amberwood", "Sandalwood", "Cedar"]},
+      "accords": ["Woody", "Aromatic", "Citrus"]
+    },
+    "parfums_de_marly__herod": {
+      "brand": "Parfums de Marly", "name": "Herod", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Amber Spicy", "kind": "original",
+      "approxPriceUSD": 355,
+      "notes": {"top": ["Cinnamon", "Pepper"], "heart": ["Tobacco Leaf", "Incense", "Labdanum"], "base": ["Vanilla", "Vetiver", "Olibanum", "Cedar", "Musk"]},
+      "accords": ["Amber", "Spicy", "Tobacco", "Sweet"]
+    },
+    "maison_alhambra__hercules": {
+      "brand": "Maison Alhambra", "name": "Hercules", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Amber Spicy", "kind": "clone",
+      "approxPriceUSD": 20,
+      "notes": {"top": ["Cinnamon", "Pepper"], "heart": ["Tobacco Leaf", "Incense"], "base": ["Vanilla", "Vetiver", "Cedar"]},
+      "accords": ["Amber", "Spicy", "Tobacco", "Sweet"]
+    },
+    "creed__silver_mountain_water": {
+      "brand": "Creed", "name": "Silver Mountain Water", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Aromatic Green", "kind": "original",
+      "approxPriceUSD": 340,
+      "notes": {"top": ["Bergamot", "Mandarin Orange"], "heart": ["Green Tea", "Blackcurrant"], "base": ["Musk", "Galbanum", "Sandalwood", "Petitgrain"]},
+      "accords": ["Aromatic", "Green", "Citrus", "Musky"]
+    },
+    "armaf__club_de_nuit_sillage": {
+      "brand": "Armaf", "name": "Club de Nuit Sillage", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Aromatic Green", "kind": "clone",
+      "approxPriceUSD": 35,
+      "notes": {"top": ["Bergamot", "Mandarin Orange", "Ambroxan"], "heart": ["Green Tea", "Blackcurrant"], "base": ["Musk", "Sandalwood"]},
+      "accords": ["Aromatic", "Green", "Citrus"]
+    },
+    "ysl__y_eau_de_parfum": {
+      "brand": "Yves Saint Laurent", "name": "Y Eau de Parfum", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Aromatic Fougere", "kind": "original",
+      "approxPriceUSD": 130,
+      "notes": {"top": ["Apple", "Ginger", "Bergamot"], "heart": ["Sage", "Juniper", "Geranium"], "base": ["Amberwood", "Tonka Bean", "Cedar", "Vetiver"]},
+      "accords": ["Aromatic", "Woody", "Fresh Spicy"]
+    },
+    "maison_alhambra__yeah": {
+      "brand": "Maison Alhambra", "name": "Yeah!", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Aromatic Fougere", "kind": "clone",
+      "approxPriceUSD": 18,
+      "notes": {"top": ["Apple", "Ginger", "Bergamot"], "heart": ["Sage", "Geranium"], "base": ["Amberwood", "Tonka Bean", "Cedar"]},
+      "accords": ["Aromatic", "Woody", "Fresh Spicy"]
+    },
+    "by_kilian__angels_share": {
+      "brand": "By Kilian", "name": "Angels' Share", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Gourmand", "kind": "original",
+      "approxPriceUSD": 290,
+      "notes": {"top": ["Cognac"], "heart": ["Cinnamon", "Tonka Bean", "Oak"], "base": ["Vanilla", "Praline", "Sandalwood"]},
+      "accords": ["Amber", "Sweet", "Gourmand", "Boozy"]
+    },
+    "lattafa__khamrah": {
+      "brand": "Lattafa", "name": "Khamrah", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber Gourmand", "kind": "clone",
+      "approxPriceUSD": 35,
+      "notes": {"top": ["Dates", "Cinnamon", "Nutmeg", "Bergamot"], "heart": ["Praline", "Tuberose", "Mahogany"], "base": ["Vanilla", "Tonka Bean", "Benzoin", "Amber", "Myrrh"]},
+      "accords": ["Amber", "Sweet", "Gourmand", "Spicy"]
+    },
+    "mfk__grand_soir": {
+      "brand": "Maison Francis Kurkdjian", "name": "Grand Soir", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber", "kind": "original",
+      "approxPriceUSD": 325,
+      "notes": {"top": ["Amber", "Benzoin"], "heart": ["Tonka Bean", "Vanilla"], "base": ["Labdanum", "Cistus"]},
+      "accords": ["Amber", "Sweet", "Warm Spicy", "Vanilla"]
+    },
+    "lattafa__ajwad": {
+      "brand": "Lattafa", "name": "Ajwad", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Amber", "kind": "clone",
+      "approxPriceUSD": 30,
+      "notes": {"top": ["Amber", "Benzoin", "Raspberry"], "heart": ["Tonka Bean", "Vanilla"], "base": ["Musk", "Patchouli"]},
+      "accords": ["Amber", "Sweet", "Fruity"]
+    }
+  },
+  "relationships": [
+    {
+      "original": "creed__aventus", "clone": "armaf__club_de_nuit_intense_man", "category": "Fruity Chypre",
+      "match": {"opening": 80, "heart": 88, "drydown": 88, "overall": 88},
+      "performance": {"longevityComparison": "stronger", "projectionComparison": "stronger", "sillageComparison": "stronger"},
+      "whyItMatches": ["Shares the fruity pineapple-blackcurrant opening and smoky birch DNA that defines Aventus", "Widely considered the single most-recommended Aventus alternative across fragrance communities", "Drydown lands on a comparable clean musk-ambergris base"],
+      "differences": ["Opening lemon reads sharper and more synthetic than Aventus's natural pineapple", "Drydown is more linear and slightly sweeter, with less ambergris nuance"],
+      "claims": [
+        {"source_id": "fragrantica_board", "source_name": "Fragrantica Community Board", "url": "https://www.fragrantica.com/board/viewtopic.php?id=214149", "confidence": 93, "reported_similarity": 88, "note": "Long-running community thread: CDNIM is the consensus closest Aventus clone."},
+        {"source_id": "scentclones", "source_name": "ScentClones", "url": "https://scentclones.com/smells-like-creed-aventus-best-clones-dupes/", "confidence": 90, "reported_similarity": 88, "note": "Ranked best overall Aventus dupe for 2026 batches."}
+      ]
+    },
+    {
+      "original": "mfk__baccarat_rouge_540", "clone": "fragrance_world__barakkat_rouge_540", "category": "Amber Woody",
+      "match": {"opening": 88, "heart": 88, "drydown": 86, "overall": 88},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Reproduces the signature saffron-amberwood-jasmine accord almost 1:1", "One of the most blind-tested BR540 alternatives, frequently fooling owners of the original", "Sweet amber drydown tracks the original closely"],
+      "differences": ["Slightly more synthetic in the amberwood base", "Marginally shorter sweet-linen phase in the drydown"],
+      "claims": [
+        {"source_id": "scentclones", "source_name": "ScentClones", "url": "https://scentclones.com/best-baccarat-rouge-540-dupes-clones-ranked/", "confidence": 90, "reported_similarity": 88, "note": "Ranked/tested among top BR540 clones."},
+        {"source_id": "scentgourmand", "source_name": "ScentGourmand", "url": "http://www.scentgourmand.com/battle-between-10-maison-francis-kurkdjian-baccarat-rouge-540-dupes-which-wins/", "confidence": 88, "reported_similarity": 87, "note": "Side-by-side battle of 10+ BR540 dupes."}
+      ]
+    },
+    {
+      "original": "mfk__baccarat_rouge_540", "clone": "lattafa__ana_abiyedh_rouge", "category": "Amber Woody",
+      "match": {"opening": 85, "heart": 85, "drydown": 84, "overall": 85},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "weaker", "sillageComparison": "weaker"},
+      "whyItMatches": ["Captures the saffron-amber sweetness at the core of BR540", "Repeatedly named a blind-test-passing, long-lasting BR540 alternative under $60", "Same broad amber-woody-floral family"],
+      "differences": ["Projection and sillage fall short of the original's radiance", "Amber base is a touch flatter"],
+      "claims": [
+        {"source_id": "scentclones", "source_name": "ScentClones", "url": "https://scentclones.com/best-baccarat-rouge-540-dupes-clones-ranked/", "confidence": 88, "reported_similarity": 85, "note": "Listed among best BR540 dupes, blind-tested, under $60."}
+      ]
+    },
+    {
+      "original": "mfk__baccarat_rouge_540", "clone": "armaf__club_de_nuit_untold", "category": "Amber Woody",
+      "match": {"opening": 84, "heart": 85, "drydown": 83, "overall": 84},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Recreates the saffron-jasmine-amberwood spine of BR540", "Regularly featured in head-to-head BR540 dupe comparisons", "Strong value performer in the amber-woody space"],
+      "differences": ["Sweetness is slightly heavier than the original", "Less of the airy, diffusive quality BR540 is known for"],
+      "claims": [
+        {"source_id": "scentgourmand", "source_name": "ScentGourmand", "url": "http://www.scentgourmand.com/battle-between-10-maison-francis-kurkdjian-baccarat-rouge-540-dupes-which-wins/", "confidence": 85, "reported_similarity": 84, "note": "Included in multi-dupe BR540 comparison (Armaf Untold)."}
+      ]
+    },
+    {
+      "original": "parfums_de_marly__layton", "clone": "al_haramain__detour_noir", "category": "Amber Vanilla",
+      "match": {"opening": 86, "heart": 87, "drydown": 87, "overall": 87},
+      "performance": {"longevityComparison": "weaker", "projectionComparison": "similar", "sillageComparison": "weaker"},
+      "whyItMatches": ["Follows Layton's apple-lavender opening into a creamy vanilla-cardamom drydown", "Community consensus places it around 85-90% of Layton", "Often called a 'baby Layton' for its faithful sweet-spicy character"],
+      "differences": ["Lacks some of Layton's richness and spice depth", "Softer presence after the first few hours"],
+      "claims": [
+        {"source_id": "alharamain_blog", "source_name": "Al Haramain Perfumes", "url": "https://alharamainperfume.online/blogs/news/is-haramain-detour-noir-really-similar-to-parfums-de-marly-layton", "confidence": 88, "reported_similarity": 88, "note": "Detailed Layton vs Detour Noir comparison, ~90%."},
+        {"source_id": "fragrantica_board", "source_name": "Fragrantica Community Board", "url": "https://www.fragrantica.com/board/viewtopic.php?id=290690", "confidence": 85, "reported_similarity": 85, "note": "Community 'Layton DUPE' thread; owners put it ~85%."}
+      ]
+    },
+    {
+      "original": "louis_vuitton__imagination", "clone": "lattafa__art_of_arabia_i", "category": "Citrus Aromatic",
+      "match": {"opening": 82, "heart": 82, "drydown": 80, "overall": 82},
+      "performance": {"longevityComparison": "weaker", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Delivers Imagination's bright citrus-tea signature at a fraction of the price", "Frequently cited as the go-to affordable Imagination alternative", "Same citrus-tea-ginger structure"],
+      "differences": ["Citrus can read with a slight chemical edge versus the original", "Less refined and shorter-lived than Imagination"],
+      "claims": [
+        {"source_id": "fragrantica", "source_name": "Fragrantica", "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Jean-Lowe-Fantasme-128506.html", "confidence": 83, "reported_similarity": 82, "note": "Reviewer compares Imagination clones incl. Art of Arabia I."}
+      ]
+    },
+    {
+      "original": "louis_vuitton__imagination", "clone": "maison_alhambra__jean_lowe_fantasme", "category": "Citrus Aromatic",
+      "match": {"opening": 90, "heart": 90, "drydown": 88, "overall": 90},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Reviewer-rated ~93% match to Imagination and called the cheapest and best clone", "Note pyramid mirrors Imagination's citrus/neroli/black-tea/ambroxan build", "Bright, ice-cold citrus freshie profile matches the original"],
+      "differences": ["Very slightly less polished in the ambroxan-woody base", "Newer release with more variable batch consistency"],
+      "claims": [
+        {"source_id": "fragrantica", "source_name": "Fragrantica", "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Jean-Lowe-Fantasme-128506.html", "confidence": 88, "reported_similarity": 90, "note": "Reviewer gave 93% similarity, 'cheapest and best clone'."}
+      ]
+    },
+    {
+      "original": "initio__oud_for_greatness", "clone": "lattafa__badee_al_oud_oud_for_glory", "category": "Amber Woody",
+      "match": {"opening": 90, "heart": 92, "drydown": 92, "overall": 92},
+      "performance": {"longevityComparison": "stronger", "projectionComparison": "stronger", "sillageComparison": "stronger"},
+      "whyItMatches": ["Captures 90-95% of the Oud for Greatness drydown per broad community consensus", "Same saffron-nutmeg-lavender to oud-patchouli progression", "One of the most legendary and universally recommended clones ever made"],
+      "differences": ["Reads a bit more synthetic and 'cheaper' up close", "Sweeter and heavier than the original's cleaner oud"],
+      "claims": [
+        {"source_id": "fragrance_dupes", "source_name": "Fragrance-Dupes.com", "url": "https://fragrance-dupes.com/catalogue/lattafa-badee-al-oud-oud-for-glory-initio-oud-for-greatness-clone/", "confidence": 94, "reported_similarity": 92, "note": "Cataloged explicitly as the Oud for Greatness clone."},
+        {"source_id": "scentclones", "source_name": "ScentClones", "url": "https://scentclones.com/best-initio-dupes/", "confidence": 92, "reported_similarity": 92, "note": "Top-ranked Initio dupe; captures 90-95% of drydown."}
+      ]
+    },
+    {
+      "original": "dior__sauvage", "clone": "maison_alhambra__salvo", "category": "Aromatic Fougere",
+      "match": {"opening": 88, "heart": 88, "drydown": 86, "overall": 88},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Reproduces the bergamot-pepper-ambroxan spine of Sauvage EDT at ~90%", "Widely regarded as one of the best UAE Sauvage clones currently made", "Same fresh-spicy aromatic profile"],
+      "differences": ["Reads more soapy/clean; original is spicier and more detailed", "Needs maceration to fully bloom"],
+      "claims": [
+        {"source_id": "fragrantica", "source_name": "Fragrantica", "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Salvo-93538.html", "confidence": 88, "reported_similarity": 90, "note": "Commonly listed Sauvage EDT clone; ~90% similarity."}
+      ]
+    },
+    {
+      "original": "dior__sauvage_elixir", "clone": "lattafa__asad", "category": "Amber Spicy",
+      "match": {"opening": 85, "heart": 85, "drydown": 84, "overall": 85},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "stronger", "sillageComparison": "similar"},
+      "whyItMatches": ["Captures the dark, spicy, woody intensity of Sauvage Elixir at ~85%", "Same cinnamon-cardamom-lavender to amber-patchouli structure", "Strong-projecting budget alternative frequently paired with Elixir"],
+      "differences": ["Slightly less refined spice blend than the original", "Sweeter and more synthetic in the base"],
+      "claims": [
+        {"source_id": "perfumesblend", "source_name": "Perfumes Blend", "url": "https://perfumesblend.com/en/Lattafa-Asad/p867242029", "confidence": 85, "reported_similarity": 85, "note": "Listed and reviewed as the Sauvage Elixir clone."}
+      ]
+    },
+    {
+      "original": "chanel__bleu_de_chanel", "clone": "armaf__club_de_nuit_blue_iconic", "category": "Woody Aromatic",
+      "match": {"opening": 82, "heart": 82, "drydown": 80, "overall": 82},
+      "performance": {"longevityComparison": "weaker", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Marketed and widely accepted as the Bleu de Chanel alternative", "Same citrus-woody-amber DNA at roughly a quarter of the price", "Comparable smooth woody drydown"],
+      "differences": ["Brighter and simpler than BdC EDP", "Becomes a skin scent after 3-4 hours; weaker longevity"],
+      "claims": [
+        {"source_id": "fragrantica", "source_name": "Fragrantica", "url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Blue-Iconic-78475.html", "confidence": 83, "reported_similarity": 82, "note": "Marketed/reviewed as the Bleu de Chanel dupe."}
+      ]
+    },
+    {
+      "original": "parfums_de_marly__herod", "clone": "maison_alhambra__hercules", "category": "Amber Spicy",
+      "match": {"opening": 86, "heart": 87, "drydown": 87, "overall": 87},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Reproduces Herod's sweet cinnamon-tobacco-vanilla accord at ~85-90%", "Consistently named the best Herod clone in community reviews", "Long-lasting (8+ hours) like the original"],
+      "differences": ["Slightly cherry-like sweetness up top versus Herod", "Line has faced availability issues due to copyright pressure"],
+      "claims": [
+        {"source_id": "fragrantica_board", "source_name": "Fragrantica Community Board", "url": "https://www.fragrantica.com/board/viewtopic.php?id=304020", "confidence": 86, "reported_similarity": 87, "note": "PDM Herod clone thread; Hercules ~85-90%."}
+      ]
+    },
+    {
+      "original": "creed__silver_mountain_water", "clone": "armaf__club_de_nuit_sillage", "category": "Aromatic Green",
+      "match": {"opening": 82, "heart": 84, "drydown": 82, "overall": 83},
+      "performance": {"longevityComparison": "weaker", "projectionComparison": "stronger", "sillageComparison": "stronger"},
+      "whyItMatches": ["Bears a striking resemblance to Silver Mountain Water at under 1/10 the price", "Same fresh citrus-green-musk character", "One of the most-cited SMW alternatives"],
+      "differences": ["Opening ambroxan is harsher and more metallic than SMW", "Lacks the prominent tea note; shorter longevity (4-5h)"],
+      "claims": [
+        {"source_id": "aromaauthority", "source_name": "Aroma Authority", "url": "https://aromaauthority.com/alternatives/creed-silver-mountain-water-vs-armaf-club-de-nuit-sillage/", "confidence": 84, "reported_similarity": 82, "note": "Direct SMW vs CDN Sillage comparison; ~82% accurate."}
+      ]
+    },
+    {
+      "original": "ysl__y_eau_de_parfum", "clone": "maison_alhambra__yeah", "category": "Aromatic Fougere",
+      "match": {"opening": 89, "heart": 89, "drydown": 88, "overall": 89},
+      "performance": {"longevityComparison": "stronger", "projectionComparison": "stronger", "sillageComparison": "similar"},
+      "whyItMatches": ["Nearly indistinguishable from YSL Y EDP in blind comparisons", "Same apple-sage-amberwood fresh fougere structure", "Strong community consensus that Y EDP is easily replicated"],
+      "differences": ["Base is a touch less refined than the original", "Batch longevity can be modest for the price point"],
+      "claims": [
+        {"source_id": "fragrantica", "source_name": "Fragrantica", "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Yeah-83061.html", "confidence": 88, "reported_similarity": 89, "note": "Widely reviewed as an extremely close Y EDP clone."}
+      ]
+    },
+    {
+      "original": "by_kilian__angels_share", "clone": "lattafa__khamrah", "category": "Amber Gourmand",
+      "match": {"opening": 74, "heart": 76, "drydown": 75, "overall": 75},
+      "performance": {"longevityComparison": "stronger", "projectionComparison": "stronger", "sillageComparison": "stronger"},
+      "whyItMatches": ["Universally positioned as the affordable Angels' Share alternative", "Shares the warm cinnamon-praline-vanilla gourmand DNA", "Outlasts the original, still projecting at hour 12"],
+      "differences": ["Not a 1:1 match (~70-75%); leans heavier on dates and thick amber", "Angels' Share has a more distinct cognac-oak angle Khamrah softens"],
+      "claims": [
+        {"source_id": "scentclones", "source_name": "ScentClones", "url": "https://scentclones.com/khamrah-vs-angels-share/", "confidence": 88, "reported_similarity": 74, "note": "Blind side-by-side; strong consensus dupe, ~70-75% match."}
+      ]
+    },
+    {
+      "original": "mfk__grand_soir", "clone": "lattafa__ajwad", "category": "Amber",
+      "match": {"opening": 82, "heart": 83, "drydown": 82, "overall": 82},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Highest-rated Grand Soir clone in aggregated community scoring", "Same warm amber-tonka-vanilla comfort accord", "Saves ~92% versus the original's retail price"],
+      "differences": ["A fruity raspberry facet not present in Grand Soir", "Slightly less resinous depth in the base"],
+      "claims": [
+        {"source_id": "scentmetric", "source_name": "ScentMetric", "url": "https://www.scentmetric.com/cologne/mfk-grand-soir/", "confidence": 82, "reported_similarity": 82, "note": "Top-scoring Grand Soir clone (82/100) in aggregated ratings."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1049 @@
+[
+  {
+    "id": "al_haramain__detour_noir",
+    "brandId": "al_haramain",
+    "brand": "Al Haramain",
+    "name": "Detour Noir",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Vanilla",
+    "approxPriceUSD": 35,
+    "notes": {
+      "top": [
+        "Apple",
+        "Bergamot",
+        "Lavender"
+      ],
+      "heart": [
+        "Geranium",
+        "Violet"
+      ],
+      "base": [
+        "Vanilla",
+        "Guaiac Wood",
+        "Cardamom"
+      ]
+    },
+    "accords": [
+      "Sweet",
+      "Vanilla",
+      "Spicy"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "armaf__club_de_nuit_blue_iconic",
+    "brandId": "armaf",
+    "brand": "Armaf",
+    "name": "Club de Nuit Blue Iconic",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Woody Aromatic",
+    "approxPriceUSD": 30,
+    "notes": {
+      "top": [
+        "Grapefruit",
+        "Lemon",
+        "Mint",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Ginger",
+        "Nutmeg"
+      ],
+      "base": [
+        "Amberwood",
+        "Sandalwood",
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Woody",
+      "Aromatic",
+      "Citrus"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "armaf__club_de_nuit_intense_man",
+    "brandId": "armaf",
+    "brand": "Armaf",
+    "name": "Club de Nuit Intense Man",
+    "kind": "clone",
+    "concentration": "Eau de Toilette",
+    "gender": "masculine",
+    "category": "Fruity Chypre",
+    "approxPriceUSD": 30,
+    "notes": {
+      "top": [
+        "Pineapple",
+        "Lemon",
+        "Blackcurrant",
+        "Bergamot"
+      ],
+      "heart": [
+        "Birch",
+        "Jasmine",
+        "Rose"
+      ],
+      "base": [
+        "Musk",
+        "Ambergris",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    "accords": [
+      "Fruity",
+      "Woody",
+      "Smoky"
+    ],
+    "sourceIds": [
+      "community_votes",
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "armaf__club_de_nuit_sillage",
+    "brandId": "armaf",
+    "brand": "Armaf",
+    "name": "Club de Nuit Sillage",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Aromatic Green",
+    "approxPriceUSD": 35,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Mandarin Orange",
+        "Ambroxan"
+      ],
+      "heart": [
+        "Green Tea",
+        "Blackcurrant"
+      ],
+      "base": [
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    "accords": [
+      "Aromatic",
+      "Green",
+      "Citrus"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "armaf__club_de_nuit_untold",
+    "brandId": "armaf",
+    "brand": "Armaf",
+    "name": "Club de Nuit Untold",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Woody",
+    "approxPriceUSD": 35,
+    "notes": {
+      "top": [
+        "Saffron",
+        "Jasmine"
+      ],
+      "heart": [
+        "Amberwood",
+        "Ambergris"
+      ],
+      "base": [
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Woody",
+      "Sweet"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "by_kilian__angels_share",
+    "brandId": "by_kilian",
+    "brand": "By Kilian",
+    "name": "Angels' Share",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Gourmand",
+    "approxPriceUSD": 290,
+    "notes": {
+      "top": [
+        "Cognac"
+      ],
+      "heart": [
+        "Cinnamon",
+        "Tonka Bean",
+        "Oak"
+      ],
+      "base": [
+        "Vanilla",
+        "Praline",
+        "Sandalwood"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Sweet",
+      "Gourmand",
+      "Boozy"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "chanel__bleu_de_chanel",
+    "brandId": "chanel",
+    "brand": "Chanel",
+    "name": "Bleu de Chanel",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Woody Aromatic",
+    "approxPriceUSD": 135,
+    "notes": {
+      "top": [
+        "Grapefruit",
+        "Lemon",
+        "Mint",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Ginger",
+        "Nutmeg",
+        "Jasmine"
+      ],
+      "base": [
+        "Incense",
+        "Amberwood",
+        "Sandalwood",
+        "Patchouli",
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Woody",
+      "Aromatic",
+      "Citrus",
+      "Amber"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "creed__aventus",
+    "brandId": "creed",
+    "brand": "Creed",
+    "name": "Aventus",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Fruity Chypre",
+    "approxPriceUSD": 340,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Blackcurrant",
+        "Apple",
+        "Pineapple",
+        "Lemon"
+      ],
+      "heart": [
+        "Birch",
+        "Patchouli",
+        "Rose",
+        "Jasmine"
+      ],
+      "base": [
+        "Musk",
+        "Oakmoss",
+        "Ambergris",
+        "Vanilla"
+      ]
+    },
+    "accords": [
+      "Fruity",
+      "Woody",
+      "Smoky",
+      "Chypre"
+    ],
+    "sourceIds": [
+      "community_votes",
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "creed__silver_mountain_water",
+    "brandId": "creed",
+    "brand": "Creed",
+    "name": "Silver Mountain Water",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Aromatic Green",
+    "approxPriceUSD": 340,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Mandarin Orange"
+      ],
+      "heart": [
+        "Green Tea",
+        "Blackcurrant"
+      ],
+      "base": [
+        "Musk",
+        "Galbanum",
+        "Sandalwood",
+        "Petitgrain"
+      ]
+    },
+    "accords": [
+      "Aromatic",
+      "Green",
+      "Citrus",
+      "Musky"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "dior__sauvage",
+    "brandId": "dior",
+    "brand": "Dior",
+    "name": "Sauvage",
+    "kind": "original",
+    "concentration": "Eau de Toilette",
+    "gender": "masculine",
+    "category": "Aromatic Fougere",
+    "approxPriceUSD": 110,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Pepper"
+      ],
+      "heart": [
+        "Lavender",
+        "Sichuan Pepper",
+        "Star Anise"
+      ],
+      "base": [
+        "Ambroxan",
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Aromatic",
+      "Fresh Spicy",
+      "Woody"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "dior__sauvage_elixir",
+    "brandId": "dior",
+    "brand": "Dior",
+    "name": "Sauvage Elixir",
+    "kind": "original",
+    "concentration": "Parfum",
+    "gender": "masculine",
+    "category": "Amber Spicy",
+    "approxPriceUSD": 165,
+    "notes": {
+      "top": [
+        "Cinnamon",
+        "Nutmeg",
+        "Cardamom",
+        "Grapefruit",
+        "Lavender"
+      ],
+      "heart": [
+        "Licorice",
+        "Sage"
+      ],
+      "base": [
+        "Amber",
+        "Patchouli",
+        "Sandalwood"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Spicy",
+      "Woody",
+      "Aromatic"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "fragrance_world__barakkat_rouge_540",
+    "brandId": "fragrance_world",
+    "brand": "Fragrance World",
+    "name": "Barakkat Rouge 540",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Woody",
+    "approxPriceUSD": 25,
+    "notes": {
+      "top": [
+        "Saffron",
+        "Jasmine"
+      ],
+      "heart": [
+        "Amberwood",
+        "Ambergris"
+      ],
+      "base": [
+        "Cedar",
+        "Fir Resin"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Woody",
+      "Sweet"
+    ],
+    "sourceIds": [
+      "community_votes",
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "initio__oud_for_greatness",
+    "brandId": "initio",
+    "brand": "Initio",
+    "name": "Oud for Greatness",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Woody",
+    "approxPriceUSD": 325,
+    "notes": {
+      "top": [
+        "Saffron",
+        "Nutmeg",
+        "Lavender"
+      ],
+      "heart": [
+        "Oud",
+        "Patchouli"
+      ],
+      "base": [
+        "Musk"
+      ]
+    },
+    "accords": [
+      "Woody",
+      "Amber",
+      "Aromatic",
+      "Oud"
+    ],
+    "sourceIds": [
+      "community_votes",
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "lattafa__ajwad",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Ajwad",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber",
+    "approxPriceUSD": 30,
+    "notes": {
+      "top": [
+        "Amber",
+        "Benzoin",
+        "Raspberry"
+      ],
+      "heart": [
+        "Tonka Bean",
+        "Vanilla"
+      ],
+      "base": [
+        "Musk",
+        "Patchouli"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Sweet",
+      "Fruity"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "lattafa__ana_abiyedh_rouge",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Ana Abiyedh Rouge",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Woody",
+    "approxPriceUSD": 30,
+    "notes": {
+      "top": [
+        "Saffron",
+        "Jasmine"
+      ],
+      "heart": [
+        "Amberwood"
+      ],
+      "base": [
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Woody",
+      "Sweet"
+    ],
+    "sourceIds": [
+      "community_votes",
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "lattafa__art_of_arabia_i",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Art of Arabia I",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Citrus Aromatic",
+    "approxPriceUSD": 25,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Orange",
+        "Black Tea"
+      ],
+      "heart": [
+        "Ginger",
+        "Neroli"
+      ],
+      "base": [
+        "Ambroxan",
+        "Guaiac Wood"
+      ]
+    },
+    "accords": [
+      "Citrus",
+      "Aromatic",
+      "Tea"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "lattafa__asad",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Asad",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Amber Spicy",
+    "approxPriceUSD": 28,
+    "notes": {
+      "top": [
+        "Cinnamon",
+        "Nutmeg",
+        "Cardamom",
+        "Grapefruit",
+        "Lavender"
+      ],
+      "heart": [
+        "Licorice",
+        "Sage"
+      ],
+      "base": [
+        "Amber",
+        "Patchouli",
+        "Sandalwood"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Spicy",
+      "Woody"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "lattafa__bade_e_al_oud_oud_for_glory",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Bade'e Al Oud Oud for Glory",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Woody",
+    "approxPriceUSD": 28,
+    "notes": {
+      "top": [
+        "Saffron",
+        "Nutmeg",
+        "Lavender"
+      ],
+      "heart": [
+        "Oud",
+        "Patchouli"
+      ],
+      "base": [
+        "Oud",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    "accords": [
+      "Woody",
+      "Amber",
+      "Oud"
+    ],
+    "sourceIds": [
+      "community_votes",
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "lattafa__khamrah",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Khamrah",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Gourmand",
+    "approxPriceUSD": 35,
+    "notes": {
+      "top": [
+        "Dates",
+        "Cinnamon",
+        "Nutmeg",
+        "Bergamot"
+      ],
+      "heart": [
+        "Praline",
+        "Tuberose",
+        "Mahogany"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka Bean",
+        "Benzoin",
+        "Amber",
+        "Myrrh"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Sweet",
+      "Gourmand",
+      "Spicy"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "louis_vuitton__imagination",
+    "brandId": "louis_vuitton",
+    "brand": "Louis Vuitton",
+    "name": "Imagination",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Citrus Aromatic",
+    "approxPriceUSD": 290,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Orange",
+        "Black Tea"
+      ],
+      "heart": [
+        "Ginger",
+        "Cinnamon",
+        "Neroli"
+      ],
+      "base": [
+        "Ambroxan",
+        "Guaiac Wood"
+      ]
+    },
+    "accords": [
+      "Citrus",
+      "Aromatic",
+      "Tea",
+      "Woody"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "maison_alhambra__hercules",
+    "brandId": "maison_alhambra",
+    "brand": "Maison Alhambra",
+    "name": "Hercules",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Amber Spicy",
+    "approxPriceUSD": 20,
+    "notes": {
+      "top": [
+        "Cinnamon",
+        "Pepper"
+      ],
+      "heart": [
+        "Tobacco Leaf",
+        "Incense"
+      ],
+      "base": [
+        "Vanilla",
+        "Vetiver",
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Spicy",
+      "Tobacco",
+      "Sweet"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "maison_alhambra__jean_lowe_fantasme",
+    "brandId": "maison_alhambra",
+    "brand": "Maison Alhambra",
+    "name": "Jean Lowe Fantasme",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Citrus Aromatic",
+    "approxPriceUSD": 22,
+    "notes": {
+      "top": [
+        "Citron",
+        "Bergamot",
+        "Orange"
+      ],
+      "heart": [
+        "Neroli",
+        "Cinnamon",
+        "Ginger"
+      ],
+      "base": [
+        "Black Tea",
+        "Ambroxan",
+        "Guaiac Wood",
+        "Olibanum"
+      ]
+    },
+    "accords": [
+      "Citrus",
+      "Aromatic",
+      "Tea",
+      "Woody"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "maison_alhambra__salvo",
+    "brandId": "maison_alhambra",
+    "brand": "Maison Alhambra",
+    "name": "Salvo",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Aromatic Fougere",
+    "approxPriceUSD": 20,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Pepper"
+      ],
+      "heart": [
+        "Lavender",
+        "Sichuan Pepper"
+      ],
+      "base": [
+        "Ambroxan",
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Aromatic",
+      "Fresh Spicy",
+      "Woody"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "maison_alhambra__yeah",
+    "brandId": "maison_alhambra",
+    "brand": "Maison Alhambra",
+    "name": "Yeah!",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Aromatic Fougere",
+    "approxPriceUSD": 18,
+    "notes": {
+      "top": [
+        "Apple",
+        "Ginger",
+        "Bergamot"
+      ],
+      "heart": [
+        "Sage",
+        "Geranium"
+      ],
+      "base": [
+        "Amberwood",
+        "Tonka Bean",
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Aromatic",
+      "Woody",
+      "Fresh Spicy"
+    ],
+    "sourceIds": [
+      "community_votes",
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "maison_francis_kurkdjian__baccarat_rouge_540",
+    "brandId": "maison_francis_kurkdjian",
+    "brand": "Maison Francis Kurkdjian",
+    "name": "Baccarat Rouge 540",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Woody",
+    "approxPriceUSD": 325,
+    "notes": {
+      "top": [
+        "Saffron",
+        "Jasmine"
+      ],
+      "heart": [
+        "Amberwood",
+        "Ambergris"
+      ],
+      "base": [
+        "Fir Resin",
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Woody",
+      "Sweet",
+      "Floral"
+    ],
+    "sourceIds": [
+      "community_votes",
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "maison_francis_kurkdjian__grand_soir",
+    "brandId": "maison_francis_kurkdjian",
+    "brand": "Maison Francis Kurkdjian",
+    "name": "Grand Soir",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber",
+    "approxPriceUSD": 325,
+    "notes": {
+      "top": [
+        "Amber",
+        "Benzoin"
+      ],
+      "heart": [
+        "Tonka Bean",
+        "Vanilla"
+      ],
+      "base": [
+        "Labdanum",
+        "Cistus"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Sweet",
+      "Warm Spicy",
+      "Vanilla"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "parfums_de_marly__herod",
+    "brandId": "parfums_de_marly",
+    "brand": "Parfums de Marly",
+    "name": "Herod",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Amber Spicy",
+    "approxPriceUSD": 355,
+    "notes": {
+      "top": [
+        "Cinnamon",
+        "Pepper"
+      ],
+      "heart": [
+        "Tobacco Leaf",
+        "Incense",
+        "Labdanum"
+      ],
+      "base": [
+        "Vanilla",
+        "Vetiver",
+        "Olibanum",
+        "Cedar",
+        "Musk"
+      ]
+    },
+    "accords": [
+      "Amber",
+      "Spicy",
+      "Tobacco",
+      "Sweet"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "parfums_de_marly__layton",
+    "brandId": "parfums_de_marly",
+    "brand": "Parfums de Marly",
+    "name": "Layton",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Amber Vanilla",
+    "approxPriceUSD": 355,
+    "notes": {
+      "top": [
+        "Apple",
+        "Bergamot",
+        "Mandarin Orange",
+        "Lavender"
+      ],
+      "heart": [
+        "Geranium",
+        "Violet",
+        "Jasmine"
+      ],
+      "base": [
+        "Vanilla",
+        "Cardamom",
+        "Sandalwood",
+        "Guaiac Wood",
+        "Pepper",
+        "Cinnamon"
+      ]
+    },
+    "accords": [
+      "Sweet",
+      "Vanilla",
+      "Spicy",
+      "Powdery"
+    ],
+    "sourceIds": [
+      "curated_v1"
+    ]
+  },
+  {
+    "id": "yves_saint_laurent__y_eau_de_parfum",
+    "brandId": "yves_saint_laurent",
+    "brand": "Yves Saint Laurent",
+    "name": "Y Eau de Parfum",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Aromatic Fougere",
+    "approxPriceUSD": 130,
+    "notes": {
+      "top": [
+        "Apple",
+        "Ginger",
+        "Bergamot"
+      ],
+      "heart": [
+        "Sage",
+        "Juniper",
+        "Geranium"
+      ],
+      "base": [
+        "Amberwood",
+        "Tonka Bean",
+        "Cedar",
+        "Vetiver"
+      ]
+    },
+    "accords": [
+      "Aromatic",
+      "Woody",
+      "Fresh Spicy"
+    ],
+    "sourceIds": [
+      "community_votes",
+      "curated_v1"
+    ]
+  }
+]

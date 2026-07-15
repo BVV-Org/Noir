@@ -82,6 +82,12 @@ const config: Config = {
           DEFAULT: "hsl(var(--yellow))",
           foreground: "hsl(var(--yellow-foreground))",
         },
+        // The Dupe Finder's highlight (theme-aware, see globals.css)
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          strong: "hsl(var(--gold-strong))",
+          contrast: "hsl(var(--gold-contrast))",
+        },
         // Signature rarity progression
         rarity: {
           common: "hsl(var(--rarity-common))",

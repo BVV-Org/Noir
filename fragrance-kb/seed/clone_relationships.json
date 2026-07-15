@@ -1,0 +1,946 @@
+[
+  {
+    "id": "rel__initio__oud_for_greatness__x__lattafa__bade_e_al_oud_oud_for_glory",
+    "original": {
+      "brand": "Initio",
+      "name": "Oud for Greatness"
+    },
+    "clone": {
+      "brand": "Lattafa",
+      "name": "Bade'e Al Oud Oud for Glory"
+    },
+    "match": {
+      "opening": 90,
+      "heart": 92,
+      "drydown": 92,
+      "overall": 92
+    },
+    "performance": {
+      "longevityComparison": "stronger",
+      "projectionComparison": "stronger",
+      "sillageComparison": "stronger"
+    },
+    "price": {
+      "originalApproxUSD": 325,
+      "cloneApproxUSD": 28
+    },
+    "category": "Amber Woody",
+    "confidence": 94,
+    "whyItMatches": [
+      "Captures 90-95% of the Oud for Greatness drydown per broad community consensus",
+      "Same saffron-nutmeg-lavender to oud-patchouli progression",
+      "One of the most legendary and universally recommended clones ever made"
+    ],
+    "differences": [
+      "Reads a bit more synthetic and 'cheaper' up close",
+      "Sweeter and heavier than the original's cleaner oud"
+    ],
+    "sources": [
+      "https://fragrance-dupes.com/catalogue/lattafa-badee-al-oud-oud-for-glory-initio-oud-for-greatness-clone/",
+      "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Oud-for-Glory-64948.html",
+      "https://scentclones.com/best-initio-dupes/"
+    ],
+    "verified": true,
+    "originalFragranceId": "initio__oud_for_greatness",
+    "cloneFragranceId": "lattafa__bade_e_al_oud_oud_for_glory",
+    "claims": [
+      {
+        "sourceId": "fragrance_dupes",
+        "sourceName": "Fragrance-Dupes.com",
+        "url": "https://fragrance-dupes.com/catalogue/lattafa-badee-al-oud-oud-for-glory-initio-oud-for-greatness-clone/",
+        "confidence": 94,
+        "reportedSimilarity": 92,
+        "note": "Cataloged explicitly as the Oud for Greatness clone.",
+        "trustWeight": 1.0
+      },
+      {
+        "sourceId": "fragrantica",
+        "sourceName": "Fragrantica",
+        "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Oud-for-Glory-64948.html",
+        "confidence": 93,
+        "reportedSimilarity": 92,
+        "note": "Community reviews confirm the Oud for Greatness relationship",
+        "trustWeight": 0.6
+      },
+      {
+        "sourceId": "scentclones",
+        "sourceName": "ScentClones",
+        "url": "https://scentclones.com/best-initio-dupes/",
+        "confidence": 92,
+        "reportedSimilarity": 92,
+        "note": "Top-ranked Initio dupe; captures 90-95% of drydown.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__creed__aventus__x__armaf__club_de_nuit_intense_man",
+    "original": {
+      "brand": "Creed",
+      "name": "Aventus"
+    },
+    "clone": {
+      "brand": "Armaf",
+      "name": "Club de Nuit Intense Man"
+    },
+    "match": {
+      "opening": 80,
+      "heart": 88,
+      "drydown": 88,
+      "overall": 88
+    },
+    "performance": {
+      "longevityComparison": "stronger",
+      "projectionComparison": "stronger",
+      "sillageComparison": "stronger"
+    },
+    "price": {
+      "originalApproxUSD": 340,
+      "cloneApproxUSD": 30
+    },
+    "category": "Fruity Chypre",
+    "confidence": 93,
+    "whyItMatches": [
+      "Shares the fruity pineapple-blackcurrant opening and smoky birch DNA that defines Aventus",
+      "Widely considered the single most-recommended Aventus alternative across fragrance communities",
+      "Drydown lands on a comparable clean musk-ambergris base"
+    ],
+    "differences": [
+      "Opening lemon reads sharper and more synthetic than Aventus's natural pineapple",
+      "Drydown is more linear and slightly sweeter, with less ambergris nuance"
+    ],
+    "sources": [
+      "https://www.fragrantica.com/board/viewtopic.php?id=214149",
+      "https://scentclones.com/smells-like-creed-aventus-best-clones-dupes/"
+    ],
+    "verified": true,
+    "originalFragranceId": "creed__aventus",
+    "cloneFragranceId": "armaf__club_de_nuit_intense_man",
+    "claims": [
+      {
+        "sourceId": "fragrantica_board",
+        "sourceName": "Fragrantica Community Board",
+        "url": "https://www.fragrantica.com/board/viewtopic.php?id=214149",
+        "confidence": 93,
+        "reportedSimilarity": 88,
+        "note": "Long-running community thread: CDNIM is the consensus closest Aventus clone.",
+        "trustWeight": 1.0
+      },
+      {
+        "sourceId": "scentclones",
+        "sourceName": "ScentClones",
+        "url": "https://scentclones.com/smells-like-creed-aventus-best-clones-dupes/",
+        "confidence": 90,
+        "reportedSimilarity": 88,
+        "note": "Ranked best overall Aventus dupe for 2026 batches.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__maison_francis_kurkdjian__baccarat_rouge_540__x__fragrance_world__barakkat_rouge_540",
+    "original": {
+      "brand": "Maison Francis Kurkdjian",
+      "name": "Baccarat Rouge 540"
+    },
+    "clone": {
+      "brand": "Fragrance World",
+      "name": "Barakkat Rouge 540"
+    },
+    "match": {
+      "opening": 88,
+      "heart": 88,
+      "drydown": 86,
+      "overall": 88
+    },
+    "performance": {
+      "longevityComparison": "similar",
+      "projectionComparison": "similar",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 325,
+      "cloneApproxUSD": 25
+    },
+    "category": "Amber Woody",
+    "confidence": 90,
+    "whyItMatches": [
+      "Reproduces the signature saffron-amberwood-jasmine accord almost 1:1",
+      "One of the most blind-tested BR540 alternatives, frequently fooling owners of the original",
+      "Sweet amber drydown tracks the original closely"
+    ],
+    "differences": [
+      "Slightly more synthetic in the amberwood base",
+      "Marginally shorter sweet-linen phase in the drydown"
+    ],
+    "sources": [
+      "https://scentclones.com/best-baccarat-rouge-540-dupes-clones-ranked/",
+      "https://shopping.yahoo.com/beauty/fragrance/articles/tested-every-baccarat-rouge-540-171356665.html",
+      "http://www.scentgourmand.com/battle-between-10-maison-francis-kurkdjian-baccarat-rouge-540-dupes-which-wins/"
+    ],
+    "verified": true,
+    "originalFragranceId": "maison_francis_kurkdjian__baccarat_rouge_540",
+    "cloneFragranceId": "fragrance_world__barakkat_rouge_540",
+    "claims": [
+      {
+        "sourceId": "scentclones",
+        "sourceName": "ScentClones",
+        "url": "https://scentclones.com/best-baccarat-rouge-540-dupes-clones-ranked/",
+        "confidence": 90,
+        "reportedSimilarity": 88,
+        "note": "Ranked/tested among top BR540 clones.",
+        "trustWeight": 1.0
+      },
+      {
+        "sourceId": "yahoo_shopping",
+        "sourceName": "Yahoo Shopping",
+        "url": "https://shopping.yahoo.com/beauty/fragrance/articles/tested-every-baccarat-rouge-540-171356665.html",
+        "confidence": 89,
+        "reportedSimilarity": 88,
+        "note": "Tested every BR540 dupe; Barakkat cited as top value",
+        "trustWeight": 0.6
+      },
+      {
+        "sourceId": "scentgourmand",
+        "sourceName": "ScentGourmand",
+        "url": "http://www.scentgourmand.com/battle-between-10-maison-francis-kurkdjian-baccarat-rouge-540-dupes-which-wins/",
+        "confidence": 88,
+        "reportedSimilarity": 87,
+        "note": "Side-by-side battle of 10+ BR540 dupes.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__by_kilian__angels_share__x__lattafa__khamrah",
+    "original": {
+      "brand": "By Kilian",
+      "name": "Angels' Share"
+    },
+    "clone": {
+      "brand": "Lattafa",
+      "name": "Khamrah"
+    },
+    "match": {
+      "opening": 74,
+      "heart": 76,
+      "drydown": 75,
+      "overall": 75
+    },
+    "performance": {
+      "longevityComparison": "stronger",
+      "projectionComparison": "stronger",
+      "sillageComparison": "stronger"
+    },
+    "price": {
+      "originalApproxUSD": 290,
+      "cloneApproxUSD": 35
+    },
+    "category": "Amber Gourmand",
+    "confidence": 88,
+    "whyItMatches": [
+      "Universally positioned as the affordable Angels' Share alternative",
+      "Shares the warm cinnamon-praline-vanilla gourmand DNA",
+      "Outlasts the original, still projecting at hour 12"
+    ],
+    "differences": [
+      "Not a 1:1 match (~70-75%); leans heavier on dates and thick amber",
+      "Angels' Share has a more distinct cognac-oak angle Khamrah softens"
+    ],
+    "sources": [
+      "https://scentclones.com/khamrah-vs-angels-share/"
+    ],
+    "verified": true,
+    "originalFragranceId": "by_kilian__angels_share",
+    "cloneFragranceId": "lattafa__khamrah",
+    "claims": [
+      {
+        "sourceId": "scentclones",
+        "sourceName": "ScentClones",
+        "url": "https://scentclones.com/khamrah-vs-angels-share/",
+        "confidence": 88,
+        "reportedSimilarity": 74,
+        "note": "Blind side-by-side; strong consensus dupe, ~70-75% match.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__dior__sauvage__x__maison_alhambra__salvo",
+    "original": {
+      "brand": "Dior",
+      "name": "Sauvage"
+    },
+    "clone": {
+      "brand": "Maison Alhambra",
+      "name": "Salvo"
+    },
+    "match": {
+      "opening": 88,
+      "heart": 88,
+      "drydown": 86,
+      "overall": 88
+    },
+    "performance": {
+      "longevityComparison": "similar",
+      "projectionComparison": "similar",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 110,
+      "cloneApproxUSD": 20
+    },
+    "category": "Aromatic Fougere",
+    "confidence": 88,
+    "whyItMatches": [
+      "Reproduces the bergamot-pepper-ambroxan spine of Sauvage EDT at ~90%",
+      "Widely regarded as one of the best UAE Sauvage clones currently made",
+      "Same fresh-spicy aromatic profile"
+    ],
+    "differences": [
+      "Reads more soapy/clean; original is spicier and more detailed",
+      "Needs maceration to fully bloom"
+    ],
+    "sources": [
+      "https://www.fragrantica.com/perfume/Maison-Alhambra/Salvo-93538.html"
+    ],
+    "verified": true,
+    "originalFragranceId": "dior__sauvage",
+    "cloneFragranceId": "maison_alhambra__salvo",
+    "claims": [
+      {
+        "sourceId": "fragrantica",
+        "sourceName": "Fragrantica",
+        "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Salvo-93538.html",
+        "confidence": 88,
+        "reportedSimilarity": 90,
+        "note": "Commonly listed Sauvage EDT clone; ~90% similarity.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__louis_vuitton__imagination__x__maison_alhambra__jean_lowe_fantasme",
+    "original": {
+      "brand": "Louis Vuitton",
+      "name": "Imagination"
+    },
+    "clone": {
+      "brand": "Maison Alhambra",
+      "name": "Jean Lowe Fantasme"
+    },
+    "match": {
+      "opening": 90,
+      "heart": 90,
+      "drydown": 88,
+      "overall": 90
+    },
+    "performance": {
+      "longevityComparison": "similar",
+      "projectionComparison": "similar",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 290,
+      "cloneApproxUSD": 22
+    },
+    "category": "Citrus Aromatic",
+    "confidence": 88,
+    "whyItMatches": [
+      "Reviewer-rated ~93% match to Imagination and called the cheapest and best clone",
+      "Note pyramid mirrors Imagination's citrus/neroli/black-tea/ambroxan build",
+      "Bright, ice-cold citrus freshie profile matches the original"
+    ],
+    "differences": [
+      "Very slightly less polished in the ambroxan-woody base",
+      "Newer release with more variable batch consistency"
+    ],
+    "sources": [
+      "https://www.fragrantica.com/perfume/Maison-Alhambra/Jean-Lowe-Fantasme-128506.html"
+    ],
+    "verified": true,
+    "originalFragranceId": "louis_vuitton__imagination",
+    "cloneFragranceId": "maison_alhambra__jean_lowe_fantasme",
+    "claims": [
+      {
+        "sourceId": "fragrantica",
+        "sourceName": "Fragrantica",
+        "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Jean-Lowe-Fantasme-128506.html",
+        "confidence": 88,
+        "reportedSimilarity": 90,
+        "note": "Reviewer gave 93% similarity, 'cheapest and best clone'.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__maison_francis_kurkdjian__baccarat_rouge_540__x__lattafa__ana_abiyedh_rouge",
+    "original": {
+      "brand": "Maison Francis Kurkdjian",
+      "name": "Baccarat Rouge 540"
+    },
+    "clone": {
+      "brand": "Lattafa",
+      "name": "Ana Abiyedh Rouge"
+    },
+    "match": {
+      "opening": 85,
+      "heart": 85,
+      "drydown": 84,
+      "overall": 85
+    },
+    "performance": {
+      "longevityComparison": "similar",
+      "projectionComparison": "weaker",
+      "sillageComparison": "weaker"
+    },
+    "price": {
+      "originalApproxUSD": 325,
+      "cloneApproxUSD": 30
+    },
+    "category": "Amber Woody",
+    "confidence": 88,
+    "whyItMatches": [
+      "Captures the saffron-amber sweetness at the core of BR540",
+      "Repeatedly named a blind-test-passing, long-lasting BR540 alternative under $60",
+      "Same broad amber-woody-floral family"
+    ],
+    "differences": [
+      "Projection and sillage fall short of the original's radiance",
+      "Amber base is a touch flatter"
+    ],
+    "sources": [
+      "https://scentclones.com/best-baccarat-rouge-540-dupes-clones-ranked/",
+      "http://www.scentgourmand.com/battle-between-10-maison-francis-kurkdjian-baccarat-rouge-540-dupes-which-wins/"
+    ],
+    "verified": true,
+    "originalFragranceId": "maison_francis_kurkdjian__baccarat_rouge_540",
+    "cloneFragranceId": "lattafa__ana_abiyedh_rouge",
+    "claims": [
+      {
+        "sourceId": "scentclones",
+        "sourceName": "ScentClones",
+        "url": "https://scentclones.com/best-baccarat-rouge-540-dupes-clones-ranked/",
+        "confidence": 88,
+        "reportedSimilarity": 85,
+        "note": "Listed among best BR540 dupes, blind-tested, under $60.",
+        "trustWeight": 1.0
+      },
+      {
+        "sourceId": "scentgourmand",
+        "sourceName": "ScentGourmand",
+        "url": "http://www.scentgourmand.com/battle-between-10-maison-francis-kurkdjian-baccarat-rouge-540-dupes-which-wins/",
+        "confidence": 86,
+        "reportedSimilarity": 85,
+        "note": "Included in 10+ BR540 dupe battle",
+        "trustWeight": 0.6
+      }
+    ]
+  },
+  {
+    "id": "rel__parfums_de_marly__layton__x__al_haramain__detour_noir",
+    "original": {
+      "brand": "Parfums de Marly",
+      "name": "Layton"
+    },
+    "clone": {
+      "brand": "Al Haramain",
+      "name": "Detour Noir"
+    },
+    "match": {
+      "opening": 86,
+      "heart": 87,
+      "drydown": 87,
+      "overall": 87
+    },
+    "performance": {
+      "longevityComparison": "weaker",
+      "projectionComparison": "similar",
+      "sillageComparison": "weaker"
+    },
+    "price": {
+      "originalApproxUSD": 355,
+      "cloneApproxUSD": 35
+    },
+    "category": "Amber Vanilla",
+    "confidence": 88,
+    "whyItMatches": [
+      "Follows Layton's apple-lavender opening into a creamy vanilla-cardamom drydown",
+      "Community consensus places it around 85-90% of Layton",
+      "Often called a 'baby Layton' for its faithful sweet-spicy character"
+    ],
+    "differences": [
+      "Lacks some of Layton's richness and spice depth",
+      "Softer presence after the first few hours"
+    ],
+    "sources": [
+      "https://alharamainperfume.online/blogs/news/is-haramain-detour-noir-really-similar-to-parfums-de-marly-layton",
+      "https://www.fragrantica.com/board/viewtopic.php?id=290690"
+    ],
+    "verified": true,
+    "originalFragranceId": "parfums_de_marly__layton",
+    "cloneFragranceId": "al_haramain__detour_noir",
+    "claims": [
+      {
+        "sourceId": "alharamain_blog",
+        "sourceName": "Al Haramain Perfumes",
+        "url": "https://alharamainperfume.online/blogs/news/is-haramain-detour-noir-really-similar-to-parfums-de-marly-layton",
+        "confidence": 88,
+        "reportedSimilarity": 88,
+        "note": "Detailed Layton vs Detour Noir comparison, ~90%.",
+        "trustWeight": 1.0
+      },
+      {
+        "sourceId": "fragrantica_board",
+        "sourceName": "Fragrantica Community Board",
+        "url": "https://www.fragrantica.com/board/viewtopic.php?id=290690",
+        "confidence": 85,
+        "reportedSimilarity": 85,
+        "note": "Community 'Layton DUPE' thread; owners put it ~85%.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__yves_saint_laurent__y_eau_de_parfum__x__maison_alhambra__yeah",
+    "original": {
+      "brand": "Yves Saint Laurent",
+      "name": "Y Eau de Parfum"
+    },
+    "clone": {
+      "brand": "Maison Alhambra",
+      "name": "Yeah!"
+    },
+    "match": {
+      "opening": 89,
+      "heart": 89,
+      "drydown": 88,
+      "overall": 89
+    },
+    "performance": {
+      "longevityComparison": "stronger",
+      "projectionComparison": "stronger",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 130,
+      "cloneApproxUSD": 18
+    },
+    "category": "Aromatic Fougere",
+    "confidence": 88,
+    "whyItMatches": [
+      "Nearly indistinguishable from YSL Y EDP in blind comparisons",
+      "Same apple-sage-amberwood fresh fougere structure",
+      "Strong community consensus that Y EDP is easily replicated"
+    ],
+    "differences": [
+      "Base is a touch less refined than the original",
+      "Batch longevity can be modest for the price point"
+    ],
+    "sources": [
+      "https://www.fragrantica.com/perfume/Maison-Alhambra/Yeah-83061.html",
+      "https://perfumegyaan.com/product/maison-alhambra-yeah-eau-de-parfum-100ml-and-decants/"
+    ],
+    "verified": true,
+    "originalFragranceId": "yves_saint_laurent__y_eau_de_parfum",
+    "cloneFragranceId": "maison_alhambra__yeah",
+    "claims": [
+      {
+        "sourceId": "fragrantica",
+        "sourceName": "Fragrantica",
+        "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Yeah-83061.html",
+        "confidence": 88,
+        "reportedSimilarity": 89,
+        "note": "Widely reviewed as an extremely close Y EDP clone.",
+        "trustWeight": 1.0
+      },
+      {
+        "sourceId": "perfumegyaan",
+        "sourceName": "Perfume Gyaan",
+        "url": "https://perfumegyaan.com/product/maison-alhambra-yeah-eau-de-parfum-100ml-and-decants/",
+        "confidence": 88,
+        "reportedSimilarity": 89,
+        "note": "Listed explicitly as YSL Y EDP clone",
+        "trustWeight": 0.6
+      }
+    ]
+  },
+  {
+    "id": "rel__parfums_de_marly__herod__x__maison_alhambra__hercules",
+    "original": {
+      "brand": "Parfums de Marly",
+      "name": "Herod"
+    },
+    "clone": {
+      "brand": "Maison Alhambra",
+      "name": "Hercules"
+    },
+    "match": {
+      "opening": 86,
+      "heart": 87,
+      "drydown": 87,
+      "overall": 87
+    },
+    "performance": {
+      "longevityComparison": "similar",
+      "projectionComparison": "similar",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 355,
+      "cloneApproxUSD": 20
+    },
+    "category": "Amber Spicy",
+    "confidence": 86,
+    "whyItMatches": [
+      "Reproduces Herod's sweet cinnamon-tobacco-vanilla accord at ~85-90%",
+      "Consistently named the best Herod clone in community reviews",
+      "Long-lasting (8+ hours) like the original"
+    ],
+    "differences": [
+      "Slightly cherry-like sweetness up top versus Herod",
+      "Line has faced availability issues due to copyright pressure"
+    ],
+    "sources": [
+      "https://www.fragrantica.com/board/viewtopic.php?id=304020"
+    ],
+    "verified": true,
+    "originalFragranceId": "parfums_de_marly__herod",
+    "cloneFragranceId": "maison_alhambra__hercules",
+    "claims": [
+      {
+        "sourceId": "fragrantica_board",
+        "sourceName": "Fragrantica Community Board",
+        "url": "https://www.fragrantica.com/board/viewtopic.php?id=304020",
+        "confidence": 86,
+        "reportedSimilarity": 87,
+        "note": "PDM Herod clone thread; Hercules ~85-90%.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__dior__sauvage_elixir__x__lattafa__asad",
+    "original": {
+      "brand": "Dior",
+      "name": "Sauvage Elixir"
+    },
+    "clone": {
+      "brand": "Lattafa",
+      "name": "Asad"
+    },
+    "match": {
+      "opening": 85,
+      "heart": 85,
+      "drydown": 84,
+      "overall": 85
+    },
+    "performance": {
+      "longevityComparison": "similar",
+      "projectionComparison": "stronger",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 165,
+      "cloneApproxUSD": 28
+    },
+    "category": "Amber Spicy",
+    "confidence": 85,
+    "whyItMatches": [
+      "Captures the dark, spicy, woody intensity of Sauvage Elixir at ~85%",
+      "Same cinnamon-cardamom-lavender to amber-patchouli structure",
+      "Strong-projecting budget alternative frequently paired with Elixir"
+    ],
+    "differences": [
+      "Slightly less refined spice blend than the original",
+      "Sweeter and more synthetic in the base"
+    ],
+    "sources": [
+      "https://perfumesblend.com/en/Lattafa-Asad/p867242029"
+    ],
+    "verified": true,
+    "originalFragranceId": "dior__sauvage_elixir",
+    "cloneFragranceId": "lattafa__asad",
+    "claims": [
+      {
+        "sourceId": "perfumesblend",
+        "sourceName": "Perfumes Blend",
+        "url": "https://perfumesblend.com/en/Lattafa-Asad/p867242029",
+        "confidence": 85,
+        "reportedSimilarity": 85,
+        "note": "Listed and reviewed as the Sauvage Elixir clone.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__maison_francis_kurkdjian__baccarat_rouge_540__x__armaf__club_de_nuit_untold",
+    "original": {
+      "brand": "Maison Francis Kurkdjian",
+      "name": "Baccarat Rouge 540"
+    },
+    "clone": {
+      "brand": "Armaf",
+      "name": "Club de Nuit Untold"
+    },
+    "match": {
+      "opening": 84,
+      "heart": 85,
+      "drydown": 83,
+      "overall": 84
+    },
+    "performance": {
+      "longevityComparison": "similar",
+      "projectionComparison": "similar",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 325,
+      "cloneApproxUSD": 35
+    },
+    "category": "Amber Woody",
+    "confidence": 85,
+    "whyItMatches": [
+      "Recreates the saffron-jasmine-amberwood spine of BR540",
+      "Regularly featured in head-to-head BR540 dupe comparisons",
+      "Strong value performer in the amber-woody space"
+    ],
+    "differences": [
+      "Sweetness is slightly heavier than the original",
+      "Less of the airy, diffusive quality BR540 is known for"
+    ],
+    "sources": [
+      "http://www.scentgourmand.com/battle-between-10-maison-francis-kurkdjian-baccarat-rouge-540-dupes-which-wins/"
+    ],
+    "verified": true,
+    "originalFragranceId": "maison_francis_kurkdjian__baccarat_rouge_540",
+    "cloneFragranceId": "armaf__club_de_nuit_untold",
+    "claims": [
+      {
+        "sourceId": "scentgourmand",
+        "sourceName": "ScentGourmand",
+        "url": "http://www.scentgourmand.com/battle-between-10-maison-francis-kurkdjian-baccarat-rouge-540-dupes-which-wins/",
+        "confidence": 85,
+        "reportedSimilarity": 84,
+        "note": "Included in multi-dupe BR540 comparison (Armaf Untold).",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__creed__silver_mountain_water__x__armaf__club_de_nuit_sillage",
+    "original": {
+      "brand": "Creed",
+      "name": "Silver Mountain Water"
+    },
+    "clone": {
+      "brand": "Armaf",
+      "name": "Club de Nuit Sillage"
+    },
+    "match": {
+      "opening": 82,
+      "heart": 84,
+      "drydown": 82,
+      "overall": 83
+    },
+    "performance": {
+      "longevityComparison": "weaker",
+      "projectionComparison": "stronger",
+      "sillageComparison": "stronger"
+    },
+    "price": {
+      "originalApproxUSD": 340,
+      "cloneApproxUSD": 35
+    },
+    "category": "Aromatic Green",
+    "confidence": 84,
+    "whyItMatches": [
+      "Bears a striking resemblance to Silver Mountain Water at under 1/10 the price",
+      "Same fresh citrus-green-musk character",
+      "One of the most-cited SMW alternatives"
+    ],
+    "differences": [
+      "Opening ambroxan is harsher and more metallic than SMW",
+      "Lacks the prominent tea note; shorter longevity (4-5h)"
+    ],
+    "sources": [
+      "https://aromaauthority.com/alternatives/creed-silver-mountain-water-vs-armaf-club-de-nuit-sillage/"
+    ],
+    "verified": true,
+    "originalFragranceId": "creed__silver_mountain_water",
+    "cloneFragranceId": "armaf__club_de_nuit_sillage",
+    "claims": [
+      {
+        "sourceId": "aromaauthority",
+        "sourceName": "Aroma Authority",
+        "url": "https://aromaauthority.com/alternatives/creed-silver-mountain-water-vs-armaf-club-de-nuit-sillage/",
+        "confidence": 84,
+        "reportedSimilarity": 82,
+        "note": "Direct SMW vs CDN Sillage comparison; ~82% accurate.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__chanel__bleu_de_chanel__x__armaf__club_de_nuit_blue_iconic",
+    "original": {
+      "brand": "Chanel",
+      "name": "Bleu de Chanel"
+    },
+    "clone": {
+      "brand": "Armaf",
+      "name": "Club de Nuit Blue Iconic"
+    },
+    "match": {
+      "opening": 82,
+      "heart": 82,
+      "drydown": 80,
+      "overall": 82
+    },
+    "performance": {
+      "longevityComparison": "weaker",
+      "projectionComparison": "similar",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 135,
+      "cloneApproxUSD": 30
+    },
+    "category": "Woody Aromatic",
+    "confidence": 83,
+    "whyItMatches": [
+      "Marketed and widely accepted as the Bleu de Chanel alternative",
+      "Same citrus-woody-amber DNA at roughly a quarter of the price",
+      "Comparable smooth woody drydown"
+    ],
+    "differences": [
+      "Brighter and simpler than BdC EDP",
+      "Becomes a skin scent after 3-4 hours; weaker longevity"
+    ],
+    "sources": [
+      "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Blue-Iconic-78475.html"
+    ],
+    "verified": true,
+    "originalFragranceId": "chanel__bleu_de_chanel",
+    "cloneFragranceId": "armaf__club_de_nuit_blue_iconic",
+    "claims": [
+      {
+        "sourceId": "fragrantica",
+        "sourceName": "Fragrantica",
+        "url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Blue-Iconic-78475.html",
+        "confidence": 83,
+        "reportedSimilarity": 82,
+        "note": "Marketed/reviewed as the Bleu de Chanel dupe.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__louis_vuitton__imagination__x__lattafa__art_of_arabia_i",
+    "original": {
+      "brand": "Louis Vuitton",
+      "name": "Imagination"
+    },
+    "clone": {
+      "brand": "Lattafa",
+      "name": "Art of Arabia I"
+    },
+    "match": {
+      "opening": 82,
+      "heart": 82,
+      "drydown": 80,
+      "overall": 82
+    },
+    "performance": {
+      "longevityComparison": "weaker",
+      "projectionComparison": "similar",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 290,
+      "cloneApproxUSD": 25
+    },
+    "category": "Citrus Aromatic",
+    "confidence": 83,
+    "whyItMatches": [
+      "Delivers Imagination's bright citrus-tea signature at a fraction of the price",
+      "Frequently cited as the go-to affordable Imagination alternative",
+      "Same citrus-tea-ginger structure"
+    ],
+    "differences": [
+      "Citrus can read with a slight chemical edge versus the original",
+      "Less refined and shorter-lived than Imagination"
+    ],
+    "sources": [
+      "https://www.fragrantica.com/perfume/Maison-Alhambra/Jean-Lowe-Fantasme-128506.html"
+    ],
+    "verified": true,
+    "originalFragranceId": "louis_vuitton__imagination",
+    "cloneFragranceId": "lattafa__art_of_arabia_i",
+    "claims": [
+      {
+        "sourceId": "fragrantica",
+        "sourceName": "Fragrantica",
+        "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Jean-Lowe-Fantasme-128506.html",
+        "confidence": 83,
+        "reportedSimilarity": 82,
+        "note": "Reviewer compares Imagination clones incl. Art of Arabia I.",
+        "trustWeight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "rel__maison_francis_kurkdjian__grand_soir__x__lattafa__ajwad",
+    "original": {
+      "brand": "Maison Francis Kurkdjian",
+      "name": "Grand Soir"
+    },
+    "clone": {
+      "brand": "Lattafa",
+      "name": "Ajwad"
+    },
+    "match": {
+      "opening": 82,
+      "heart": 83,
+      "drydown": 82,
+      "overall": 82
+    },
+    "performance": {
+      "longevityComparison": "similar",
+      "projectionComparison": "similar",
+      "sillageComparison": "similar"
+    },
+    "price": {
+      "originalApproxUSD": 325,
+      "cloneApproxUSD": 30
+    },
+    "category": "Amber",
+    "confidence": 82,
+    "whyItMatches": [
+      "Highest-rated Grand Soir clone in aggregated community scoring",
+      "Same warm amber-tonka-vanilla comfort accord",
+      "Saves ~92% versus the original's retail price"
+    ],
+    "differences": [
+      "A fruity raspberry facet not present in Grand Soir",
+      "Slightly less resinous depth in the base"
+    ],
+    "sources": [
+      "https://www.scentmetric.com/cologne/mfk-grand-soir/"
+    ],
+    "verified": true,
+    "originalFragranceId": "maison_francis_kurkdjian__grand_soir",
+    "cloneFragranceId": "lattafa__ajwad",
+    "claims": [
+      {
+        "sourceId": "scentmetric",
+        "sourceName": "ScentMetric",
+        "url": "https://www.scentmetric.com/cologne/mfk-grand-soir/",
+        "confidence": 82,
+        "reportedSimilarity": 82,
+        "note": "Top-scoring Grand Soir clone (82/100) in aggregated ratings.",
+        "trustWeight": 1.0
+      }
+    ]
+  }
+]

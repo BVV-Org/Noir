@@ -13,6 +13,14 @@ const nextConfig: NextConfig = {
   // Pin the file-tracing root to this project (a stray lockfile higher up the
   // tree would otherwise be inferred as the workspace root).
   outputFileTracingRoot: __dirname,
+  // The Dupe Finder reads the fragrance knowledge base from disk at request
+  // time. Next only bundles files it can statically trace, so these routes must
+  // be told to ship the seed JSON into their serverless functions.
+  outputFileTracingIncludes: {
+    "/dupe-finder": ["./fragrance-kb/seed/*.json"],
+    "/api/dupes/search": ["./fragrance-kb/seed/*.json"],
+    "/api/dupes/[fragranceId]": ["./fragrance-kb/seed/*.json"],
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [

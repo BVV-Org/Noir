@@ -10,6 +10,7 @@ export interface NavItem {
 export const mainNav: NavItem[] = [
   { label: "Shop", href: "/shop" },
   { label: "Collections", href: "/collections" },
+  { label: "Dupe Finder", href: "/dupe-finder" },
   { label: "Discovery Kits", href: "/discovery-kits" },
   { label: "Journal", href: "/journal" },
   { label: "About", href: "/about" },
