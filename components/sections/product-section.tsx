@@ -61,7 +61,9 @@ export function ProductSection({
           </div>
         </>
       ) : (
-        <ProductGrid products={products} />
+        // Grid on tablet/desktop, a horizontal swipe strip on phones so the
+        // homepage stays short on small screens.
+        <ProductGrid products={products} layout="rail-mobile" />
       )}
     </Section>
   );

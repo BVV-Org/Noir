@@ -23,9 +23,25 @@ export function FeaturedCollections({
           : undefined
       }
     >
-      <Stagger as="ul" className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      {/*
+        Phones: a horizontal scroll-snap strip (the site is long, so collections
+        swipe sideways instead of stacking). From `sm` up it returns to the grid
+        — one column, two at `lg`.
+      */}
+      <Stagger
+        as="ul"
+        className={
+          "scrollbar-none -mb-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 " +
+          "sm:mb-0 sm:grid sm:snap-none sm:grid-cols-1 sm:gap-6 sm:overflow-visible sm:pb-0 " +
+          "lg:grid-cols-2"
+        }
+      >
         {collections.map((collection) => (
-          <StaggerItem as="li" key={collection.id} className="flex">
+          <StaggerItem
+            as="li"
+            key={collection.id}
+            className="flex w-[80vw] shrink-0 snap-start sm:w-auto"
+          >
             <CollectionCard collection={collection} className="w-full" />
           </StaggerItem>
         ))}
