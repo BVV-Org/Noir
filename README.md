@@ -19,7 +19,6 @@ cp .env.example .env.local     # leave the Shopify vars blank to run on mock dat
 npm run dev
 ```
 
-Open <http://localhost:3000>.
 
 With **no Shopify credentials**, the app runs entirely on the mock provider: 12
 fragrances, 4 collections, 3 discovery kits, 4 journal articles, and a working
