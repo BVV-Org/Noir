@@ -31,6 +31,26 @@ import { ProductCard } from "@/components/commerce/product-card";
  */
 const MAX_PRIORITY_IMAGES = 2;
 
+/**
+ * `rail-mobile` is a horizontal scroll-snap strip on phones that becomes the
+ * normal responsive grid from `sm` up — so a long homepage section stays a quick
+ * swipe on a phone but keeps its grid on tablet/desktop.
+ */
+const CONTAINER_CLASS = {
+  grid: "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
+  rail: "scrollbar-none -mb-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4",
+  "rail-mobile":
+    "scrollbar-none -mb-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 " +
+    "sm:mb-0 sm:grid sm:snap-none sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:pb-0 " +
+    "lg:grid-cols-3 xl:grid-cols-4",
+} as const;
+
+const ITEM_CLASS = {
+  grid: "",
+  rail: "w-[72vw] shrink-0 snap-start sm:w-[44vw] lg:w-[30%]",
+  "rail-mobile": "w-[72vw] shrink-0 snap-start sm:w-auto",
+} as const;
+
 export function ProductGrid({
   products,
   layout = "grid",
@@ -39,7 +59,7 @@ export function ProductGrid({
   className,
 }: {
   products: Product[];
-  layout?: "grid" | "rail";
+  layout?: "grid" | "rail" | "rail-mobile";
   priorityCount?: number;
   /** Overlay control per card, e.g. Quick View. Evaluated on the server. */
   renderAction?: (product: Product) => React.ReactNode;
@@ -49,24 +69,12 @@ export function ProductGrid({
   const priorityLimit = Math.min(priorityCount, MAX_PRIORITY_IMAGES);
 
   return (
-    <Stagger
-      as="ul"
-      className={cn(
-        layout === "grid"
-          ? "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-          : "scrollbar-none -mb-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4",
-        className
-      )}
-    >
+    <Stagger as="ul" className={cn(CONTAINER_CLASS[layout], className)}>
       {products.map((product, index) => (
         <StaggerItem
           as="li"
           key={product.id}
-          className={cn(
-            "flex",
-            layout === "rail" &&
-              "w-[72vw] shrink-0 snap-start sm:w-[44vw] lg:w-[30%]"
-          )}
+          className={cn("flex", ITEM_CLASS[layout])}
         >
           <ProductCard
             product={product}
