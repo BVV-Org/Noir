@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { isActivePath, mainNav } from "@/lib/config/nav";
+import { isActivePath, mainNav, shopMenu } from "@/lib/config/nav";
 import { siteConfig } from "@/lib/config/site";
 import {
   Sheet,
@@ -64,21 +64,40 @@ export function MobileMenu() {
           {mainNav.map((item) => {
             const active = isActivePath(pathname, item.href);
             return (
-              <SheetClose asChild key={item.href}>
-                <Link
-                  href={item.href}
-                  aria-current={active ? "page" : undefined}
-                  className={cn(
-                    "flex min-h-11 items-center border-b border-border/60 py-3 font-display text-h4",
-                    "transition-colors duration-150 ease-premium",
-                    active
-                      ? "text-primary"
-                      : "text-foreground hover:text-primary"
-                  )}
-                >
-                  {item.label}
-                </Link>
-              </SheetClose>
+              <React.Fragment key={item.href}>
+                <SheetClose asChild>
+                  <Link
+                    href={item.href}
+                    aria-current={active ? "page" : undefined}
+                    className={cn(
+                      "flex min-h-11 items-center border-b border-border/60 py-3 font-display text-h4",
+                      "transition-colors duration-150 ease-premium",
+                      active
+                        ? "text-primary"
+                        : "text-foreground hover:text-primary"
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                </SheetClose>
+
+                {/* The audience cut lives directly beneath Shop, indented so it
+                    reads as a subset rather than a peer destination. */}
+                {item.href === "/shop" &&
+                  shopMenu.map((sub) => (
+                    <SheetClose asChild key={sub.href}>
+                      <Link
+                        href={sub.href}
+                        className={cn(
+                          "flex min-h-11 items-center border-b border-border/60 py-2.5 pl-4 font-mono text-caption uppercase tracking-[0.08em]",
+                          "text-muted-foreground transition-colors duration-150 ease-premium hover:text-foreground"
+                        )}
+                      >
+                        {sub.label}
+                      </Link>
+                    </SheetClose>
+                  ))}
+              </React.Fragment>
             );
           })}
         </nav>

@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo/metadata";
 import Link from "next/link";
-import { SearchX } from "lucide-react";
+import { SearchX, Sparkles } from "lucide-react";
 import { getProvider } from "@/lib/data";
 import {
   FACET_KEYS,
@@ -177,6 +177,36 @@ async function ShopResults({
     : await provider.getProducts({ sort, filters, first: show });
 
   if (page.items.length === 0) {
+    // "For Her" is a stocked-soon category: the vault opens masculine and
+    // crossover first. Rather than a dead "no results", the audience filter
+    // gets a deliberate coming-soon note so the empty state reads as intent,
+    // not a broken link.
+    const awaitingHer =
+      !query &&
+      filters.genders?.length === 1 &&
+      filters.genders[0] === "Her" &&
+      Object.keys(filters).length === 1;
+
+    if (awaitingHer) {
+      return (
+        <EmptyState
+          icon={Sparkles}
+          title="For Her is dropping soon"
+          description="The vault opened with a masculine and unisex core. The feminine chapter is being curated now — join the list and you'll be first through the door."
+          action={
+            <div className="flex flex-wrap justify-center gap-3">
+              <Button asChild>
+                <Link href="/shop?gender=Unisex">Explore unisex</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="/shop">All fragrances</Link>
+              </Button>
+            </div>
+          }
+        />
+      );
+    }
+
     return (
       <EmptyState
         icon={SearchX}

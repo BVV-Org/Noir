@@ -43,6 +43,8 @@ export function applyFilters(items: Product[], filters?: Filters): Product[] {
     if (!matchesAny(filters.dna, [p.classification.dna])) return false;
     if (!matchesAny(filters.rarities, [p.classification.rarity])) return false;
     if (!matchesAny(filters.tags, p.tags)) return false;
+    // Gender is mirrored to product tags ("Him" | "Her" | "Unisex").
+    if (!matchesAny(filters.genders, p.tags)) return false;
 
     if (filters.inStockOnly && !p.availableForSale) return false;
     if (filters.minPrice !== undefined && amount(p) < filters.minPrice) {
