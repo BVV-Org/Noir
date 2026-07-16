@@ -31,6 +31,7 @@ import { MOTION_CONFIG } from "@/lib/animations/config";
 export function ScrollFrameHero({
   frameDir = "/hero-frames",
   frameCount = 60,
+  frameVersion = "1",
   children,
   trackVh = MOTION_CONFIG.heroTrackVh,
   className,
@@ -38,6 +39,16 @@ export function ScrollFrameHero({
   /** Directory of `f-001.webp … f-NNN.webp` frames (1-indexed, zero-padded). */
   frameDir?: string;
   frameCount?: number;
+  /**
+   * Cache-busting token appended to every frame URL. The frame filenames never
+   * change (`f-001.webp` … `f-NNN.webp`), so when the underlying clip is
+   * re-extracted a returning visitor — and any CDN — would otherwise keep
+   * serving the previously cached bytes. The first frame is the worst hit: it's
+   * preloaded as the LCP image, so it caches earliest and stickiest, which
+   * shows up as a stale opening frame over a fresh scrub. Bump this whenever
+   * the frames are replaced.
+   */
+  frameVersion?: string;
   children: React.ReactNode;
   /** Height of the scroll track in viewport units; larger = slower scrub. */
   trackVh?: number;
@@ -56,14 +67,16 @@ export function ScrollFrameHero({
   const scrub = !reduce;
 
   const frameUrl = React.useCallback(
-    (i: number) => `${frameDir}/f-${String(i + 1).padStart(3, "0")}.webp`,
-    [frameDir]
+    (i: number) =>
+      `${frameDir}/f-${String(i + 1).padStart(3, "0")}.webp?v=${frameVersion}`,
+    [frameDir, frameVersion]
   );
 
   // Start downloading the very first frame during render — this emits a
   // <link rel="preload"> into the SSR HTML, so a phone begins fetching the
-  // hero's first painted frame before any JS runs. It's the LCP element.
-  ReactDOM.preload(`${frameDir}/f-001.webp`, {
+  // hero's first painted frame before any JS runs. It's the LCP element. The
+  // `?v=` must match `frameUrl(0)` exactly or the preload is wasted.
+  ReactDOM.preload(`${frameDir}/f-001.webp?v=${frameVersion}`, {
     as: "image",
     fetchPriority: "high",
   });

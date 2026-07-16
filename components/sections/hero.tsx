@@ -50,7 +50,10 @@ export function Hero({
     // hero's `position: sticky` stage and break the pin, leaving the tall scroll
     // track empty.
     <section className="relative">
-      <ScrollFrameHero frameCount={97}>
+      {/* frameVersion: bump whenever /public/hero-frames is re-extracted so
+          returning visitors and the CDN can't serve the previous clip's bytes
+          (the preloaded first frame is the stickiest to cache). v2 = 9 PM. */}
+      <ScrollFrameHero frameCount={97} frameVersion="2">
         <MaskRise mode="mount" as="p">
           <span className="overline tracking-[0.4em] text-white/70">
             The Vault
