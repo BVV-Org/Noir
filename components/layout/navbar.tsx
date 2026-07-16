@@ -10,6 +10,7 @@ import { Container } from "@/components/layout/container";
 import { Logo } from "@/components/layout/logo";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { MobileMenu } from "@/components/layout/mobile-menu";
+import { ShopMenu } from "@/components/layout/shop-menu";
 import { CartTrigger } from "@/components/commerce/cart-trigger";
 
 /**
@@ -60,6 +61,16 @@ export function Navbar() {
           <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
             {mainNav.map((item) => {
               const active = isActivePath(pathname, item.href);
+              // Shop carries the audience mega-menu; the rest are plain links.
+              if (item.href === "/shop") {
+                return (
+                  <ShopMenu
+                    key={item.href}
+                    active={active}
+                    triggerClassName={navItemClass}
+                  />
+                );
+              }
               return (
                 <Link
                   key={item.href}

@@ -50,6 +50,8 @@ export interface Filters {
   dna?: string[];
   rarities?: string[];
   tags?: string[];
+  /** Audience cut — "Him" | "Her" | "Unisex", mirrored to product tags. */
+  genders?: string[];
   minPrice?: number;
   maxPrice?: number;
   inStockOnly?: boolean;

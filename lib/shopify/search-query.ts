@@ -72,6 +72,7 @@ export function buildProductQuery({
       anyOf("tag", filters.dna),
       anyOf("tag", filters.notes),
       anyOf("tag", filters.tags),
+      anyOf("tag", filters.genders),
     ].filter((term): term is string => Boolean(term));
 
     terms.push(...facets);

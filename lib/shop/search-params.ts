@@ -24,6 +24,7 @@ export const FACETS = {
   dna: "dna",
   rarity: "rarities",
   tag: "tags",
+  gender: "genders",
 } as const satisfies Record<string, keyof Filters>;
 
 export type FacetKey = keyof typeof FACETS;
@@ -112,6 +113,7 @@ export const FACET_LABELS: Record<FacetKey, string> = {
   dna: "DNA",
   rarity: "Rarity",
   tag: "Tag",
+  gender: "For",
 };
 
 /**

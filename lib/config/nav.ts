@@ -17,6 +17,27 @@ export const mainNav: NavItem[] = [
 ];
 
 /**
+ * Shop mega-menu — the "who is it for" cut of the catalogue, surfaced on hover
+ * (and click/focus) from the Shop nav item. Fragrance shoppers self-select by
+ * audience first and everything else second, so this is the fastest path from
+ * "I want to browse" to a filtered grid. Destinations are `/shop?gender=…`,
+ * which the shop's facet system reads like any other filter, so the URLs are
+ * shareable and the back button behaves.
+ *
+ * `blurb` is telemetry-voice microcopy (DESIGN_SYSTEM §4): one terse line that
+ * tells a browser what lives behind the link before they commit the click.
+ */
+export interface ShopMenuItem extends NavItem {
+  blurb: string;
+}
+
+export const shopMenu: ShopMenuItem[] = [
+  { label: "For Him", href: "/shop?gender=Him", blurb: "Bold, woody, built to carry a room" },
+  { label: "For Her", href: "/shop?gender=Her", blurb: "Florals, ambers, and soft-focus musks" },
+  { label: "Unisex", href: "/shop?gender=Unisex", blurb: "Skin scents that refuse a lane" },
+];
+
+/**
  * Icon identifiers for the mobile bottom bar. Names, not components: this
  * module is plain data, and the mapping to `lucide-react` lives in the
  * component that renders it (coding-standards.md — UI separate from config).
