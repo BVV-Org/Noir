@@ -42,22 +42,18 @@ export function DupeFinder({ featured }: { featured: FeaturedOriginal[] }) {
       <div className={compact ? "pt-2" : "pt-8 text-center sm:pt-14"}>
         {!compact && (
           <>
-            <m.p
-              {...rise(0)}
-              className="font-mono text-caption uppercase tracking-[0.28em] text-gold"
-            >
-              Fragrance Dupe Finder
+            <m.p {...rise(0)} className="overline">
+              The Vault
             </m.p>
             <m.h1
               {...rise(0.08)}
-              className="mt-5 font-display text-[clamp(2.6rem,7vw,4.75rem)] uppercase leading-[0.95] tracking-[-0.01em]"
+              className="mt-4 text-h1 font-semibold text-foreground"
             >
-              Smell the icon.
-              <span className="block text-gold">Not the price.</span>
+              Dupe Finder
             </m.h1>
             <m.p
               {...rise(0.16)}
-              className="mx-auto mt-5 max-w-xl leading-relaxed text-muted-foreground"
+              className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground"
             >
               Every match is community-verified and provenance-backed — ranked by
               confidence, with an honest breakdown of how close it really gets.

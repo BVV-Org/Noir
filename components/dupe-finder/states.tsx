@@ -20,7 +20,7 @@ function Chips({
         <button
           key={f.fragranceId}
           onClick={() => onSelect(f.fragranceId, `${f.brand} ${f.name}`)}
-          className="rounded-full border border-border bg-secondary/30 px-4 py-2 font-mono text-caption uppercase tracking-[0.06em] text-foreground transition-colors hover:border-gold/50 hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="rounded-full border border-border bg-secondary/30 px-4 py-2 font-mono text-caption uppercase tracking-[0.06em] text-foreground transition-colors hover:border-foreground/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           {f.brand} {f.name}
         </button>
@@ -44,7 +44,7 @@ export function EmptyState({
       transition={{ duration: 0.6, ease: EASE.signature }}
       className="mx-auto max-w-lg py-16 text-center sm:py-24"
     >
-      <span className="mx-auto grid size-14 place-items-center rounded-full border border-gold/30 bg-gold/[0.06] text-gold">
+      <span className="mx-auto grid size-14 place-items-center rounded-full border border-border bg-secondary/40 text-foreground">
         <Sparkles className="size-6" aria-hidden />
       </span>
       <h2 className="mt-6 font-display text-h3 uppercase leading-tight">Find its match</h2>

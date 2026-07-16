@@ -67,7 +67,7 @@ export function SearchBar({
     <div className="relative w-full">
       <div
         className={cn(
-          "flex items-center gap-3 rounded-full border border-border bg-background/70 backdrop-blur-xl transition-colors focus-within:border-gold/60",
+          "flex items-center gap-3 rounded-full border border-border bg-background/70 backdrop-blur-xl transition-colors focus-within:border-foreground/40",
           size === "lg" ? "h-14 px-5" : "h-12 px-4"
         )}
       >
