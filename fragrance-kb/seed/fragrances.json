@@ -1,5 +1,476 @@
 [
   {
+    "id": "afnan__9am",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "9AM",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__9am_dive",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "9AM Dive",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Woody Aromatic",
+    "currency": "INR",
+    "approxPriceINR": 3360,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Lemon",
+        "Mint"
+      ],
+      "heart": [
+        "Ginger",
+        "Nutmeg",
+        "Sage"
+      ],
+      "base": [
+        "Amberwood",
+        "Cedar"
+      ]
+    },
+    "accords": [
+      "Woody",
+      "Aromatic",
+      "Citrus"
+    ],
+    "sourceIds": [
+      "catalog_expansion_v1",
+      "curated_v2"
+    ]
+  },
+  {
+    "id": "afnan__9pm",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "9PM",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Amber Fougere",
+    "currency": "INR",
+    "approxPriceINR": 3360,
+    "notes": {
+      "top": [
+        "Apple",
+        "Cinnamon",
+        "Bergamot",
+        "Lavender"
+      ],
+      "heart": [
+        "Vanilla",
+        "Tonka Bean",
+        "Orange Blossom"
+      ],
+      "base": [
+        "Amberwood",
+        "Vanilla",
+        "Cashmeran"
+      ]
+    },
+    "accords": [
+      "Sweet",
+      "Amber",
+      "Vanilla"
+    ],
+    "sourceIds": [
+      "catalog_expansion_v1",
+      "curated_v2"
+    ]
+  },
+  {
+    "id": "afnan__9pm_elixir",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "9PM Elixir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__9pm_night_out",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "9PM Night Out",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__9pm_rebel",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "9PM Rebel",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__historic_olmeda",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Historic Olmeda",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__historic_sahara",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Historic Sahara",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__modest_une",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Modest Une",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__portrait_abstract",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Portrait Abstract",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__rare_carbon",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Rare Carbon",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__rare_reef",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Rare Reef",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__supremacy_collector_s_edition",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Supremacy Collector's Edition",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__supremacy_in_heaven",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Supremacy In Heaven",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__supremacy_in_oud",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Supremacy In Oud",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__supremacy_not_only_intense",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Supremacy Not Only Intense",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Fruity Chypre",
+    "currency": "INR",
+    "approxPriceINR": 3840,
+    "notes": {
+      "top": [
+        "Blackcurrant",
+        "Pineapple",
+        "Bergamot"
+      ],
+      "heart": [
+        "Birch",
+        "Patchouli",
+        "Oakmoss"
+      ],
+      "base": [
+        "Musk",
+        "Ambergris"
+      ]
+    },
+    "accords": [
+      "Fruity",
+      "Woody",
+      "Smoky",
+      "Green"
+    ],
+    "sourceIds": [
+      "catalog_expansion_v1",
+      "curated_v2"
+    ]
+  },
+  {
+    "id": "afnan__supremacy_silver",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Supremacy Silver",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__turathi_blue",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Turathi Blue",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__turathi_brown",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Turathi Brown",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "afnan__turathi_electric",
+    "brandId": "afnan",
+    "brand": "Afnan",
+    "name": "Turathi Electric",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
     "id": "al_haramain__detour_noir",
     "brandId": "al_haramain",
     "brand": "Al Haramain",
@@ -8,7 +479,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Vanilla",
-    "approxPriceUSD": 35,
+    "currency": "INR",
+    "approxPriceINR": 3360,
     "notes": {
       "top": [
         "Apple",
@@ -35,6 +507,1224 @@
     ]
   },
   {
+    "id": "arabiyat_prestige__aariz",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Aariz",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__aariz_intense",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Aariz Intense",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__aariz_l_absolu",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Aariz L'Absolu",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__al_noor",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Al Noor",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__aristo",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Aristo",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ash_aa_amethyst",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ash'aa Amethyst",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ash_aa_blanc",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ash'aa Blanc",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ash_aa_mauve",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ash'aa Mauve",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ash_aa_neroli",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ash'aa Neroli",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ash_aa_oud_noir",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ash'aa Oud Noir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__bedour",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Bedour",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__bedour_extrait",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Bedour Extrait",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__blueberry_musk",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Blueberry Musk",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__cranberry_musk",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Cranberry Musk",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__hamdan_the_brave",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Hamdan The Brave",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__hamdan_the_hero",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Hamdan The Hero",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__hamdan_the_sheikh",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Hamdan The Sheikh",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__hypnotic_amber",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Hypnotic Amber",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__hypnotic_oud",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Hypnotic Oud",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__hypnotic_vanilla",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Hypnotic Vanilla",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ishatar_amber_vanilla",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ishatar Amber Vanilla",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ishatar_citrus_oud",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ishatar Citrus Oud",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ishatar_roses_vanilla",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ishatar Roses Vanilla",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__kohl_luminous",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Kohl Luminous",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__kohl_opulence",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Kohl Opulence",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__la_di_da_for_her",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "La Di Da For Her",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__la_di_da_for_him",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "La Di Da For Him",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__lamsat_harir",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Lamsat Harir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__mahd_al_dhahab",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Mahd Al Dhahab",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__marwa",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Marwa",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nashwa",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nashwa",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nashwa_noir",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nashwa Noir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nashwa_oud",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nashwa Oud",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nashwa_smoke",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nashwa Smoke",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nayel_her_majesty",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nayel Her Majesty",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nayel_king",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nayel King",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nayel_oud",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nayel Oud",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nayel_queen",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nayel Queen",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nyla",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nyla",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nyla_sherbet",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nyla Sherbet",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nyla_suede",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nyla Suede",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__nyla_vani_elle",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Nyla Vani-Elle",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__portrait",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Portrait",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__portrait_azure",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Portrait Azure",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__portrait_cafe_noir",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Portrait Café Noir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__raees",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Raees",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__raees_aurum",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Raees Aurum",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__raees_luxury_edition",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Raees Luxury Edition",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__raees_twilight_aura",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Raees Twilight Aura",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ramad",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ramad",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ramad_earthy",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ramad Earthy",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ramad_louban",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ramad Louban",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ramad_myrrh",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ramad Myrrh",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__ramad_oriental",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Ramad Oriental",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__safa",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Safa",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__swar_seduire",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Swar Seduire",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__swar_venin",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Swar Venin",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "arabiyat_prestige__uhud",
+    "brandId": "arabiyat_prestige",
+    "brand": "Arabiyat Prestige",
+    "name": "Uhud",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
     "id": "armaf__club_de_nuit_blue_iconic",
     "brandId": "armaf",
     "brand": "Armaf",
@@ -43,7 +1733,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Woody Aromatic",
-    "approxPriceUSD": 30,
+    "currency": "INR",
+    "approxPriceINR": 2880,
     "notes": {
       "top": [
         "Grapefruit",
@@ -79,7 +1770,8 @@
     "concentration": "Eau de Toilette",
     "gender": "masculine",
     "category": "Fruity Chypre",
-    "approxPriceUSD": 30,
+    "currency": "INR",
+    "approxPriceINR": 2880,
     "notes": {
       "top": [
         "Pineapple",
@@ -118,7 +1810,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Aromatic Green",
-    "approxPriceUSD": 35,
+    "currency": "INR",
+    "approxPriceINR": 3360,
     "notes": {
       "top": [
         "Bergamot",
@@ -152,7 +1845,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Woody",
-    "approxPriceUSD": 35,
+    "currency": "INR",
+    "approxPriceINR": 3360,
     "notes": {
       "top": [
         "Saffron",
@@ -176,6 +1870,216 @@
     ]
   },
   {
+    "id": "aromatix_x_french_avenue__carnal_desire",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "Carnal Desire",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "aromatix_x_french_avenue__forbidden_fruit",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "Forbidden Fruit",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "aromatix_x_french_avenue__frostbite",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "Frostbite",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "aromatix_x_french_avenue__l_absolu_noir",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "L'Absolu Noir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "aromatix_x_french_avenue__magnetiq",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "Magnetiq",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "aromatix_x_french_avenue__midnight_oud",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "Midnight Oud",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "aromatix_x_french_avenue__naughty_dates",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "Naughty Dates",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "aromatix_x_french_avenue__platine_blanc",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "Platine Blanc",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "aromatix_x_french_avenue__teas_me",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "Teas Me",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "aromatix_x_french_avenue__elara",
+    "brandId": "aromatix_x_french_avenue",
+    "brand": "Aromatix x French Avenue",
+    "name": "Élara",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
     "id": "by_kilian__angels_share",
     "brandId": "by_kilian",
     "brand": "By Kilian",
@@ -184,7 +2088,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Gourmand",
-    "approxPriceUSD": 290,
+    "currency": "INR",
+    "approxPriceINR": 27840,
     "notes": {
       "top": [
         "Cognac"
@@ -219,7 +2124,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Woody Aromatic",
-    "approxPriceUSD": 135,
+    "currency": "INR",
+    "approxPriceINR": 12960,
     "notes": {
       "top": [
         "Grapefruit",
@@ -247,7 +2153,8 @@
       "Amber"
     ],
     "sourceIds": [
-      "curated_v1"
+      "curated_v1",
+      "curated_v2"
     ]
   },
   {
@@ -259,7 +2166,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Fruity Chypre",
-    "approxPriceUSD": 340,
+    "currency": "INR",
+    "approxPriceINR": 32640,
     "notes": {
       "top": [
         "Bergamot",
@@ -289,7 +2197,8 @@
     ],
     "sourceIds": [
       "community_votes",
-      "curated_v1"
+      "curated_v1",
+      "curated_v2"
     ]
   },
   {
@@ -301,7 +2210,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Aromatic Green",
-    "approxPriceUSD": 340,
+    "currency": "INR",
+    "approxPriceINR": 32640,
     "notes": {
       "top": [
         "Bergamot",
@@ -325,7 +2235,8 @@
       "Musky"
     ],
     "sourceIds": [
-      "curated_v1"
+      "curated_v1",
+      "curated_v2"
     ]
   },
   {
@@ -337,7 +2248,8 @@
     "concentration": "Eau de Toilette",
     "gender": "masculine",
     "category": "Aromatic Fougere",
-    "approxPriceUSD": 110,
+    "currency": "INR",
+    "approxPriceINR": 10560,
     "notes": {
       "top": [
         "Bergamot",
@@ -371,7 +2283,8 @@
     "concentration": "Parfum",
     "gender": "masculine",
     "category": "Amber Spicy",
-    "approxPriceUSD": 165,
+    "currency": "INR",
+    "approxPriceINR": 15840,
     "notes": {
       "top": [
         "Cinnamon",
@@ -409,7 +2322,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Woody",
-    "approxPriceUSD": 25,
+    "currency": "INR",
+    "approxPriceINR": 2400,
     "notes": {
       "top": [
         "Saffron",
@@ -435,6 +2349,779 @@
     ]
   },
   {
+    "id": "french_avenue__aether",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Aether",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__atlantis_extrait",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Atlantis Extrait",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__azzure_oud",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Azzure Oud",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__cocoa_morado",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Cocoa Morado",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__essence_de_blanc",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Essence de Blanc",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__essence_de_matcha",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Essence de Matcha",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__liquid_brun",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Liquid Brun",
+    "kind": "clone",
+    "concentration": "Extrait de Parfum",
+    "gender": "unisex",
+    "category": "Amber Vanilla",
+    "currency": "INR",
+    "approxPriceINR": 4320,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Bitter Almond"
+      ],
+      "heart": [
+        "Cinnamon",
+        "Praline"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka Bean",
+        "Benzoin",
+        "Sandalwood"
+      ]
+    },
+    "accords": [
+      "Sweet",
+      "Vanilla",
+      "Amber",
+      "Almond"
+    ],
+    "sourceIds": [
+      "catalog_expansion_v1",
+      "curated_v2"
+    ]
+  },
+  {
+    "id": "french_avenue__liquid_brun_limited_edition",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Liquid Brun Limited Edition",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__meringue_luscious",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Meringue Luscious",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__miraj_absolu",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Miraj Absolu",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__miraj_exclusif",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Miraj Exclusif",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__moonstone_bleu",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Moonstone Bleu",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__moonstone_noire",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Moonstone Noire",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__pinnace_noir",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Pinnace Noir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__pinnace_oryn",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Pinnace Oryn",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__royal_blend",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Royal Blend",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__royal_blend_bourbon",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Royal Blend Bourbon",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__royal_blend_nero",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Royal Blend Nero",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__royal_blend_sequoia",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Royal Blend Sequoia",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__royal_blend_vintage",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Royal Blend Vintage",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__spectre_ghost",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Spectre Ghost",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__spectre_pinnace",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Spectre Pinnace",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__spectre_wraith",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Spectre Wraith",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__veneno",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Veneno",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__veneno_bianco",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Veneno Bianco",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__veneno_scarlet",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Veneno Scarlet",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__vulcan_baie",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Vulcan Baie",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__vulcan_black_friday",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Vulcan Black Friday",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__vulcan_feu",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Vulcan Feu",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__vulcan_sable",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Vulcan Sable",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__zenith_blue",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Zenith Blue",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__zenith_deep",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Zenith Deep",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__zenith_santal",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Zenith Santal",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__zenith_tobacco",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Zenith Tobacco",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__zenith_vanilla",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Zenith Vanilla",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "french_avenue__eclair_affair",
+    "brandId": "french_avenue",
+    "brand": "French Avenue",
+    "name": "Éclair Affair",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
     "id": "initio__oud_for_greatness",
     "brandId": "initio",
     "brand": "Initio",
@@ -443,7 +3130,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Woody",
-    "approxPriceUSD": 325,
+    "currency": "INR",
+    "approxPriceINR": 31200,
     "notes": {
       "top": [
         "Saffron",
@@ -470,6 +3158,45 @@
     ]
   },
   {
+    "id": "jean_paul_gaultier__ultra_male",
+    "brandId": "jean_paul_gaultier",
+    "brand": "Jean Paul Gaultier",
+    "name": "Ultra Male",
+    "kind": "original",
+    "concentration": "Eau de Toilette",
+    "gender": "masculine",
+    "category": "Amber Fougere",
+    "currency": "INR",
+    "approxPriceINR": 9120,
+    "notes": {
+      "top": [
+        "Lavender",
+        "Mint",
+        "Bergamot"
+      ],
+      "heart": [
+        "Pear",
+        "Cinnamon",
+        "Clary Sage"
+      ],
+      "base": [
+        "Vanilla",
+        "Amber",
+        "Musk",
+        "Cashmeran"
+      ]
+    },
+    "accords": [
+      "Sweet",
+      "Amber",
+      "Aromatic",
+      "Vanilla"
+    ],
+    "sourceIds": [
+      "curated_v2"
+    ]
+  },
+  {
     "id": "lattafa__ajwad",
     "brandId": "lattafa",
     "brand": "Lattafa",
@@ -478,7 +3205,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber",
-    "approxPriceUSD": 30,
+    "currency": "INR",
+    "approxPriceINR": 2880,
     "notes": {
       "top": [
         "Amber",
@@ -504,6 +3232,27 @@
     ]
   },
   {
+    "id": "lattafa__al_nashama_caprice",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Al Nashama Caprice",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
     "id": "lattafa__ana_abiyedh_rouge",
     "brandId": "lattafa",
     "brand": "Lattafa",
@@ -512,7 +3261,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Woody",
-    "approxPriceUSD": 30,
+    "currency": "INR",
+    "approxPriceINR": 2880,
     "notes": {
       "top": [
         "Saffron",
@@ -544,7 +3294,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Citrus Aromatic",
-    "approxPriceUSD": 25,
+    "currency": "INR",
+    "approxPriceINR": 2400,
     "notes": {
       "top": [
         "Bergamot",
@@ -578,7 +3329,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Amber Spicy",
-    "approxPriceUSD": 28,
+    "currency": "INR",
+    "approxPriceINR": 2688,
     "notes": {
       "top": [
         "Cinnamon",
@@ -603,7 +3355,113 @@
       "Woody"
     ],
     "sourceIds": [
+      "catalog_expansion_v1",
       "curated_v1"
+    ]
+  },
+  {
+    "id": "lattafa__asad_bourbon",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Asad Bourbon",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__asad_elixir",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Asad Elixir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__asad_zanzibar",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Asad Zanzibar",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__bade_e_al_oud_amethyst",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Bade'e Al Oud Amethyst",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__bade_e_al_oud_honor_glory",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Bade'e Al Oud Honor & Glory",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
     ]
   },
   {
@@ -615,7 +3473,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Woody",
-    "approxPriceUSD": 28,
+    "currency": "INR",
+    "approxPriceINR": 2688,
     "notes": {
       "top": [
         "Saffron",
@@ -638,8 +3497,93 @@
       "Oud"
     ],
     "sourceIds": [
+      "catalog_expansion_v1",
       "community_votes",
       "curated_v1"
+    ]
+  },
+  {
+    "id": "lattafa__bade_e_al_oud_sublime",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Bade'e Al Oud Sublime",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__eternal_oud",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Eternal Oud",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__fakhar_black",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Fakhar Black",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__fakhar_gold_extrait",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Fakhar Gold Extrait",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
     ]
   },
   {
@@ -651,7 +3595,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Gourmand",
-    "approxPriceUSD": 35,
+    "currency": "INR",
+    "approxPriceINR": 3360,
     "notes": {
       "top": [
         "Dates",
@@ -679,7 +3624,155 @@
       "Spicy"
     ],
     "sourceIds": [
+      "catalog_expansion_v1",
       "curated_v1"
+    ]
+  },
+  {
+    "id": "lattafa__khamrah_dukhan",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Khamrah Dukhan",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__khamrah_qahwa",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Khamrah Qahwa",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__liam_blue_shine",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Liam Blue Shine",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__liam_grey",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Liam Grey",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__maahir_legacy",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Maahir Legacy",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__musamam_black_intense",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Musamam Black Intense",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "lattafa__qaed_al_fursan",
+    "brandId": "lattafa",
+    "brand": "Lattafa",
+    "name": "Qaed Al Fursan",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
     ]
   },
   {
@@ -691,7 +3784,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Citrus Aromatic",
-    "approxPriceUSD": 290,
+    "currency": "INR",
+    "approxPriceINR": 27840,
     "notes": {
       "top": [
         "Bergamot",
@@ -727,7 +3821,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Amber Spicy",
-    "approxPriceUSD": 20,
+    "currency": "INR",
+    "approxPriceINR": 1920,
     "notes": {
       "top": [
         "Cinnamon",
@@ -762,7 +3857,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Citrus Aromatic",
-    "approxPriceUSD": 22,
+    "currency": "INR",
+    "approxPriceINR": 2112,
     "notes": {
       "top": [
         "Citron",
@@ -800,7 +3896,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Aromatic Fougere",
-    "approxPriceUSD": 20,
+    "currency": "INR",
+    "approxPriceINR": 1920,
     "notes": {
       "top": [
         "Bergamot",
@@ -833,7 +3930,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Aromatic Fougere",
-    "approxPriceUSD": 18,
+    "currency": "INR",
+    "approxPriceINR": 1728,
     "notes": {
       "top": [
         "Apple",
@@ -869,7 +3967,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Woody",
-    "approxPriceUSD": 325,
+    "currency": "INR",
+    "approxPriceINR": 31200,
     "notes": {
       "top": [
         "Saffron",
@@ -904,7 +4003,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber",
-    "approxPriceUSD": 325,
+    "currency": "INR",
+    "approxPriceINR": 31200,
     "notes": {
       "top": [
         "Amber",
@@ -930,6 +4030,80 @@
     ]
   },
   {
+    "id": "paco_rabanne__invictus_aqua",
+    "brandId": "paco_rabanne",
+    "brand": "Paco Rabanne",
+    "name": "Invictus Aqua",
+    "kind": "original",
+    "concentration": "Eau de Toilette",
+    "gender": "masculine",
+    "category": "Aromatic Aquatic",
+    "currency": "INR",
+    "approxPriceINR": 8640,
+    "notes": {
+      "top": [
+        "Grapefruit",
+        "Marine Notes",
+        "Bergamot"
+      ],
+      "heart": [
+        "Bay Leaf",
+        "Water Notes",
+        "Ambergris"
+      ],
+      "base": [
+        "Woody Notes",
+        "Guaiac Wood"
+      ]
+    },
+    "accords": [
+      "Aromatic",
+      "Aquatic",
+      "Citrus",
+      "Fresh"
+    ],
+    "sourceIds": [
+      "curated_v2"
+    ]
+  },
+  {
+    "id": "parfums_de_marly__althair",
+    "brandId": "parfums_de_marly",
+    "brand": "Parfums de Marly",
+    "name": "Althaïr",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Amber Vanilla",
+    "currency": "INR",
+    "approxPriceINR": 34080,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Bitter Almond"
+      ],
+      "heart": [
+        "Cinnamon",
+        "Praline"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka Bean",
+        "Sandalwood",
+        "Benzoin"
+      ]
+    },
+    "accords": [
+      "Sweet",
+      "Vanilla",
+      "Amber",
+      "Almond"
+    ],
+    "sourceIds": [
+      "curated_v2"
+    ]
+  },
+  {
     "id": "parfums_de_marly__herod",
     "brandId": "parfums_de_marly",
     "brand": "Parfums de Marly",
@@ -938,7 +4112,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Amber Spicy",
-    "approxPriceUSD": 355,
+    "currency": "INR",
+    "approxPriceINR": 34080,
     "notes": {
       "top": [
         "Cinnamon",
@@ -976,7 +4151,8 @@
     "concentration": "Eau de Parfum",
     "gender": "unisex",
     "category": "Amber Vanilla",
-    "approxPriceUSD": 355,
+    "currency": "INR",
+    "approxPriceINR": 34080,
     "notes": {
       "top": [
         "Apple",
@@ -1009,6 +4185,1049 @@
     ]
   },
   {
+    "id": "rasasi__al_wisam_day",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Al Wisam Day",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Aromatic Green",
+    "currency": "INR",
+    "approxPriceINR": 4320,
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Geranium",
+        "Lavender"
+      ],
+      "heart": [
+        "Rose",
+        "Sandalwood",
+        "Clary Sage",
+        "Cedar"
+      ],
+      "base": [
+        "Musk",
+        "Oakmoss",
+        "Oud",
+        "Amber"
+      ]
+    },
+    "accords": [
+      "Aromatic",
+      "Green",
+      "Powdery",
+      "Musky"
+    ],
+    "sourceIds": [
+      "catalog_expansion_v1",
+      "curated_v2"
+    ]
+  },
+  {
+    "id": "rasasi__al_wisam_evening",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Al Wisam Evening",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__daarej_pour_homme",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Daarej Pour Homme",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__fattan_pour_homme",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Fattan Pour Homme",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_addiction",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Addiction",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_atlantis",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Atlantis",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_black",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Black",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_chrome",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Chrome",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_eclat",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Eclat",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_elixir",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Elixir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_exotic",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Exotic",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_fire",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Fire",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_glitz",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Glitz",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_highness",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Highness",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_ice",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Ice",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_lava_gold",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Lava Gold",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_overdose",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Overdose",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_pink",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Pink",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_rouge",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Rouge",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_thunder",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Thunder",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_tropical",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Tropical",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_viper",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas Viper",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__hawas_for_him",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Hawas for Him",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Aromatic Aquatic",
+    "currency": "INR",
+    "approxPriceINR": 5280,
+    "notes": {
+      "top": [
+        "Apple",
+        "Bergamot",
+        "Cinnamon",
+        "Sea Notes"
+      ],
+      "heart": [
+        "Ylang-ylang",
+        "Cardamom",
+        "Sage"
+      ],
+      "base": [
+        "Ambergris",
+        "Musk",
+        "Cedar",
+        "Vetiver"
+      ]
+    },
+    "accords": [
+      "Aromatic",
+      "Aquatic",
+      "Fresh",
+      "Sweet"
+    ],
+    "sourceIds": [
+      "catalog_expansion_v1",
+      "curated_v2"
+    ]
+  },
+  {
+    "id": "rasasi__la_yuqawam_ambergris_showers",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "La Yuqawam Ambergris Showers",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__la_yuqawam_homme",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "La Yuqawam Homme",
+    "kind": "clone",
+    "concentration": "Eau de Parfum",
+    "gender": "masculine",
+    "category": "Leather",
+    "currency": "INR",
+    "approxPriceINR": 6720,
+    "notes": {
+      "top": [
+        "Raspberry",
+        "Saffron",
+        "Thyme"
+      ],
+      "heart": [
+        "Olibanum",
+        "Jasmine",
+        "Artemisia"
+      ],
+      "base": [
+        "Leather",
+        "Suede",
+        "Woody Notes",
+        "Amber"
+      ]
+    },
+    "accords": [
+      "Leather",
+      "Smoky",
+      "Fruity",
+      "Woody"
+    ],
+    "sourceIds": [
+      "catalog_expansion_v1",
+      "curated_v2"
+    ]
+  },
+  {
+    "id": "rasasi__la_yuqawam_tobacco_blaze",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "La Yuqawam Tobacco Blaze",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rasasi__shuhrah_pour_homme",
+    "brandId": "rasasi",
+    "brand": "Rasasi",
+    "name": "Shuhrah Pour Homme",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__azul",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Azul",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__black",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Black",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__cobra",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Cobra",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__corium",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Corium",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__crimson",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Crimson",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__elixir",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Elixir",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__imperia",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Imperia",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__lion",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Lion",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__noor",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Noor",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__ocean_rush",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Ocean Rush",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__pacific",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Pacific",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__pacific_aloha",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Pacific Aloha",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__pacific_aura",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Pacific Aura",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__panther",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Panther",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__ruby",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Ruby",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__sapphire",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Sapphire",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__tiger",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Tiger",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "rayhaan__topaze",
+    "brandId": "rayhaan",
+    "brand": "Rayhaan",
+    "name": "Topaze",
+    "kind": "clone",
+    "concentration": null,
+    "gender": null,
+    "category": null,
+    "currency": "INR",
+    "approxPriceINR": null,
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "accords": [],
+    "sourceIds": [
+      "catalog_expansion_v1"
+    ]
+  },
+  {
+    "id": "tom_ford__tuscan_leather",
+    "brandId": "tom_ford",
+    "brand": "Tom Ford",
+    "name": "Tuscan Leather",
+    "kind": "original",
+    "concentration": "Eau de Parfum",
+    "gender": "unisex",
+    "category": "Leather",
+    "currency": "INR",
+    "approxPriceINR": 31680,
+    "notes": {
+      "top": [
+        "Raspberry",
+        "Saffron",
+        "Thyme"
+      ],
+      "heart": [
+        "Olibanum",
+        "Jasmine",
+        "Night-blooming Jasmine"
+      ],
+      "base": [
+        "Leather",
+        "Suede",
+        "Amber",
+        "Woody Notes"
+      ]
+    },
+    "accords": [
+      "Leather",
+      "Smoky",
+      "Fruity",
+      "Woody"
+    ],
+    "sourceIds": [
+      "curated_v2"
+    ]
+  },
+  {
     "id": "yves_saint_laurent__y_eau_de_parfum",
     "brandId": "yves_saint_laurent",
     "brand": "Yves Saint Laurent",
@@ -1017,7 +5236,8 @@
     "concentration": "Eau de Parfum",
     "gender": "masculine",
     "category": "Aromatic Fougere",
-    "approxPriceUSD": 130,
+    "currency": "INR",
+    "approxPriceINR": 12480,
     "notes": {
       "top": [
         "Apple",

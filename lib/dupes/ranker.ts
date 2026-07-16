@@ -58,8 +58,8 @@ export function rankRelationships(
     if (b.confidence !== a.confidence) return b.confidence - a.confidence;
     if (b.match.overall !== a.match.overall)
       return b.match.overall - a.match.overall;
-    const ap = a.price.cloneApproxUSD ?? Number.POSITIVE_INFINITY;
-    const bp = b.price.cloneApproxUSD ?? Number.POSITIVE_INFINITY;
+    const ap = a.price.cloneApproxINR ?? Number.POSITIVE_INFINITY;
+    const bp = b.price.cloneApproxINR ?? Number.POSITIVE_INFINITY;
     return ap - bp;
   });
 }

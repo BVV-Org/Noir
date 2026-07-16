@@ -45,7 +45,7 @@ create table if not exists fragrance (
     concentration       text,
     gender              text,
     category            text,
-    approx_price_usd    numeric(10,2),
+    approx_price_inr    integer,            -- prices stored in INR
     unique (brand_id, name)
 );
 
@@ -89,9 +89,9 @@ create table if not exists clone_relationship (
     longevity_comparison    text,
     projection_comparison   text,
     sillage_comparison      text,
-    -- price snapshot (approximate, USD)
-    original_approx_usd      numeric(10,2),
-    clone_approx_usd         numeric(10,2),
+    -- price snapshot (approximate, INR)
+    original_approx_inr      integer,
+    clone_approx_inr         integer,
     -- aggregated confidence 0..100 (>= 80 by policy)
     confidence               smallint not null check (confidence between 0 and 100),
     why_it_matches           text[] not null default '{}',
@@ -155,13 +155,15 @@ select
     r.id                     as relationship_id,
     ob.name                  as original_brand,
     o.name                   as original_name,
+    o.approx_price_inr       as original_price_inr,
     cb.name                  as clone_brand,
     c.name                   as clone_name,
+    c.approx_price_inr       as clone_price_inr,
     r.category,
     r.match_overall,
     r.confidence,
-    r.clone_approx_usd,
-    r.original_approx_usd,
+    r.clone_approx_inr,
+    r.original_approx_inr,
     r.verified,
     count(cl.*)              as source_count
 from clone_relationship r
@@ -170,8 +172,8 @@ join brand     ob on ob.id = o.brand_id
 join fragrance c  on c.id = r.clone_fragrance_id
 join brand     cb on cb.id = c.brand_id
 left join clone_claim cl on cl.relationship_id = r.id
-group by r.id, ob.name, o.name, cb.name, c.name, r.category,
-         r.match_overall, r.confidence, r.clone_approx_usd,
-         r.original_approx_usd, r.verified;
+group by r.id, ob.name, o.name, o.approx_price_inr, cb.name, c.name,
+         c.approx_price_inr, r.category, r.match_overall, r.confidence,
+         r.clone_approx_inr, r.original_approx_inr, r.verified;
 
 commit;

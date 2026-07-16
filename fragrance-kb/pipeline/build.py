@@ -19,6 +19,7 @@ import os
 from collections import defaultdict
 
 from . import normalize as N
+from . import config
 from .dedup import FragranceResolver
 from .models import (Brand, Note, Accord, Fragrance, CloneClaim, CloneRelationship)
 from .sources import ALL_SOURCES
@@ -91,7 +92,7 @@ class KnowledgeBaseBuilder:
                 id=fid, brand_id=brand.id, brand=brand.name, name=cname,
                 kind=raw.kind or "unknown", concentration=raw.concentration,
                 gender=raw.gender, category=raw.category,
-                approx_price_usd=raw.approx_price_usd,
+                approx_price_inr=config.to_inr(raw.approx_price_usd) or None,
                 notes={"top": top, "heart": heart, "base": base},
                 accords=accords, source_ids=[source_id],
             )
@@ -105,7 +106,7 @@ class KnowledgeBaseBuilder:
             for attr, val in (("concentration", raw.concentration),
                               ("gender", raw.gender),
                               ("category", raw.category),
-                              ("approx_price_usd", raw.approx_price_usd)):
+                              ("approx_price_inr", config.to_inr(raw.approx_price_usd))):
                 if getattr(frag, attr) in (None, "", 0) and val not in (None, "", 0):
                     setattr(frag, attr, val)
             if not frag.notes["top"] and top:
@@ -217,9 +218,11 @@ class KnowledgeBaseBuilder:
             perf = acc["performance"] or {
                 "longevityComparison": "", "projectionComparison": "",
                 "sillageComparison": ""}
-            price = acc["price"] or {
-                "originalApproxUSD": orig.approx_price_usd or 0,
-                "cloneApproxUSD": clone.approx_price_usd or 0}
+            # Price is derived from the (already INR-converted) fragrance prices,
+            # so the relationship price and the fragrance catalog never disagree.
+            price = {
+                "originalApproxINR": orig.approx_price_inr or 0,
+                "cloneApproxINR": clone.approx_price_inr or 0}
 
             rel = CloneRelationship(
                 id=N.relationship_id(acc["orig_fid"], acc["clone_fid"]),

@@ -47,7 +47,8 @@ export interface KBFragrance {
   concentration: string | null;
   gender: string | null;
   category: string | null;
-  approxPriceUSD: number | null;
+  currency: string | null;
+  approxPriceINR: number | null;
   notes: KBNotePyramid;
   accords: string[];
   sourceIds: string[];
@@ -67,8 +68,8 @@ export interface KBPerformance {
 }
 
 export interface KBPrice {
-  originalApproxUSD?: number;
-  cloneApproxUSD?: number;
+  originalApproxINR?: number;
+  cloneApproxINR?: number;
 }
 
 export interface KBCloneClaim {
@@ -93,6 +94,7 @@ export interface KBCloneRelationship {
   match: KBMatchScores;
   performance: KBPerformance;
   price: KBPrice;
+  currency: string | null;
   category: string;
   confidence: number;
   whyItMatches: string[];
@@ -136,9 +138,9 @@ export interface PerformanceAxisVM {
 }
 
 export interface PriceComparisonVM {
-  originalUSD: number | null;
-  cloneUSD: number | null;
-  savingsUSD: number | null;
+  originalINR: number | null;
+  cloneINR: number | null;
+  savingsINR: number | null;
   savingsPct: number | null;
   originalDisplay: string | null;
   cloneDisplay: string | null;
@@ -158,7 +160,6 @@ export interface CloneCardVM {
   differences: string[];
   performance: PerformanceAxisVM[];
   price: PriceComparisonVM;
-  sources: string[];
   verified: boolean;
   /** Deterministic gradient stops derived from the fragrance id (no image field in KB). */
   swatch: [string, string];

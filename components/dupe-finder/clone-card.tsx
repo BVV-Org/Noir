@@ -175,8 +175,7 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
 
       {/* Verdict */}
       <div className="border-t border-border px-5 py-3 sm:px-6">
-        <p className="inline-flex items-center gap-1.5 font-mono text-[0.6rem] uppercase tracking-[0.08em] text-muted-foreground">
-          <BadgeCheck className="size-3.5 text-gold" aria-hidden />
+        <p className="font-mono text-[0.6rem] uppercase tracking-[0.08em] text-muted-foreground">
           Verdict by Noir
         </p>
       </div>

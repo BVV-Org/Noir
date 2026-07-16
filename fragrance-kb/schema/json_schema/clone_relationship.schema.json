@@ -36,10 +36,11 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "originalApproxUSD": {"type": "number", "minimum": 0},
-        "cloneApproxUSD": {"type": "number", "minimum": 0}
+        "originalApproxINR": {"type": "number", "minimum": 0},
+        "cloneApproxINR": {"type": "number", "minimum": 0}
       }
     },
+    "currency": {"const": "INR"},
     "category": {"type": "string"},
     "confidence": {"type": "integer", "minimum": 80, "maximum": 100},
     "whyItMatches": {"type": "array", "items": {"type": "string"}},

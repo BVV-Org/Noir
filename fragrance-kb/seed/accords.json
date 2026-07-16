@@ -1,7 +1,15 @@
 [
   {
+    "id": "almond",
+    "name": "Almond"
+  },
+  {
     "id": "amber",
     "name": "Amber"
+  },
+  {
+    "id": "aquatic",
+    "name": "Aquatic"
   },
   {
     "id": "aromatic",
@@ -24,6 +32,10 @@
     "name": "Floral"
   },
   {
+    "id": "fresh",
+    "name": "Fresh"
+  },
+  {
     "id": "fresh_spicy",
     "name": "Fresh Spicy"
   },
@@ -38,6 +50,10 @@
   {
     "id": "green",
     "name": "Green"
+  },
+  {
+    "id": "leather",
+    "name": "Leather"
   },
   {
     "id": "musky",

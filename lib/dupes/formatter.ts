@@ -19,11 +19,11 @@ import type {
  * function of the data: no per-fragrance styling or copy is hardcoded.
  */
 
-export function formatUSD(value: number | null | undefined): string | null {
+export function formatINR(value: number | null | undefined): string | null {
   if (value == null) return null;
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("en-IN", {
     style: "currency",
-    currency: "USD",
+    currency: "INR",
     maximumFractionDigits: 0,
   }).format(value);
 }
@@ -58,24 +58,24 @@ function buildPerformance(perf: KBPerformance): PerformanceAxisVM[] {
 }
 
 function buildPrice(price: KBPrice): PriceComparisonVM {
-  const originalUSD = price.originalApproxUSD ?? null;
-  const cloneUSD = price.cloneApproxUSD ?? null;
-  const savingsUSD =
-    originalUSD != null && cloneUSD != null
-      ? Math.max(0, originalUSD - cloneUSD)
+  const originalINR = price.originalApproxINR ?? null;
+  const cloneINR = price.cloneApproxINR ?? null;
+  const savingsINR =
+    originalINR != null && cloneINR != null
+      ? Math.max(0, originalINR - cloneINR)
       : null;
   const savingsPct =
-    originalUSD != null && cloneUSD != null && originalUSD > 0
-      ? Math.round((savingsUSD! / originalUSD) * 100)
+    originalINR != null && cloneINR != null && originalINR > 0
+      ? Math.round((savingsINR! / originalINR) * 100)
       : null;
   return {
-    originalUSD,
-    cloneUSD,
-    savingsUSD,
+    originalINR,
+    cloneINR,
+    savingsINR,
     savingsPct,
-    originalDisplay: formatUSD(originalUSD),
-    cloneDisplay: formatUSD(cloneUSD),
-    savingsDisplay: formatUSD(savingsUSD),
+    originalDisplay: formatINR(originalINR),
+    cloneDisplay: formatINR(cloneINR),
+    savingsDisplay: formatINR(savingsINR),
   };
 }
 
@@ -106,7 +106,6 @@ export function buildCloneCard(
     differences: rel.differences,
     performance: buildPerformance(rel.performance),
     price: buildPrice(rel.price),
-    sources: rel.sources,
     verified: rel.verified,
     swatch: swatchFor(clone.id),
   };

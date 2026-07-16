@@ -25,6 +25,16 @@
     "aliases": []
   },
   {
+    "id": "artemisia",
+    "name": "Artemisia",
+    "aliases": []
+  },
+  {
+    "id": "bay_leaf",
+    "name": "Bay Leaf",
+    "aliases": []
+  },
+  {
     "id": "benzoin",
     "name": "Benzoin",
     "aliases": []
@@ -40,6 +50,11 @@
     "aliases": []
   },
   {
+    "id": "bitter_almond",
+    "name": "Bitter Almond",
+    "aliases": []
+  },
+  {
     "id": "black_tea",
     "name": "Black Tea",
     "aliases": []
@@ -52,6 +67,11 @@
   {
     "id": "cardamom",
     "name": "Cardamom",
+    "aliases": []
+  },
+  {
+    "id": "cashmeran",
+    "name": "Cashmeran",
     "aliases": []
   },
   {
@@ -72,6 +92,11 @@
   {
     "id": "citron",
     "name": "Citron",
+    "aliases": []
+  },
+  {
+    "id": "clary_sage",
+    "name": "Clary Sage",
     "aliases": []
   },
   {
@@ -145,6 +170,11 @@
     "aliases": []
   },
   {
+    "id": "leather",
+    "name": "Leather",
+    "aliases": []
+  },
+  {
     "id": "lemon",
     "name": "Lemon",
     "aliases": []
@@ -162,6 +192,11 @@
   {
     "id": "mandarin_orange",
     "name": "Mandarin Orange",
+    "aliases": []
+  },
+  {
+    "id": "marine_notes",
+    "name": "Marine Notes",
     "aliases": []
   },
   {
@@ -183,6 +218,13 @@
     "id": "neroli",
     "name": "Neroli",
     "aliases": []
+  },
+  {
+    "id": "night_blooming_jasmine",
+    "name": "Night-blooming Jasmine",
+    "aliases": [
+      "Night-Blooming Jasmine"
+    ]
   },
   {
     "id": "nutmeg",
@@ -210,6 +252,11 @@
     "aliases": []
   },
   {
+    "id": "orange_blossom",
+    "name": "Orange Blossom",
+    "aliases": []
+  },
+  {
     "id": "oud",
     "name": "Oud",
     "aliases": []
@@ -217,6 +264,11 @@
   {
     "id": "patchouli",
     "name": "Patchouli",
+    "aliases": []
+  },
+  {
+    "id": "pear",
+    "name": "Pear",
     "aliases": []
   },
   {
@@ -270,6 +322,11 @@
     "aliases": []
   },
   {
+    "id": "sea_notes",
+    "name": "Sea Notes",
+    "aliases": []
+  },
+  {
     "id": "sichuan_pepper",
     "name": "Sichuan Pepper",
     "aliases": []
@@ -277,6 +334,16 @@
   {
     "id": "star_anise",
     "name": "Star Anise",
+    "aliases": []
+  },
+  {
+    "id": "suede",
+    "name": "Suede",
+    "aliases": []
+  },
+  {
+    "id": "thyme",
+    "name": "Thyme",
     "aliases": []
   },
   {
@@ -308,5 +375,22 @@
     "id": "violet",
     "name": "Violet",
     "aliases": []
+  },
+  {
+    "id": "water_notes",
+    "name": "Water Notes",
+    "aliases": []
+  },
+  {
+    "id": "woody_notes",
+    "name": "Woody Notes",
+    "aliases": []
+  },
+  {
+    "id": "ylang_ylang",
+    "name": "Ylang-ylang",
+    "aliases": [
+      "Ylang-Ylang"
+    ]
   }
 ]

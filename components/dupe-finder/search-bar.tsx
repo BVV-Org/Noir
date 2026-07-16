@@ -97,7 +97,8 @@ export function SearchBar({
           onBlur={() => window.setTimeout(() => setOpen(false), 120)}
           onKeyDown={onKeyDown}
           className={cn(
-            "min-w-0 flex-1 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none",
+            "min-w-0 flex-1 bg-transparent text-foreground placeholder:text-muted-foreground",
+            "focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0",
             size === "lg" ? "text-lg" : "text-base"
           )}
         />
