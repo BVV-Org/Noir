@@ -6,6 +6,7 @@ import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { ProductBadge } from "@/components/commerce/product-badge";
+import { TrustBar } from "@/components/commerce/trust-bar";
 import { ProductGrid } from "@/components/commerce/product-grid";
 import { ProductGallery } from "@/components/product/product-gallery";
 import { VariantSelector } from "@/components/product/variant-selector";
@@ -111,6 +112,9 @@ export default async function ProductPage({
             </div>
 
             <VariantSelector product={product} />
+
+            {/* Reassurance at the moment of decision — see lib/config/trust.ts. */}
+            <TrustBar variant="compact" />
 
             <p className="text-base text-muted-foreground">
               {product.description}
