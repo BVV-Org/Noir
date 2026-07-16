@@ -75,7 +75,24 @@ class TestBuiltKnowledgeBase(unittest.TestCase):
 
     def test_confidence_gate(self):
         for r in self.rels:
-            self.assertGreaterEqual(r.confidence, 80)
+            self.assertGreaterEqual(r.confidence, 70)
+            # tier must be consistent with the score
+            expected = "confirmed" if r.confidence >= 85 else "probable"
+            self.assertEqual(r.confidence_tier, expected)
+
+    def test_no_fragrance_is_orphaned(self):
+        allowed = {"matched", "designer_original", "inspiration_unconfirmed"}
+        for f in self.builder.fragrances.values():
+            self.assertIn(f.dupe_status, allowed,
+                          f"{f.id} would show as 'not found'")
+
+    def test_relationship_direction(self):
+        # clone side must be a clone house; original must not be
+        clone_brands = {b.name for b in self.builder.brands.values()
+                        if b.kind == "clone"}
+        for r in self.rels:
+            self.assertIn(r.clone["brand"], clone_brands)
+            self.assertNotIn(r.original["brand"], clone_brands)
 
     def test_no_duplicate_or_contradictory_pairs(self):
         seen = set()

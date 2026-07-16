@@ -32,6 +32,18 @@
     "aliases": []
   },
   {
+    "id": "azzaro",
+    "name": "Azzaro",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "bvlgari",
+    "name": "Bvlgari",
+    "kind": "original",
+    "aliases": []
+  },
+  {
     "id": "by_kilian",
     "name": "By Kilian",
     "kind": "original",
@@ -112,6 +124,12 @@
     ]
   },
   {
+    "id": "maison_margiela",
+    "name": "Maison Margiela",
+    "kind": "original",
+    "aliases": []
+  },
+  {
     "id": "paco_rabanne",
     "name": "Paco Rabanne",
     "kind": "original",
@@ -138,6 +156,12 @@
   {
     "id": "tom_ford",
     "name": "Tom Ford",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "xerjoff",
+    "name": "Xerjoff",
     "kind": "original",
     "aliases": []
   },

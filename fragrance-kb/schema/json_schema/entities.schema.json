@@ -43,6 +43,7 @@
         "brand": {"type": "string"},
         "name": {"type": "string"},
         "kind": {"enum": ["original", "clone", "unknown"]},
+        "dupeStatus": {"enum": ["matched", "designer_original", "inspiration_unconfirmed"]},
         "concentration": {"type": ["string", "null"]},
         "gender": {"type": ["string", "null"]},
         "category": {"type": ["string", "null"]},

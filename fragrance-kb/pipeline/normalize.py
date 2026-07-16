@@ -94,6 +94,10 @@ BRAND_ALIASES = {
     "paco_rabanne": "Paco Rabanne",
     "montblanc": "Montblanc",
     "mont_blanc": "Montblanc",
+    "azzaro": "Azzaro",
+    "maison_margiela": "Maison Margiela",
+    "margiela": "Maison Margiela",
+    "mmm": "Maison Margiela",
     # --- Clone / Middle Eastern houses ---
     "lattafa": "Lattafa",
     "lattafa_perfumes": "Lattafa",

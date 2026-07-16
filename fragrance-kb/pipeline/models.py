@@ -126,6 +126,7 @@ class Fragrance:
     notes: dict = field(default_factory=lambda: {"top": [], "heart": [], "base": []})
     accords: list = field(default_factory=list)
     source_ids: list = field(default_factory=list)
+    dupe_status: str = "unknown"     # matched | designer_original | inspiration_unconfirmed
 
     def to_json(self) -> dict:
         return {
@@ -134,6 +135,7 @@ class Fragrance:
             "brand": self.brand,
             "name": self.name,
             "kind": self.kind,
+            "dupeStatus": self.dupe_status,
             "concentration": self.concentration,
             "gender": self.gender,
             "category": self.category,
@@ -185,6 +187,7 @@ class CloneRelationship:
     confidence: int                  # aggregated from claims
     why_it_matches: list
     differences: list
+    confidence_tier: str = "probable"            # confirmed (>=85) | probable (70-84)
     claims: list = field(default_factory=list)   # list[CloneClaim]
     verified: bool = False
 
@@ -201,6 +204,7 @@ class CloneRelationship:
             "currency": "INR",
             "category": self.category,
             "confidence": self.confidence,
+            "confidenceTier": self.confidence_tier,
             "whyItMatches": self.why_it_matches,
             "differences": self.differences,
             "sources": [c.url for c in self.claims if c.url],

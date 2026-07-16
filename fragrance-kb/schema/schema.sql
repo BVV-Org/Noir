@@ -42,6 +42,9 @@ create table if not exists fragrance (
     name                text not null,
     kind                text not null default 'unknown'
                         check (kind in ('original', 'clone', 'unknown')),
+    dupe_status         text not null default 'unknown'
+                        check (dupe_status in ('matched', 'designer_original',
+                               'inspiration_unconfirmed', 'unknown')),
     concentration       text,
     gender              text,
     category            text,
@@ -80,6 +83,7 @@ create table if not exists clone_relationship (
     original_fragrance_id   text not null references fragrance(id) on delete cascade,
     clone_fragrance_id      text not null references fragrance(id) on delete cascade,
     category                text,
+    confidence_tier         text check (confidence_tier in ('confirmed', 'probable')),
     -- match breakdown 0..100
     match_opening           smallint check (match_opening between 0 and 100),
     match_heart             smallint check (match_heart between 0 and 100),

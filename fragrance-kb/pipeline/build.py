@@ -24,7 +24,13 @@ from .dedup import FragranceResolver
 from .models import (Brand, Note, Accord, Fragrance, CloneClaim, CloneRelationship)
 from .sources import ALL_SOURCES
 
-MIN_CONFIDENCE = 80          # spec: omit anything below 80
+# Inclusion gate. Confirmed (>=85) and probable (70-84) mappings are BOTH
+# included so every clone can resolve to an og (no "not found" on site); each
+# relationship is tagged with a confidenceTier so the UI can distinguish them.
+# Anything below this is treated as no-mapping (fragrance gets an explicit
+# 'inspiration_unconfirmed' status rather than a fabricated pairing).
+MIN_CONFIDENCE = 70
+CONFIRMED_THRESHOLD = 85
 SEED_DIR = "seed"
 
 
@@ -187,7 +193,30 @@ class KnowledgeBaseBuilder:
                 self.report["claims_ingested"] += 1
 
         relationships = self._finalize_relationships()
+        self._assign_dupe_status(relationships)
         return relationships
+
+    def _assign_dupe_status(self, relationships):
+        """
+        Guarantee every fragrance has an explicit coverage state so the UI never
+        shows 'not found':
+          * matched                 -> clone that resolves to a designer original
+          * designer_original       -> a designer/niche house fragrance
+          * inspiration_unconfirmed -> a clone house product whose specific og is
+                                       not yet established (still a clone, just
+                                       unmapped -- never fabricate a pairing)
+        """
+        matched_clone_ids = {r.clone_fragrance_id for r in relationships}
+        for f in self.fragrances.values():
+            if f.id in matched_clone_ids:
+                f.dupe_status = "matched"
+            elif f.kind == "original":
+                f.dupe_status = "designer_original"
+            elif f.kind == "clone":
+                f.dupe_status = "inspiration_unconfirmed"
+            else:
+                f.dupe_status = "unknown"
+            self.report[f"status_{f.dupe_status}"] += 1
 
     def _finalize_relationships(self):
         rels = []
@@ -224,6 +253,7 @@ class KnowledgeBaseBuilder:
                 "originalApproxINR": orig.approx_price_inr or 0,
                 "cloneApproxINR": clone.approx_price_inr or 0}
 
+            tier = "confirmed" if headline >= CONFIRMED_THRESHOLD else "probable"
             rel = CloneRelationship(
                 id=N.relationship_id(acc["orig_fid"], acc["clone_fid"]),
                 original_fragrance_id=acc["orig_fid"],
@@ -232,13 +262,14 @@ class KnowledgeBaseBuilder:
                 clone={"brand": clone.brand, "name": clone.name},
                 category=acc["category"] or orig.category,
                 match=match, performance=perf, price=price,
-                confidence=headline, why_it_matches=acc["why"],
-                differences=acc["diff"],
+                confidence=headline, confidence_tier=tier,
+                why_it_matches=acc["why"], differences=acc["diff"],
                 claims=sorted(claims, key=lambda c: -c.confidence),
                 verified=True,      # every emitted rel is source-backed
             )
             rels.append(rel)
             self.report["relationships_emitted"] += 1
+            self.report[f"tier_{tier}"] += 1
         rels.sort(key=lambda r: (-r.confidence, r.original["brand"], r.original["name"]))
         return rels
 

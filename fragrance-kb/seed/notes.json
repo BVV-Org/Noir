@@ -25,8 +25,18 @@
     "aliases": []
   },
   {
+    "id": "apricot",
+    "name": "Apricot",
+    "aliases": []
+  },
+  {
     "id": "artemisia",
     "name": "Artemisia",
+    "aliases": []
+  },
+  {
+    "id": "basil",
+    "name": "Basil",
     "aliases": []
   },
   {
@@ -65,6 +75,16 @@
     "aliases": []
   },
   {
+    "id": "blood_mandarin",
+    "name": "Blood Mandarin",
+    "aliases": []
+  },
+  {
+    "id": "bourbon_whiskey",
+    "name": "Bourbon Whiskey",
+    "aliases": []
+  },
+  {
     "id": "cardamom",
     "name": "Cardamom",
     "aliases": []
@@ -77,6 +97,11 @@
   {
     "id": "cedar",
     "name": "Cedar",
+    "aliases": []
+  },
+  {
+    "id": "chestnut",
+    "name": "Chestnut",
     "aliases": []
   },
   {
@@ -100,6 +125,16 @@
     "aliases": []
   },
   {
+    "id": "clove",
+    "name": "Clove",
+    "aliases": []
+  },
+  {
+    "id": "coffee",
+    "name": "Coffee",
+    "aliases": []
+  },
+  {
     "id": "cognac",
     "name": "Cognac",
     "aliases": []
@@ -112,6 +147,11 @@
   {
     "id": "fir_resin",
     "name": "Fir Resin",
+    "aliases": []
+  },
+  {
+    "id": "fruity_notes",
+    "name": "Fruity Notes",
     "aliases": []
   },
   {
@@ -145,6 +185,11 @@
     "aliases": []
   },
   {
+    "id": "honey",
+    "name": "Honey",
+    "aliases": []
+  },
+  {
     "id": "incense",
     "name": "Incense",
     "aliases": []
@@ -152,6 +197,11 @@
   {
     "id": "jasmine",
     "name": "Jasmine",
+    "aliases": []
+  },
+  {
+    "id": "jasmine_sambac",
+    "name": "Jasmine Sambac",
     "aliases": []
   },
   {
@@ -185,6 +235,16 @@
     "aliases": []
   },
   {
+    "id": "lime",
+    "name": "Lime",
+    "aliases": []
+  },
+  {
+    "id": "liquor",
+    "name": "Liquor",
+    "aliases": []
+  },
+  {
     "id": "mahogany",
     "name": "Mahogany",
     "aliases": []
@@ -192,7 +252,9 @@
   {
     "id": "mandarin_orange",
     "name": "Mandarin Orange",
-    "aliases": []
+    "aliases": [
+      "Mandarin"
+    ]
   },
   {
     "id": "marine_notes",
@@ -202,6 +264,11 @@
   {
     "id": "mint",
     "name": "Mint",
+    "aliases": []
+  },
+  {
+    "id": "moss",
+    "name": "Moss",
     "aliases": []
   },
   {
@@ -277,6 +344,11 @@
     "aliases": []
   },
   {
+    "id": "peru_balsam",
+    "name": "Peru Balsam",
+    "aliases": []
+  },
+  {
     "id": "petitgrain",
     "name": "Petitgrain",
     "aliases": []
@@ -289,6 +361,11 @@
   {
     "id": "pink_pepper",
     "name": "Pink Pepper",
+    "aliases": []
+  },
+  {
+    "id": "plum",
+    "name": "Plum",
     "aliases": []
   },
   {
@@ -332,6 +409,16 @@
     "aliases": []
   },
   {
+    "id": "sicilian_orange",
+    "name": "Sicilian Orange",
+    "aliases": []
+  },
+  {
+    "id": "spices",
+    "name": "Spices",
+    "aliases": []
+  },
+  {
     "id": "star_anise",
     "name": "Star Anise",
     "aliases": []
@@ -347,8 +434,18 @@
     "aliases": []
   },
   {
+    "id": "tobacco",
+    "name": "Tobacco",
+    "aliases": []
+  },
+  {
     "id": "tobacco_leaf",
     "name": "Tobacco Leaf",
+    "aliases": []
+  },
+  {
+    "id": "toffee",
+    "name": "Toffee",
     "aliases": []
   },
   {
@@ -379,6 +476,11 @@
   {
     "id": "water_notes",
     "name": "Water Notes",
+    "aliases": []
+  },
+  {
+    "id": "whiskey",
+    "name": "Whiskey",
     "aliases": []
   },
   {

@@ -28,6 +28,10 @@
     "name": "Citrus"
   },
   {
+    "id": "coffee",
+    "name": "Coffee"
+  },
+  {
     "id": "floral",
     "name": "Floral"
   },
@@ -50,6 +54,10 @@
   {
     "id": "green",
     "name": "Green"
+  },
+  {
+    "id": "honey",
+    "name": "Honey"
   },
   {
     "id": "leather",
