@@ -2,6 +2,7 @@ import { getProvider } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { RARITIES, RARITY_LABELS, type Rarity } from "@/lib/config/site";
 import { Marquee } from "@/components/motion/marquee";
+import { TrustBar } from "@/components/commerce/trust-bar";
 import {
   SectionRenderer,
   type SectionData,
@@ -66,9 +67,21 @@ export default async function HomePage() {
     ...sections.filter((s) => s.type !== "hero" && s.type !== "best_sellers"),
   ];
 
+  // The hero sells the vibe; the trust bar underpins it with legitimacy before
+  // the visitor scrolls into product — so it sits directly between the hero and
+  // the first content section (see lib/config/trust.ts for the why).
+  const heroSections = ordered.filter((s) => s.type === "hero");
+  const afterHero = ordered.filter((s) => s.type !== "hero");
+
   return (
     <>
-      {ordered.map((section) => (
+      {heroSections.map((section) => (
+        <SectionRenderer key={section.id} section={section} data={data} />
+      ))}
+
+      <TrustBar />
+
+      {afterHero.map((section) => (
         <SectionRenderer key={section.id} section={section} data={data} />
       ))}
 
