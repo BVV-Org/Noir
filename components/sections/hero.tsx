@@ -50,7 +50,7 @@ export function Hero({
     // hero's `position: sticky` stage and break the pin, leaving the tall scroll
     // track empty.
     <section className="relative">
-      <ScrollFrameHero>
+      <ScrollFrameHero frameCount={97}>
         <MaskRise mode="mount" as="p">
           <span className="overline tracking-[0.4em] text-white/70">
             The Vault
