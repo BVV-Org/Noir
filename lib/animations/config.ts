@@ -32,15 +32,17 @@ export const MOTION_CONFIG = {
    * Height of the scroll-video hero's scroll track, in viewport units.
    * The clip scrubs across `heroTrackVh - 100` vh of scrolling, so lower =
    * the whole intro completes in a single scroll gesture. 300 felt like three
-   * flicks; ~160 lets one swoop finish it.
+   * flicks; 160 was one swoop; 130 lets a single scroll clear the intro and
+   * land on the content below — the hero can't hold a shopper hostage.
    */
-  heroTrackVh: 160,
+  heroTrackVh: 130,
   /**
    * How fast the hero playhead chases the scroll target, per 60fps frame
    * (0–1). Higher = snappier / less lag; the easing is frame-rate-independent
-   * so 120Hz Windows monitors behave the same as 60Hz laptops.
+   * so 120Hz Windows monitors behave the same as 60Hz laptops. Nudged up with
+   * the shorter track so the tighter scrub still resolves fast and clean.
    */
-  heroScrubEase: 0.24,
+  heroScrubEase: 0.3,
 
   /** Seconds between words in a WordReveal. */
   wordStagger: 0.03,
