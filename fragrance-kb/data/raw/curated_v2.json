@@ -1,0 +1,173 @@
+{
+  "source_meta": {
+    "source_id": "curated_v2",
+    "source_name": "Curated Clone Database v2 (Afnan / Rasasi / French Avenue lines, verified 2026-07)",
+    "source_type": "curated",
+    "trust_weight": 1.0,
+    "notes": "Verified additions for the expanded Middle Eastern house lists. Only strong-consensus relationships are included; ambiguous or divided-consensus pairs (e.g. Eternal Oud->Grand Soir, Qaed Al Fursan, Maahir Legacy) are intentionally omitted. Prices authored in USD; the pipeline converts to INR."
+  },
+  "fragrances": {
+    "jpg__ultra_male": {
+      "brand": "Jean Paul Gaultier", "name": "Ultra Male", "concentration": "Eau de Toilette",
+      "gender": "masculine", "category": "Amber Fougere", "kind": "original", "approxPriceUSD": 95,
+      "notes": {"top": ["Lavender", "Mint", "Bergamot"], "heart": ["Pear", "Cinnamon", "Clary Sage"], "base": ["Vanilla", "Amber", "Musk", "Cashmeran"]},
+      "accords": ["Sweet", "Amber", "Aromatic", "Vanilla"]
+    },
+    "afnan__9pm": {
+      "brand": "Afnan", "name": "9PM", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Amber Fougere", "kind": "clone", "approxPriceUSD": 35,
+      "notes": {"top": ["Apple", "Cinnamon", "Bergamot", "Lavender"], "heart": ["Vanilla", "Tonka Bean", "Orange Blossom"], "base": ["Amberwood", "Vanilla", "Cashmeran"]},
+      "accords": ["Sweet", "Amber", "Vanilla"]
+    },
+    "chanel__bleu_de_chanel": {
+      "brand": "Chanel", "name": "Bleu de Chanel", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Woody Aromatic", "kind": "original", "approxPriceUSD": 135,
+      "notes": {"top": ["Grapefruit", "Lemon", "Mint", "Pink Pepper"], "heart": ["Ginger", "Nutmeg", "Jasmine"], "base": ["Incense", "Amberwood", "Sandalwood", "Patchouli", "Cedar"]},
+      "accords": ["Woody", "Aromatic", "Citrus", "Amber"]
+    },
+    "afnan__9am_dive": {
+      "brand": "Afnan", "name": "9AM Dive", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Woody Aromatic", "kind": "clone", "approxPriceUSD": 35,
+      "notes": {"top": ["Bergamot", "Lemon", "Mint"], "heart": ["Ginger", "Nutmeg", "Sage"], "base": ["Amberwood", "Cedar"]},
+      "accords": ["Woody", "Aromatic", "Citrus"]
+    },
+    "creed__aventus": {
+      "brand": "Creed", "name": "Aventus", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Fruity Chypre", "kind": "original", "approxPriceUSD": 340,
+      "notes": {"top": ["Bergamot", "Blackcurrant", "Apple", "Pineapple", "Lemon"], "heart": ["Birch", "Patchouli", "Rose", "Jasmine"], "base": ["Musk", "Oakmoss", "Ambergris", "Vanilla"]},
+      "accords": ["Fruity", "Woody", "Smoky", "Chypre"]
+    },
+    "afnan__supremacy_not_only_intense": {
+      "brand": "Afnan", "name": "Supremacy Not Only Intense", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Fruity Chypre", "kind": "clone", "approxPriceUSD": 40,
+      "notes": {"top": ["Blackcurrant", "Pineapple", "Bergamot"], "heart": ["Birch", "Patchouli", "Oakmoss"], "base": ["Musk", "Ambergris"]},
+      "accords": ["Fruity", "Woody", "Smoky", "Green"]
+    },
+    "paco_rabanne__invictus_aqua": {
+      "brand": "Paco Rabanne", "name": "Invictus Aqua", "concentration": "Eau de Toilette",
+      "gender": "masculine", "category": "Aromatic Aquatic", "kind": "original", "approxPriceUSD": 90,
+      "notes": {"top": ["Grapefruit", "Marine Notes", "Bergamot"], "heart": ["Bay Leaf", "Water Notes", "Ambergris"], "base": ["Woody Notes", "Guaiac Wood"]},
+      "accords": ["Aromatic", "Aquatic", "Citrus", "Fresh"]
+    },
+    "rasasi__hawas_for_him": {
+      "brand": "Rasasi", "name": "Hawas for Him", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Aromatic Aquatic", "kind": "clone", "approxPriceUSD": 55,
+      "notes": {"top": ["Apple", "Bergamot", "Cinnamon", "Sea Notes"], "heart": ["Ylang-Ylang", "Cardamom", "Sage"], "base": ["Ambergris", "Musk", "Cedar", "Vetiver"]},
+      "accords": ["Aromatic", "Aquatic", "Fresh", "Sweet"]
+    },
+    "tom_ford__tuscan_leather": {
+      "brand": "Tom Ford", "name": "Tuscan Leather", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Leather", "kind": "original", "approxPriceUSD": 330,
+      "notes": {"top": ["Raspberry", "Saffron", "Thyme"], "heart": ["Olibanum", "Jasmine", "Night-Blooming Jasmine"], "base": ["Leather", "Suede", "Amber", "Woody Notes"]},
+      "accords": ["Leather", "Smoky", "Fruity", "Woody"]
+    },
+    "rasasi__la_yuqawam_homme": {
+      "brand": "Rasasi", "name": "La Yuqawam Homme", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Leather", "kind": "clone", "approxPriceUSD": 70,
+      "notes": {"top": ["Raspberry", "Saffron", "Thyme"], "heart": ["Olibanum", "Jasmine", "Artemisia"], "base": ["Leather", "Suede", "Woody Notes", "Amber"]},
+      "accords": ["Leather", "Smoky", "Fruity", "Woody"]
+    },
+    "creed__silver_mountain_water": {
+      "brand": "Creed", "name": "Silver Mountain Water", "concentration": "Eau de Parfum",
+      "gender": "unisex", "category": "Aromatic Green", "kind": "original", "approxPriceUSD": 340,
+      "notes": {"top": ["Bergamot", "Mandarin Orange"], "heart": ["Green Tea", "Blackcurrant"], "base": ["Musk", "Galbanum", "Sandalwood", "Petitgrain"]},
+      "accords": ["Aromatic", "Green", "Citrus", "Musky"]
+    },
+    "rasasi__al_wisam_day": {
+      "brand": "Rasasi", "name": "Al Wisam Day", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Aromatic Green", "kind": "clone", "approxPriceUSD": 45,
+      "notes": {"top": ["Bergamot", "Geranium", "Lavender"], "heart": ["Rose", "Sandalwood", "Clary Sage", "Cedar"], "base": ["Musk", "Oakmoss", "Oud", "Amber"]},
+      "accords": ["Aromatic", "Green", "Powdery", "Musky"]
+    },
+    "parfums_de_marly__althair": {
+      "brand": "Parfums de Marly", "name": "Althaïr", "concentration": "Eau de Parfum",
+      "gender": "masculine", "category": "Amber Vanilla", "kind": "original", "approxPriceUSD": 355,
+      "notes": {"top": ["Bergamot", "Bitter Almond"], "heart": ["Cinnamon", "Praline"], "base": ["Vanilla", "Tonka Bean", "Sandalwood", "Benzoin"]},
+      "accords": ["Sweet", "Vanilla", "Amber", "Almond"]
+    },
+    "french_avenue__liquid_brun": {
+      "brand": "French Avenue", "name": "Liquid Brun", "concentration": "Extrait de Parfum",
+      "gender": "unisex", "category": "Amber Vanilla", "kind": "clone", "approxPriceUSD": 45,
+      "notes": {"top": ["Bergamot", "Bitter Almond"], "heart": ["Cinnamon", "Praline"], "base": ["Vanilla", "Tonka Bean", "Benzoin", "Sandalwood"]},
+      "accords": ["Sweet", "Vanilla", "Amber", "Almond"]
+    }
+  },
+  "relationships": [
+    {
+      "original": "jpg__ultra_male", "clone": "afnan__9pm", "category": "Amber Fougere",
+      "match": {"opening": 82, "heart": 86, "drydown": 86, "overall": 85},
+      "performance": {"longevityComparison": "stronger", "projectionComparison": "stronger", "sillageComparison": "stronger"},
+      "whyItMatches": ["Shares the sweet cinnamon-vanilla-amber DNA that defines Ultra Male", "Widely regarded across communities as a direct Ultra Male clone", "Heavy vanilla-amber drydown is nearly identical to the original"],
+      "differences": ["Opens on apple rather than Ultra Male's signature pear note", "Slightly more synthetic and sweeter overall"],
+      "claims": [
+        {"source_id": "fragrantica", "source_name": "Fragrantica", "url": "https://www.fragrantica.com/perfume/Afnan/9pm-65414.html", "confidence": 88, "reported_similarity": 85, "note": "Community pages consistently frame 9PM as the Ultra Male clone."},
+        {"source_id": "perfumesblend", "source_name": "Perfumes Blend", "url": "https://perfumesblend.com/en/afnan-9pm-men-perfume/p983483407", "confidence": 86, "reported_similarity": 85, "note": "Listed explicitly as 'Ultra Male Clone'."}
+      ]
+    },
+    {
+      "original": "chanel__bleu_de_chanel", "clone": "afnan__9am_dive", "category": "Woody Aromatic",
+      "match": {"opening": 78, "heart": 80, "drydown": 80, "overall": 80},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Fresh citrus-smoky opening tracks Bleu de Chanel", "Community consensus positions 9AM Dive as a Bleu de Chanel-leaning alternative", "Woody-aromatic structure aligns with the original"],
+      "differences": ["A hybrid — drydown leans sweeter and YSL Y-like", "Less refined blending than the original"],
+      "claims": [
+        {"source_id": "thesnifftest", "source_name": "The Sniff Test", "url": "https://thesnifftest.co.uk/afnan/afnan-9am/", "confidence": 82, "reported_similarity": 80, "note": "Clone/dupe guide: primarily Bleu de Chanel, secondary YSL Y."}
+      ]
+    },
+    {
+      "original": "creed__aventus", "clone": "afnan__supremacy_not_only_intense", "category": "Fruity Chypre",
+      "match": {"opening": 78, "heart": 82, "drydown": 80, "overall": 80},
+      "performance": {"longevityComparison": "stronger", "projectionComparison": "stronger", "sillageComparison": "stronger"},
+      "whyItMatches": ["Enters the same confident fruity-woody-mossy Aventus territory", "Blackcurrant-forward profile some liken to an Aventus/Aventus Absolu blend", "Strong performer at a fraction of the price"],
+      "differences": ["Not an exact copy — denser, greener and darker than Aventus", "Heavier oakmoss and a more aggressive character"],
+      "claims": [
+        {"source_id": "perfumecultures", "source_name": "Perfume Cultures", "url": "https://perfumecultures.com/creed-aventus-vs-afnan-supremacy-not-only-intense/", "confidence": 82, "reported_similarity": 80, "note": "Direct Aventus vs Supremacy Not Only Intense comparison."},
+        {"source_id": "fragrantica", "source_name": "Fragrantica", "url": "https://www.fragrantica.com/perfume/Afnan/Supremacy-Not-Only-Intense-68271.html", "confidence": 80, "reported_similarity": 78, "note": "Community notes on Aventus-direction similarity."}
+      ]
+    },
+    {
+      "original": "paco_rabanne__invictus_aqua", "clone": "rasasi__hawas_for_him", "category": "Aromatic Aquatic",
+      "match": {"opening": 82, "heart": 85, "drydown": 84, "overall": 84},
+      "performance": {"longevityComparison": "stronger", "projectionComparison": "stronger", "sillageComparison": "stronger"},
+      "whyItMatches": ["Fresh sweet-marine profile closely tracks Invictus Aqua", "Community consensus resolves Hawas to Invictus Aqua (NOT Creed Aventus)", "Apple-ambergris drydown mirrors the original's clean marine base"],
+      "differences": ["Hawas is slightly fruitier and sweeter", "Reads as its own polished 'blue' scent rather than a 1:1 copy"],
+      "claims": [
+        {"source_id": "qamareperfumes", "source_name": "Qamare Perfumes", "url": "https://qamareperfumes.com/blogs/qamare-blog/rasasi-hawas-vs-creed-aventus-the-300-dupe-truth", "confidence": 86, "reported_similarity": 84, "note": "Explains Hawas is inspired by Invictus Aqua, not Aventus."},
+        {"source_id": "fragrantica_board", "source_name": "Fragrantica Community Board", "url": "https://www.fragrantica.com/board/viewtopic.php?id=262223", "confidence": 84, "reported_similarity": 82, "note": "Community thread settling the Invictus Aqua inspiration."}
+      ]
+    },
+    {
+      "original": "tom_ford__tuscan_leather", "clone": "rasasi__la_yuqawam_homme", "category": "Leather",
+      "match": {"opening": 80, "heart": 82, "drydown": 78, "overall": 80},
+      "performance": {"longevityComparison": "similar", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Raspberry-saffron-leather DNA gets surprisingly close to Tuscan Leather", "Frequently listed as the go-to Tuscan Leather clone", "Smoky suede-and-amber base echoes the original"],
+      "differences": ["Emphasizes raspberry and smoke over Tuscan Leather's textured leather", "Base is a touch thinner than the original"],
+      "claims": [
+        {"source_id": "basenotes", "source_name": "Basenotes", "url": "https://basenotes.com/threads/a-list-of-the-rasasi-armaf-clones-and-their-counterparts.417230/", "confidence": 84, "reported_similarity": 80, "note": "Rasasi/Armaf clone counterpart list: La Yuqawam ~ Tuscan Leather."},
+        {"source_id": "fragrantica", "source_name": "Fragrantica", "url": "https://www.fragrantica.com/perfume/Rasasi/La-Yuqawam-Homme-19668.html", "confidence": 82, "reported_similarity": 80, "note": "Community comparison to Tuscan Leather."}
+      ]
+    },
+    {
+      "original": "creed__silver_mountain_water", "clone": "rasasi__al_wisam_day", "category": "Aromatic Green",
+      "match": {"opening": 80, "heart": 80, "drydown": 80, "overall": 80},
+      "performance": {"longevityComparison": "stronger", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Metallic-fresh bergamot-lavender profile is a recognized Silver Mountain Water alternative", "Often called the best budget SMW alternative", "Clean, long-lasting musky drydown"],
+      "differences": ["Heart leans more into rose and is more powdery than SMW", "Less of the fruity blackcurrant/tea facet of the original"],
+      "claims": [
+        {"source_id": "perfumesblend", "source_name": "Perfumes Blend", "url": "https://perfumesblend.com/en/rasasi-al-wisam-day-white/p1217967739", "confidence": 84, "reported_similarity": 80, "note": "Listed as Creed SMW clone."},
+        {"source_id": "parfumo", "source_name": "Parfumo", "url": "https://www.parfumo.com/Perfumes/Rasasi/al-wisam-day", "confidence": 82, "reported_similarity": 78, "note": "Reviews describe the SMW relationship with noted differences."}
+      ]
+    },
+    {
+      "original": "parfums_de_marly__althair", "clone": "french_avenue__liquid_brun", "category": "Amber Vanilla",
+      "match": {"opening": 86, "heart": 88, "drydown": 88, "overall": 88},
+      "performance": {"longevityComparison": "stronger", "projectionComparison": "similar", "sillageComparison": "similar"},
+      "whyItMatches": ["Almond-cinnamon-vanilla accord fans call ~95% identical to Althaïr", "Consensus among reviewers as one of the most accurate clones available", "Creamy vanilla drydown lands very close to the original"],
+      "differences": ["Vanilla is louder, creamier and simpler than Althaïr", "Lacks some of Althaïr's smoky, almost leathery benzoin nuance"],
+      "claims": [
+        {"source_id": "ifragrance", "source_name": "iFragrance", "url": "https://ifragranceofficial.com/liquid-brun-vs-althair-review-comparison/", "confidence": 88, "reported_similarity": 88, "note": "Liquid Brun vs Althaïr detailed comparison; ~95% claimed."},
+        {"source_id": "topmidbase", "source_name": "Top Mid Base", "url": "https://topmidbase.com/blog/pdm-althair-vs-liquid-brun-by-french-avenue/", "confidence": 86, "reported_similarity": 88, "note": "PDM Althaïr vs Liquid Brun comparison."}
+      ]
+    }
+  ]
+}

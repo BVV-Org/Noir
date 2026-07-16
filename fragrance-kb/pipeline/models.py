@@ -122,7 +122,7 @@ class Fragrance:
     concentration: Optional[str] = None
     gender: Optional[str] = None
     category: Optional[str] = None
-    approx_price_usd: Optional[float] = None
+    approx_price_inr: Optional[int] = None       # stored in INR
     notes: dict = field(default_factory=lambda: {"top": [], "heart": [], "base": []})
     accords: list = field(default_factory=list)
     source_ids: list = field(default_factory=list)
@@ -137,7 +137,8 @@ class Fragrance:
             "concentration": self.concentration,
             "gender": self.gender,
             "category": self.category,
-            "approxPriceUSD": self.approx_price_usd,
+            "currency": "INR",
+            "approxPriceINR": self.approx_price_inr,
             "notes": {
                 "top": self.notes.get("top", []),
                 "heart": self.notes.get("heart", []),
@@ -196,7 +197,8 @@ class CloneRelationship:
             "clone": self.clone,
             "match": self.match,
             "performance": self.performance,
-            "price": self.price,
+            "price": self.price,          # {"originalApproxINR","cloneApproxINR"}
+            "currency": "INR",
             "category": self.category,
             "confidence": self.confidence,
             "whyItMatches": self.why_it_matches,

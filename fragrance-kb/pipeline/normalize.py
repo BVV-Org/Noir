@@ -91,6 +91,9 @@ BRAND_ALIASES = {
     "versace": "Versace",
     "valentino": "Valentino",
     "givenchy": "Givenchy",
+    "paco_rabanne": "Paco Rabanne",
+    "montblanc": "Montblanc",
+    "mont_blanc": "Montblanc",
     # --- Clone / Middle Eastern houses ---
     "lattafa": "Lattafa",
     "lattafa_perfumes": "Lattafa",
@@ -116,6 +119,12 @@ BRAND_ALIASES = {
     "orientica": "Orientica",
     "rayhaan": "Rayhaan",
     "nusuk": "Nusuk",
+    "arabiyat_prestige": "Arabiyat Prestige",
+    "arabiyat": "Arabiyat Prestige",
+    "french_avenue": "French Avenue",
+    "aromatix": "Aromatix",
+    "aromatix_french_avenue": "Aromatix x French Avenue",
+    "aromatix_x_french_avenue": "Aromatix x French Avenue",
 }
 
 # Which houses are "clone" houses vs "original/luxury" houses. Used only for
@@ -125,6 +134,7 @@ CLONE_HOUSES = {
     "Paris Corner", "Al Haramain", "Swiss Arabian", "Rasasi",
     "Ahmed Al Maghribi", "Khadlaj", "Ard Al Zaafaran", "Emir", "Zimaya",
     "Riiffs", "Pendora Scents", "Orientica", "Rayhaan", "Nusuk",
+    "Arabiyat Prestige", "French Avenue", "Aromatix", "Aromatix x French Avenue",
 }
 
 

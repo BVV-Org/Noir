@@ -1,7 +1,19 @@
 [
   {
+    "id": "afnan",
+    "name": "Afnan",
+    "kind": "clone",
+    "aliases": []
+  },
+  {
     "id": "al_haramain",
     "name": "Al Haramain",
+    "kind": "clone",
+    "aliases": []
+  },
+  {
+    "id": "arabiyat_prestige",
+    "name": "Arabiyat Prestige",
     "kind": "clone",
     "aliases": []
   },
@@ -12,6 +24,12 @@
     "aliases": [
       "armaf"
     ]
+  },
+  {
+    "id": "aromatix_x_french_avenue",
+    "name": "Aromatix x French Avenue",
+    "kind": "clone",
+    "aliases": []
   },
   {
     "id": "by_kilian",
@@ -46,8 +64,20 @@
     ]
   },
   {
+    "id": "french_avenue",
+    "name": "French Avenue",
+    "kind": "clone",
+    "aliases": []
+  },
+  {
     "id": "initio",
     "name": "Initio",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "jean_paul_gaultier",
+    "name": "Jean Paul Gaultier",
     "kind": "original",
     "aliases": []
   },
@@ -82,8 +112,32 @@
     ]
   },
   {
+    "id": "paco_rabanne",
+    "name": "Paco Rabanne",
+    "kind": "original",
+    "aliases": []
+  },
+  {
     "id": "parfums_de_marly",
     "name": "Parfums de Marly",
+    "kind": "original",
+    "aliases": []
+  },
+  {
+    "id": "rasasi",
+    "name": "Rasasi",
+    "kind": "clone",
+    "aliases": []
+  },
+  {
+    "id": "rayhaan",
+    "name": "Rayhaan",
+    "kind": "clone",
+    "aliases": []
+  },
+  {
+    "id": "tom_ford",
+    "name": "Tom Ford",
     "kind": "original",
     "aliases": []
   },

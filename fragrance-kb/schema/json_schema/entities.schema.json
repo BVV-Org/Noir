@@ -46,7 +46,8 @@
         "concentration": {"type": ["string", "null"]},
         "gender": {"type": ["string", "null"]},
         "category": {"type": ["string", "null"]},
-        "approxPriceUSD": {"type": ["number", "null"], "minimum": 0},
+        "currency": {"const": "INR"},
+        "approxPriceINR": {"type": ["integer", "null"], "minimum": 0},
         "notes": {
           "type": "object",
           "required": ["top", "heart", "base"],
