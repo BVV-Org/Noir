@@ -45,7 +45,7 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
       transition={{ duration: 0.5, ease: EASE.signature }}
       className={cn(
         "overflow-hidden rounded-xl border bg-card",
-        card.rank === 1 ? "border-gold/40" : "border-border"
+        card.rank === 1 ? "border-foreground/30" : "border-border"
       )}
     >
       {/* Header: image + identity + confidence */}
@@ -57,7 +57,7 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
             {card.rank === 1 && (
-              <span className="rounded-full bg-gold px-2 py-0.5 font-mono text-[0.6rem] font-bold uppercase tracking-[0.08em] text-gold-contrast">
+              <span className="rounded-full bg-foreground px-2 py-0.5 font-mono text-[0.6rem] font-bold uppercase tracking-[0.08em] text-background">
                 Top match
               </span>
             )}
@@ -65,7 +65,7 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
               {card.category}
             </span>
             {card.verified && (
-              <span className="inline-flex items-center gap-1 font-mono text-[0.6rem] uppercase tracking-[0.08em] text-gold">
+              <span className="inline-flex items-center gap-1 font-mono text-[0.6rem] uppercase tracking-[0.08em] text-muted-foreground">
                 <BadgeCheck className="size-3.5" aria-hidden />
                 Verified
               </span>
@@ -80,7 +80,7 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
           <p className="mt-1 font-mono text-caption uppercase tracking-[0.06em] text-muted-foreground">
             {[clone.concentration, clone.gender].filter(Boolean).join(" · ")}
           </p>
-          <p className="mt-2 text-sm text-gold">{card.confidenceLabel}</p>
+          <p className="mt-2 text-sm text-muted-foreground">{card.confidenceLabel}</p>
         </div>
         <ConfidenceGauge value={card.confidence} className="shrink-0 self-center" />
       </div>
@@ -110,7 +110,7 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
             </div>
           </div>
 
-          <div className="rounded-lg border border-gold/25 bg-gold/[0.04] p-4">
+          <div className="rounded-lg border border-border bg-secondary/30 p-4">
             <div className="flex items-end justify-between gap-3">
               <div>
                 <p className="font-mono text-[0.6rem] uppercase tracking-[0.08em] text-muted-foreground">
@@ -121,7 +121,7 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
                 </p>
               </div>
               <div className="text-right">
-                <p className="font-mono text-[0.6rem] uppercase tracking-[0.08em] text-gold">
+                <p className="font-mono text-[0.6rem] uppercase tracking-[0.08em] text-foreground">
                   This dupe
                 </p>
                 <p className="font-display text-h4 leading-none">
@@ -130,7 +130,7 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
               </div>
             </div>
             {price.savingsDisplay && price.savingsPct != null && (
-              <p className="mt-2 border-t border-gold/20 pt-2 text-right font-mono text-caption uppercase tracking-[0.06em] text-gold">
+              <p className="mt-2 border-t border-foreground/15 pt-2 text-right font-mono text-caption uppercase tracking-[0.06em] text-foreground">
                 Save {price.savingsDisplay} · {price.savingsPct}% less
               </p>
             )}
@@ -141,13 +141,13 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
       {/* Explanation + differences */}
       <div className="grid gap-6 border-t border-border p-5 sm:grid-cols-2 sm:p-6">
         <div>
-          <h4 className="mb-3 font-mono text-caption uppercase tracking-[0.08em] text-gold">
+          <h4 className="mb-3 font-mono text-caption uppercase tracking-[0.08em] text-muted-foreground">
             Why it matches
           </h4>
           <ul className="space-y-2">
             {card.whyItMatches.map((why) => (
               <li key={why} className="flex gap-2.5 text-sm leading-relaxed">
-                <Check className="mt-0.5 size-3.5 shrink-0 text-gold" aria-hidden />
+                <Check className="mt-0.5 size-3.5 shrink-0 text-foreground" aria-hidden />
                 {why}
               </li>
             ))}
