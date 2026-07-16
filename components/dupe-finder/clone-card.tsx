@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import { m, useReducedMotion } from "framer-motion";
 import { ArrowDown, ArrowUp, BadgeCheck, Check, Equal, Minus } from "lucide-react";
 import { EASE } from "@/lib/animations/config";
@@ -33,14 +32,6 @@ function PerformanceRow({ axis }: { axis: PerformanceAxisVM }) {
 }
 
 const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
-
-function hostOf(url: string): string {
-  try {
-    return new URL(url).hostname.replace(/^www\./, "");
-  } catch {
-    return url;
-  }
-}
 
 export function CloneCard({ card }: { card: CloneCardVM }) {
   const reduce = useReducedMotion();
@@ -182,27 +173,13 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
         )}
       </div>
 
-      {/* Provenance */}
-      {card.sources.length > 0 && (
-        <div className="border-t border-border px-5 py-3 sm:px-6">
-          <p className="font-mono text-[0.6rem] uppercase tracking-[0.08em] text-muted-foreground">
-            Sourced from{" "}
-            {card.sources.map((url, i) => (
-              <React.Fragment key={url}>
-                {i > 0 && ", "}
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground underline decoration-foreground/30 underline-offset-2 hover:text-gold"
-                >
-                  {hostOf(url)}
-                </a>
-              </React.Fragment>
-            ))}
-          </p>
-        </div>
-      )}
+      {/* Verdict */}
+      <div className="border-t border-border px-5 py-3 sm:px-6">
+        <p className="inline-flex items-center gap-1.5 font-mono text-[0.6rem] uppercase tracking-[0.08em] text-muted-foreground">
+          <BadgeCheck className="size-3.5 text-gold" aria-hidden />
+          Verdict by Noir
+        </p>
+      </div>
     </m.article>
   );
 }
