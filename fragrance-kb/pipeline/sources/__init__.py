@@ -18,6 +18,7 @@ from .catalog_text import CatalogTextSource
 ALL_SOURCES = [
     CuratedJsonSource("data/raw/curated_v1.json"),
     CuratedJsonSource("data/raw/curated_v2.json"),
+    CuratedJsonSource("data/raw/curated_v3.json"),
     CommunityCsvSource("data/raw/community_votes_v1.csv"),
     CatalogTextSource("data/raw/catalog_expansion_v1.txt"),
 ]

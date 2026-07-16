@@ -82,14 +82,16 @@ def main():
     lines.append("\n-- fragrances")
     for f in frags:
         lines.append(
-            f"insert into fragrance (id, brand_id, name, kind, concentration, "
-            f"gender, category, approx_price_inr) values "
+            f"insert into fragrance (id, brand_id, name, kind, dupe_status, "
+            f"concentration, gender, category, approx_price_inr) values "
             f"({q(f['id'])}, {q(f['brandId'])}, {q(f['name'])}, {q(f['kind'])}, "
-            f"{q(f['concentration'])}, {q(f['gender'])}, {q(f['category'])}, "
-            f"{q(f['approxPriceINR'])}) on conflict (id) do update set "
+            f"{q(f['dupeStatus'])}, {q(f['concentration'])}, {q(f['gender'])}, "
+            f"{q(f['category'])}, {q(f['approxPriceINR'])}) "
+            f"on conflict (id) do update set "
             f"brand_id=excluded.brand_id, name=excluded.name, kind=excluded.kind, "
-            f"concentration=excluded.concentration, gender=excluded.gender, "
-            f"category=excluded.category, approx_price_inr=excluded.approx_price_inr;")
+            f"dupe_status=excluded.dupe_status, concentration=excluded.concentration, "
+            f"gender=excluded.gender, category=excluded.category, "
+            f"approx_price_inr=excluded.approx_price_inr;")
 
     # note-name -> note-id and accord-name -> accord-id lookups
     note_id = {n["name"]: n["id"] for n in notes}
@@ -132,19 +134,20 @@ def main():
         pr = r["price"]
         lines.append(
             f"insert into clone_relationship (id, original_fragrance_id, "
-            f"clone_fragrance_id, category, match_opening, match_heart, "
-            f"match_drydown, match_overall, longevity_comparison, "
+            f"clone_fragrance_id, category, confidence_tier, match_opening, "
+            f"match_heart, match_drydown, match_overall, longevity_comparison, "
             f"projection_comparison, sillage_comparison, original_approx_inr, "
             f"clone_approx_inr, confidence, why_it_matches, differences, verified) "
             f"values ({q(r['id'])}, {q(r['originalFragranceId'])}, "
-            f"{q(r['cloneFragranceId'])}, {q(r['category'])}, {q(m['opening'])}, "
-            f"{q(m['heart'])}, {q(m['drydown'])}, {q(m['overall'])}, "
+            f"{q(r['cloneFragranceId'])}, {q(r['category'])}, {q(r['confidenceTier'])}, "
+            f"{q(m['opening'])}, {q(m['heart'])}, {q(m['drydown'])}, {q(m['overall'])}, "
             f"{q(p['longevityComparison'])}, {q(p['projectionComparison'])}, "
             f"{q(p['sillageComparison'])}, {q(pr['originalApproxINR'])}, "
             f"{q(pr['cloneApproxINR'])}, {q(r['confidence'])}, "
             f"{arr(r['whyItMatches'])}, {arr(r['differences'])}, {q(r['verified'])}) "
             f"on conflict (id) do update set "
-            f"category=excluded.category, match_overall=excluded.match_overall, "
+            f"category=excluded.category, confidence_tier=excluded.confidence_tier, "
+            f"match_overall=excluded.match_overall, "
             f"confidence=excluded.confidence, verified=excluded.verified;")
 
     lines.append("\n-- clone claims (provenance)")

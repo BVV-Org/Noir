@@ -155,10 +155,35 @@ are trust-discounted and cannot, alone, push a pair over the inclusion gate.
 
 ---
 
+## Coverage model — no "not found" on the site
+
+Every fragrance carries an explicit `dupeStatus`, so the Dupe Finder always has
+something to render (no 404 / "not found"):
+
+- `matched` — a clone that resolves to a designer/niche original (has a
+  relationship).
+- `designer_original` — a designer/niche house fragrance (the og side).
+- `inspiration_unconfirmed` — a Middle Eastern clone-house product whose
+  *specific* og is not yet established from sources. It is still shown as a
+  clone; we simply do not fabricate a designer pairing for it.
+
+Relationships also carry a `confidenceTier`:
+
+- `confirmed` (confidence ≥ 85) — strong, well-documented match.
+- `probable` (70–84) — documented "inspired by" / good-match, lower certainty.
+
+The UI should surface the tier (e.g. a "confirmed match" vs "likely dupe"
+badge) and give `inspiration_unconfirmed` items a graceful state instead of a
+not-found error.
+
 ## Quality gates (enforced, not aspirational)
 
-- **Confidence ≥ 80** to be included (spec threshold). Anything weaker is
-  dropped and counted in the build report.
+- **Inclusion gate: confidence ≥ 70**, tagged `confirmed`/`probable`. Weaker
+  signals become `inspiration_unconfirmed` (no fabricated pairing).
+- **Every fragrance has a valid `dupeStatus`** — guarantees no orphaned /
+  "not found" listings.
+- **Direction rule**: the clone side is always a Middle Eastern house; the
+  original is always a designer/niche house. Never inverted.
 - **No duplicate relationships** (same pair twice).
 - **No contradictory mappings** (a pair mapped in both directions).
 - **No self-references**.
@@ -199,7 +224,9 @@ are trust-discounted and cannot, alone, push a pair over the inclusion gate.
 
 ## Current dataset
 
-**23 high-confidence relationships** across **219 fragrances / 23 brands**.
+**48 relationships** (19 confirmed, 29 probable) across **230 fragrances /
+27 brands**. Coverage: 48 `matched`, 28 `designer_original`, 154
+`inspiration_unconfirmed` — 0 orphaned listings.
 
 - Clone houses: Armaf, Maison Alhambra, Fragrance World, Lattafa, Al Haramain,
   Afnan, Rasasi, Rayhaan, Arabiyat Prestige, French Avenue, Aromatix ×
