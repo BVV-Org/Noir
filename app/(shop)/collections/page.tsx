@@ -53,6 +53,7 @@ export default async function CollectionsPage() {
                 <CollectionCard
                   collection={collection}
                   priority={index < 2}
+                  subheading="none"
                   className="w-full"
                 />
               </StaggerItem>

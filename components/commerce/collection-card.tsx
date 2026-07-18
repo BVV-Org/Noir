@@ -17,13 +17,28 @@ import { ParallaxMedia } from "@/components/motion/parallax-media";
 export function CollectionCard({
   collection,
   priority = false,
+  subheading = "tagline",
   className,
 }: {
   collection: Collection;
   priority?: boolean;
+  /**
+   * Which line sits under the title:
+   *  - "tagline": the short metafield tagline (the default elsewhere)
+   *  - "description": the collection's full Shopify description
+   *  - "none": title only
+   */
+  subheading?: "tagline" | "description" | "none";
   className?: string;
 }) {
-  const { image, title, tagline, handle, productCount } = collection;
+  const { image, title, tagline, description, handle, productCount } =
+    collection;
+  const subheadingText =
+    subheading === "description"
+      ? description
+      : subheading === "tagline"
+        ? tagline
+        : undefined;
 
   return (
     <Card
@@ -61,9 +76,9 @@ export function CollectionCard({
             <h3 className="mt-2 text-h3 font-semibold text-foreground">
               {title}
             </h3>
-            {tagline && (
-              <p className="mt-2 line-clamp-1 text-small text-muted-foreground">
-                {tagline}
+            {subheadingText && (
+              <p className="mt-2 line-clamp-2 text-small text-muted-foreground">
+                {subheadingText}
               </p>
             )}
           </div>

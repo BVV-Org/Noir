@@ -144,24 +144,19 @@ export function ShopMenu({
                     href={item.href}
                     onClick={() => setOpen(false)}
                     className={cn(
-                      "group/item flex flex-col gap-0.5 rounded-md px-3 py-2.5",
+                      "group/item flex items-center justify-between rounded-md px-3 py-2.5",
                       "transition-colors duration-150 ease-premium",
                       "hover:bg-accent focus-visible:bg-accent focus-visible:outline-none"
                     )}
                   >
-                    <span className="flex items-center justify-between">
-                      <span className="font-display text-h4 uppercase leading-none tracking-[0.04em] text-foreground">
-                        {item.label}
-                      </span>
-                      <span
-                        aria-hidden
-                        className="translate-x-0 font-mono text-muted-foreground opacity-0 transition-all duration-200 ease-premium group-hover/item:translate-x-0.5 group-hover/item:opacity-100"
-                      >
-                        →
-                      </span>
+                    <span className="font-display text-h4 uppercase leading-none tracking-[0.04em] text-foreground">
+                      {item.label}
                     </span>
-                    <span className="font-mono text-caption text-muted-foreground">
-                      {item.blurb}
+                    <span
+                      aria-hidden
+                      className="translate-x-0 font-mono text-muted-foreground opacity-0 transition-all duration-200 ease-premium group-hover/item:translate-x-0.5 group-hover/item:opacity-100"
+                    >
+                      →
                     </span>
                   </Link>
                 </m.div>
