@@ -36,6 +36,8 @@ const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 export function CloneCard({ card }: { card: CloneCardVM }) {
   const reduce = useReducedMotion();
   const { clone, price } = card;
+  const hasPerformance = card.performance.length > 0;
+  const hasPrice = price.originalDisplay != null || price.cloneDisplay != null;
 
   return (
     <m.article
@@ -85,8 +87,14 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
         <ConfidenceGauge value={card.confidence} className="shrink-0 self-center" />
       </div>
 
-      {/* Match breakdown */}
-      <div className="grid gap-x-8 gap-y-4 border-t border-border p-5 sm:grid-cols-2 sm:p-6">
+      {/* Match breakdown. Performance and price only render when the KB carries
+          them; without a right column the phases take the full width. */}
+      <div
+        className={cn(
+          "grid gap-x-8 gap-y-4 border-t border-border p-5 sm:p-6",
+          (hasPerformance || hasPrice) && "sm:grid-cols-2"
+        )}
+      >
         <div className="space-y-3.5">
           <h4 className="font-mono text-caption uppercase tracking-[0.08em] text-muted-foreground">
             Similarity by phase
@@ -97,45 +105,50 @@ export function CloneCard({ card }: { card: CloneCardVM }) {
           <MetricBar label="Overall DNA" value={card.match.overall} />
         </div>
 
-        {/* Performance + price */}
-        <div className="space-y-6">
-          <div>
-            <h4 className="mb-1 font-mono text-caption uppercase tracking-[0.08em] text-muted-foreground">
-              Performance vs original
-            </h4>
-            <div className="divide-y divide-border/60">
-              {card.performance.map((axis) => (
-                <PerformanceRow key={axis.label} axis={axis} />
-              ))}
-            </div>
-          </div>
-
-          <div className="rounded-lg border border-border bg-secondary/30 p-4">
-            <div className="flex items-end justify-between gap-3">
+        {(hasPerformance || hasPrice) && (
+          <div className="space-y-6">
+            {hasPerformance && (
               <div>
-                <p className="font-mono text-[0.6rem] uppercase tracking-[0.08em] text-muted-foreground">
-                  Original
-                </p>
-                <p className="text-sm text-muted-foreground line-through decoration-foreground/30">
-                  {price.originalDisplay ?? "—"}
-                </p>
+                <h4 className="mb-1 font-mono text-caption uppercase tracking-[0.08em] text-muted-foreground">
+                  Performance vs original
+                </h4>
+                <div className="divide-y divide-border/60">
+                  {card.performance.map((axis) => (
+                    <PerformanceRow key={axis.label} axis={axis} />
+                  ))}
+                </div>
               </div>
-              <div className="text-right">
-                <p className="font-mono text-[0.6rem] uppercase tracking-[0.08em] text-foreground">
-                  This dupe
-                </p>
-                <p className="font-display text-h4 leading-none">
-                  {price.cloneDisplay ?? "—"}
-                </p>
+            )}
+
+            {hasPrice && (
+              <div className="rounded-lg border border-border bg-secondary/30 p-4">
+                <div className="flex items-end justify-between gap-3">
+                  <div>
+                    <p className="font-mono text-[0.6rem] uppercase tracking-[0.08em] text-muted-foreground">
+                      Original
+                    </p>
+                    <p className="text-sm text-muted-foreground line-through decoration-foreground/30">
+                      {price.originalDisplay ?? "—"}
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-mono text-[0.6rem] uppercase tracking-[0.08em] text-foreground">
+                      This dupe
+                    </p>
+                    <p className="font-display text-h4 leading-none">
+                      {price.cloneDisplay ?? "—"}
+                    </p>
+                  </div>
+                </div>
+                {price.savingsDisplay && price.savingsPct != null && (
+                  <p className="mt-2 border-t border-foreground/15 pt-2 text-right font-mono text-caption uppercase tracking-[0.06em] text-foreground">
+                    Save {price.savingsDisplay} · {price.savingsPct}% less
+                  </p>
+                )}
               </div>
-            </div>
-            {price.savingsDisplay && price.savingsPct != null && (
-              <p className="mt-2 border-t border-foreground/15 pt-2 text-right font-mono text-caption uppercase tracking-[0.06em] text-foreground">
-                Save {price.savingsDisplay} · {price.savingsPct}% less
-              </p>
             )}
           </div>
-        </div>
+        )}
       </div>
 
       {/* Explanation + differences */}

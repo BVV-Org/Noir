@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "name": "Afnan",
+    "slug": "afnan",
+    "country": "AE",
+    "is_house_reference": 0,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 2,
+    "name": "Lattafa",
+    "slug": "lattafa",
+    "country": "AE",
+    "is_house_reference": 0,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 3,
+    "name": "Rayhaan",
+    "slug": "rayhaan",
+    "country": "AE",
+    "is_house_reference": 0,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 4,
+    "name": "Rasasi",
+    "slug": "rasasi",
+    "country": "AE",
+    "is_house_reference": 0,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 5,
+    "name": "Arabiyat Prestige",
+    "slug": "arabiyat-prestige",
+    "country": "AE",
+    "is_house_reference": 0,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 6,
+    "name": "French Avenue",
+    "slug": "french-avenue",
+    "country": "AE",
+    "is_house_reference": 0,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 7,
+    "name": "Aromatix × French Avenue",
+    "slug": "aromatix-french-avenue",
+    "country": "AE",
+    "is_house_reference": 0,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 8,
+    "name": "Armaf",
+    "slug": "armaf",
+    "country": "AE",
+    "is_house_reference": 0,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 9,
+    "name": "Jean Paul Gaultier",
+    "slug": "jean-paul-gaultier",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 10,
+    "name": "Chanel",
+    "slug": "chanel",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 11,
+    "name": "Yves Saint Laurent",
+    "slug": "yves-saint-laurent",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 12,
+    "name": "Creed",
+    "slug": "creed",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 13,
+    "name": "Dior",
+    "slug": "dior",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 14,
+    "name": "Kilian",
+    "slug": "kilian",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 15,
+    "name": "Initio Parfums Prives",
+    "slug": "initio-parfums-prives",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 16,
+    "name": "Nishane",
+    "slug": "nishane",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 17,
+    "name": "Parfums de Marly",
+    "slug": "parfums-de-marly",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 18,
+    "name": "Louis Vuitton",
+    "slug": "louis-vuitton",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 19,
+    "name": "Tom Ford",
+    "slug": "tom-ford",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 20,
+    "name": "Azzaro",
+    "slug": "azzaro",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 21,
+    "name": "Paco Rabanne",
+    "slug": "paco-rabanne",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 22,
+    "name": "Giorgio Armani",
+    "slug": "giorgio-armani",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 23,
+    "name": "BDK Parfums",
+    "slug": "bdk-parfums",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 24,
+    "name": "Ex Nihilo",
+    "slug": "ex-nihilo",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 25,
+    "name": "Kayali",
+    "slug": "kayali",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 26,
+    "name": "Bentley",
+    "slug": "bentley",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 27,
+    "name": "Bvlgari",
+    "slug": "bvlgari",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 28,
+    "name": "Simone Andreoli",
+    "slug": "simone-andreoli",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 29,
+    "name": "Emporio Armani",
+    "slug": "emporio-armani",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 30,
+    "name": "Gissah",
+    "slug": "gissah",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 31,
+    "name": "Xerjoff",
+    "slug": "xerjoff",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 32,
+    "name": "Memo Paris",
+    "slug": "memo-paris",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 33,
+    "name": "Valentino",
+    "slug": "valentino",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 34,
+    "name": "Hermes",
+    "slug": "hermes",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 35,
+    "name": "Issey Miyake",
+    "slug": "issey-miyake",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 36,
+    "name": "Maison Francis Kurkdjian",
+    "slug": "maison-francis-kurkdjian",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 37,
+    "name": "Hugo Boss",
+    "slug": "hugo-boss",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 38,
+    "name": "Maison Crivelli",
+    "slug": "maison-crivelli",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 39,
+    "name": "Penhaligon's",
+    "slug": "penhaligon-s",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 40,
+    "name": "Stephane Humbert Lucas 777",
+    "slug": "stephane-humbert-lucas-777",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 41,
+    "name": "Mancera",
+    "slug": "mancera",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 42,
+    "name": "Versace",
+    "slug": "versace",
+    "country": null,
+    "is_house_reference": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  }
+]

@@ -7,42 +7,53 @@ import type {
 } from "@/types/dupes";
 
 /**
- * ranker — retrieval + ranking of clone relationships for a searched fragrance.
+ * ranker — retrieval + ranking of the relationships a fragrance participates in.
  *
- * Requirement #6/#7/#9: given a fragrance, gather every clone relationship and
- * rank them automatically. A searched *clone* resolves to its original so the
- * user still sees the full field of alternatives (its siblings), with the one
- * they searched among them.
+ * Given a fragrance, gather EVERY relationship that touches it — in either
+ * direction and of any type (verified clone, inspired by, similar DNA, hybrid
+ * DNA) — so each relationship in the KB is reachable from the fragrance's own
+ * page. The card then shows the fragrance on the *other* side of the edge.
  *
- * Ranking is deterministic: headline confidence first (the KB's provenance-
- * aggregated score), then overall match, then the cheaper clone. Nothing about
- * the ordering is hand-assigned per fragrance.
+ * Ranking is deterministic and read straight off the KB: headline confidence
+ * first, then overall similarity. Nothing about the ordering is hand-assigned.
  */
 export interface ResolvedResult {
+  /** The searched fragrance — the page anchors on it. */
   original: KBFragrance;
   searched: KBFragrance;
   searchedRole: "original" | "clone";
   relationships: KBCloneRelationship[];
 }
 
+/** The fragrance a relationship card should display: the far side from `anchor`. */
+export function otherSideOf(
+  rel: KBCloneRelationship,
+  anchorId: string
+): string {
+  return rel.cloneFragranceId === anchorId
+    ? rel.originalFragranceId
+    : rel.cloneFragranceId;
+}
+
 /**
- * Featured originals for the empty state — every original that has at least one
- * clone, ordered by its strongest clone's confidence. Purely derived from the
- * KB, so it grows automatically as relationships are added.
+ * Featured chips for the empty state — reference fragrances that anchor the most
+ * relationships, ordered by their strongest confidence. Purely derived from the
+ * KB, so the set grows as the KB does.
  */
 export function getFeaturedOriginals(
   index: KBIndex,
   limit = 6
 ): FeaturedOriginal[] {
-  const featured: { frag: KBFragrance; bestConfidence: number }[] = [];
+  const featured: { frag: KBFragrance; bestConfidence: number; count: number }[] =
+    [];
   for (const [originalId, rels] of index.relationshipsByOriginalId) {
     const frag = index.fragranceById.get(originalId);
     if (!frag) continue;
     const bestConfidence = Math.max(...rels.map((r) => r.confidence));
-    featured.push({ frag, bestConfidence });
+    featured.push({ frag, bestConfidence, count: rels.length });
   }
   return featured
-    .sort((a, b) => b.bestConfidence - a.bestConfidence)
+    .sort((a, b) => b.count - a.count || b.bestConfidence - a.bestConfidence)
     .slice(0, limit)
     .map(({ frag }) => ({
       fragranceId: frag.id,
@@ -56,11 +67,7 @@ export function rankRelationships(
 ): KBCloneRelationship[] {
   return [...relationships].sort((a, b) => {
     if (b.confidence !== a.confidence) return b.confidence - a.confidence;
-    if (b.match.overall !== a.match.overall)
-      return b.match.overall - a.match.overall;
-    const ap = a.price.cloneApproxINR ?? Number.POSITIVE_INFINITY;
-    const bp = b.price.cloneApproxINR ?? Number.POSITIVE_INFINITY;
-    return ap - bp;
+    return b.match.overall - a.match.overall;
   });
 }
 
@@ -71,39 +78,23 @@ export function resolveDupes(
   const searched = index.fragranceById.get(fragranceId);
   if (!searched) return null;
 
-  // Case 1: the searched fragrance is an original with known clones.
-  const asOriginal = index.relationshipsByOriginalId.get(fragranceId);
-  if (asOriginal && asOriginal.length > 0) {
-    return {
-      original: searched,
-      searched,
-      searchedRole: "original",
-      relationships: rankRelationships(asOriginal),
-    };
-  }
+  const touching = index.relationshipsByFragranceId.get(fragranceId) ?? [];
 
-  // Case 2: the searched fragrance is a clone — resolve to its original and
-  // return the whole sibling set so alternatives are still visible.
-  const asClone = index.relationshipByCloneId.get(fragranceId);
-  if (asClone) {
-    const original = index.fragranceById.get(asClone.originalFragranceId);
-    if (original) {
-      const siblings =
-        index.relationshipsByOriginalId.get(original.id) ?? [asClone];
-      return {
-        original,
-        searched,
-        searchedRole: "clone",
-        relationships: rankRelationships(siblings),
-      };
+  // One card per related fragrance: a pair can be joined by more than one edge,
+  // so keep the strongest and drop the rest to avoid duplicate cards.
+  const strongestByOther = new Map<string, KBCloneRelationship>();
+  for (const rel of touching) {
+    const other = otherSideOf(rel, fragranceId);
+    const existing = strongestByOther.get(other);
+    if (!existing || rel.confidence > existing.confidence) {
+      strongestByOther.set(other, rel);
     }
   }
 
-  // Case 3: known fragrance, but no relationship in the KB yet.
   return {
     original: searched,
     searched,
     searchedRole: searched.kind === "clone" ? "clone" : "original",
-    relationships: [],
+    relationships: rankRelationships([...strongestByOther.values()]),
   };
 }

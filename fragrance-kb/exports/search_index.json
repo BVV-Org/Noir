@@ -1,0 +1,1892 @@
+[
+  {
+    "fragrance_id": 5,
+    "brand": "Afnan",
+    "display_name": "Afnan 9AM",
+    "family": "Aromatic Woody",
+    "terms": "afnan 9am afnan aromatic woody woody aromatic citrus musk fresh bergamot citruses aromatic notes musk woods",
+    "accords": "woody, aromatic, citrus, musk, fresh",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 6,
+    "brand": "Afnan",
+    "display_name": "Afnan 9AM Dive",
+    "family": "Aromatic Aquatic",
+    "terms": "afnan 9am dive afnan aromatic aquatic woody aromatic citrus smoky fresh spicy cedar patchouli lemon mint black currant pink pepper incense sandalwood",
+    "accords": "woody, aromatic, citrus, smoky, fresh spicy",
+    "top_relationships": "[{\"type\": \"HYBRID_DNA\", \"target\": \"Chanel Bleu de Chanel\", \"confidence\": 0.65}, {\"type\": \"HYBRID_DNA\", \"target\": \"Yves Saint Laurent Y Eau de Parfum\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 1,
+    "brand": "Afnan",
+    "display_name": "Afnan 9PM",
+    "family": "Amber Fougere",
+    "terms": "afnan 9pm afnan amber fougere sweet cinnamon warm spicy vanilla amber powdery apple cinnamon cinnamon lavender orange blossom vanilla tonka bean amber sugar",
+    "accords": "sweet, cinnamon, warm spicy, vanilla, amber, powdery",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Jean Paul Gaultier Ultra Male\", \"confidence\": 0.9}]"
+  },
+  {
+    "fragrance_id": 3,
+    "brand": "Afnan",
+    "display_name": "Afnan 9PM Elixir",
+    "family": "Amber Spicy",
+    "terms": "afnan 9pm elixir afnan amber spicy sweet warm spicy amber aromatic lavender vanilla amber pimento nutmeg cardamom",
+    "accords": "sweet, warm spicy, amber, aromatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Jean Paul Gaultier Ultra Male\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 4,
+    "brand": "Afnan",
+    "display_name": "Afnan 9PM Night Out",
+    "family": "Amber Boozy",
+    "terms": "afnan 9pm night out afnan amber boozy sweet warm spicy amber woody boozy apple lavender tonka bean cedar cardamom dragon fruit cognac bergamot toffee suede ambroxan patchouli akigalawood",
+    "accords": "sweet, warm spicy, amber, woody, boozy",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Azzaro The Most Wanted\", \"confidence\": 0.35}]"
+  },
+  {
+    "fragrance_id": 2,
+    "brand": "Afnan",
+    "display_name": "Afnan 9PM Rebel",
+    "family": "Fruity Woody",
+    "terms": "afnan 9pm rebel afnan fruity woody sweet fruity pineapple woody cedar pineapple green apple cedar cedar caramel",
+    "accords": "sweet, fruity, pineapple, woody, cedar",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Afnan 9PM\", \"confidence\": 0.5}, {\"type\": \"SIMILAR_DNA\", \"target\": \"Creed Aventus\", \"confidence\": 0.35}]"
+  },
+  {
+    "fragrance_id": 18,
+    "brand": "Afnan",
+    "display_name": "Afnan Historic Olmeda",
+    "family": "Aromatic Woody",
+    "terms": "afnan historic olmeda afnan aromatic woody warm spicy woody aromatic citrus fresh amber bergamot woods incense citrus ginger",
+    "accords": "warm spicy, woody, aromatic, citrus, fresh",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Chanel Bleu de Chanel\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 17,
+    "brand": "Afnan",
+    "display_name": "Afnan Historic Sahara",
+    "family": "Amber Gourmand",
+    "terms": "afnan historic sahara afnan amber gourmand sweet warm spicy amber gourmand almond cinnamon vanilla tonka bean sugar cardamom bergamot ambroxan musk elemi almond praline",
+    "accords": "sweet, warm spicy, amber, gourmand, almond",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Parfums de Marly Althair\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 19,
+    "brand": "Afnan",
+    "display_name": "Afnan Modest Une",
+    "family": "Aromatic Fougere",
+    "terms": "afnan modest une afnan aromatic fougere woody aromatic fresh spicy ambroxan lavender amber cedar nutmeg citruses musk mint vetiver pepper eucalyptus",
+    "accords": "woody, aromatic, fresh spicy, ambroxan",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Dior Sauvage Eau de Toilette\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 20,
+    "brand": "Afnan",
+    "display_name": "Afnan Portrait Abstract",
+    "family": "Oriental Fougere",
+    "terms": "afnan portrait abstract afnan oriental fougere amber woody incense leather rose tonka bean amber cedar incense sandalwood leather rose vetiver rhubarb",
+    "accords": "amber, woody, incense, leather, rose",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 15,
+    "brand": "Afnan",
+    "display_name": "Afnan Rare Carbon",
+    "family": "Leather",
+    "terms": "afnan rare carbon afnan leather warm spicy woody floral leather cinnamon amber cedar nutmeg sandalwood oud leather violet leaf violet rose vetiver",
+    "accords": "warm spicy, woody, floral, leather",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Tom Ford Ombre Leather\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 16,
+    "brand": "Afnan",
+    "display_name": "Afnan Rare Reef",
+    "family": "Citrus Aromatic",
+    "terms": "afnan rare reef afnan citrus aromatic fruity aromatic citrus fresh green mint black currant violet leaf rose orange citron grapefruit coriander apricot basil fig dates ambrette amberwood",
+    "accords": "fruity, aromatic, citrus, fresh, green",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Louis Vuitton Pacific Chill\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 12,
+    "brand": "Afnan",
+    "display_name": "Afnan Supremacy Collector's Edition",
+    "family": "Chypre Fruity",
+    "terms": "afnan supremacy collector's edition afnan chypre fruity fruity woody smoky chypre floral apple orange blossom amber pineapple bergamot musk oakmoss birch ambergris white flowers",
+    "accords": "fruity, woody, smoky, chypre, floral",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Creed Aventus Absolu\", \"confidence\": 0.7}]"
+  },
+  {
+    "fragrance_id": 14,
+    "brand": "Afnan",
+    "display_name": "Afnan Supremacy In Heaven",
+    "family": "Woody Aromatic",
+    "terms": "afnan supremacy in heaven afnan woody aromatic woody aromatic fresh musky green bergamot musk woods black currant sandalwood mandarin orange green tea",
+    "accords": "woody, aromatic, fresh, musky, green",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Creed Silver Mountain Water\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 13,
+    "brand": "Afnan",
+    "display_name": "Afnan Supremacy In Oud",
+    "family": "Amber Woody Oud",
+    "terms": "afnan supremacy in oud afnan amber woody oud amber woody smoky oud saffron lavender nutmeg patchouli musk saffron oud oud",
+    "accords": "amber, woody, smoky, oud, saffron",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Initio Parfums Prives Oud for Greatness\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 10,
+    "brand": "Afnan",
+    "display_name": "Afnan Supremacy Not Only Intense",
+    "family": "Woody Smoky",
+    "terms": "afnan supremacy not only intense afnan woody smoky woody aromatic smoky patchouli incense pineapple bergamot patchouli woods incense oakmoss",
+    "accords": "woody, aromatic, smoky, patchouli, incense",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Nishane Hacivat\", \"confidence\": 0.72}]"
+  },
+  {
+    "fragrance_id": 11,
+    "brand": "Afnan",
+    "display_name": "Afnan Supremacy Silver",
+    "family": "Fruity Chypre",
+    "terms": "afnan supremacy silver afnan fruity chypre fruity woody smoky chypre apple pineapple bergamot patchouli musk oakmoss jasmine birch ambergris",
+    "accords": "fruity, woody, smoky, chypre",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Creed Aventus\", \"confidence\": 0.8}]"
+  },
+  {
+    "fragrance_id": 7,
+    "brand": "Afnan",
+    "display_name": "Afnan Turathi Blue",
+    "family": "Aromatic Aquatic",
+    "terms": "afnan turathi blue afnan aromatic aquatic woody aromatic fresh aquatic patchouli bergamot patchouli aromatic notes musk aquatic notes",
+    "accords": "woody, aromatic, fresh, aquatic, patchouli",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Bvlgari Tygar\", \"confidence\": 0.72}]"
+  },
+  {
+    "fragrance_id": 8,
+    "brand": "Afnan",
+    "display_name": "Afnan Turathi Brown",
+    "family": "Woody Spicy",
+    "terms": "afnan turathi brown afnan woody spicy warm spicy powdery woody aromatic bergamot patchouli woods incense saffron",
+    "accords": "warm spicy, powdery, woody, aromatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Yves Saint Laurent Tuxedo\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 9,
+    "brand": "Afnan",
+    "display_name": "Afnan Turathi Electric",
+    "family": "Fruity Musky",
+    "terms": "afnan turathi electric afnan fruity musky fruity citrus fresh musky lavender vanilla amber bergamot pink grapefruit fruity notes",
+    "accords": "fruity, citrus, fresh, musky",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Ex Nihilo Blue Talisman\", \"confidence\": 0.35}]"
+  },
+  {
+    "fragrance_id": 87,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Aariz",
+    "family": "Amber Gourmand",
+    "terms": "arabiyat prestige aariz arabiyat prestige amber gourmand sweet warm spicy vanilla amber gourmand",
+    "accords": "sweet, warm spicy, vanilla, amber, gourmand",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 88,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Aariz Intense",
+    "family": "Amber Gourmand",
+    "terms": "arabiyat prestige aariz intense arabiyat prestige amber gourmand sweet warm spicy vanilla woody boozy gourmand vanilla tonka bean cedar cardamom sandalwood praline fig leaf lactonic notes",
+    "accords": "sweet, warm spicy, vanilla, woody, boozy, gourmand",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Kilian Angels' Share\", \"confidence\": 0.55}, {\"type\": \"SIMILAR_DNA\", \"target\": \"Lattafa Khamrah\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 89,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Aariz L'Absolu",
+    "family": "Amber Gourmand",
+    "terms": "arabiyat prestige aariz l'absolu arabiyat prestige amber gourmand sweet warm spicy vanilla amber gourmand",
+    "accords": "sweet, warm spicy, vanilla, amber, gourmand",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 90,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Al Noor",
+    "family": "Woody Spicy",
+    "terms": "arabiyat prestige al noor arabiyat prestige woody spicy sweet warm spicy woody leather creamy vanilla tonka bean nutmeg cardamom patchouli saffron leather vetiver fig iris labdanum",
+    "accords": "sweet, warm spicy, woody, leather, creamy",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"BDK Parfums Gris Charnel\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 91,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Aristo",
+    "family": "Floral Woody",
+    "terms": "arabiyat prestige aristo arabiyat prestige floral woody sweet woody citrus musky floral vanilla patchouli musk lemon sandalwood jasmine orange mandarin ginger flower magnolia",
+    "accords": "sweet, woody, citrus, musky, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 94,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ash'aa Amethyst",
+    "family": "Floral Fruity",
+    "terms": "arabiyat prestige ash'aa amethyst arabiyat prestige floral fruity sweet powdery fruity floral",
+    "accords": "sweet, powdery, fruity, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 95,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ash'aa Blanc",
+    "family": "Floral Musk",
+    "terms": "arabiyat prestige ash'aa blanc arabiyat prestige floral musk fresh musky floral clean",
+    "accords": "fresh, musky, floral, clean",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 92,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ash'aa Mauve",
+    "family": "Floral Fruity",
+    "terms": "arabiyat prestige ash'aa mauve arabiyat prestige floral fruity sweet powdery fruity floral rose vanilla musk incense violet rose raspberry neroli blueberry carnation cashmere wood",
+    "accords": "sweet, powdery, fruity, floral, rose",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 93,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ash'aa Neroli",
+    "family": "Citrus Floral",
+    "terms": "arabiyat prestige ash'aa neroli arabiyat prestige citrus floral aromatic citrus fresh musky floral bergamot ambergris grapefruit neroli verbena",
+    "accords": "aromatic, citrus, fresh, musky, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 96,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ash'aa Oud Noir",
+    "family": "Aromatic Woody",
+    "terms": "arabiyat prestige ash'aa oud noir arabiyat prestige aromatic woody woody aromatic fresh oud green lavender amber cedar bergamot ambroxan lemon sandalwood oakmoss oud violet juniper berries galbanum peppermint",
+    "accords": "woody, aromatic, fresh, oud, green",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 97,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Bedour",
+    "family": "Fruity Gourmand",
+    "terms": "arabiyat prestige bedour arabiyat prestige fruity gourmand sweet vanilla fruity floral gourmand",
+    "accords": "sweet, vanilla, fruity, floral, gourmand",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 98,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Bedour Extrait",
+    "family": "Fruity Gourmand",
+    "terms": "arabiyat prestige bedour extrait arabiyat prestige fruity gourmand sweet vanilla fruity floral gourmand orange blossom vanilla bergamot akigalawood musk vetiver mandarin cotton candy white peach gourmand accord",
+    "accords": "sweet, vanilla, fruity, floral, gourmand",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 99,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Blueberry Musk",
+    "family": "Fruity Musk",
+    "terms": "arabiyat prestige blueberry musk arabiyat prestige fruity musk sweet fruity musky floral lavender vanilla patchouli oakmoss rose raspberry freesia blueberry blackberry",
+    "accords": "sweet, fruity, musky, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 100,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Cranberry Musk",
+    "family": "Fruity Musk",
+    "terms": "arabiyat prestige cranberry musk arabiyat prestige fruity musk fruity fresh musky floral vanilla musk sandalwood jasmine pear freesia lotus cranberry",
+    "accords": "fruity, fresh, musky, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 101,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Hamdan The Brave",
+    "family": "Amber Spicy",
+    "terms": "arabiyat prestige hamdan the brave arabiyat prestige amber spicy sweet warm spicy amber woody aromatic",
+    "accords": "sweet, warm spicy, amber, woody, aromatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Valentino Uomo Born in Roma Intense\", \"confidence\": 0.42}]"
+  },
+  {
+    "fragrance_id": 102,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Hamdan The Hero",
+    "family": "Aromatic Aquatic",
+    "terms": "arabiyat prestige hamdan the hero arabiyat prestige aromatic aquatic woody aromatic citrus fresh spicy aquatic amber cedar nutmeg cardamom patchouli musk lemon pepper mandarin calone clove orris",
+    "accords": "woody, aromatic, citrus, fresh spicy, aquatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Issey Miyake L'Eau d'Issey pour Homme\", \"confidence\": 0.52}]"
+  },
+  {
+    "fragrance_id": 103,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Hamdan The Sheikh",
+    "family": "Aromatic Fougere",
+    "terms": "arabiyat prestige hamdan the sheikh arabiyat prestige aromatic fougere woody aromatic citrus fresh spicy ambroxan lavender amber cedar bergamot ambroxan pepper sichuan pepper",
+    "accords": "woody, aromatic, citrus, fresh spicy, ambroxan",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Dior Sauvage Eau de Parfum\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 104,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Hypnotic Amber",
+    "family": "Amber Woody",
+    "terms": "arabiyat prestige hypnotic amber arabiyat prestige amber woody sweet amber woody smoky incense vanilla bergamot ambroxan patchouli musk incense oud rose black pepper",
+    "accords": "sweet, amber, woody, smoky, incense",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Creed Aventus\", \"confidence\": 0.4}]"
+  },
+  {
+    "fragrance_id": 105,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Hypnotic Oud",
+    "family": "Amber Oud Gourmand",
+    "terms": "arabiyat prestige hypnotic oud arabiyat prestige amber oud gourmand sweet warm spicy amber oud gourmand orange blossom vanilla amber caramel akigalawood saffron oud cashmeran clove",
+    "accords": "sweet, warm spicy, amber, oud, gourmand",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Kilian Angels' Share\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 106,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Hypnotic Vanilla",
+    "family": "Amber Vanilla",
+    "terms": "arabiyat prestige hypnotic vanilla arabiyat prestige amber vanilla sweet vanilla amber gourmand",
+    "accords": "sweet, vanilla, amber, gourmand",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 107,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ishatar Amber Vanilla",
+    "family": "Amber Floral",
+    "terms": "arabiyat prestige ishatar amber vanilla arabiyat prestige amber floral sweet vanilla amber floral gourmand vanilla amber amber caramel bergamot patchouli musk sandalwood jasmine ginger mandarin moroccan rose",
+    "accords": "sweet, vanilla, amber, floral, gourmand",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 108,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ishatar Citrus Oud",
+    "family": "Woody Oud",
+    "terms": "arabiyat prestige ishatar citrus oud arabiyat prestige woody oud amber woody citrus fresh oud tonka bean amber cedar bergamot patchouli jasmine oud grapefruit",
+    "accords": "amber, woody, citrus, fresh, oud",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 109,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ishatar Roses Vanilla",
+    "family": "Floral Vanilla",
+    "terms": "arabiyat prestige ishatar roses vanilla arabiyat prestige floral vanilla sweet vanilla musky floral rose vanilla cedar lemon rose white musk",
+    "accords": "sweet, vanilla, musky, floral, rose",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 110,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Kohl Luminous",
+    "family": "Fruity Chypre",
+    "terms": "arabiyat prestige kohl luminous arabiyat prestige fruity chypre sweet warm spicy fruity woody chypre tonka bean cedar lemon pink pepper oakmoss jasmine ambergris violet praline ginger rhubarb mango",
+    "accords": "sweet, warm spicy, fruity, woody, chypre",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 111,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Kohl Opulence",
+    "family": "Fruity Floral",
+    "terms": "arabiyat prestige kohl opulence arabiyat prestige fruity floral sweet amber fruity woody floral orange blossom vanilla amber bergamot musk jasmine ginger pear woody notes",
+    "accords": "sweet, amber, fruity, woody, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 113,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige La Di Da For Her",
+    "family": "Floral Gourmand",
+    "terms": "arabiyat prestige la di da for her arabiyat prestige floral gourmand sweet vanilla fruity floral gourmand vanilla musk lemon rose tuberose benzoin raspberry sweet notes ylang-ylang",
+    "accords": "sweet, vanilla, fruity, floral, gourmand",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Tom Ford Vanilla Sex\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 112,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige La Di Da For Him",
+    "family": "Aromatic",
+    "terms": "arabiyat prestige la di da for him arabiyat prestige aromatic sweet amber aromatic citrus musky vanilla tonka bean bergamot aromatic notes musk ambergris grapefruit black pepper geranium",
+    "accords": "sweet, amber, aromatic, citrus, musky",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 114,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Lamsat Harir",
+    "family": "Floral Fruity",
+    "terms": "arabiyat prestige lamsat harir arabiyat prestige floral fruity sweet powdery fruity chypre floral cedar patchouli musk black currant jasmine tuberose grapes heliotrope",
+    "accords": "sweet, powdery, fruity, chypre, floral",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Giorgio Armani Si\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 115,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Mahd Al Dhahab",
+    "family": "Amber Woody",
+    "terms": "arabiyat prestige mahd al dhahab arabiyat prestige amber woody sweet warm spicy amber woody oud vanilla amber bergamot patchouli lemon sandalwood oud spices white musk",
+    "accords": "sweet, warm spicy, amber, woody, oud",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 116,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Marwa",
+    "family": "Woody Spicy",
+    "terms": "arabiyat prestige marwa arabiyat prestige woody spicy warm spicy amber woody citrus tea cinnamon bergamot ambroxan lemon orange ginger olibanum black tea neroli guaiac wood",
+    "accords": "warm spicy, amber, woody, citrus, tea",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Louis Vuitton Imagination\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 117,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nashwa",
+    "family": "Aromatic Citrus",
+    "terms": "arabiyat prestige nashwa arabiyat prestige aromatic citrus woody aromatic citrus fresh mineral amber bergamot patchouli musk vetiver grapefruit ginger",
+    "accords": "woody, aromatic, citrus, fresh, mineral",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Bvlgari Tygar\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 118,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nashwa Noir",
+    "family": "Leather Oud",
+    "terms": "arabiyat prestige nashwa noir arabiyat prestige leather oud warm spicy woody smoky oud leather cinnamon nutmeg bergamot patchouli saffron oud leather geranium bark nagarmotha black musk",
+    "accords": "warm spicy, woody, smoky, oud, leather",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 119,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nashwa Oud",
+    "family": "Woody Oud",
+    "terms": "arabiyat prestige nashwa oud arabiyat prestige woody oud warm spicy amber woody incense oud vanilla cedar bergamot ambroxan patchouli saffron oud olibanum geranium",
+    "accords": "warm spicy, amber, woody, incense, oud",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 120,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nashwa Smoke",
+    "family": "Smoky Oud",
+    "terms": "arabiyat prestige nashwa smoke arabiyat prestige smoky oud sweet smoky incense oud leather amber cedar caramel bergamot patchouli oud leather olibanum mandarin",
+    "accords": "sweet, smoky, incense, oud, leather",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Bvlgari Le Gemme Onekh\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 121,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nayel Her Majesty",
+    "family": "Amber Gourmand",
+    "terms": "arabiyat prestige nayel her majesty arabiyat prestige amber gourmand sweet vanilla fruity gourmand coffee cinnamon orange blossom vanilla patchouli coffee mandarin pear",
+    "accords": "sweet, vanilla, fruity, gourmand, coffee",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 122,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nayel King",
+    "family": "Woody Spicy",
+    "terms": "arabiyat prestige nayel king arabiyat prestige woody spicy warm spicy amber woody aromatic",
+    "accords": "warm spicy, amber, woody, aromatic",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 123,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nayel Oud",
+    "family": "Aromatic Oud",
+    "terms": "arabiyat prestige nayel oud arabiyat prestige aromatic oud powdery woody aromatic floral oud vanilla amber cedar bergamot patchouli oud violet leaf rose lily-of-the-valley",
+    "accords": "powdery, woody, aromatic, floral, oud",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Yves Saint Laurent Tuxedo\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 124,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nayel Queen",
+    "family": "Tobacco Woody",
+    "terms": "arabiyat prestige nayel queen arabiyat prestige tobacco woody sweet warm spicy woody tobacco suede vanilla tonka bean cedar suede pink pepper saffron benzoin tobacco black pepper",
+    "accords": "sweet, warm spicy, woody, tobacco, suede",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 125,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nyla",
+    "family": "Floral Tropical",
+    "terms": "arabiyat prestige nyla arabiyat prestige floral tropical fruity musky floral coconut tropical bergamot patchouli jasmine white flowers rose mandarin coconut peach white musk tiare",
+    "accords": "fruity, musky, floral, coconut, tropical",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 126,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nyla Sherbet",
+    "family": "Fruity",
+    "terms": "arabiyat prestige nyla sherbet arabiyat prestige fruity sweet fruity fresh musky musk sandalwood mandarin plum strawberry",
+    "accords": "sweet, fruity, fresh, musky",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 127,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nyla Suede",
+    "family": "Leather Gourmand",
+    "terms": "arabiyat prestige nyla suede arabiyat prestige leather gourmand sweet leather gourmand coconut creamy vanilla caramel musk sandalwood ambergris leather praline coconut milk cashmere wood ylang-ylang",
+    "accords": "sweet, leather, gourmand, coconut, creamy",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 128,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Nyla Vani-Elle",
+    "family": "Amber Vanilla",
+    "terms": "arabiyat prestige nyla vani-elle arabiyat prestige amber vanilla sweet vanilla amber gourmand creamy vanilla tonka bean amber caramel musk jasmine vanilla bean",
+    "accords": "sweet, vanilla, amber, gourmand, creamy",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 129,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Portrait",
+    "family": "Woody",
+    "terms": "arabiyat prestige portrait arabiyat prestige woody sweet amber woody aromatic",
+    "accords": "sweet, amber, woody, aromatic",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 130,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Portrait Azure",
+    "family": "Amber Spicy",
+    "terms": "arabiyat prestige portrait azure arabiyat prestige amber spicy sweet warm spicy amber woody fresh vanilla ambergris rose magnolia gourmand accord red fruits hazelnut lychee cypriol",
+    "accords": "sweet, warm spicy, amber, woody, fresh",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Dior Sauvage Elixir\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 131,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Portrait Café Noir",
+    "family": "Woody Chypre",
+    "terms": "arabiyat prestige portrait café noir arabiyat prestige woody chypre sweet amber fruity woody chypre amber caramel bergamot patchouli akigalawood musk black currant evernyl",
+    "accords": "sweet, amber, fruity, woody, chypre",
+    "top_relationships": "[{\"type\": \"HYBRID_DNA\", \"target\": \"Creed Aventus\", \"confidence\": 0.45}, {\"type\": \"HYBRID_DNA\", \"target\": \"Maison Francis Kurkdjian Baccarat Rouge 540\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 132,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Raees",
+    "family": "Fruity",
+    "terms": "arabiyat prestige raees arabiyat prestige fruity sweet amber fruity fresh",
+    "accords": "sweet, amber, fruity, fresh",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 133,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Raees Aurum",
+    "family": "Fruity",
+    "terms": "arabiyat prestige raees aurum arabiyat prestige fruity sweet amber fruity citrus",
+    "accords": "sweet, amber, fruity, citrus",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Xerjoff Erba Pura\", \"confidence\": 0.4}]"
+  },
+  {
+    "fragrance_id": 134,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Raees Luxury Edition",
+    "family": "Woody Aquatic",
+    "terms": "arabiyat prestige raees luxury edition arabiyat prestige woody aquatic woody aromatic fresh aquatic",
+    "accords": "woody, aromatic, fresh, aquatic",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 135,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Raees Twilight Aura",
+    "family": "Fruity",
+    "terms": "arabiyat prestige raees twilight aura arabiyat prestige fruity sweet amber fruity citrus green amber amber musk fruity notes citrus green notes woody notes sweet notes tropical fruits floral notes",
+    "accords": "sweet, amber, fruity, citrus, green",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Xerjoff Erba Pura\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 136,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ramad",
+    "family": "Woody Smoky",
+    "terms": "arabiyat prestige ramad arabiyat prestige woody smoky amber woody smoky incense",
+    "accords": "amber, woody, smoky, incense",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 137,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ramad Earthy",
+    "family": "Woody Earthy",
+    "terms": "arabiyat prestige ramad earthy arabiyat prestige woody earthy amber woody smoky earthy",
+    "accords": "amber, woody, smoky, earthy",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 138,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ramad Louban",
+    "family": "Woody Spicy",
+    "terms": "arabiyat prestige ramad louban arabiyat prestige woody spicy warm spicy amber woody smoky incense cinnamon amber cedar cardamom oakmoss vetiver pepper benzoin myrrh labdanum davana hazelnut cypriol pine",
+    "accords": "warm spicy, amber, woody, smoky, incense",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 139,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ramad Myrrh",
+    "family": "Resinous Woody",
+    "terms": "arabiyat prestige ramad myrrh arabiyat prestige resinous woody warm spicy amber woody incense resinous",
+    "accords": "warm spicy, amber, woody, incense, resinous",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 140,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Ramad Oriental",
+    "family": "Amber Woody",
+    "terms": "arabiyat prestige ramad oriental arabiyat prestige amber woody sweet warm spicy amber woody",
+    "accords": "sweet, warm spicy, amber, woody",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 141,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Safa",
+    "family": "Floral Fruity Gourmand",
+    "terms": "arabiyat prestige safa arabiyat prestige floral fruity gourmand sweet fruity floral gourmand rose vanilla ambergris rose magnolia gourmand accord red fruits hazelnut lychee cypriol",
+    "accords": "sweet, fruity, floral, gourmand, rose",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Parfums de Marly Delina\", \"confidence\": 0.48}]"
+  },
+  {
+    "fragrance_id": 142,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Swar Seduire",
+    "family": "Amber Woody",
+    "terms": "arabiyat prestige swar seduire arabiyat prestige amber woody sweet warm spicy amber oud leather cinnamon vanilla amber patchouli oud leather dates marigold sugar cane",
+    "accords": "sweet, warm spicy, amber, oud, leather",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 143,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Swar Venin",
+    "family": "Amber Woody",
+    "terms": "arabiyat prestige swar venin arabiyat prestige amber woody sweet warm spicy amber woody",
+    "accords": "sweet, warm spicy, amber, woody",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 144,
+    "brand": "Arabiyat Prestige",
+    "display_name": "Arabiyat Prestige Uhud",
+    "family": "Amber Gourmand",
+    "terms": "arabiyat prestige uhud arabiyat prestige amber gourmand sweet vanilla amber fruity gourmand vanilla tonka bean amber caramel rose raspberry white musk red fruits honey",
+    "accords": "sweet, vanilla, amber, fruity, gourmand",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 210,
+    "brand": "Armaf",
+    "display_name": "Armaf Aura Fresh",
+    "family": "Woody Aromatic",
+    "terms": "armaf aura fresh armaf woody aromatic warm spicy woody aromatic citrus fresh amber cedar cardamom bergamot musk woods lemon saffron pepper sage carambola",
+    "accords": "warm spicy, woody, aromatic, citrus, fresh",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Versace Eau Fraiche\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 200,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Blue Iconic",
+    "family": "Aromatic Woody",
+    "terms": "armaf club de nuit blue iconic armaf aromatic woody woody aromatic citrus fresh incense amber cedar nutmeg patchouli lemon mint pink pepper incense sandalwood jasmine grapefruit coriander ginger labdanum melon",
+    "accords": "woody, aromatic, citrus, fresh, incense",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Chanel Bleu de Chanel\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 199,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Iconic",
+    "family": "Aromatic Woody",
+    "terms": "armaf club de nuit iconic armaf aromatic woody woody aromatic citrus fresh incense amber cedar nutmeg lemon mint pink pepper incense sandalwood jasmine grapefruit ginger labdanum",
+    "accords": "woody, aromatic, citrus, fresh, incense",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Chanel Bleu de Chanel\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 192,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Intense Man EDP",
+    "family": "Fruity Chypre",
+    "terms": "armaf club de nuit intense man edp armaf fruity chypre fruity pineapple woody smoky chypre vanilla pineapple bergamot musk lemon oakmoss jasmine birch ambergris rose",
+    "accords": "fruity, pineapple, woody, smoky, chypre",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Creed Aventus\", \"confidence\": 0.85}, {\"type\": \"SIMILAR_DNA\", \"target\": \"Armaf Club de Nuit Intense Man EDT\", \"confidence\": 0.85}]"
+  },
+  {
+    "fragrance_id": 191,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Intense Man EDT",
+    "family": "Fruity Chypre",
+    "terms": "armaf club de nuit intense man edt armaf fruity chypre fruity pineapple woody smoky chypre apple vanilla pineapple bergamot musk lemon black currant oakmoss jasmine birch ambergris rose vetiver",
+    "accords": "fruity, pineapple, woody, smoky, chypre",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Creed Aventus\", \"confidence\": 0.92}]"
+  },
+  {
+    "fragrance_id": 193,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Intense Man Limited Edition",
+    "family": "Fruity Chypre",
+    "terms": "armaf club de nuit intense man limited edition armaf fruity chypre amber fruity pineapple woody smoky vanilla pineapple bergamot musk lemon oakmoss jasmine birch ambergris rose",
+    "accords": "amber, fruity, pineapple, woody, smoky",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Creed Aventus\", \"confidence\": 0.85}]"
+  },
+  {
+    "fragrance_id": 196,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Milestone",
+    "family": "Woody Floral Musk",
+    "terms": "armaf club de nuit milestone armaf woody floral musk fruity woody fresh aquatic musky bergamot ambroxan musk woods lemon sandalwood violet iris sea notes",
+    "accords": "fruity, woody, fresh, aquatic, musky",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Creed Millesime Imperial\", \"confidence\": 0.75}]"
+  },
+  {
+    "fragrance_id": 194,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Precieux",
+    "family": "Fruity Chypre",
+    "terms": "armaf club de nuit precieux armaf fruity chypre sweet fruity pineapple woody chypre vanilla amber pineapple cedar caramel bergamot ambroxan patchouli lemon pink pepper oakmoss jasmine leather black pepper pear lily-of-the-valley white musk anise white wood",
+    "accords": "sweet, fruity, pineapple, woody, chypre",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Creed Aventus Absolu\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 195,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Sillage",
+    "family": "Woody Aromatic",
+    "terms": "armaf club de nuit sillage armaf woody aromatic woody citrus fresh musky green cedar bergamot ambroxan musk lemon black currant sandalwood jasmine violet leaf rose ginger iris lime",
+    "accords": "woody, citrus, fresh, musky, green",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Creed Silver Mountain Water\", \"confidence\": 0.75}]"
+  },
+  {
+    "fragrance_id": 197,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Untold",
+    "family": "Amber Woody Floral",
+    "terms": "armaf club de nuit untold armaf amber woody floral sweet amber woody floral saffron cedar saffron jasmine ambergris amberwood fir resin",
+    "accords": "sweet, amber, woody, floral, saffron",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Maison Francis Kurkdjian Baccarat Rouge 540\", \"confidence\": 0.8}]"
+  },
+  {
+    "fragrance_id": 198,
+    "brand": "Armaf",
+    "display_name": "Armaf Club de Nuit Urban Man Elixir",
+    "family": "Amber Spicy",
+    "terms": "armaf club de nuit urban man elixir armaf amber spicy sweet warm spicy amber woody aromatic",
+    "accords": "sweet, warm spicy, amber, woody, aromatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Dior Sauvage Elixir\", \"confidence\": 0.42}]"
+  },
+  {
+    "fragrance_id": 206,
+    "brand": "Armaf",
+    "display_name": "Armaf Hunter Intense",
+    "family": "Aromatic Fresh Spicy",
+    "terms": "armaf hunter intense armaf aromatic fresh spicy woody aromatic citrus fresh spicy aquatic lavender amber bergamot musk woods lemon tuberose geranium mandarin ylang-ylang pomelo",
+    "accords": "woody, aromatic, citrus, fresh spicy, aquatic",
+    "top_relationships": "[{\"type\": \"HYBRID_DNA\", \"target\": \"Dior Sauvage Eau de Toilette\", \"confidence\": 0.42}, {\"type\": \"HYBRID_DNA\", \"target\": \"Paco Rabanne Invictus\", \"confidence\": 0.4}]"
+  },
+  {
+    "fragrance_id": 207,
+    "brand": "Armaf",
+    "display_name": "Armaf Hunter Killer",
+    "family": "Tobacco Woody",
+    "terms": "armaf hunter killer armaf tobacco woody warm spicy amber woody incense tobacco cinnamon lavender vanilla amber green apple nutmeg patchouli incense saffron jasmine vetiver pepper tobacco guaiac wood",
+    "accords": "warm spicy, amber, woody, incense, tobacco",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Mancera Red Tobacco\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 203,
+    "brand": "Armaf",
+    "display_name": "Armaf Odyssey Aqua",
+    "family": "Aromatic Aquatic",
+    "terms": "armaf odyssey aqua armaf aromatic aquatic woody aromatic citrus fresh aquatic",
+    "accords": "woody, aromatic, citrus, fresh, aquatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Paco Rabanne Invictus Platinum\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 204,
+    "brand": "Armaf",
+    "display_name": "Armaf Odyssey Homme",
+    "family": "Amber Spicy",
+    "terms": "armaf odyssey homme armaf amber spicy sweet warm spicy amber woody floral orange blossom vanilla amber cardamom woods sandalwood rose mandarin neroli",
+    "accords": "sweet, warm spicy, amber, woody, floral",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Tom Ford Noir Extreme\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 201,
+    "brand": "Armaf",
+    "display_name": "Armaf Odyssey Mandarin Sky",
+    "family": "Amber Fougere",
+    "terms": "armaf odyssey mandarin sky armaf amber fougere sweet warm spicy amber aromatic citrus tonka bean cedar caramel ambroxan saffron vetiver orange sage mandarin marigold",
+    "accords": "sweet, warm spicy, amber, aromatic, citrus",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Jean Paul Gaultier Scandal Pour Homme\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 202,
+    "brand": "Armaf",
+    "display_name": "Armaf Odyssey Mega",
+    "family": "Aromatic Fresh Spicy",
+    "terms": "armaf odyssey mega armaf aromatic fresh spicy fruity woody aromatic citrus fresh spicy tonka bean pineapple cedar bergamot musk lemon mint vetiver orange ginger sage juniper berries geranium",
+    "accords": "fruity, woody, aromatic, citrus, fresh spicy",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Yves Saint Laurent Y Eau de Parfum\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 205,
+    "brand": "Armaf",
+    "display_name": "Armaf Odyssey Wild One",
+    "family": "Woody Spicy",
+    "terms": "armaf odyssey wild one armaf woody spicy warm spicy woody aromatic citrus fresh lavender cedar bergamot patchouli musk lemon mint pink pepper sandalwood vetiver vetiver elemi ginger pepper",
+    "accords": "warm spicy, woody, aromatic, citrus, fresh",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Chanel Bleu de Chanel\", \"confidence\": 0.48}]"
+  },
+  {
+    "fragrance_id": 209,
+    "brand": "Armaf",
+    "display_name": "Armaf Tag Him Uomo Rosso",
+    "family": "Amber Spicy",
+    "terms": "armaf tag him uomo rosso armaf amber spicy sweet warm spicy amber woody aromatic lavender vanilla tonka bean cardamom patchouli aromatic notes incense black pepper spicy notes",
+    "accords": "sweet, warm spicy, amber, woody, aromatic",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Paco Rabanne Invictus Victory Elixir\", \"confidence\": 0.75}]"
+  },
+  {
+    "fragrance_id": 208,
+    "brand": "Armaf",
+    "display_name": "Armaf Ventana",
+    "family": "Aromatic Fougere",
+    "terms": "armaf ventana armaf aromatic fougere woody aromatic citrus fresh spicy ambroxan",
+    "accords": "woody, aromatic, citrus, fresh spicy, ambroxan",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Dior Sauvage Eau de Toilette\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 184,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue Carnal Desire",
+    "family": "Fruity Leather Oud",
+    "terms": "aromatix × french avenue carnal desire aromatix × french avenue fruity leather oud sweet fruity oud leather gourmand cinnamon vanilla cedar bergamot patchouli oud leather rose raspberry cotton candy orris",
+    "accords": "sweet, fruity, oud, leather, gourmand",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Maison Crivelli Oud Maracuja\", \"confidence\": 0.42}]"
+  },
+  {
+    "fragrance_id": 182,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue Forbidden Fruit",
+    "family": "Oriental Floral",
+    "terms": "aromatix × french avenue forbidden fruit aromatix × french avenue oriental floral sweet warm spicy amber fruity floral vanilla amber cedar cardamom bergamot musk sandalwood rose benzoin blood orange peach red apple margarita accord",
+    "accords": "sweet, warm spicy, amber, fruity, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 186,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue Frostbite",
+    "family": "Fruity Aromatic",
+    "terms": "aromatix × french avenue frostbite aromatix × french avenue fruity aromatic sweet fruity woody aromatic fresh apple lavender vanilla amber cedar cardamom bergamot patchouli pink pepper sandalwood oakmoss jasmine ambergris violet vetiver geranium mango blueberry",
+    "accords": "sweet, fruity, woody, aromatic, fresh",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 188,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue L'Absolu Noir",
+    "family": "Amber Woody",
+    "terms": "aromatix × french avenue l'absolu noir aromatix × french avenue amber woody warm spicy amber woody smoky",
+    "accords": "warm spicy, amber, woody, smoky",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 181,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue Magnetiq",
+    "family": "Woody Aromatic",
+    "terms": "aromatix × french avenue magnetiq aromatix × french avenue woody aromatic amber woody aromatic fresh floral lavender orange blossom vanilla amber cedar bergamot musk pink pepper sandalwood oakmoss myrrh iris rosemary neroli",
+    "accords": "amber, woody, aromatic, fresh, floral",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Yves Saint Laurent MYSLF\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 189,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue Midnight Oud",
+    "family": "Woody Oud",
+    "terms": "aromatix × french avenue midnight oud aromatix × french avenue woody oud amber woody smoky oud",
+    "accords": "amber, woody, smoky, oud",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 183,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue Naughty Dates",
+    "family": "Amber Gourmand Coffee",
+    "terms": "aromatix × french avenue naughty dates aromatix × french avenue amber gourmand coffee sweet warm spicy amber gourmand coffee cinnamon vanilla amber caramel cardamom bergamot sandalwood dates coffee mandarin hazelnut honey ebony wood",
+    "accords": "sweet, warm spicy, amber, gourmand, coffee",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 187,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue Platine Blanc",
+    "family": "Aromatic Green",
+    "terms": "aromatix × french avenue platine blanc aromatix × french avenue aromatic green aromatic citrus fresh musky green musk lemon mint black currant sandalwood oakmoss jasmine ambergris rosemary lime tonic water",
+    "accords": "aromatic, citrus, fresh, musky, green",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 185,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue Teas Me",
+    "family": "Woody Tea",
+    "terms": "aromatix × french avenue teas me aromatix × french avenue woody tea warm spicy woody aromatic fresh tea vanilla tonka bean amber cardamom patchouli ginger olibanum geranium black tea lime hedione",
+    "accords": "warm spicy, woody, aromatic, fresh, tea",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 190,
+    "brand": "Aromatix × French Avenue",
+    "display_name": "Aromatix × French Avenue Élara",
+    "family": "Floral",
+    "terms": "aromatix × french avenue élara aromatix × french avenue floral sweet fresh musky floral",
+    "accords": "sweet, fresh, musky, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 152,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Aether",
+    "family": "Aromatic Fruity",
+    "terms": "french avenue aether french avenue aromatic fruity fruity woody aromatic fresh green green apple cedar bergamot musk oakmoss violet amberwood cashmeran mandarin petitgrain",
+    "accords": "fruity, woody, aromatic, fresh, green",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Parfums de Marly Greenly\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 153,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Atlantis Extrait",
+    "family": "Fruity Aquatic",
+    "terms": "french avenue atlantis extrait french avenue fruity aquatic sweet fruity aquatic coconut marine lemon ambergris orange amberwood cacao mandarin watermelon coconut",
+    "accords": "sweet, fruity, aquatic, coconut, marine",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Simone Andreoli Wavechild\", \"confidence\": 0.4}]"
+  },
+  {
+    "fragrance_id": 159,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Azzure Oud",
+    "family": "Fruity Oud",
+    "terms": "french avenue azzure oud french avenue fruity oud amber fruity woody oud leather amber cedar patchouli sandalwood saffron fruity notes oud leather rose benzoin labdanum guaiac wood passion fruit",
+    "accords": "amber, fruity, woody, oud, leather",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Maison Crivelli Oud Maracuja\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 160,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Cocoa Morado",
+    "family": "Amber Oud Gourmand",
+    "terms": "french avenue cocoa morado french avenue amber oud gourmand sweet warm spicy incense oud gourmand cinnamon amber caramel cardamom woods incense saffron oud dates",
+    "accords": "sweet, warm spicy, incense, oud, gourmand",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Maison Crivelli Oud Cadenza\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 163,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Essence de Blanc",
+    "family": "Aromatic Tea",
+    "terms": "french avenue essence de blanc french avenue aromatic tea woody aromatic citrus incense tea cinnamon bergamot ambroxan lemon incense orange ginger black tea neroli guaiac wood",
+    "accords": "woody, aromatic, citrus, incense, tea",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Louis Vuitton Imagination\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 164,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Essence de Matcha",
+    "family": "Woody Aromatic",
+    "terms": "french avenue essence de matcha french avenue woody aromatic fruity woody fresh green tea cedar lemon sandalwood orange apricot fig matcha tea osmanthus",
+    "accords": "fruity, woody, fresh, green, tea",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 150,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Liquid Brun",
+    "family": "Amber Gourmand",
+    "terms": "french avenue liquid brun french avenue amber gourmand sweet warm spicy vanilla gourmand almond cinnamon vanilla tonka bean bergamot ambroxan almond praline",
+    "accords": "sweet, warm spicy, vanilla, gourmand, almond",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Parfums de Marly Althair\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 151,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Liquid Brun Limited Edition",
+    "family": "Amber Gourmand",
+    "terms": "french avenue liquid brun limited edition french avenue amber gourmand sweet vanilla amber gourmand almond",
+    "accords": "sweet, vanilla, amber, gourmand, almond",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"French Avenue Liquid Brun\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 162,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Meringue Luscious",
+    "family": "Gourmand",
+    "terms": "french avenue meringue luscious french avenue gourmand sweet vanilla gourmand pistachio nutty vanilla tonka bean cardamom bergamot musk saffron pistachio honey peanut",
+    "accords": "sweet, vanilla, gourmand, pistachio, nutty",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 165,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Miraj Absolu",
+    "family": "Floral Woody",
+    "terms": "french avenue miraj absolu french avenue floral woody sweet woody floral oud animalic vanilla amber bergamot patchouli pink pepper sandalwood oakmoss oud rose almond coffee geranium watery notes mandarin guaiac wood civet gardenia water lily",
+    "accords": "sweet, woody, floral, oud, animalic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Parfums de Marly Layton Exclusif\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 166,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Miraj Exclusif",
+    "family": "Oriental Oud",
+    "terms": "french avenue miraj exclusif french avenue oriental oud sweet incense floral oud coffee vanilla cardamom incense oud coffee jasmine sambac",
+    "accords": "sweet, incense, floral, oud, coffee",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Penhaligon's The Bewitching Yasmine\", \"confidence\": 0.48}]"
+  },
+  {
+    "fragrance_id": 167,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Moonstone Bleu",
+    "family": "Aromatic Leather",
+    "terms": "french avenue moonstone bleu french avenue aromatic leather powdery woody aromatic leather honey lavender vanilla tonka bean amber cedar cardamom patchouli oakmoss leather violet leaf myrrh black pepper aldehydes lime white musk honey metallic notes beeswax cyclamen",
+    "accords": "powdery, woody, aromatic, leather, honey",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Penhaligon's Sartorial\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 168,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Moonstone Noire",
+    "family": "Leather",
+    "terms": "french avenue moonstone noire french avenue leather warm spicy amber woody smoky leather vanilla cedar oud leather vetiver smoky notes balsamic notes ambernat",
+    "accords": "warm spicy, amber, woody, smoky, leather",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Tom Ford Ombre Leather\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 157,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Pinnace Noir",
+    "family": "Fruity Aromatic",
+    "terms": "french avenue pinnace noir french avenue fruity aromatic sweet warm spicy fruity woody aromatic apple cinnamon orange blossom vanilla cedar bergamot lemon sandalwood geranium clove brazilian rosewood",
+    "accords": "sweet, warm spicy, fruity, woody, aromatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Hugo Boss Bottled\", \"confidence\": 0.52}]"
+  },
+  {
+    "fragrance_id": 158,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Pinnace Oryn",
+    "family": "Citrus",
+    "terms": "french avenue pinnace oryn french avenue citrus aromatic citrus fresh musky bergamot ambergris orange ginger mandarin",
+    "accords": "aromatic, citrus, fresh, musky",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Louis Vuitton Afternoon Swim\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 145,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Royal Blend",
+    "family": "Amber Gourmand",
+    "terms": "french avenue royal blend french avenue amber gourmand sweet warm spicy vanilla boozy gourmand cinnamon vanilla tonka bean cognac sandalwood praline oak",
+    "accords": "sweet, warm spicy, vanilla, boozy, gourmand",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Kilian Angels' Share\", \"confidence\": 0.8}]"
+  },
+  {
+    "fragrance_id": 147,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Royal Blend Bourbon",
+    "family": "Aromatic",
+    "terms": "french avenue royal blend bourbon french avenue aromatic warm spicy woody aromatic boozy cinnamon lavender basil peppermint bark oak bourbon whiskey peru balsam",
+    "accords": "warm spicy, woody, aromatic, boozy",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 146,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Royal Blend Nero",
+    "family": "Amber Gourmand",
+    "terms": "french avenue royal blend nero french avenue amber gourmand sweet warm spicy vanilla woody boozy cinnamon vanilla tonka bean dry wood",
+    "accords": "sweet, warm spicy, vanilla, woody, boozy",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"French Avenue Royal Blend\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 149,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Royal Blend Sequoia",
+    "family": "Fruity Gourmand",
+    "terms": "french avenue royal blend sequoia french avenue fruity gourmand sweet amber fruity boozy gourmand vanilla tonka bean praline raspberry liquor accord",
+    "accords": "sweet, amber, fruity, boozy, gourmand",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Kilian Angels' Share\", \"confidence\": 0.42}]"
+  },
+  {
+    "fragrance_id": 148,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Royal Blend Vintage",
+    "family": "Oriental Fougere",
+    "terms": "french avenue royal blend vintage french avenue oriental fougere sweet warm spicy woody aromatic boozy",
+    "accords": "sweet, warm spicy, woody, aromatic, boozy",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 154,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Spectre Ghost",
+    "family": "Amber Gourmand",
+    "terms": "french avenue spectre ghost french avenue amber gourmand sweet warm spicy vanilla fruity woody vanilla cedar cardamom bergamot patchouli black currant pink pepper rose ginger",
+    "accords": "sweet, warm spicy, vanilla, fruity, woody",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Nishane Ani\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 156,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Spectre Pinnace",
+    "family": "Citrus Aromatic",
+    "terms": "french avenue spectre pinnace french avenue citrus aromatic fruity aromatic citrus fresh aquatic bergamot musk lemon apricot amberwood",
+    "accords": "fruity, aromatic, citrus, fresh, aquatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Louis Vuitton Pacific Chill\", \"confidence\": 0.35}]"
+  },
+  {
+    "fragrance_id": 155,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Spectre Wraith",
+    "family": "Amber Vanilla",
+    "terms": "french avenue spectre wraith french avenue amber vanilla sweet vanilla amber boozy coffee patchouli sandalwood vetiver coffee spices sugar cane rum",
+    "accords": "sweet, vanilla, amber, boozy, coffee",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Kilian Black Phantom\", \"confidence\": 0.58}]"
+  },
+  {
+    "fragrance_id": 178,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Veneno",
+    "family": "Amber Woody",
+    "terms": "french avenue veneno french avenue amber woody sweet amber fruity smoky tobacco apple cinnamon oakmoss tobacco bourbon vanilla smoke orcanox",
+    "accords": "sweet, amber, fruity, smoky, tobacco",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 179,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Veneno Bianco",
+    "family": "Floral Coconut",
+    "terms": "french avenue veneno bianco french avenue floral coconut sweet floral coconut creamy tropical vanilla bergamot white flowers labdanum coconut milk neroli guaiac wood ylang-ylang tiare",
+    "accords": "sweet, floral, coconut, creamy, tropical",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 180,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Veneno Scarlet",
+    "family": "Fruity Leather",
+    "terms": "french avenue veneno scarlet french avenue fruity leather sweet warm spicy fruity leather gourmand cinnamon vanilla tonka bean cedar caramel patchouli leather raspberry blackberry strawberry fir",
+    "accords": "sweet, warm spicy, fruity, leather, gourmand",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Stephane Humbert Lucas 777 Venom Incarnat\", \"confidence\": 0.52}]"
+  },
+  {
+    "fragrance_id": 171,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Vulcan Baie",
+    "family": "Fruity",
+    "terms": "french avenue vulcan baie french avenue fruity sweet fruity boozy musky green amber bergamot patchouli musk black currant incense sandalwood basil raspberry rosemary peach lily-of-the-valley blackberry strawberry vodka accord",
+    "accords": "sweet, fruity, boozy, musky, green",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Stephane Humbert Lucas 777 Pink Boa\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 170,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Vulcan Black Friday",
+    "family": "Leather",
+    "terms": "french avenue vulcan black friday french avenue leather warm spicy fruity woody smoky leather apple cinnamon patchouli musk saffron oakmoss leather rose papyrus",
+    "accords": "warm spicy, fruity, woody, smoky, leather",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Xerjoff Deified\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 169,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Vulcan Feu",
+    "family": "Fruity Chypre",
+    "terms": "french avenue vulcan feu french avenue fruity chypre sweet warm spicy fruity woody chypre tonka bean cedar lemon pink pepper oakmoss jasmine ambergris violet praline ginger rhubarb mango",
+    "accords": "sweet, warm spicy, fruity, woody, chypre",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 172,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Vulcan Sable",
+    "family": "Woody Spicy",
+    "terms": "french avenue vulcan sable french avenue woody spicy warm spicy amber woody aromatic boozy amber woods coriander mandarin whiskey accord sesame anise",
+    "accords": "warm spicy, amber, woody, aromatic, boozy",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 173,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Zenith Blue",
+    "family": "Aromatic Fougere",
+    "terms": "french avenue zenith blue french avenue aromatic fougere woody aromatic citrus fresh spicy ambroxan lavender bergamot ambroxan patchouli vetiver elemi pepper geranium",
+    "accords": "woody, aromatic, citrus, fresh spicy, ambroxan",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Dior Sauvage Eau de Toilette\", \"confidence\": 0.58}]"
+  },
+  {
+    "fragrance_id": 177,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Zenith Deep",
+    "family": "Aromatic Woody",
+    "terms": "french avenue zenith deep french avenue aromatic woody woody aromatic citrus fresh incense amber cedar nutmeg bergamot lemon mint incense sandalwood jasmine grapefruit ginger pepper labdanum melon",
+    "accords": "woody, aromatic, citrus, fresh, incense",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Chanel Bleu de Chanel\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 174,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Zenith Santal",
+    "family": "Woody",
+    "terms": "french avenue zenith santal french avenue woody sweet warm spicy amber woody creamy lavender vanilla cedar sandalwood saffron chestnut",
+    "accords": "sweet, warm spicy, amber, woody, creamy",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Emporio Armani Stronger With You Sandalwood\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 176,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Zenith Tobacco",
+    "family": "Amber Vanilla Tobacco",
+    "terms": "french avenue zenith tobacco french avenue amber vanilla tobacco sweet warm spicy amber gourmand tobacco tonka bean caramel patchouli oakmoss mandarin chocolate honey tolu balsam",
+    "accords": "sweet, warm spicy, amber, gourmand, tobacco",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Dior Tobacolor\", \"confidence\": 0.52}]"
+  },
+  {
+    "fragrance_id": 175,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Zenith Vanilla",
+    "family": "Amber Vanilla",
+    "terms": "french avenue zenith vanilla french avenue amber vanilla sweet vanilla amber gourmand",
+    "accords": "sweet, vanilla, amber, gourmand",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 161,
+    "brand": "French Avenue",
+    "display_name": "French Avenue Éclair Affair",
+    "family": "Gourmand",
+    "terms": "french avenue éclair affair french avenue gourmand sweet vanilla gourmand creamy",
+    "accords": "sweet, vanilla, gourmand, creamy",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 36,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Al Nashama Caprice",
+    "family": "Aromatic Fresh Spicy",
+    "terms": "lattafa al nashama caprice lattafa aromatic fresh spicy woody aromatic fresh spicy cardamom lavender amber cedar cardamom bergamot patchouli lemon mint vetiver ginger geranium",
+    "accords": "woody, aromatic, fresh spicy, cardamom",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Yves Saint Laurent La Nuit de l'Homme Bleu Electrique\", \"confidence\": 0.65}]"
+  },
+  {
+    "fragrance_id": 24,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Asad",
+    "family": "Amber Spicy",
+    "terms": "lattafa asad lattafa amber spicy sweet warm spicy amber woody tobacco vanilla amber pineapple patchouli benzoin coffee tobacco black pepper iris dry woods labdanum",
+    "accords": "sweet, warm spicy, amber, woody, tobacco",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Dior Sauvage Elixir\", \"confidence\": 0.75}]"
+  },
+  {
+    "fragrance_id": 25,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Asad Bourbon",
+    "family": "Amber Gourmand",
+    "terms": "lattafa asad bourbon lattafa amber gourmand sweet amber aromatic boozy chocolate lavender amber nutmeg pink pepper vetiver mirabelle cacao davana bourbon vanilla",
+    "accords": "sweet, amber, aromatic, boozy, chocolate",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Azzaro The Most Wanted\", \"confidence\": 0.7}]"
+  },
+  {
+    "fragrance_id": 27,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Asad Elixir",
+    "family": "Amber Spicy Tobacco",
+    "terms": "lattafa asad elixir lattafa amber spicy tobacco sweet warm spicy amber smoky tobacco vanilla amber cedar patchouli pink pepper saffron grapefruit tobacco olibanum cashmeran",
+    "accords": "sweet, warm spicy, amber, smoky, tobacco",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Lattafa Asad\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 26,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Asad Zanzibar",
+    "family": "Amber Woody",
+    "terms": "lattafa asad zanzibar lattafa amber woody sweet amber woody smoky coconut lavender vanilla incense black pepper iris coconut water salt",
+    "accords": "sweet, amber, woody, smoky, coconut",
+    "top_relationships": "[{\"type\": \"HYBRID_DNA\", \"target\": \"Bentley Bentley for Men Intense\", \"confidence\": 0.45}, {\"type\": \"HYBRID_DNA\", \"target\": \"Jean Paul Gaultier Ultra Male\", \"confidence\": 0.4}]"
+  },
+  {
+    "fragrance_id": 32,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Bade'e Al Oud Amethyst",
+    "family": "Rose Woody",
+    "terms": "lattafa bade'e al oud amethyst lattafa rose woody warm spicy amber woody oud rose patchouli musk pink pepper oud rose aldehydes raspberry",
+    "accords": "warm spicy, amber, woody, oud, rose",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Initio Parfums Prives Atomic Rose\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 31,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Bade'e Al Oud Honor & Glory",
+    "family": "Fruity Woody",
+    "terms": "lattafa bade'e al oud honor & glory lattafa fruity woody vanilla fruity pineapple woody smoky incense vanilla amber pineapple bergamot woods incense spices",
+    "accords": "vanilla, fruity, pineapple, woody, smoky, incense",
+    "top_relationships": "[{\"type\": \"HYBRID_DNA\", \"target\": \"Nishane Hacivat\", \"confidence\": 0.5}, {\"type\": \"HYBRID_DNA\", \"target\": \"Nishane Ani\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 30,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Bade'e Al Oud Oud for Glory",
+    "family": "Amber Woody Oud",
+    "terms": "lattafa bade'e al oud oud for glory lattafa amber woody oud warm spicy amber woody oud saffron lavender nutmeg patchouli patchouli musk saffron oud oud",
+    "accords": "warm spicy, amber, woody, oud, saffron",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Initio Parfums Prives Oud for Greatness\", \"confidence\": 0.85}]"
+  },
+  {
+    "fragrance_id": 33,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Bade'e Al Oud Sublime",
+    "family": "Fruity Floral",
+    "terms": "lattafa bade'e al oud sublime lattafa fruity floral sweet fruity floral apple apple vanilla musk jasmine rhubarb",
+    "accords": "sweet, fruity, floral, apple",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Kayali Eden Juicy Apple 01\", \"confidence\": 0.4}]"
+  },
+  {
+    "fragrance_id": 40,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Eternal Oud",
+    "family": "Woody Oud",
+    "terms": "lattafa eternal oud lattafa woody oud warm spicy amber woody oud amber musk woods saffron oud rose spices",
+    "accords": "warm spicy, amber, woody, oud",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 28,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Fakhar Black",
+    "family": "Aromatic Fresh Spicy",
+    "terms": "lattafa fakhar black lattafa aromatic fresh spicy fruity woody aromatic fresh spicy apple lavender tonka bean cedar bergamot vetiver amberwood ginger sage juniper berries geranium",
+    "accords": "fruity, woody, aromatic, fresh spicy",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Yves Saint Laurent Y Eau de Parfum\", \"confidence\": 0.82}]"
+  },
+  {
+    "fragrance_id": 29,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Fakhar Gold Extrait",
+    "family": "Amber Spicy Floral",
+    "terms": "lattafa fakhar gold extrait lattafa amber spicy floral sweet warm spicy amber floral leather amber cardamom pink pepper leather grapefruit tuberose labdanum cashmeran solar notes artemisia",
+    "accords": "sweet, warm spicy, amber, floral, leather",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Paco Rabanne 1 Million Parfum\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 21,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Khamrah",
+    "family": "Amber Gourmand",
+    "terms": "lattafa khamrah lattafa amber gourmand sweet cinnamon warm spicy vanilla amber gourmand cinnamon vanilla tonka bean nutmeg bergamot akigalawood dates amberwood praline tuberose benzoin myrrh",
+    "accords": "sweet, cinnamon, warm spicy, vanilla, amber, gourmand",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Kilian Angels' Share\", \"confidence\": 0.85}]"
+  },
+  {
+    "fragrance_id": 23,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Khamrah Dukhan",
+    "family": "Amber Smoky Gourmand",
+    "terms": "lattafa khamrah dukhan lattafa amber smoky gourmand sweet amber smoky incense tobacco cinnamon vanilla tonka bean incense oud dates amberwood praline tobacco",
+    "accords": "sweet, amber, smoky, incense, tobacco",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Lattafa Khamrah\", \"confidence\": 0.78}]"
+  },
+  {
+    "fragrance_id": 22,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Khamrah Qahwa",
+    "family": "Amber Gourmand Coffee",
+    "terms": "lattafa khamrah qahwa lattafa amber gourmand coffee sweet warm spicy vanilla gourmand coffee cinnamon vanilla tonka bean cardamom dates amberwood praline coffee",
+    "accords": "sweet, warm spicy, vanilla, gourmand, coffee",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Lattafa Khamrah\", \"confidence\": 0.8}, {\"type\": \"INSPIRED_BY\", \"target\": \"Kilian Angels' Share\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 34,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Liam Blue Shine",
+    "family": "Aromatic Aquatic",
+    "terms": "lattafa liam blue shine lattafa aromatic aquatic woody aromatic fresh aquatic marine amber bergamot patchouli musk violet pepper rosemary sea notes",
+    "accords": "woody, aromatic, fresh, aquatic, marine",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Giorgio Armani Acqua di Gio\", \"confidence\": 0.62}]"
+  },
+  {
+    "fragrance_id": 35,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Liam Grey",
+    "family": "Woody Spicy",
+    "terms": "lattafa liam grey lattafa woody spicy sweet warm spicy woody tea creamy vanilla tonka bean cardamom patchouli sandalwood vetiver fig iris labdanum black tea",
+    "accords": "sweet, warm spicy, woody, tea, creamy",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"BDK Parfums Gris Charnel\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 39,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Maahir Legacy",
+    "family": "Aromatic Citrus",
+    "terms": "lattafa maahir legacy lattafa aromatic citrus aromatic citrus fresh mint cedar bergamot patchouli musk mint geranium lime watery notes",
+    "accords": "aromatic, citrus, fresh, mint",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Parfums de Marly Sedley\", \"confidence\": 0.72}]"
+  },
+  {
+    "fragrance_id": 37,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Musamam Black Intense",
+    "family": "Woody Smoky",
+    "terms": "lattafa musamam black intense lattafa woody smoky warm spicy amber woody smoky incense lavender cedar akigalawood incense saffron mandarin orange amberwood labdanum geranium",
+    "accords": "warm spicy, amber, woody, smoky, incense",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Tom Ford Ombre Leather\", \"confidence\": 0.35}]"
+  },
+  {
+    "fragrance_id": 38,
+    "brand": "Lattafa",
+    "display_name": "Lattafa Qaed Al Fursan",
+    "family": "Fruity Woody",
+    "terms": "lattafa qaed al fursan lattafa fruity woody amber fruity pineapple woody smoky amber pineapple cedar saffron jasmine oud balsam fir",
+    "accords": "amber, fruity, pineapple, woody, smoky",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Nishane Hacivat\", \"confidence\": 0.55}, {\"type\": \"SIMILAR_DNA\", \"target\": \"Creed Aventus\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 84,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Al Wisam Day",
+    "family": "Woody Aromatic",
+    "terms": "rasasi al wisam day rasasi woody aromatic woody aromatic fresh green rose lavender amber cedar bergamot musk sandalwood oakmoss oud rose geranium clary sage",
+    "accords": "woody, aromatic, fresh, green, rose",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Creed Silver Mountain Water\", \"confidence\": 0.58}]"
+  },
+  {
+    "fragrance_id": 85,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Al Wisam Evening",
+    "family": "Woody Aromatic",
+    "terms": "rasasi al wisam evening rasasi woody aromatic woody aromatic fresh green lavender musk lemon sandalwood rose galbanum black currant leaf",
+    "accords": "woody, aromatic, fresh, green",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 82,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Daarej Pour Homme",
+    "family": "Amber Spicy",
+    "terms": "rasasi daarej pour homme rasasi amber spicy sweet warm spicy amber powdery woody vanilla tonka bean amber cardamom patchouli musk sandalwood rose artemisia cumin orris root",
+    "accords": "sweet, warm spicy, amber, powdery, woody",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Valentino V pour Homme\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 83,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Fattan Pour Homme",
+    "family": "Woody Citrus",
+    "terms": "rasasi fattan pour homme rasasi woody citrus woody aromatic citrus fresh earthy amber cedar bergamot patchouli pink pepper oakmoss vetiver grapefruit benzoin lily-of-the-valley",
+    "accords": "woody, aromatic, citrus, fresh, earthy",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Hermes Terre d'Hermes\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 77,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Addiction",
+    "family": "Amber Gourmand",
+    "terms": "rasasi hawas addiction rasasi amber gourmand sweet vanilla gourmand coconut creamy vanilla vanilla amber cedar caramel milk moss marshmallow cotton candy ice cream accord coconut milk",
+    "accords": "sweet, vanilla, gourmand, coconut, creamy",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 67,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Atlantis",
+    "family": "Aromatic Aquatic",
+    "terms": "rasasi hawas atlantis rasasi aromatic aquatic fresh aquatic musky green marine bergamot musk woods ambergris marine notes green notes",
+    "accords": "fresh, aquatic, musky, green, marine",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Paco Rabanne Invictus Parfum\", \"confidence\": 0.42}]"
+  },
+  {
+    "fragrance_id": 61,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Black",
+    "family": "Fruity Chypre",
+    "terms": "rasasi hawas black rasasi fruity chypre fruity woody fresh smoky chypre pineapple cedar bergamot patchouli musk oakmoss jasmine grapefruit",
+    "accords": "fruity, woody, fresh, smoky, chypre",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Nishane Hacivat\", \"confidence\": 0.68}]"
+  },
+  {
+    "fragrance_id": 75,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Chrome",
+    "family": "Fruity",
+    "terms": "rasasi hawas chrome rasasi fruity sweet vanilla amber fruity citrus vanilla amber musk orange yellow fruits peach water fruits mango passion fruit",
+    "accords": "sweet, vanilla, amber, fruity, citrus",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Xerjoff Erba Pura\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 65,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Eclat",
+    "family": "Floral Fruity",
+    "terms": "rasasi hawas eclat rasasi floral fruity sweet fruity floral rose lychee vanilla amber bergamot musk woods incense rose pear litchi pistachio",
+    "accords": "sweet, fruity, floral, rose, lychee",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Parfums de Marly Delina\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 63,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Elixir",
+    "family": "Aromatic Aquatic",
+    "terms": "rasasi hawas elixir rasasi aromatic aquatic sweet amber fruity aquatic musky apple amber cardamom bergamot musk ambergris plum",
+    "accords": "sweet, amber, fruity, aquatic, musky",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 70,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Exotic",
+    "family": "Amber Woody",
+    "terms": "rasasi hawas exotic rasasi amber woody warm spicy amber woody aromatic coconut lavender amber cardamom bergamot woods spices coconut",
+    "accords": "warm spicy, amber, woody, aromatic, coconut",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 62,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Fire",
+    "family": "Aromatic Fruity",
+    "terms": "rasasi hawas fire rasasi aromatic fruity sweet fruity aromatic aquatic floral amber musk fruity notes marine notes clary sage white florals",
+    "accords": "sweet, fruity, aromatic, aquatic, floral",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Gissah Imperial Valley\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 72,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Glitz",
+    "family": "Amber Vanilla",
+    "terms": "rasasi hawas glitz rasasi amber vanilla sweet vanilla powdery fruity floral orange blossom vanilla caramel bergamot musk sandalwood rose geranium pear nut orris",
+    "accords": "sweet, vanilla, powdery, fruity, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 73,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Highness",
+    "family": "Floral Woody",
+    "terms": "rasasi hawas highness rasasi floral woody warm spicy amber woody citrus floral amber cedar patchouli jasmine violet rose vetiver citrus spicy notes",
+    "accords": "warm spicy, amber, woody, citrus, floral",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 60,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Ice",
+    "family": "Aromatic Aquatic",
+    "terms": "rasasi hawas ice rasasi aromatic aquatic sweet fruity citrus aquatic musky apple orange blossom amber cardamom bergamot musk lemon plum driftwood star anise moss",
+    "accords": "sweet, fruity, citrus, aquatic, musky",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Rasasi Hawas for Him\", \"confidence\": 0.65}, {\"type\": \"INSPIRED_BY\", \"target\": \"Paco Rabanne Invictus Aqua\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 71,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Lava Gold",
+    "family": "Amber Woody",
+    "terms": "rasasi hawas lava gold rasasi amber woody amber fruity woody oud leather apple amber pineapple caramel patchouli lemon saffron oud leather grapefruit raspberry moss",
+    "accords": "amber, fruity, woody, oud, leather",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 74,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Overdose",
+    "family": "Amber Gourmand",
+    "terms": "rasasi hawas overdose rasasi amber gourmand sweet warm spicy amber gourmand chocolate orange blossom vanilla amber aromatic notes ambergris praline spicy notes guaiac wood chocolate",
+    "accords": "sweet, warm spicy, amber, gourmand, chocolate",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Parfums de Marly Althair\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 68,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Pink",
+    "family": "Amber Gourmand",
+    "terms": "rasasi hawas pink rasasi amber gourmand sweet vanilla powdery floral gourmand cinnamon orange blossom vanilla tonka bean nutmeg tuberose neroli marshmallow cotton candy",
+    "accords": "sweet, vanilla, powdery, floral, gourmand",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 76,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Rouge",
+    "family": "Unverified (data pending)",
+    "terms": "rasasi hawas rouge rasasi unverified (data pending)",
+    "accords": "",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 69,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Thunder",
+    "family": "Spicy Citrus Woody",
+    "terms": "rasasi hawas thunder rasasi spicy citrus woody warm spicy amber woody citrus fresh apple amber bergamot woods ginger spicy notes",
+    "accords": "warm spicy, amber, woody, citrus, fresh",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Yves Saint Laurent MYSLF L'Absolu\", \"confidence\": 0.4}]"
+  },
+  {
+    "fragrance_id": 64,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Tropical",
+    "family": "Aromatic Green",
+    "terms": "rasasi hawas tropical rasasi aromatic green fruity woody fresh green coconut tonka bean musk mint sandalwood fig ginger coconut water coconut fig leaf",
+    "accords": "fruity, woody, fresh, green, coconut",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 66,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas Viper",
+    "family": "Aromatic Fruity Tobacco",
+    "terms": "rasasi hawas viper rasasi aromatic fruity tobacco warm spicy fruity aromatic smoky tobacco cinnamon tonka bean musk saffron coffee tobacco davana raspberry cannabis accord thyme gurjan balsam",
+    "accords": "warm spicy, fruity, aromatic, smoky, tobacco",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 59,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Hawas for Him",
+    "family": "Aromatic Aquatic",
+    "terms": "rasasi hawas for him rasasi aromatic aquatic fruity citrus aquatic musky marine apple cinnamon orange blossom cardamom bergamot patchouli musk lemon ambergris plum driftwood",
+    "accords": "fruity, citrus, aquatic, musky, marine",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Paco Rabanne Invictus\", \"confidence\": 0.7}]"
+  },
+  {
+    "fragrance_id": 79,
+    "brand": "Rasasi",
+    "display_name": "Rasasi La Yuqawam Ambergris Showers",
+    "family": "Leather",
+    "terms": "rasasi la yuqawam ambergris showers rasasi leather woody aromatic green leather leather vetiver clary sage violet leaves tangerine galbanum mate styrax",
+    "accords": "woody, aromatic, green, leather",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Memo Paris Irish Leather\", \"confidence\": 0.7}]"
+  },
+  {
+    "fragrance_id": 78,
+    "brand": "Rasasi",
+    "display_name": "Rasasi La Yuqawam Homme",
+    "family": "Leather",
+    "terms": "rasasi la yuqawam homme rasasi leather fruity woody smoky leather suede amber suede woods saffron jasmine leather olibanum artemisia raspberry thyme",
+    "accords": "fruity, woody, smoky, leather, suede",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Tom Ford Tuscan Leather\", \"confidence\": 0.75}]"
+  },
+  {
+    "fragrance_id": 80,
+    "brand": "Rasasi",
+    "display_name": "Rasasi La Yuqawam Tobacco Blaze",
+    "family": "Leather Oud",
+    "terms": "rasasi la yuqawam tobacco blaze rasasi leather oud warm spicy amber woody oud leather amber cedar patchouli saffron oud leather violet apricot neroli lily-of-the-valley coumarin",
+    "accords": "warm spicy, amber, woody, oud, leather",
+    "top_relationships": "[{\"type\": \"SIMILAR_DNA\", \"target\": \"Rasasi La Yuqawam Homme\", \"confidence\": 0.6}, {\"type\": \"INSPIRED_BY\", \"target\": \"Tom Ford Tuscan Leather\", \"confidence\": 0.5}]"
+  },
+  {
+    "fragrance_id": 81,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Shuhrah Pour Homme",
+    "family": "Woody Aromatic",
+    "terms": "rasasi shuhrah pour homme rasasi woody aromatic woody aromatic green leather rose amber cedar musk sandalwood oakmoss jasmine oud leather rose rose tomato leaf freesia",
+    "accords": "woody, aromatic, green, leather, rose",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 86,
+    "brand": "Rasasi",
+    "display_name": "Rasasi Yanis 12:01 AM",
+    "family": "Unverified (data pending)",
+    "terms": "rasasi yanis 12:01 am rasasi unverified (data pending)",
+    "accords": "",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 46,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Azul",
+    "family": "Aromatic Aquatic",
+    "terms": "rayhaan azul rayhaan aromatic aquatic woody citrus fresh aquatic bergamot lemon sandalwood grapefruit blossom calone",
+    "accords": "woody, citrus, fresh, aquatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Dior Homme Cologne\", \"confidence\": 0.35}]"
+  },
+  {
+    "fragrance_id": 54,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Black",
+    "family": "Unverified (identity not confirmed)",
+    "terms": "rayhaan black rayhaan unverified (identity not confirmed)",
+    "accords": "",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 51,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Cobra",
+    "family": "Unverified (identity not confirmed)",
+    "terms": "rayhaan cobra rayhaan unverified (identity not confirmed)",
+    "accords": "",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 52,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Corium",
+    "family": "Woody Leather",
+    "terms": "rayhaan corium rayhaan woody leather sweet warm spicy woody leather vanilla oud leather elemi sage spices chestnut",
+    "accords": "sweet, warm spicy, woody, leather",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Emporio Armani Stronger With You Leather\", \"confidence\": 0.75}]"
+  },
+  {
+    "fragrance_id": 53,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Crimson",
+    "family": "Amber Spicy",
+    "terms": "rayhaan crimson rayhaan amber spicy sweet warm spicy amber powdery cinnamon vanilla tonka bean cardamom patchouli pink pepper benzoin",
+    "accords": "sweet, warm spicy, amber, powdery",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Creed Centaurus\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 41,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Elixir",
+    "family": "Oriental Woody",
+    "terms": "rayhaan elixir rayhaan oriental woody sweet warm spicy vanilla amber tobacco lavender cinnamon lavender vanilla tonka bean amber bergamot benzoin tobacco",
+    "accords": "sweet, warm spicy, vanilla, amber, tobacco, lavender",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Jean Paul Gaultier Le Male Elixir\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 42,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Imperia",
+    "family": "Fruity Chypre",
+    "terms": "rayhaan imperia rayhaan fruity chypre fruity woody fresh smoky chypre apple amber cedar bergamot patchouli musk mint sandalwood oakmoss jasmine rose",
+    "accords": "fruity, woody, fresh, smoky, chypre",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Creed Aventus\", \"confidence\": 0.6}]"
+  },
+  {
+    "fragrance_id": 48,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Lion",
+    "family": "Amber Fougere",
+    "terms": "rayhaan lion rayhaan amber fougere sweet warm spicy vanilla amber lavender cinnamon lavender vanilla amber cedar bergamot patchouli mint pear clary sage cumin",
+    "accords": "sweet, warm spicy, vanilla, amber, lavender",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Jean Paul Gaultier Ultra Male\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 58,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Noor",
+    "family": "Unverified (identity not confirmed)",
+    "terms": "rayhaan noor rayhaan unverified (identity not confirmed)",
+    "accords": "",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 47,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Ocean Rush",
+    "family": "Aromatic Aquatic",
+    "terms": "rayhaan ocean rush rayhaan aromatic aquatic woody aromatic fresh aquatic lavender amber bergamot patchouli musk rosemary mandarin calone cypress",
+    "accords": "woody, aromatic, fresh, aquatic",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 43,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Pacific",
+    "family": "Citrus Aromatic",
+    "terms": "rayhaan pacific rayhaan citrus aromatic aromatic citrus fresh aquatic amber ambroxan mint basil citrus",
+    "accords": "aromatic, citrus, fresh, aquatic",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Louis Vuitton Pacific Chill\", \"confidence\": 0.45}]"
+  },
+  {
+    "fragrance_id": 45,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Pacific Aloha",
+    "family": "Fruity Aquatic",
+    "terms": "rayhaan pacific aloha rayhaan fruity aquatic sweet fruity aquatic coconut marine lemon amberwood cacao melon blood orange watermelon coconut marine notes",
+    "accords": "sweet, fruity, aquatic, coconut, marine",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Simone Andreoli Wavechild\", \"confidence\": 0.4}]"
+  },
+  {
+    "fragrance_id": 44,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Pacific Aura",
+    "family": "Citrus Aromatic",
+    "terms": "rayhaan pacific aura rayhaan citrus aromatic aromatic citrus fresh aquatic green amber bergamot ambroxan mint black currant rose citron coriander basil fig mandarin carrot",
+    "accords": "aromatic, citrus, fresh, aquatic, green",
+    "top_relationships": "[{\"type\": \"VERIFIED_CLONE\", \"target\": \"Louis Vuitton Pacific Chill\", \"confidence\": 0.8}]"
+  },
+  {
+    "fragrance_id": 50,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Panther",
+    "family": "Unverified (identity not confirmed)",
+    "terms": "rayhaan panther rayhaan unverified (identity not confirmed)",
+    "accords": "",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 55,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Ruby",
+    "family": "Unverified (identity not confirmed)",
+    "terms": "rayhaan ruby rayhaan unverified (identity not confirmed)",
+    "accords": "",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 56,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Sapphire",
+    "family": "Unverified (identity not confirmed)",
+    "terms": "rayhaan sapphire rayhaan unverified (identity not confirmed)",
+    "accords": "",
+    "top_relationships": "[]"
+  },
+  {
+    "fragrance_id": 49,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Tiger",
+    "family": "Amber Spicy",
+    "terms": "rayhaan tiger rayhaan amber spicy warm spicy amber woody incense creamy amber nutmeg patchouli lemon rose labdanum davana clove milk frankincense",
+    "accords": "warm spicy, amber, woody, incense, creamy",
+    "top_relationships": "[{\"type\": \"INSPIRED_BY\", \"target\": \"Nishane Halfeti\", \"confidence\": 0.55}]"
+  },
+  {
+    "fragrance_id": 57,
+    "brand": "Rayhaan",
+    "display_name": "Rayhaan Topaze",
+    "family": "Unverified (identity not confirmed)",
+    "terms": "rayhaan topaze rayhaan unverified (identity not confirmed)",
+    "accords": "",
+    "top_relationships": "[]"
+  }
+]
