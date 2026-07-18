@@ -42,7 +42,11 @@ export function FeaturedCollections({
             key={collection.id}
             className="flex w-[80vw] shrink-0 snap-start sm:w-auto"
           >
-            <CollectionCard collection={collection} className="w-full" />
+            <CollectionCard
+              collection={collection}
+              subheading="description"
+              className="w-full"
+            />
           </StaggerItem>
         ))}
       </Stagger>
