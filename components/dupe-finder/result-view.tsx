@@ -1,7 +1,6 @@
 "use client";
 
 import { m, useReducedMotion } from "framer-motion";
-import { Info } from "lucide-react";
 import { EASE } from "@/lib/animations/config";
 import { swatchFor } from "@/lib/dupes/formatter";
 import type { DupeResultVM, FeaturedOriginal } from "@/types/dupes";
@@ -10,9 +9,9 @@ import { CloneCard } from "@/components/dupe-finder/clone-card";
 import { NoDupesState } from "@/components/dupe-finder/states";
 
 /**
- * ResultView — the original being matched, then its clones as ranked cards.
- * If the user searched a clone, a note explains that we resolved to the
- * original so they can see the full field of alternatives.
+ * ResultView — the searched fragrance, then every fragrance it relates to as
+ * ranked cards. The page anchors on the searched fragrance itself; each card's
+ * chip names the relationship type the KB assigned.
  */
 export function ResultView({
   result,
@@ -24,12 +23,12 @@ export function ResultView({
   onSelect: (id: string, label: string) => void;
 }) {
   const reduce = useReducedMotion();
-  const { original, searched, searchedRole, clones } = result;
+  const { original, clones } = result;
 
   if (clones.length === 0) {
     return (
       <NoDupesState
-        fragranceLabel={`${searched.brand} ${searched.name}`}
+        fragranceLabel={`${original.brand} ${original.name}`}
         featured={featured}
         onSelect={onSelect}
       />
@@ -63,21 +62,10 @@ export function ResultView({
         <div className="shrink-0 text-right">
           <p className="font-display text-h3 leading-none text-foreground">{clones.length}</p>
           <p className="font-mono text-caption uppercase tracking-[0.08em] text-muted-foreground">
-            {clones.length === 1 ? "verified dupe" : "verified dupes"}
+            {clones.length === 1 ? "match" : "matches"}
           </p>
         </div>
       </m.header>
-
-      {searchedRole === "clone" && (
-        <p className="flex items-center gap-2 rounded-lg border border-border bg-secondary/30 px-4 py-3 text-sm text-muted-foreground">
-          <Info className="size-4 shrink-0 text-muted-foreground" aria-hidden />
-          <span>
-            <span className="text-foreground">{searched.name}</span> is a dupe of{" "}
-            <span className="text-foreground">{original.name}</span> — here&apos;s the
-            full field of alternatives.
-          </span>
-        </p>
-      )}
 
       <div className="space-y-6">
         {clones.map((card) => (
