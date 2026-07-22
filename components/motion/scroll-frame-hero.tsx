@@ -117,7 +117,7 @@ export function ScrollFrameHero({
       if (canvas.height !== Math.round(ch * dpr)) canvas.height = Math.round(ch * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-      // object-cover math.
+      // object-cover math, with a ceiling on how far it may magnify.
       const ir = img.width / img.height;
       const cr = cw / ch;
       let dw: number;
@@ -129,6 +129,27 @@ export function ScrollFrameHero({
         dh = ch;
         dw = ch * ir;
       }
+
+      /*
+       * Plain `cover` fills the stage by scaling until the short edge matches,
+       * which is fine on a landscape window (a 16:9 clip in a 1280×760 viewport
+       * magnifies ~1.06x) but catastrophic on a portrait one: at 375×812 the
+       * same clip is blown up 3.85x and 74% of the frame is thrown away, so the
+       * bottle is cropped into an unreadable close-up.
+       *
+       * Capping the magnification keeps the composition intact. The remainder
+       * letterboxes, which costs nothing here — the clip is a centred product
+       * on black and the stage behind the canvas is already `bg-black`, so the
+       * seam is invisible rather than a grey bar.
+       */
+      const MAX_ZOOM = 1.75;
+      const maxWidth = cw * MAX_ZOOM;
+      if (dw > maxWidth) {
+        const scale = maxWidth / dw;
+        dw *= scale;
+        dh *= scale;
+      }
+
       ctx.clearRect(0, 0, cw, ch);
       ctx.drawImage(img, (cw - dw) / 2, (ch - dh) / 2, dw, dh);
     },
