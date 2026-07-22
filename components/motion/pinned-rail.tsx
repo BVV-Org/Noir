@@ -31,6 +31,7 @@ export function PinnedRail({
   const outerRef = React.useRef<HTMLDivElement>(null);
   const trackRef = React.useRef<HTMLUListElement>(null);
   const [distance, setDistance] = React.useState(0);
+  const [railHeight, setRailHeight] = React.useState(0);
   const reduce = useReducedMotion();
 
   React.useLayoutEffect(() => {
@@ -41,6 +42,7 @@ export function PinnedRail({
     const measure = () => {
       const parentWidth = track.parentElement?.clientWidth ?? 0;
       setDistance(Math.max(0, track.scrollWidth - parentWidth));
+      setRailHeight(track.offsetHeight);
     };
     measure();
     const observer = new ResizeObserver(measure);
@@ -72,12 +74,33 @@ export function PinnedRail({
   }
 
   return (
+    /*
+     * The pinned frame is exactly as tall as the rail, NOT `100svh`.
+     *
+     * A full-viewport frame looks correct only once the pin has engaged. Before
+     * that the frame is still in normal flow directly beneath the section
+     * heading, so `items-center` centred the cards inside a viewport-tall box
+     * whose top edge started below the heading — parking them roughly half a
+     * screen down and opening a large dead gap under the title. Sizing the
+     * frame to the content removes the empty space in both states, and the
+     * outer track only needs to be tall enough to pan the horizontal distance.
+     *
+     * `top-24` clears the sticky navbar (h-16 / lg:4.5rem) with breathing room,
+     * so the pinned rail never slides under it. Height is applied only once
+     * measured, so the first paint keeps the natural (auto) height rather than
+     * collapsing to zero.
+     */
     <div
       ref={outerRef}
       className={className}
-      style={{ height: `calc(100svh + ${distance}px)` }}
+      style={
+        railHeight ? { height: `${railHeight + distance}px` } : undefined
+      }
     >
-      <div className="sticky top-0 flex h-[100svh] items-center overflow-hidden">
+      <div
+        className="sticky top-24 flex items-center overflow-hidden"
+        style={railHeight ? { height: `${railHeight}px` } : undefined}
+      >
         <m.ul
           ref={trackRef}
           style={{ x }}
