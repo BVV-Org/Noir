@@ -19,6 +19,17 @@ import { cn } from "@/lib/utils";
  * renders a plain horizontally scrollable rail instead — the content is
  * always reachable.
  */
+
+/**
+ * How far below the viewport top the rail pins, in px — enough to clear the
+ * sticky navbar (h-16 / lg:4.5rem) with breathing room.
+ *
+ * Deliberately a constant rather than a `top-24` class: the scroll window is
+ * derived from this same number, and if the CSS offset and the offset used to
+ * measure progress ever disagreed the scrub would silently desynchronise from
+ * the pin.
+ */
+const STICKY_TOP = 96;
 export function PinnedRail({
   items,
   className,
@@ -50,9 +61,36 @@ export function PinnedRail({
     return () => observer.disconnect();
   }, [reduce, items.length]);
 
+  /*
+   * The scroll window must describe exactly the span the frame stays pinned.
+   *
+   * `["start start", "end end"]` measures progress across
+   * `outerHeight - viewportHeight`. That equals the pin duration ONLY when the
+   * frame is a full viewport tall and stuck at the very top — the shape of the
+   * original implementation. Now that the frame is content-height and offset
+   * below the navbar, that default maps the whole pan onto whatever slice of
+   * scroll happens to be left over, so the track lurches sideways far faster
+   * than the reader scrolls.
+   *
+   * Anchoring both edges to the frame's own box restores the 1:1 scrub:
+   * progress 0 the moment the outer track's top reaches the sticky offset (the
+   * pin begins), progress 1 when its bottom reaches the frame's bottom edge
+   * (the last frame it can stay pinned).
+   */
+  const offset = React.useMemo(
+    () =>
+      railHeight
+        ? ([
+            `start ${STICKY_TOP}px`,
+            `end ${STICKY_TOP + railHeight}px`,
+          ] as const)
+        : (["start start", "end end"] as const),
+    [railHeight]
+  );
+
   const { scrollYProgress } = useScroll({
     target: outerRef,
-    offset: ["start start", "end end"],
+    offset: offset as never,
   });
   const x = useTransform(scrollYProgress, [0, 1], [0, -distance]);
 
@@ -98,8 +136,11 @@ export function PinnedRail({
       }
     >
       <div
-        className="sticky top-24 flex items-center overflow-hidden"
-        style={railHeight ? { height: `${railHeight}px` } : undefined}
+        className="sticky flex items-center overflow-hidden"
+        style={{
+          top: STICKY_TOP,
+          ...(railHeight ? { height: `${railHeight}px` } : {}),
+        }}
       >
         <m.ul
           ref={trackRef}
