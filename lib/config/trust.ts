@@ -12,32 +12,26 @@
  *  single source of truth the components render from.
  * ────────────────────────────────────────────────────────────────────────
  *
- * `icon` is a string key, mapped to a `lucide-react` component in TrustBar —
- * data stays free of UI imports, matching the nav config convention.
+ * Claims are plain strings — deliberately no icon field. The bar used to pair
+ * each claim with a stock line icon (shield, droplet, truck, padlock), which
+ * is the visual equivalent of clip art: every template ships those same four,
+ * so they made a real guarantee read as filler. The claim carries itself, and
+ * a typographic mark separates them instead.
  */
-export type TrustIcon =
-  | "original"
-  | "sealed"
-  | "shipping"
-  | "secure"
-  | "returns"
-  | "cod";
-
 export interface TrustClaim {
-  icon: TrustIcon;
   label: string;
 }
 
 /**
- * The homepage strip (under the hero). Four claims is the scan ceiling — more
- * and none of them get read. These four are the defensible defaults; swap in
- * the stronger optional claims below once they're true for your operation.
+ * The homepage ticker. Four claims is the scan ceiling — more and none of them
+ * get read. These are the defensible defaults; swap in the stronger optional
+ * claims below once they're true for your operation.
  */
 export const TRUST_CLAIMS: TrustClaim[] = [
-  { icon: "original", label: "100% Original" },
-  { icon: "sealed", label: "Decanted from sealed bottles" },
-  { icon: "shipping", label: "Pan-India shipping" },
-  { icon: "secure", label: "Secure checkout" },
+  { label: "100% Original" },
+  { label: "Decanted from sealed bottles" },
+  { label: "Pan-India shipping" },
+  { label: "Secure checkout" },
 ];
 
 /**
@@ -45,15 +39,15 @@ export const TRUST_CLAIMS: TrustClaim[] = [
  * Cart). Kept to three so it never competes with the buy button.
  */
 export const TRUST_CLAIMS_COMPACT: TrustClaim[] = [
-  { icon: "original", label: "100% Original" },
-  { icon: "sealed", label: "Decanted from sealed bottles" },
-  { icon: "secure", label: "Secure checkout" },
+  { label: "100% Original" },
+  { label: "Decanted from sealed bottles" },
+  { label: "Secure checkout" },
 ];
 
 /**
  * Stronger claims to promote once verified — each lifts conversion more than
  * the defaults, but each is also a bigger promise:
- *   { icon: "cod",     label: "Cash on delivery" }        // only if you offer COD
- *   { icon: "shipping", label: "Ships in 2–3 days" }      // only if you hit it
- *   { icon: "returns", label: "Authenticity guaranteed" } // only with a real refund path
+ *   { label: "Cash on delivery" }        // only if you offer COD
+ *   { label: "Ships in 2–3 days" }       // only if you hit it
+ *   { label: "Authenticity guaranteed" } // only with a real refund path
  */
