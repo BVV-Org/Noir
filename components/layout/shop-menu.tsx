@@ -170,7 +170,11 @@ export function ShopMenu({
                 onClick={() => setOpen(false)}
                 className={cn(
                   "flex items-center justify-between rounded-md px-3 py-2",
-                  "font-mono text-overline uppercase tracking-[0.08em] text-muted-foreground",
+                  // Deliberately NOT the mono/wide-tracked label treatment: at
+                  // this size that spacing is the generic-template tell. The
+                  // house display face, pulled tight, keeps it a sibling of the
+                  // three audience links above rather than a footnote.
+                  "font-display text-sm uppercase tracking-[-0.01em] text-muted-foreground",
                   "transition-colors duration-150 ease-premium hover:bg-accent hover:text-foreground focus-visible:bg-accent focus-visible:outline-none"
                 )}
               >

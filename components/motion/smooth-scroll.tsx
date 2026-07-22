@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { usePathname } from "next/navigation";
 import Lenis from "lenis";
 import { MOTION_CONFIG } from "@/lib/animations/config";
 
@@ -15,6 +16,9 @@ import { MOTION_CONFIG } from "@/lib/animations/config";
  * and the vestibular guidance applies to it the same as to transforms.
  */
 export function SmoothScroll() {
+  const lenisRef = React.useRef<Lenis | null>(null);
+  const pathname = usePathname();
+
   React.useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return;
@@ -26,6 +30,7 @@ export function SmoothScroll() {
       lerp: MOTION_CONFIG.lerp,
       wheelMultiplier: MOTION_CONFIG.wheelMultiplier,
     });
+    lenisRef.current = lenis;
 
     let frame: number;
     const raf = (time: number) => {
@@ -37,8 +42,33 @@ export function SmoothScroll() {
     return () => {
       cancelAnimationFrame(frame);
       lenis.destroy();
+      lenisRef.current = null;
     };
   }, []);
+
+  /**
+   * Reset to the top on navigation.
+   *
+   * The App Router resets `window.scrollY` itself, but Lenis keeps its own
+   * `animatedScroll`/`targetScroll` and writes them back on the very next
+   * frame — so the router's reset is immediately undone and the new route
+   * opens wherever the previous one was left. Scrolling from the homepage
+   * into a product page is the obvious case: it lands mid-page.
+   *
+   * `immediate` jumps rather than animating: a new page easing up to its own
+   * top would read as a glitch, not as motion. `force` is required because
+   * Lenis ignores `scrollTo` while stopped (e.g. a modal locked scrolling
+   * during the transition), which would silently reinstate the bug.
+   *
+   * A hash link is the one case to leave alone — the browser is mid-anchor
+   * jump and forcing 0 would fight it.
+   */
+  React.useEffect(() => {
+    const lenis = lenisRef.current;
+    if (!lenis) return;
+    if (window.location.hash) return;
+    lenis.scrollTo(0, { immediate: true, force: true });
+  }, [pathname]);
 
   return null;
 }

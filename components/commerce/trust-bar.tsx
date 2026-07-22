@@ -1,63 +1,41 @@
-import { Lock, ShieldCheck, Droplet, Truck, RotateCcw, Wallet } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Marquee } from "@/components/motion/marquee";
 import {
   TRUST_CLAIMS,
   TRUST_CLAIMS_COMPACT,
   type TrustClaim,
-  type TrustIcon,
 } from "@/lib/config/trust";
 
 /**
  * TrustBar — the authenticity/reassurance strip (see lib/config/trust.ts).
  *
- * Two registers, one component:
- *  - "bar" (default): a full-width hairline-bordered row under the hero. The
- *    claims wrap and stay centred on narrow screens rather than scrolling, so
- *    every promise is visible without interaction.
- *  - "compact": a tighter inline list for the product page, sat beside Add to
- *    Cart at the moment of decision.
+ * ## Why it looks like this
  *
- * Deliberately in the "telemetry" voice (DESIGN_SYSTEM §4) — small mono
- * uppercase, thin line icons, a single yellow accent on the mark. That
- * restraint is the point: reassurance that reads as fact, not as a badge
- * sticker, so it reinforces the premium feel instead of cheapening it.
+ * The first version was the default internet trust bar: four stock line icons
+ * (shield, droplet, truck, padlock) beside four uppercase monospace labels,
+ * sitting still. Both halves of that are template signals. The icons are
+ * interchangeable clip art, and small uppercase monospace on wide tracking is
+ * the single most over-used "premium" label treatment there is — the spacing
+ * is what makes it read as generated, not the typeface.
+ *
+ * So this drops both. The claims are set in the house display face (the same
+ * one the hero shouts in), uppercase and pulled TIGHT rather than spaced out,
+ * and separated by a rotated square — a drawn mark that belongs to the Swiss
+ * vocabulary rather than a picked icon. Then it moves: the strip runs as a
+ * slow ticker that speeds up with scroll velocity, so the band reads as part
+ * of the storefront rather than a static compliance footer.
+ *
+ * Two registers, one component:
+ *  - "bar" (default): the full-width ticker under the hero.
+ *  - "compact": a still, stacked list for the product page, where motion next
+ *    to Add to Cart would pull against the buy decision.
  */
-const ICONS: Record<TrustIcon, typeof ShieldCheck> = {
-  original: ShieldCheck,
-  sealed: Droplet,
-  shipping: Truck,
-  secure: Lock,
-  returns: RotateCcw,
-  cod: Wallet,
-};
-
-function ClaimItem({
-  claim,
-  size = "bar",
-}: {
-  claim: TrustClaim;
-  size?: "bar" | "compact";
-}) {
-  const Icon = ICONS[claim.icon];
+function Diamond() {
   return (
-    <li className="flex items-center gap-2">
-      <Icon
-        className={cn(
-          "shrink-0 text-primary",
-          size === "compact" ? "size-4" : "size-[1.15rem]"
-        )}
-        strokeWidth={1.5}
-        aria-hidden
-      />
-      <span
-        className={cn(
-          "whitespace-nowrap font-mono uppercase tracking-[0.08em] text-muted-foreground",
-          size === "compact" ? "text-caption" : "text-overline"
-        )}
-      >
-        {claim.label}
-      </span>
-    </li>
+    <span
+      aria-hidden
+      className="inline-block size-[5px] rotate-45 bg-foreground/35"
+    />
   );
 }
 
@@ -73,12 +51,17 @@ export function TrustBar({
       <ul
         aria-label="Why buy from us"
         className={cn(
-          "flex flex-col gap-2 rounded-lg border border-border/70 bg-secondary/30 p-4",
+          "flex flex-col gap-2.5 border-l border-border/70 pl-4",
           className
         )}
       >
-        {TRUST_CLAIMS_COMPACT.map((claim) => (
-          <ClaimItem key={claim.label} claim={claim} size="compact" />
+        {TRUST_CLAIMS_COMPACT.map((claim: TrustClaim) => (
+          <li
+            key={claim.label}
+            className="font-display text-sm uppercase leading-none tracking-[-0.01em] text-muted-foreground"
+          >
+            {claim.label}
+          </li>
         ))}
       </ul>
     );
@@ -87,13 +70,27 @@ export function TrustBar({
   return (
     <section
       aria-label="Our guarantees"
-      className={cn("border-y border-foreground/15", className)}
+      className={cn("border-y border-foreground/15 py-4 sm:py-5", className)}
     >
-      <ul className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-8 gap-y-3 px-6 py-5 sm:gap-x-12 sm:py-6">
+      {/* The ticker is aria-hidden (it duplicates its children for the seamless
+          loop, which a screen reader would read twice), so the claims are also
+          exposed once, invisibly, as a real list. */}
+      <ul className="sr-only">
         {TRUST_CLAIMS.map((claim) => (
-          <ClaimItem key={claim.label} claim={claim} />
+          <li key={claim.label}>{claim.label}</li>
         ))}
       </ul>
+
+      <Marquee>
+        {TRUST_CLAIMS.map((claim) => (
+          <span key={claim.label} className="flex items-center gap-10">
+            <span className="font-display text-lg uppercase leading-none tracking-[-0.01em] text-foreground/85 sm:text-xl">
+              {claim.label}
+            </span>
+            <Diamond />
+          </span>
+        ))}
+      </Marquee>
     </section>
   );
 }

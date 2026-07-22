@@ -1,11 +1,18 @@
-import { Anton, Archivo, Space_Mono } from "next/font/google";
+import { Anton, Archivo, Sometype_Mono } from "next/font/google";
 
 /**
  * Self-hosted fonts via next/font — no external requests, no layout shift.
  *
- *   Display / headings → Anton      (exposed as `--font-display`)
- *   Body / UI          → Archivo    (exposed as `--font-sans`)
- *   Labels / telemetry → Space Mono (exposed as `--font-mono`)
+ *   Display / headings → Anton         (exposed as `--font-display`)
+ *   Body / UI          → Archivo       (exposed as `--font-sans`)
+ *   Labels / telemetry → Sometype Mono (exposed as `--font-mono`)
+ *
+ * The telemetry face was Space Mono, which is the single most over-used
+ * "designer default" monospace — its quirky R/g/1 read as a stock choice
+ * rather than a decision, and it was what made the nav and menu labels feel
+ * generated. Sometype Mono is a humanist semi-mono: same technical, uppercase
+ * label register, but with even colour and calmer letterforms that hold up at
+ * 12px. It is the face lamalama.com uses for exactly this layer.
  *
  * The system is Swiss-print brutalism: one monolithic condensed grotesque
  * deployed huge and uppercase for structure, a plain grotesque for reading,
@@ -30,11 +37,11 @@ export const fontSans = Archivo({
   variable: "--font-sans",
 });
 
-export const fontMono = Space_Mono({
+export const fontMono = Sometype_Mono({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-mono",
-  weight: ["400", "700"],
+  weight: ["400", "500", "700"],
 });
 
 /** Combined class to apply all font variables on the root element. */

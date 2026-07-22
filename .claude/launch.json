@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "noir-dev",
-      "runtimeExecutable": "/private/tmp/claude-501/-Users-vansh-Desktop-Noir/ea466ab4-0d36-494f-98f1-718579d96801/scratchpad/node-v22.14.0-darwin-arm64/bin/node",
-      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev", "-p", "3000"],
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
       "port": 3000
     }
   ]
