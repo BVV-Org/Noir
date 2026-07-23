@@ -131,18 +131,19 @@ export function ScrollFrameHero({
       }
 
       /*
-       * Plain `cover` fills the stage by scaling until the short edge matches,
-       * which is fine on a landscape window (a 16:9 clip in a 1280×760 viewport
-       * magnifies ~1.06x) but catastrophic on a portrait one: at 375×812 the
-       * same clip is blown up 3.85x and 74% of the frame is thrown away, so the
-       * bottle is cropped into an unreadable close-up.
+       * `cover` (above) is the right fit for THIS clip, including on a portrait
+       * phone. The subject is a single bottle centred on black: on a tall
+       * viewport the fit fills the height and the only thing cropped off the
+       * sides is empty black, so the whole bottle — cap to base — stays visible
+       * and fills the screen. An earlier version capped the magnification to
+       * avoid "over-zoom", but for a centred subject that just shrank the bottle
+       * and boxed it in black bars; the cap is intentionally gone.
        *
-       * Capping the magnification keeps the composition intact. The remainder
-       * letterboxes, which costs nothing here — the clip is a centred product
-       * on black and the stage behind the canvas is already `bg-black`, so the
-       * seam is invisible rather than a grey bar.
+       * The one guard kept is against pathological ratios (an ultra-tall or
+       * ultra-wide viewport scaling a frame to absurdity), which would waste
+       * memory without changing what's on screen.
        */
-      const MAX_ZOOM = 1.75;
+      const MAX_ZOOM = 5;
       const maxWidth = cw * MAX_ZOOM;
       if (dw > maxWidth) {
         const scale = maxWidth / dw;
