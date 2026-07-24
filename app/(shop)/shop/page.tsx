@@ -88,8 +88,7 @@ export default async function ShopPage({
         <p className="overline">The Vault</p>
         <h1 className="mt-4 text-h1 font-semibold text-foreground">Shop</h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          {catalogue.items.length} fragrances, catalogued by rarity, house, and
-          the notes they are built on.
+          Catalogued by rarity, house, and the notes they are built on.
         </p>
       </header>
 
