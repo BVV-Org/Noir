@@ -47,7 +47,7 @@ export function StickyAddToCart({
           <p className="truncate text-small font-medium text-foreground">
             {product.title}
           </p>
-          <p className="text-caption tabular-nums text-muted-foreground">
+          <p className="font-system text-caption tabular-nums text-muted-foreground">
             {variant
               ? `${variant.title} · ${formatMoney(variant.price.amount, variant.price.currencyCode)}`
               : formatMoney(product.price.amount, product.price.currencyCode)}

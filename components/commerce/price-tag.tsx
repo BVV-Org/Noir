@@ -4,7 +4,10 @@ import { cn, formatMoney } from "@/lib/utils";
 /**
  * PriceTag — money, and the price it used to be.
  *
- * Prices live in the telemetry layer: mono, tabular. When `compareAtPrice`
+ * Money renders in the platform default grotesque (`font-system`), matching
+ * ProductCard — a price is a headline number, and the mono telemetry face's
+ * even advances flatten it into metadata. `tabular-nums` is kept so digits
+ * still align wherever prices stack. When `compareAtPrice`
  * is higher, the old price is struck through; the strike itself is the sale
  * signal, no accent color needed. The struck price is wrapped in `<s>` so
  * assistive tech announces it as no longer applicable, and the pairing is
@@ -38,7 +41,7 @@ export function PriceTag({
       <span
         aria-hidden={Boolean(previous)}
         className={cn(
-          "font-mono tabular-nums text-foreground",
+          "font-system tabular-nums text-foreground",
           size === "lg" ? "text-h4 font-bold" : "text-small font-bold"
         )}
       >
@@ -48,7 +51,7 @@ export function PriceTag({
         <s
           aria-hidden
           className={cn(
-            "tabular-nums text-muted-foreground",
+            "font-system tabular-nums text-muted-foreground",
             size === "lg" ? "text-lg" : "text-small"
           )}
         >

@@ -111,6 +111,19 @@ const config: Config = {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
         // Telemetry — uppercase mono metadata
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+        // Platform default grotesque — no webfont. Card prices use this: the
+        // reference card declares no font-family, so its numerals render in
+        // whatever the OS serves (SF on macOS/iOS, Segoe on Windows, Roboto on
+        // Android). Keeps money looking native rather than branded.
+        system: [
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
       },
       fontSize: {
         // Telemetry / metadata
