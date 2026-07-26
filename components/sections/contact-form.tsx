@@ -109,7 +109,16 @@ export function ContactForm() {
         error={fieldErrors.email}
       >
         {(props) => (
-          <Input {...props} name="email" type="email" autoComplete="email" />
+          // `text` + `inputMode="email"` so the field can carry the smooth
+          // caret; `type="email"` has no selection API. Validation is unchanged
+          // — the zod schema still owns it.
+          <Input
+            {...props}
+            name="email"
+            type="text"
+            inputMode="email"
+            autoComplete="email"
+          />
         )}
       </Field>
 

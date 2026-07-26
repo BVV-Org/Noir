@@ -170,13 +170,19 @@ export function FilterSidebar({
             <Label htmlFor="filter-min" className="sr-only">
               Minimum price
             </Label>
+            {/*
+              `text` + `inputMode="numeric"` rather than `type="number"`: the
+              number type exposes no selection API, so it cannot carry the
+              smooth caret. `parseSearchParams` already coerces and clamps
+              these server-side, so the native min/max constraint was belt to
+              its braces — an out-of-range entry now simply returns no matches.
+            */}
             <Input
               id="filter-min"
               name="min"
-              type="number"
+              type="text"
               inputMode="numeric"
-              min={priceRange.min}
-              max={priceRange.max}
+              pattern="[0-9]*"
               defaultValue={currentMin}
               placeholder={`${priceRange.min}`}
             />
@@ -191,10 +197,9 @@ export function FilterSidebar({
             <Input
               id="filter-max"
               name="max"
-              type="number"
+              type="text"
               inputMode="numeric"
-              min={priceRange.min}
-              max={priceRange.max}
+              pattern="[0-9]*"
               defaultValue={currentMax}
               placeholder={`${priceRange.max}`}
             />

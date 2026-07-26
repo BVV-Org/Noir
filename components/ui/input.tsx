@@ -1,12 +1,21 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { SmoothCaretInput } from "@/components/ui/smooth-caret-input";
 
-/** Input — a field on the dark surface. 44px tall to satisfy touch targets. */
+/**
+ * Input — a field on the dark surface. 44px tall to satisfy touch targets.
+ *
+ * Renders through `SmoothCaretInput`, so every field in the app gets the
+ * spring-tracked caret. That primitive falls back to a plain input for types
+ * without selection support (`number`, `email`, dates), so this stays safe to
+ * use for any field.
+ */
 const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
   ({ className, type = "text", ...props }, ref) => (
-    <input
+    <SmoothCaretInput
       ref={ref}
       type={type}
+      wrapperClassName="w-full"
       className={cn(
         "flex h-11 w-full rounded-md border border-input bg-background px-3.5 py-2 text-small text-foreground",
         "placeholder:text-muted-foreground",
