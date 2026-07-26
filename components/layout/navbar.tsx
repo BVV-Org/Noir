@@ -64,18 +64,39 @@ export function Navbar() {
             // a bright top edge for the light above, a soft dark bottom edge for
             // the thickness, then an outer drop shadow to lift it off the page.
             "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.35),inset_0_-1px_0_0_rgba(0,0,0,0.06),0_8px_28px_-12px_rgba(0,0,0,0.45)]",
-            "dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.14),inset_0_-1px_0_0_rgba(0,0,0,0.35),0_10px_34px_-14px_rgba(0,0,0,0.85)]"
+            "dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.14),inset_0_-1px_0_0_rgba(0,0,0,0.35),0_10px_34px_-14px_rgba(0,0,0,0.85)]",
+            // Positions the shine's clipping layer below.
+            "relative"
           )}
         >
+          {/*
+            The sweep gets its OWN clipping layer rather than `overflow-hidden`
+            on the capsule: the Shop mega-menu is absolutely positioned at
+            `top-full` inside this same element, so clipping the capsule would
+            cut the dropdown off at the bar's edge.
+
+            `z-0` here with `z-10` on the three content groups keeps the shine
+            behind the wordmark and links — passing a blurred highlight over the
+            type would wash it out mid-sweep.
+          */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-full"
+          >
+            <span className="nav-shine" />
+          </div>
           {/* `shrink-0` + `nowrap`: the capsule's padding leaves less room than
               the old full-bleed bar, and without these the wordmark is the first
               thing to wrap, which forces the capsule taller. */}
-          <div className="flex shrink-0 items-center gap-1 whitespace-nowrap">
+          <div className="relative z-10 flex shrink-0 items-center gap-1 whitespace-nowrap">
             <MobileMenu />
             <Logo />
           </div>
 
-          <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
+          <nav
+            aria-label="Main"
+            className="relative z-10 hidden items-center gap-7 lg:flex"
+          >
             {mainNav.map((item) => {
               const active = isActivePath(pathname, item.href);
               // Shop carries the audience mega-menu; the rest are plain links.
@@ -114,7 +135,7 @@ export function Navbar() {
             })}
           </nav>
 
-          <div className="flex shrink-0 items-center gap-1">
+          <div className="relative z-10 flex shrink-0 items-center gap-1">
             <ThemeToggle
               className={cn(
                 // Always visible — including mobile, where it's the only way to

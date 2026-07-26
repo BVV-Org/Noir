@@ -5,7 +5,6 @@ import type { Product } from "@/types";
 import type { Rarity } from "@/lib/config/site";
 import { cn, formatMoney } from "@/lib/utils";
 import { WishlistButton } from "@/components/commerce/wishlist-button";
-import { GlassSurface } from "@/components/ui/glass-surface";
 
 /**
  * ProductCard — the catalogue's atom.
@@ -123,10 +122,9 @@ export function ProductCard({
             </div>
           )}
 
-          {/* The CTA lives INSIDE the image box so the glass has something worth
-              refracting: over the flat card fill it showed only its bevel. The
-              box clips it at rest, so it slides up out of the photo's bottom
-              edge. Decorative — the stretched title link owns the click. */}
+          {/* The CTA lives INSIDE the image box, which clips it at rest so it
+              slides up out of the photo's bottom edge. Decorative — the
+              stretched title link owns the click. */}
           <div
             aria-hidden
             className={cn(
@@ -135,24 +133,12 @@ export function ProductCard({
               "group-hover/card:translate-y-0"
             )}
           >
-            {/* borderRadius is half the height, so the surface reads as a pill.
-                A little backgroundOpacity keeps the label legible over a pale
-                bottle shot — pure refraction leaves the text fighting the image. */}
-            <GlassSurface
-              width="100%"
-              height={40}
-              borderRadius={20}
-              backgroundOpacity={0.12}
-              saturation={1.4}
-              blur={8}
-              displace={0.6}
-              distortionScale={-140}
-              className="w-full"
-            >
-              <span className="font-sans text-[0.8rem] font-medium text-white drop-shadow">
-                View product
-              </span>
-            </GlassSurface>
+            {/* `.glass-control` (globals.css) — the same frosted surface the
+                Quick View trigger wears, so the two controls stacked on one
+                photo read as one material. */}
+            <span className="glass-control flex h-full w-full items-center justify-center rounded-full font-sans text-[0.8rem] font-medium">
+              View product
+            </span>
           </div>
         </div>
       </div>
