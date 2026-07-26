@@ -16,11 +16,18 @@ import { CartTrigger } from "@/components/commerce/cart-trigger";
 /**
  * Navbar — the sticky global header (DESIGN_SYSTEM.md §4).
  *
- * Everything in the bar lives in the telemetry layer: small uppercase mono,
- * one line, no decoration. Sticky rather than fixed: it stays in flow, so no
- * page has to reserve a top offset and full-bleed sections keep working. At
- * rest the bar is transparent against the substrate; once content scrolls
- * beneath it the glass surface and hairline fade in over 150ms.
+ * The bar is a floating glass capsule rather than a full-bleed strip: it insets
+ * from all three edges so the page runs *under* it on every side, which is what
+ * makes the blur legible — a full-width bar with a bottom hairline reads as a
+ * solid band no matter how much backdrop-blur it carries.
+ *
+ * Glass here is four things stacked, not one: a translucent fill, the backdrop
+ * blur itself, a hairline border, and an inset top highlight standing in for a
+ * light source above. Drop any one and it flattens into a grey box.
+ *
+ * Still sticky, not fixed: it stays in flow, so no page has to reserve a top
+ * offset and full-bleed sections keep working. Opacity firms up once content
+ * scrolls beneath it — over the hero it should be barely there.
  *
  * The cart trigger is the last action and is always visible, including on
  * mobile where Wishlist and Account fold into the bottom bar — a shopper must
@@ -41,19 +48,29 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-40 w-full border-b transition-colors duration-150 ease-premium",
-        // Not the `.glass` utility: it borders all four sides, which paints a
-        // stray hairline across the top of the viewport on a full-bleed bar.
-        scrolled
-          ? "border-foreground/15 bg-background/85 backdrop-blur-md"
-          : "border-transparent bg-transparent"
-      )}
-    >
+    <header className="sticky top-0 z-40 w-full pt-3 sm:pt-4">
       <Container>
-        <div className="flex h-16 items-center justify-between gap-4 lg:h-[4.5rem]">
-          <div className="flex items-center gap-1">
+        <div
+          className={cn(
+            "flex h-16 items-center justify-between gap-4 px-4 lg:h-[4.5rem] lg:px-6",
+            // Capsule: half the bar's height, so the ends read as true
+            // semicircles at both the 64px and 72px heights.
+            "rounded-full border backdrop-blur-xl",
+            "transition-[background-color,border-color] duration-150 ease-premium",
+            scrolled
+              ? "border-foreground/15 bg-background/70"
+              : "border-foreground/10 bg-background/35",
+            // The inset highlight is what sells it as glass rather than a tint:
+            // a bright top edge for the light above, a soft dark bottom edge for
+            // the thickness, then an outer drop shadow to lift it off the page.
+            "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.35),inset_0_-1px_0_0_rgba(0,0,0,0.06),0_8px_28px_-12px_rgba(0,0,0,0.45)]",
+            "dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.14),inset_0_-1px_0_0_rgba(0,0,0,0.35),0_10px_34px_-14px_rgba(0,0,0,0.85)]"
+          )}
+        >
+          {/* `shrink-0` + `nowrap`: the capsule's padding leaves less room than
+              the old full-bleed bar, and without these the wordmark is the first
+              thing to wrap, which forces the capsule taller. */}
+          <div className="flex shrink-0 items-center gap-1 whitespace-nowrap">
             <MobileMenu />
             <Logo />
           </div>
@@ -97,7 +114,7 @@ export function Navbar() {
             })}
           </nav>
 
-          <div className="flex items-center gap-1">
+          <div className="flex shrink-0 items-center gap-1">
             <ThemeToggle
               className={cn(
                 // Always visible — including mobile, where it's the only way to

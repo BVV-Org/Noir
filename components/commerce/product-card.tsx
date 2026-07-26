@@ -5,6 +5,7 @@ import type { Product } from "@/types";
 import type { Rarity } from "@/lib/config/site";
 import { cn, formatMoney } from "@/lib/utils";
 import { WishlistButton } from "@/components/commerce/wishlist-button";
+import { GlassSurface } from "@/components/ui/glass-surface";
 
 /**
  * ProductCard — the catalogue's atom.
@@ -14,20 +15,19 @@ import { WishlistButton } from "@/components/commerce/wishlist-button";
  * vacates. Nothing fades in — the card's own geometry does the reveal, so the
  * motion reads as mechanical rather than decorative.
  *
- * ## The heights are load-bearing
+ * ## Why the card has no fixed height
  *
- * The reveal is `overflow-hidden` plus arithmetic, not a transform, so the
- * numbers have to agree. Measured from the card's top edge:
+ * An earlier pass sized the image in pixels, which made the frame's aspect
+ * ratio a function of column count — portrait at 4-up, letterbox at 2-up — and
+ * `object-cover` duly cropped the bottles. The frame is now a `padding-top`
+ * percentage, which resolves against WIDTH, so 4:5 holds at every breakpoint.
  *
- *   CTA top at rest = 16 (pad) + 240 (image) + 12 (gap) + 48 (text) + 12 (its
- *                     own margin) = 328 = the card's height → flush, unseen.
- *   On hover the image gives up 44px and the CTA drops its 12px margin, so the
- *   CTA rises 56px to 272 and ends at 312 — clearing the 16px bottom padding
- *   exactly.
- *
- * Which is why the title is clamped to a single line: a second line would push
- * the CTA into view at rest and the box would never look closed. Changing any
- * one of these means re-deriving the others.
+ * Nothing about the frame changes on hover any more. The CTA is a glass surface
+ * that slides up out of the image's bottom edge, over the photo — glass refracts
+ * what is behind it, and over the card's flat fill it showed only its bevel.
+ * Because it is absolutely positioned inside the image box, it never enters
+ * layout: the card measures image + text, and a hovered card cannot stretch its
+ * grid row.
  *
  * Still a Server Component: the wishlist toggle and any `action` are the only
  * client leaves. The title link stretches over the whole tile via
@@ -74,62 +74,91 @@ export function ProductCard({
     : null;
 
   return (
-    <article
-      className={cn(
-        "group/card relative flex h-[328px] flex-col overflow-hidden rounded-lg p-4",
-        "bg-secondary/40 transition-colors duration-300 ease-premium hover:bg-card",
-        className
-      )}
-    >
-      <div
-        className={cn(
-          "relative w-full shrink-0 overflow-hidden rounded-md bg-secondary/40",
-          "h-[240px] transition-[height] duration-300 ease-premium",
-          "group-hover/card:h-[196px]"
-        )}
-      >
-        {cover && (
-          <Image
-            src={cover.url}
-            alt={cover.altText}
-            fill
-            priority={priority}
-            sizes="(min-width: 1280px) 22vw, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
-            className={cn(
-              "object-cover",
-              !product.availableForSale && "opacity-60"
-            )}
-          />
-        )}
-
-        {/* Wishlist: quiet by default, revealed on intent at pointer sizes;
-            always visible on touch where there is no hover. */}
-        <div
-          className={cn(
-            "absolute right-2 top-2 z-20",
-            "lg:opacity-0 lg:transition-opacity lg:duration-200 lg:ease-premium",
-            "lg:group-hover/card:opacity-100 lg:focus-within:opacity-100"
+    <article className={cn("group/card relative flex flex-col", className)}>
+      {/* No card fill, padding, or border: the photograph IS the card, running
+          edge to edge, with the name and price sitting on the page beneath it.
+          The sizer holds the frame open at a constant 4:5 — `padding-top`
+          percentages resolve against WIDTH, so the crop stays portrait at every
+          column count. It also clips the glass CTA until hover. */}
+      <div className="relative w-full pt-[125%]">
+        <div className="absolute inset-0 overflow-hidden rounded-lg bg-secondary/40">
+          {cover && (
+            <Image
+              src={cover.url}
+              alt={cover.altText}
+              fill
+              priority={priority}
+              sizes="(min-width: 1280px) 22vw, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
+              className={cn(
+                "object-cover",
+                !product.availableForSale && "opacity-60"
+              )}
+            />
           )}
-        >
-          <WishlistButton handle={product.handle} title={product.title} />
-        </div>
 
-        {action && (
+          {/* Wishlist: quiet by default, revealed on intent at pointer sizes;
+              always visible on touch where there is no hover. */}
           <div
             className={cn(
-              "absolute inset-x-3 bottom-3 z-20",
-              "lg:opacity-0 lg:transition-opacity lg:duration-150 lg:ease-premium",
-              "lg:focus-within:opacity-100 lg:group-hover/card:opacity-100"
+              "absolute right-2 top-2 z-20",
+              "lg:opacity-0 lg:transition-opacity lg:duration-200 lg:ease-premium",
+              "lg:group-hover/card:opacity-100 lg:focus-within:opacity-100"
             )}
           >
-            {action}
+            <WishlistButton handle={product.handle} title={product.title} />
           </div>
-        )}
+
+          {/* Quick View stacks ABOVE the glass pill rather than sharing the
+              bottom edge with it — both reveal on the same hover, so they would
+              otherwise land on top of each other. */}
+          {action && (
+            <div
+              className={cn(
+                "absolute inset-x-3 bottom-[3.75rem] z-20",
+                "lg:opacity-0 lg:transition-opacity lg:duration-150 lg:ease-premium",
+                "lg:focus-within:opacity-100 lg:group-hover/card:opacity-100"
+              )}
+            >
+              {action}
+            </div>
+          )}
+
+          {/* The CTA lives INSIDE the image box so the glass has something worth
+              refracting: over the flat card fill it showed only its bevel. The
+              box clips it at rest, so it slides up out of the photo's bottom
+              edge. Decorative — the stretched title link owns the click. */}
+          <div
+            aria-hidden
+            className={cn(
+              "absolute inset-x-3 bottom-3 z-20 h-10",
+              "translate-y-[calc(100%+0.75rem)] transition-transform duration-300 ease-premium",
+              "group-hover/card:translate-y-0"
+            )}
+          >
+            {/* borderRadius is half the height, so the surface reads as a pill.
+                A little backgroundOpacity keeps the label legible over a pale
+                bottle shot — pure refraction leaves the text fighting the image. */}
+            <GlassSurface
+              width="100%"
+              height={40}
+              borderRadius={20}
+              backgroundOpacity={0.12}
+              saturation={1.4}
+              blur={8}
+              displace={0.6}
+              distortionScale={-140}
+              className="w-full"
+            >
+              <span className="font-sans text-[0.8rem] font-medium text-white drop-shadow">
+                View product
+              </span>
+            </GlassSurface>
+          </div>
+        </div>
       </div>
 
-      {/* The tag rides the card, not the image, so it holds its place while the
-          image collapses underneath it. Sold-out outranks the tier: it changes
-          whether you can buy at all. */}
+      {/* Inset into the photo's top-left corner. Sold-out outranks the tier: it
+          changes whether you can buy at all. */}
       {!product.availableForSale ? (
         <span className="absolute left-3 top-3 z-20 rounded-full bg-background/85 px-3 py-1 font-sans text-[0.7rem] font-medium uppercase tracking-[0.12em] text-foreground backdrop-blur-sm">
           Sold out
@@ -148,8 +177,9 @@ export function ProductCard({
         )
       )}
 
-      <div className="mt-3 min-w-0">
-        {/* One line, always — see the height arithmetic above. */}
+      <div className="mt-4 min-w-0">
+        {/* One line, so a long name can't push the price out of alignment with
+            the neighbouring cards in the row. */}
         <h3 className="truncate font-sans text-[0.72rem] font-medium uppercase tracking-[0.1em] text-muted-foreground">
           <Link
             href={`/products/${product.handle}`}
@@ -189,23 +219,6 @@ export function ProductCard({
         </p>
       </div>
 
-      {/* Clipped at rest, lifted into the image's vacated height on hover. A
-          span, not a button: the stretched title link already owns this area. */}
-      <span
-        aria-hidden
-        className={cn(
-          "mt-3 flex h-10 w-full shrink-0 items-center justify-center rounded-full",
-          "bg-foreground font-sans text-[0.8rem] font-medium text-background",
-          "transition-[margin,background-color,color] duration-300 ease-premium",
-          // The accent lands on card hover rather than on the CTA's own hover:
-          // the stretched link's `after:inset-0` sits over this span, so pointer
-          // events never reach it and a `hover:` here would be dead styling.
-          "group-hover/card:mt-0",
-          "group-hover/card:bg-yellow group-hover/card:text-yellow-foreground"
-        )}
-      >
-        View product
-      </span>
     </article>
   );
 }
