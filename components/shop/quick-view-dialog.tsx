@@ -40,7 +40,7 @@ export function QuickViewDialog({ product }: { product: Product }) {
         <Button
           variant="secondary"
           size="sm"
-          className="w-full border border-white/15 bg-black/35 font-sans text-[0.7rem] font-normal tracking-[0.2em] text-white backdrop-blur-md hover:bg-black/55"
+          className="glass-control w-full rounded-full font-sans text-[0.7rem] font-normal tracking-[0.2em] hover:text-black"
         >
           Quick View
         </Button>

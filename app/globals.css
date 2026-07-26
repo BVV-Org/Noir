@@ -207,6 +207,94 @@
   }
 }
 
+/*
+ * .glass-control — the frosted surface for controls that sit ON a product
+ * photograph (the card's View product CTA, the Quick View trigger).
+ *
+ * This is the Uiverse glass recipe: a translucent fill, a backdrop blur, a
+ * bright hairline border, and an inset highlight. It deliberately replaced the
+ * React Bits GlassSurface here — that component refracts the backdrop through
+ * an SVG displacement filter, which over a dark bottle shot has almost nothing
+ * to bend and renders as little more than its own bevel. It also cost eight
+ * live SVG filters per grid.
+ *
+ * The fill is LIGHT in both themes, because the label on top is black. Tying it
+ * to the theme would put black text on a dark pill every night.
+ */
+.glass-control {
+  background: hsl(0 0% 100% / 0.62);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid hsl(0 0% 100% / 0.55);
+  box-shadow:
+    inset 2px 1px 6px hsl(0 0% 100% / 0.45),
+    0 4px 16px hsl(0 0% 0% / 0.22);
+  color: #000;
+}
+
+.glass-control:hover {
+  background: hsl(0 0% 100% / 0.78);
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+  .glass-control {
+    background: hsl(0 0% 100% / 0.86);
+  }
+}
+
+/*
+ * Navbar shine — the specular sweep that crosses the glass capsule once on load.
+ *
+ * Adapted from the Uiverse glass card's `::after` sweep. Two departures: it runs
+ * ONCE rather than on a 10s infinite loop (a permanently animating highlight in
+ * a persistent global nav is a compositing layer that never sleeps, and motion
+ * in the corner of the eye on every page), and it is a soft-edged gradient
+ * rather than a hard bar, so nothing about it reads as a seam.
+ *
+ * `fill-mode: both` holds it at the final keyframe — fully transparent, parked
+ * off the right edge — so it leaves nothing behind once it has played.
+ */
+@keyframes nav-shine {
+  0% {
+    transform: translateX(-140%) rotate(18deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  70%,
+  100% {
+    transform: translateX(360%) rotate(18deg);
+    opacity: 0;
+  }
+}
+
+.nav-shine {
+  position: absolute;
+  top: -60%;
+  left: 0;
+  height: 220%;
+  width: 14%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(0 0% 100% / 0.75),
+    transparent
+  );
+  filter: blur(14px);
+  animation: nav-shine 2.6s cubic-bezier(0.4, 0, 0.2, 1) 0.5s 1 both;
+}
+
+/* On the dark substrate the sweep needs less brightness to read the same. */
+.dark .nav-shine {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(0 0% 100% / 0.5),
+    transparent
+  );
+}
+
 /* Honor reduced-motion everywhere, regardless of component-level handling */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -216,6 +304,11 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+
+  /* The global rule above only shortens it; the sweep must not flash at all. */
+  .nav-shine {
+    display: none;
   }
 }
 /*
