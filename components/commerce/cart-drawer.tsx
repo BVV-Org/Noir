@@ -96,7 +96,7 @@ export function CartDrawer() {
                           {line.variantTitle}
                         </p>
                       </div>
-                      <p className="shrink-0 text-small tabular-nums text-foreground">
+                      <p className="shrink-0 font-system text-small tabular-nums text-foreground">
                         {formatMoney(
                           line.lineTotal.amount,
                           line.lineTotal.currencyCode
