@@ -3,8 +3,8 @@ import type { HomepageSection, Product } from "@/types";
 import { FadeIn } from "@/components/motion/fade-in";
 import { Magnetic } from "@/components/motion/magnetic";
 import { MaskRise } from "@/components/motion/mask-rise";
-import { CharReveal } from "@/components/motion/char-reveal";
 import { ScrollFrameHero } from "@/components/motion/scroll-frame-hero";
+import { KineticText } from "@/components/ui/kinetic-text";
 
 /**
  * Hero — the homepage thesis, set like a poster.
@@ -72,22 +72,17 @@ export function Hero({
           a notch smaller so the frame reads through — and it stays local,
           because `text-display` is also the About page's headline.
         */}
+        {/*
+          The headline letters are KineticText: each character thickens and
+          takes a stroke on hover while its neighbours respond at falling
+          strength, so the word reacts to the cursor as a body. It owns the
+          per-letter spans, which is why CharReveal's entrance no longer wraps
+          this headline — both split the same text and cannot share it.
+        */}
         <h1 className="mt-6 text-[clamp(3.5rem,10.5vw,11rem)] uppercase leading-[0.95] tracking-[-0.01em] text-white drop-shadow-2xl">
-          <CharReveal
-            text={lead}
-            as="span"
-            from="left"
-            delay={0.1}
-            className="block"
-          />
+          <KineticText text={lead} as="span" className="justify-center" />
           {payoff && (
-            <CharReveal
-              text={payoff}
-              as="span"
-              from="right"
-              delay={0.28}
-              className="block"
-            />
+            <KineticText text={payoff} as="span" className="justify-center" />
           )}
         </h1>
 

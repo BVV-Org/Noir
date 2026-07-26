@@ -86,7 +86,14 @@ export function Newsletter({ section }: { section: HomepageSection }) {
                 {(fieldProps) => (
                   <Input
                     {...fieldProps}
-                    type="email"
+                    // `text` + `inputMode="email"`, not `type="email"`: only
+                    // selection-capable types can carry the smooth caret, and
+                    // `type="email"` throws on `selectionStart`. The email
+                    // keyboard and autofill hint are preserved, and the address
+                    // is still validated by `z.email()` in /api/newsletter,
+                    // whose message renders through this Field's error slot.
+                    type="text"
+                    inputMode="email"
                     autoComplete="email"
                     placeholder="you@example.com"
                     value={email}

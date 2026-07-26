@@ -218,3 +218,36 @@
     scroll-behavior: auto !important;
   }
 }
+/*
+ * Theme-change view transition — drives components/ui/animated-theme-toggler.
+ *
+ * The UA's default root cross-fade is switched off so the only motion is the
+ * clip-path reveal the button animates on ::view-transition-new(root); leaving
+ * both on would dissolve one theme into the other underneath the wipe.
+ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/*
+ * Hold the new snapshot at its collapsed clip-path from the moment it is taken
+ * until the JS animation picks it up. Without this the incoming theme paints
+ * full-frame for a frame or two before the wipe starts — the toggler sets the
+ * custom property and the data attribute for exactly this handoff.
+ */
+html[data-magicui-theme-vt="active"]::view-transition-new(root) {
+  clip-path: var(--magicui-theme-vt-clip-from, circle(0% at 50% 50%));
+}
+
+/*
+ * The blanket reduced-motion rule above cannot reach these pseudo-elements
+ * (`*` does not match them), so the reveal is neutralised explicitly. The
+ * toggler is also handed duration 0 in that case, so the theme swaps instantly.
+ */
+@media (prefers-reduced-motion: reduce) {
+  html[data-magicui-theme-vt="active"]::view-transition-new(root) {
+    clip-path: none;
+  }
+}

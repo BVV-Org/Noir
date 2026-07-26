@@ -5,6 +5,7 @@ import { AnimatePresence, m, useReducedMotion } from "framer-motion";
 import { Search, X, CornerDownLeft, Loader2 } from "lucide-react";
 import { EASE } from "@/lib/animations/config";
 import { cn } from "@/lib/utils";
+import { SmoothCaretInput } from "@/components/ui/smooth-caret-input";
 import { useRelationshipSearch } from "@/hooks/use-relationships";
 
 /**
@@ -83,9 +84,10 @@ export function SearchBar({
         ) : (
           <Search className="size-5 shrink-0 text-muted-foreground" aria-hidden />
         )}
-        <input
+        <SmoothCaretInput
           ref={inputRef}
           type="text"
+          wrapperClassName="min-w-0 flex-1"
           role="combobox"
           aria-expanded={showList}
           aria-controls={listId}
@@ -104,7 +106,7 @@ export function SearchBar({
           onBlur={() => window.setTimeout(() => setOpen(false), 120)}
           onKeyDown={onKeyDown}
           className={cn(
-            "min-w-0 flex-1 bg-transparent text-foreground placeholder:text-muted-foreground",
+            "w-full bg-transparent text-foreground placeholder:text-muted-foreground",
             "focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0",
             size === "lg" ? "text-lg" : "text-base"
           )}

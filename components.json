@@ -13,9 +13,13 @@
   "iconLibrary": "lucide",
   "aliases": {
     "components": "@/components",
+    "utils": "@/lib/utils",
     "ui": "@/components/ui",
     "lib": "@/lib",
-    "utils": "@/lib/utils",
     "hooks": "@/hooks"
+  },
+  "registries": {
+    "@skiper-ui": "https://skiper-ui.com/registry/{name}.json",
+    "@magicui": "https://magicui.design/r/{name}"
   }
 }
