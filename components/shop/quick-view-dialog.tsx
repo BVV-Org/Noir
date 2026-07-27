@@ -42,7 +42,7 @@ export function QuickViewDialog({ product }: { product: Product }) {
           size="sm"
           // `relative` so the ::before sheen has something to anchor to — the
           // card's CTA gets that from its own `absolute`.
-          className="glass-control relative w-full rounded-full font-button text-[0.75rem] uppercase tracking-[0.08em] hover:text-black sm:text-[0.85rem] sm:tracking-[0.1em]"
+          className="glass-control relative w-full rounded-full font-mono text-[0.68rem] font-medium uppercase tracking-[0.18em] hover:text-black sm:text-[0.72rem]"
         >
           Quick View
         </Button>
