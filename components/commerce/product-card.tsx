@@ -141,7 +141,12 @@ export function ProductCard({
               "glass-control absolute inset-x-3 bottom-3 z-20 flex h-10 items-center justify-center rounded-full",
               // Scales with the tile: tighter type and inset on a phone-width
               // card, roomier once the grid opens up.
-              "font-button text-[0.8rem] uppercase tracking-[0.06em] sm:text-[0.9rem]",
+              // The telemetry face (Sometype Mono), uppercase and widely
+              // tracked — the register this system already reserves for small
+              // labels, and what the nav links wear. Anton and Ribes are both
+              // poster faces: at 13px on a pill they read as a shrunken
+              // headline rather than a control.
+              "font-mono text-[0.68rem] font-medium uppercase tracking-[0.18em] sm:text-[0.72rem]",
               "translate-y-[calc(100%+0.75rem)] transition-transform duration-300 ease-premium",
               "group-hover/card:translate-y-0",
               // No hover on touch, so the pill would never appear. Show it

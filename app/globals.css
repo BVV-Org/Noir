@@ -246,10 +246,10 @@
      `brightness(1.25)` is the last thing standing between a black label and an
      unreadable one — dialled down from 1.6 because at that strength it washed
      the backdrop pale and read as a fill of its own. */
-  backdrop-filter: blur(4px) saturate(var(--glass-saturation)) brightness(1.25);
-  -webkit-backdrop-filter: blur(4px) saturate(var(--glass-saturation))
+  backdrop-filter: blur(14px) saturate(var(--glass-saturation)) brightness(1.25);
+  -webkit-backdrop-filter: blur(14px) saturate(var(--glass-saturation))
     brightness(1.25);
-  backdrop-filter: url(#nv-liquid-glass) blur(2px)
+  backdrop-filter: url(#nv-liquid-glass) blur(11px)
     saturate(var(--glass-saturation)) brightness(1.25);
 
   border: 1px solid hsl(0 0% 100% / 0.55);
@@ -279,11 +279,14 @@
   z-index: -1;
   pointer-events: none;
   border-radius: inherit;
+  /* A long, gentle falloff rather than a short one — a gradient that dies
+     quickly reads as a hard band across the pill instead of a light source. */
   background: linear-gradient(
     to bottom,
-    hsl(0 0% 100% / 0.3) 0%,
-    hsl(0 0% 100% / 0.05) 40%,
-    transparent 60%
+    hsl(0 0% 100% / 0.28) 0%,
+    hsl(0 0% 100% / 0.1) 35%,
+    hsl(0 0% 100% / 0.03) 65%,
+    transparent 100%
   );
 }
 
