@@ -40,13 +40,24 @@ export function QuickViewDialog({ product }: { product: Product }) {
         <Button
           variant="secondary"
           size="sm"
-          className="glass-control w-full rounded-full font-sans text-[0.7rem] font-normal tracking-[0.2em] hover:text-black"
+          // `relative` so the ::before sheen has something to anchor to — the
+          // card's CTA gets that from its own `absolute`.
+          className="glass-control relative w-full rounded-full font-button text-[0.75rem] uppercase tracking-[0.08em] hover:text-black sm:text-[0.85rem] sm:tracking-[0.1em]"
         >
           Quick View
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="sm:grid-cols-2">
+      <DialogContent
+        // `.liquid-panel` overrides the base `bg-card` / `border-border`: it is
+        // declared after the utility layer in globals.css, so it wins at equal
+        // specificity. An opaque card fill here would sit in front of the
+        // backdrop-filter and leave nothing to see through.
+        className="liquid-panel rounded-[1.75rem] sm:grid-cols-2"
+        // A scrim that darkens without erasing: the panel refracts what is
+        // behind it, so the page has to stay legible back there.
+        overlayClassName="bg-black/45 backdrop-blur-[2px]"
+      >
         <div className="relative aspect-[4/5] overflow-hidden rounded-md bg-background">
           {cover && (
             <Image

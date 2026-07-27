@@ -111,6 +111,8 @@ const config: Config = {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
         // Telemetry — uppercase mono metadata
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+        // Button labels on photography — Ribes Black (single 900 cut)
+        button: ["var(--font-button)", "var(--font-sans)", "sans-serif"],
         // Platform default grotesque — no webfont. Card prices use this: the
         // reference card declares no font-family, so its numerals render in
         // whatever the OS serves (SF on macOS/iOS, Segoe on Windows, Roboto on

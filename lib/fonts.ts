@@ -1,4 +1,5 @@
 import { Anton, Archivo, Sometype_Mono } from "next/font/google";
+import localFont from "next/font/local";
 
 /**
  * Self-hosted fonts via next/font — no external requests, no layout shift.
@@ -44,5 +45,26 @@ export const fontMono = Sometype_Mono({
   weight: ["400", "500", "700"],
 });
 
+/**
+ * Ribes Black — the on-photograph button label (View product, Quick View).
+ *
+ * Luigi Gorlero / Collletttivo, SIL OFL 1.1, which permits web embedding and
+ * self-hosting; the licence travels with the file in `public/fonts/`.
+ *
+ * Self-hosted from the repo rather than fetched, so it behaves exactly like the
+ * three Google faces above: fingerprinted, preloaded, no external request, no
+ * layout shift. `.otf` rather than `.woff2` because that is the format shipped —
+ * at 14KB the compression difference is not worth a conversion toolchain.
+ *
+ * Declared at weight 900: this is a single-weight display cut, so asking for any
+ * other weight would only invite the browser to synthesise a fake bold.
+ */
+export const fontButton = localFont({
+  src: "../public/fonts/Ribes-Black.otf",
+  display: "swap",
+  variable: "--font-button",
+  weight: "900",
+});
+
 /** Combined class to apply all font variables on the root element. */
-export const fontVariables = `${fontDisplay.variable} ${fontSans.variable} ${fontMono.variable}`;
+export const fontVariables = `${fontDisplay.variable} ${fontSans.variable} ${fontMono.variable} ${fontButton.variable}`;

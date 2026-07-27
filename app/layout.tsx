@@ -15,6 +15,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { JsonLd } from "@/components/seo/json-ld";
+import { LiquidGlassFilter } from "@/components/ui/liquid-glass-filter";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/jsonld";
 import "./globals.css";
 
@@ -72,6 +73,9 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         {/* Site-wide identity + the sitelinks search box target. Rendered once. */}
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
+        {/* One shared displacement filter for every `.liquid-glass` surface —
+            its map is a static asset, so no element needs its own copy. */}
+        <LiquidGlassFilter />
 
         <a
           href="#main-content"

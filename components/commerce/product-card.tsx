@@ -123,23 +123,34 @@ export function ProductCard({
           )}
 
           {/* The CTA lives INSIDE the image box, which clips it at rest so it
-              slides up out of the photo's bottom edge. Decorative — the
-              stretched title link owns the click. */}
-          <div
+              slides up out of the photo's bottom edge.
+
+              A real <Link>, not a span: it sits at z-20, above the title link's
+              `after:inset-0` overlay at z-10, so it was swallowing clicks and
+              navigating nowhere. It points at the same product as the title.
+
+              `aria-hidden` + `tabIndex={-1}` because of that duplication — the
+              title link already reaches this destination, and exposing both
+              would make every card announce its product twice and cost keyboard
+              users an extra tab stop per tile for no new destination. */}
+          <Link
+            href={`/products/${product.handle}`}
             aria-hidden
+            tabIndex={-1}
             className={cn(
-              "absolute inset-x-3 bottom-3 z-20 h-10",
+              "glass-control absolute inset-x-3 bottom-3 z-20 flex h-10 items-center justify-center rounded-full",
+              // Scales with the tile: tighter type and inset on a phone-width
+              // card, roomier once the grid opens up.
+              "font-button text-[0.8rem] uppercase tracking-[0.06em] sm:text-[0.9rem]",
               "translate-y-[calc(100%+0.75rem)] transition-transform duration-300 ease-premium",
-              "group-hover/card:translate-y-0"
+              "group-hover/card:translate-y-0",
+              // No hover on touch, so the pill would never appear. Show it
+              // parked in place below `lg` instead of hiding it forever.
+              "max-lg:translate-y-0"
             )}
           >
-            {/* `.glass-control` (globals.css) — the same frosted surface the
-                Quick View trigger wears, so the two controls stacked on one
-                photo read as one material. */}
-            <span className="glass-control flex h-full w-full items-center justify-center rounded-full font-sans text-[0.8rem] font-medium">
-              View product
-            </span>
-          </div>
+            View product
+          </Link>
         </div>
       </div>
 
