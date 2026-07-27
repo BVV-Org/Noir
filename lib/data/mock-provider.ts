@@ -34,6 +34,7 @@ import {
   updateMockCart,
 } from "@/lib/mock/cart";
 import { PRODUCTS_PER_PAGE } from "@/lib/constants";
+import { soldOutLast } from "@/lib/data/sort";
 
 /**
  * Mock data provider — full parity with the live Shopify provider.
@@ -76,7 +77,9 @@ export const mockProvider: DataProvider = {
   // --- Products ---
   async getProducts(opts: ProductQuery = {}): Promise<Paginated<Product>> {
     const filtered = applyFilters(products, opts.filters);
-    const sorted = applySort(filtered, opts.sort);
+    // Sink sold-out BEFORE paginating: the whole catalogue is in memory here,
+    // so unlike the live provider this ordering is global rather than per-page.
+    const sorted = soldOutLast(applySort(filtered, opts.sort));
     return clone(
       paginate(sorted, opts.first ?? PRODUCTS_PER_PAGE, opts.cursor)
     );
@@ -97,8 +100,9 @@ export const mockProvider: DataProvider = {
   ): Promise<Paginated<Product>> {
     const matched = searchItems(products, query);
     const filtered = applyFilters(matched, filters);
-    // Search results keep their relevance order — no re-sort.
-    return clone(paginate(filtered, PRODUCTS_PER_PAGE));
+    // Search results keep their relevance order — no re-sort, but what you
+    // cannot buy still ranks below what you can.
+    return clone(paginate(soldOutLast(filtered), PRODUCTS_PER_PAGE));
   },
 
   // --- Collections ---
@@ -118,7 +122,7 @@ export const mockProvider: DataProvider = {
 
     const members = productsInCollection(handle);
     const filtered = applyFilters(members, opts.filters);
-    const sorted = applySort(filtered, opts.sort);
+    const sorted = soldOutLast(applySort(filtered, opts.sort));
 
     return {
       ...clone(collection),
