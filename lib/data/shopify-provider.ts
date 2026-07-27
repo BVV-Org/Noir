@@ -19,6 +19,7 @@ import {
   PRODUCTS_PER_PAGE,
 } from "@/lib/constants";
 import { shopifyFetch } from "@/lib/shopify/client";
+import { soldOutLast } from "@/lib/data/sort";
 import {
   buildProductQuery,
   mapCollectionSortKey,
@@ -106,7 +107,9 @@ async function getProducts(
   });
 
   return {
-    items: flatten(data.products).map(normalizeProduct),
+    // Per-page only: the Storefront API exposes no availability sortKey, so
+    // this can order the batch it fetched and no more. See lib/data/sort.ts.
+    items: soldOutLast(flatten(data.products).map(normalizeProduct)),
     pageInfo: data.products.pageInfo,
   };
 }
@@ -173,7 +176,7 @@ async function searchProducts(
   });
 
   return {
-    items: flatten(data.products).map(normalizeProduct),
+    items: soldOutLast(flatten(data.products).map(normalizeProduct)),
     pageInfo: data.products.pageInfo,
   };
 }
@@ -207,7 +210,14 @@ async function getCollectionByHandle(
     ...contentCache(CACHE_TAGS.collections),
   });
 
-  return data.collection ? normalizeCollection(data.collection) : null;
+  if (!data.collection) return null;
+
+  const collection = normalizeCollection(data.collection);
+  // `products` is optional on Collection — a listing query populates it, the
+  // index query does not. Only reorder when there is something to reorder.
+  return collection.products
+    ? { ...collection, products: soldOutLast(collection.products) }
+    : collection;
 }
 
 // --- Discovery kits -------------------------------------------------------
