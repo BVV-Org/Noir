@@ -79,6 +79,15 @@ const KIT = ["is_kit", "kit_products"] as const;
 
 const SEARCH = ["search_tags"] as const;
 
+/**
+ * The designer/niche fragrance(s) this product is a dupe of, as free text
+ * (e.g. "Creed Aventus"). A `list.single_line_text_field` — the reference
+ * metafields above can only hold Noir Vault product GIDs, so a non-Noir house
+ * structurally cannot go in them. The PDP uses this to deep-link into the Dupe
+ * Finder comparison. Populated by merch from the fragrance KB.
+ */
+const DUPE = ["dupe_of"] as const;
+
 export const PRODUCT_METAFIELD_KEYS = [
   ...BASIC,
   ...PERFORMANCE,
@@ -89,6 +98,7 @@ export const PRODUCT_METAFIELD_KEYS = [
   ...MEDIA,
   ...KIT,
   ...SEARCH,
+  ...DUPE,
 ] as const;
 
 export type ProductMetafieldKey = (typeof PRODUCT_METAFIELD_KEYS)[number];

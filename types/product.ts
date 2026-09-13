@@ -98,5 +98,11 @@ export interface Product {
   /** Handles of related products/similar fragrances (resolved on demand). */
   similarFragranceHandles: string[];
   relatedProductHandles: string[];
+  /**
+   * Designer/niche fragrance(s) this product is a dupe of, as free text
+   * (`noir.dupe_of`, e.g. "Creed Aventus"). Drives the PDP → Dupe Finder link.
+   * Absent/empty when the product is not positioned as a dupe.
+   */
+  dupeOf?: string[];
   seo?: Seo;
 }
