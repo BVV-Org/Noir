@@ -8,10 +8,15 @@ import { z } from "zod";
  * handler (TDD §10). Field-level errors are returned keyed by field so the form
  * can attach them to the right input rather than showing one generic banner.
  *
- * There is no transactional email provider wired in V1. Rather than pretending
- * a message was sent, the route records it server-side and reports
- * `delivered: false`, and the form says so. Point this at Klaviyo, Resend, or a
- * Shopify Admin ticket when one is chosen — nothing else has to change.
+ * Delivery is via Resend's REST API (no SDK dependency — a single fetch), gated
+ * on three server-only env vars. The /contact page promises a reply within two
+ * working days, so this route must NEVER silently accept a message it cannot
+ * deliver: when the provider is unconfigured it fails loudly (503 + a server
+ * error naming the missing vars) rather than returning a false success. Wire the
+ * vars in and delivery starts with no code change.
+ *
+ * Required env: RESEND_API_KEY, CONTACT_FROM_EMAIL (a sender on a Resend-verified
+ * domain), CONTACT_TO_EMAIL (the inbox that should receive submissions).
  */
 const schema = z.object({
   name: z.string().min(1, "Tell us your name.").max(120),
@@ -48,8 +53,70 @@ export async function POST(request: Request) {
     );
   }
 
-  // Deliberately not logging the message body — it is a visitor's own words.
-  console.info("Contact form submission from", parsed.data.email);
+  const apiKey = process.env.RESEND_API_KEY;
+  const from = process.env.CONTACT_FROM_EMAIL;
+  const to = process.env.CONTACT_TO_EMAIL;
 
-  return NextResponse.json({ ok: true, delivered: false });
+  // Fail loudly. Previously this console.info'd and returned delivered:false,
+  // so a visitor's message was silently dropped while the page promised a reply.
+  // If the provider is not configured, tell the operator exactly what is missing
+  // and return an error the form surfaces — never a false "received".
+  if (!apiKey || !from || !to) {
+    console.error(
+      "CONTACT PROVIDER NOT CONFIGURED — a visitor message was NOT delivered. " +
+        "Set RESEND_API_KEY, CONTACT_FROM_EMAIL and CONTACT_TO_EMAIL to enable delivery."
+    );
+    return NextResponse.json(
+      {
+        ok: false,
+        delivered: false,
+        error:
+          "We could not send your message right now. Please try again in a little while.",
+      },
+      { status: 503 }
+    );
+  }
+
+  try {
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        to: [to],
+        // Replies go straight back to the visitor, not to the shared sender.
+        reply_to: parsed.data.email,
+        subject: `Contact form — ${parsed.data.name}`,
+        text: `From: ${parsed.data.name} <${parsed.data.email}>\n\n${parsed.data.message}`,
+      }),
+    });
+
+    if (!response.ok) {
+      // Never echo the upstream body: it can carry account identifiers.
+      console.error("Resend contact send failed", response.status);
+      return NextResponse.json(
+        {
+          ok: false,
+          delivered: false,
+          error: "Could not send your message right now. Try again shortly.",
+        },
+        { status: 502 }
+      );
+    }
+
+    return NextResponse.json({ ok: true, delivered: true });
+  } catch (error) {
+    console.error("Resend contact send threw", error);
+    return NextResponse.json(
+      {
+        ok: false,
+        delivered: false,
+        error: "Could not send your message right now. Try again shortly.",
+      },
+      { status: 502 }
+    );
+  }
 }

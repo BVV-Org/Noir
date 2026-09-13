@@ -244,6 +244,7 @@ export function normalizeProduct(product: ShopifyProduct): Product {
     flags: normalizeFlags(map),
     similarFragranceHandles: mfRefHandles(map, "similar_fragrances"),
     relatedProductHandles: mfRefHandles(map, "related_products"),
+    dupeOf: mfList(map, "dupe_of"),
     seo: {
       title: product.seo.title ?? undefined,
       description: product.seo.description ?? undefined,

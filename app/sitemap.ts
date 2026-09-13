@@ -46,6 +46,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
+      // The Dupe Finder is the storefront's largest organic-search surface; it
+      // must be in the sitemap for crawlers to discover it.
+      url: url("/dupe-finder"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: url("/collections"),
       lastModified: now,
       changeFrequency: "weekly",

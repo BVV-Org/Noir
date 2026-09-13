@@ -93,6 +93,7 @@ export const products: Product[] = [
     flags: { featured: true, bestSeller: true, editorsPick: true },
     similarFragranceHandles: ["velvet-cipher", "crimson-oud"],
     relatedProductHandles: ["gold-leaf-tobacco", "ember-vow"],
+    dupeOf: ["Creed Aventus"],
     seo: {
       title: "Obsidian Bloom",
       description: "Jasmine and tuberose pressed against black amber.",
@@ -153,6 +154,7 @@ export const products: Product[] = [
     flags: { newArrival: true, bestSeller: true },
     similarFragranceHandles: ["gold-leaf-tobacco", "obsidian-bloom"],
     relatedProductHandles: ["crimson-oud", "velvet-cipher"],
+    dupeOf: ["Baccarat Rouge 540"],
   },
   {
     id: "gid://shopify/Product/3",
