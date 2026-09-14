@@ -38,27 +38,16 @@ export function QuickViewDialog({ product }: { product: Product }) {
     <Dialog>
       <DialogTrigger asChild>
         <Button
-          variant="secondary"
+          variant="outline"
           size="sm"
-          // `relative` so the ::before sheen has something to anchor to — the
-          // card's CTA gets that from its own `absolute`.
-          className="glass-control relative w-full rounded-full font-mono text-[0.68rem] font-medium uppercase tracking-[0.18em] hover:text-black sm:text-[0.72rem]"
+          className="w-full border-transparent bg-background/95 shadow-card backdrop-blur-sm hover:bg-background"
         >
-          Quick View
+          Quick view
         </Button>
       </DialogTrigger>
 
-      <DialogContent
-        // `.liquid-panel` overrides the base `bg-card` / `border-border`: it is
-        // declared after the utility layer in globals.css, so it wins at equal
-        // specificity. An opaque card fill here would sit in front of the
-        // backdrop-filter and leave nothing to see through.
-        className="liquid-panel rounded-[1.75rem] sm:grid-cols-2"
-        // A scrim that darkens without erasing: the panel refracts what is
-        // behind it, so the page has to stay legible back there.
-        overlayClassName="bg-black/45 backdrop-blur-[2px]"
-      >
-        <div className="relative aspect-[4/5] overflow-hidden rounded-md bg-background">
+      <DialogContent className="gap-6 p-3 sm:grid-cols-2 sm:p-3">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-[16px] bg-secondary">
           {cover && (
             <Image
               src={cover.url}
@@ -75,7 +64,7 @@ export function QuickViewDialog({ product }: { product: Product }) {
           />
         </div>
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 px-3 pb-3 sm:px-2 sm:py-5 sm:pr-5">
           <div>
             {product.brand && <p className="overline">{product.brand}</p>}
             <DialogTitle className="mt-2 pr-12">{product.title}</DialogTitle>

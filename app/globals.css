@@ -4,106 +4,89 @@
 
 /*
  * Noir Vault — design tokens.
- * Swiss-print brutalism, dual theme. Values are HSL channels so they compose
- * with Tailwind's `hsl(var(--token) / <alpha>)` and shadcn/ui conventions.
  *
- * Light (default): unbleached-paper gray `#e4e4e4` with carbon ink `#111`.
- * Dark (`.dark` on <html>): the noir inverse, same structure.
- * `primary` is the ink block (foreground-on-background inverted), so CTAs
- * flip correctly with the theme. ONE pop accent: signal yellow `#f9fe02`,
- * rationed to selection, the scarcity badge, and nothing else. Emerald and
- * violet exist ONLY inside the rarity scale, where color carries tier data.
+ * An achromatic system: paper, three quiet grays, and ink. Values are HSL
+ * channels so they compose with Tailwind's `hsl(var(--token) / <alpha>)` and
+ * the shadcn/ui conventions.
+ *
+ * Surfaces stack by tone, not by line weight:
+ *   background #ffffff  the page
+ *   surface    #fafafa  alternate bands, sidebars, image wells on white cards
+ *   muted      #f5f5f5  inputs, secondary buttons, product image tiles
+ *   card       #ffffff  raised containers — hairline border + `shadow-card`
+ *
+ * `primary` is the ink block, always the theme's inverse, so the one filled
+ * action flips correctly in dark mode. There is no brand hue. `destructive`
+ * (ember #e7000b) is the only saturated color outside the rarity tier data.
  */
 @layer base {
   :root {
-    /* Substrate — matte documentation paper */
-    --background: 0 0% 89%; /* #e4e4e4 */
-    --foreground: 0 0% 7%; /* #111 carbon ink */
-    --card: 0 0% 94%;
-    --card-foreground: 0 0% 7%;
-    --popover: 0 0% 94%;
-    --popover-foreground: 0 0% 7%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%; /* #0a0a0a */
+    --surface: 0 0% 98%; /* #fafafa */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
 
-    /* Ink block — the CTA surface, always the theme's inverse */
-    --primary: 0 0% 7%;
-    --primary-foreground: 0 0% 89%;
-    /* Pop accent — signal yellow, used sparingly */
-    --yellow: 61 98% 50%; /* #f9fe02 */
-    --yellow-foreground: 0 0% 7%;
-    /* shadcn convention: `accent` is the muted hover surface, not a hue */
-    --accent: 0 0% 84%;
-    --accent-foreground: 0 0% 7%;
+    --primary: 0 0% 9%; /* #171717 */
+    --primary-foreground: 0 0% 98%;
 
-    /* Neutrals */
-    --secondary: 0 0% 82%;
-    --secondary-foreground: 0 0% 7%;
-    --muted: 0 0% 82%;
-    --muted-foreground: 0 0% 38%;
+    --secondary: 0 0% 96.1%; /* #f5f5f5 */
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%; /* #737373 */
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
 
-    /* Feedback */
-    --destructive: 0 72% 42%;
+    --destructive: 357 100% 45%; /* #e7000b */
     --destructive-foreground: 0 0% 98%;
 
-    /* Lines & focus */
-    --border: 0 0% 62%;
-    --input: 0 0% 55%;
-    --ring: 0 0% 7%;
+    --border: 0 0% 89.8%; /* #e5e5e5 */
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 63.9%; /* #a3a3a3 */
 
-    /* Rarity progression (semantic tier data, not UI accents) */
-    --rarity-common: 0 0% 38%;
-    --rarity-rare: 158 65% 26%; /* emerald ink */
-    --rarity-epic: 250 55% 45%; /* violet ink */
-    --rarity-legendary: 38 70% 32%; /* amber ink */
-    --rarity-mythic: 350 70% 38%; /* crimson ink */
-
-    /* Gold — the Dupe Finder's single highlight. Deepened here so it holds AA
-       contrast against the light substrate; the .dark override goes champagne. */
-    --gold: 36 58% 32%;
-    --gold-strong: 36 62% 26%;
-    --gold-contrast: 0 0% 98%; /* text on a gold fill */
-
-    --radius: 0.4rem;
+    /* Rarity progression — tier data only, rendered as a dot. */
+    --rarity-common: 0 0% 64%;
+    --rarity-rare: 160 84% 36%;
+    --rarity-epic: 262 72% 58%;
+    --rarity-legendary: 38 92% 50%;
+    --rarity-mythic: 350 84% 52%;
 
     color-scheme: light;
   }
 
   .dark {
-    --background: 0 0% 7%; /* #111 */
-    --foreground: 0 0% 89%; /* #e4e4e4 */
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 89%;
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 89%;
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --surface: 0 0% 5.5%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 89%;
-    --primary-foreground: 0 0% 7%;
-    --yellow: 61 98% 50%;
-    --yellow-foreground: 0 0% 7%;
-    --accent: 0 0% 15%;
-    --accent-foreground: 0 0% 89%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
 
-    --secondary: 0 0% 16%;
-    --secondary-foreground: 0 0% 89%;
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 60%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 63.9%; /* #a3a3a3 */
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 62% 50%;
+    --destructive: 358 85% 58%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 30%;
-    --input: 0 0% 34%;
-    --ring: 0 0% 89%;
+    --border: 0 0% 14.9%; /* #262626 */
+    --input: 0 0% 18%;
+    --ring: 0 0% 45%;
 
-    --rarity-common: 0 0% 62%;
-    --rarity-rare: 158 55% 48%;
-    --rarity-epic: 250 60% 70%;
-    --rarity-legendary: 45 80% 60%;
-    --rarity-mythic: 350 65% 62%;
-
-    /* Champagne gold on carbon. */
-    --gold: 40 52% 68%;
-    --gold-strong: 40 60% 80%;
-    --gold-contrast: 0 0% 9%;
+    --rarity-common: 0 0% 55%;
+    --rarity-rare: 158 64% 52%;
+    --rarity-epic: 262 83% 72%;
+    --rarity-legendary: 43 96% 58%;
+    --rarity-mythic: 350 89% 66%;
 
     color-scheme: dark;
   }
@@ -114,88 +97,84 @@
 
   html {
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
   }
 
   body {
     @apply bg-background font-sans text-base text-foreground antialiased;
+    font-feature-settings:
+      "ss01" on,
+      "cv11" on;
   }
 
-  /* Headings are structural: the condensed grotesque, always uppercase.
-     Hierarchy comes from scale (Anton has one weight). */
+  /* Headings: the interface face at weight 600, tracking tightened with size
+     (set per step in the fontSize scale). Sentence case — hierarchy comes from
+     scale and weight, so nothing needs to shout. */
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply font-display font-normal uppercase;
+    @apply font-sans font-semibold text-foreground;
+    text-wrap: balance;
   }
 
-  /* Consistent, on-brand focus treatment */
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Consistent focus treatment: a soft neutral ring, offset from the element. */
   :focus-visible {
-    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+    @apply outline-none ring-2 ring-ring/60 ring-offset-2 ring-offset-background;
   }
 
   ::selection {
-    background: hsl(var(--yellow));
-    color: hsl(var(--yellow-foreground));
+    background: hsl(var(--foreground));
+    color: hsl(var(--background));
   }
 
   /* Themed, unobtrusive scrollbar */
   * {
     scrollbar-width: thin;
-    scrollbar-color: hsl(var(--muted-foreground) / 0.5) transparent;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.35) transparent;
   }
   *::-webkit-scrollbar {
     width: 10px;
     height: 10px;
   }
   *::-webkit-scrollbar-thumb {
-    background: hsl(var(--muted-foreground) / 0.45);
+    background: hsl(var(--muted-foreground) / 0.3);
     border-radius: 9999px;
     border: 3px solid transparent;
     background-clip: content-box;
   }
   *::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--muted-foreground) / 0.7);
+    background: hsl(var(--muted-foreground) / 0.55);
     background-clip: content-box;
   }
 }
 
 @layer utilities {
-  /* Uppercase mono metadata label — the telemetry layer: eyebrows, brands,
-     tier labels, nav. `no-underline` beats Tailwind's built-in `overline`
-     text-decoration utility, which shares this class name. */
+  /* 12px uppercase caption — eyebrows, group labels, table headers. The only
+     place the system uppercases, and the only place tracking opens (+0.05em).
+     `no-underline` beats Tailwind's built-in `overline` text-decoration utility,
+     which shares this class name. */
   .overline {
-    @apply font-mono text-overline uppercase text-muted-foreground no-underline;
+    @apply font-sans text-overline font-medium uppercase text-muted-foreground no-underline;
   }
 
-  /* Hairline divider that fades at both ends */
-  .hairline {
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      hsl(var(--border)) 20%,
-      hsl(var(--border)) 80%,
-      transparent
-    );
-  }
-
-  /* Full-width ink rule — the print divider between operational zones */
+  /* Full-width hairline divider. */
   .rule {
     height: 1px;
-    background: hsl(var(--foreground) / 0.25);
+    background: hsl(var(--border));
   }
 
-  /* Tasteful glass surface — used only where it earns its place */
-  .glass {
-    background: hsl(var(--background) / 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid hsl(var(--foreground) / 0.08);
+  /* Figures that must align column to column. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
   }
 
   /* Hide scrollbars on scroll-snap rails without disabling scroll */
@@ -205,218 +184,6 @@
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
-}
-
-/*
- * .glass-control — the frosted surface for controls that sit ON a product
- * photograph (the card's View product CTA, the Quick View trigger).
- *
- * This is the Uiverse glass recipe: a translucent fill, a backdrop blur, a
- * bright hairline border, and an inset highlight. It deliberately replaced the
- * React Bits GlassSurface here — that component refracts the backdrop through
- * an SVG displacement filter, which over a dark bottle shot has almost nothing
- * to bend and renders as little more than its own bevel. It also cost eight
- * live SVG filters per grid.
- *
- * The fill is LIGHT in both themes, because the label on top is black. Tying it
- * to the theme would put black text on a dark pill every night.
- */
-.glass-control {
-  --glass-saturation: 1.6;
-
-  /* Deliberately NO `position` here: this class is declared after the utility
-     layer, so setting it would beat an `absolute` utility at the call site —
-     which silently tore the card's CTA off its `bottom-3` anchor and parked it
-     at the top of the tile. Call sites own positioning; they only need to be
-     positioned *somehow* for the ::before sheen to anchor. */
-  isolation: isolate;
-  overflow: hidden;
-
-  /* Barely there — 0.08. This started at 0.58 (an opaque grey chip), then 0.22
-     (still a visible wash). The tint now only warms the surface; the backdrop
-     reads straight through it, which is the point of glass. What defines the
-     shape is the rim and the sheen, not the fill. */
-  background: hsl(0 0% 100% / 0.08);
-
-  /* Declared TWICE on purpose, and the order is load-bearing. Safari and
-     Firefox do not support an SVG filter reference in backdrop-filter, and an
-     unsupported value invalidates the WHOLE declaration — which would leave
-     those browsers with no blur at all, not just no refraction. The plain blur
-     lands first as the floor; the liquid version overrides it where supported.
-     `brightness(1.25)` is the last thing standing between a black label and an
-     unreadable one — dialled down from 1.6 because at that strength it washed
-     the backdrop pale and read as a fill of its own. */
-  backdrop-filter: blur(14px) saturate(var(--glass-saturation)) brightness(1.25);
-  -webkit-backdrop-filter: blur(14px) saturate(var(--glass-saturation))
-    brightness(1.25);
-  backdrop-filter: url(#nv-liquid-glass) blur(11px)
-    saturate(var(--glass-saturation)) brightness(1.25);
-
-  border: 1px solid hsl(0 0% 100% / 0.55);
-
-  /* Bright 1px rim, soft interior bloom, then widening dark washes for
-     thickness — plus a real drop shadow so the pill sits above the photo. */
-  box-shadow:
-    inset 0 0 2px 1px hsl(0 0% 100% / 0.45),
-    inset 0 0 8px 2px hsl(0 0% 100% / 0.08),
-    inset 0 4px 16px hsl(240 6% 5% / 0.04),
-    inset 0 8px 24px hsl(240 6% 5% / 0.04),
-    0 4px 14px hsl(0 0% 0% / 0.28);
-
-  color: #000;
-  transition:
-    background-color 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-/* Specular sheen: a light source above the pill, brightest along the top edge
-   and gone by the middle. This is the cue that reads as a curved glass surface
-   rather than a flat translucent rectangle. */
-.glass-control::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  border-radius: inherit;
-  /* A long, gentle falloff rather than a short one — a gradient that dies
-     quickly reads as a hard band across the pill instead of a light source. */
-  background: linear-gradient(
-    to bottom,
-    hsl(0 0% 100% / 0.28) 0%,
-    hsl(0 0% 100% / 0.1) 35%,
-    hsl(0 0% 100% / 0.03) 65%,
-    transparent 100%
-  );
-}
-
-.glass-control:hover,
-.glass-control:focus-visible {
-  background: hsl(0 0% 100% / 0.16);
-  border-color: hsl(0 0% 100% / 0.75);
-}
-
-/* No backdrop-filter at all (older Android WebView): nothing lifts the
-   backdrop, so the fill has to carry the label on its own. */
-@supports not (backdrop-filter: blur(10px)) {
-  .glass-control {
-    background: hsl(0 0% 100% / 0.88);
-  }
-}
-
-/*
- * .liquid-panel — the large-surface glass, for panels rather than controls.
- *
- * Same displacement filter as `.glass-control`, but tuned for a big sheet:
- *
- * 1. The fill is THEME-AWARE here, unlike the buttons. Those carry a fixed
- *    black label so their frost had to stay light; a panel carries ordinary
- *    `text-foreground`, so the surface has to follow the theme or the text
- *    inverts against it.
- * 2. Saturation is pushed to 1.8. Boosting the colour of whatever sits behind
- *    the glass is most of what reads as "Apple" — a plain blur alone looks like
- *    frosted plastic. It matters more at panel scale than at button scale.
- * 3. Blur is composited WITH the refraction rather than replacing it: the
- *    displacement bends the edges, the blur softens the middle.
- */
-.liquid-panel {
-  --glass-saturation: 1.8;
-
-  background: hsl(0 0% 100% / 0.72);
-
-  /* Order matters — see the note on .glass-control. Plain blur is the floor for
-     Safari/Firefox, which reject an SVG filter ref and would otherwise drop the
-     whole declaration and render the panel fully transparent. */
-  backdrop-filter: blur(30px) saturate(var(--glass-saturation));
-  -webkit-backdrop-filter: blur(30px) saturate(var(--glass-saturation));
-  backdrop-filter: url(#nv-liquid-glass) blur(22px)
-    saturate(var(--glass-saturation));
-
-  border: 1px solid hsl(0 0% 100% / 0.45);
-
-  /* A bright specular rim, a soft interior bloom, then three widening dark
-     washes for thickness — then one real drop shadow so the sheet floats. */
-  box-shadow:
-    inset 0 0 2px 1px hsl(0 0% 100% / 0.4),
-    inset 0 0 14px 6px hsl(0 0% 100% / 0.12),
-    inset 0 6px 20px hsl(240 6% 5% / 0.05),
-    inset 0 12px 32px hsl(240 6% 5% / 0.05),
-    inset 0 8px 64px hsl(240 6% 5% / 0.05),
-    0 24px 70px -20px hsl(0 0% 0% / 0.55);
-}
-
-.dark .liquid-panel {
-  background: hsl(240 6% 8% / 0.62);
-  border-color: hsl(0 0% 100% / 0.14);
-  box-shadow:
-    inset 0 0 2px 1px hsl(0 0% 100% / 0.18),
-    inset 0 0 14px 6px hsl(0 0% 100% / 0.06),
-    inset 0 6px 20px hsl(0 0% 0% / 0.28),
-    inset 0 12px 32px hsl(0 0% 0% / 0.22),
-    inset 0 8px 64px hsl(0 0% 0% / 0.2),
-    0 28px 80px -20px hsl(0 0% 0% / 0.85);
-}
-
-@supports not (backdrop-filter: blur(10px)) {
-  .liquid-panel {
-    background: hsl(0 0% 100% / 0.95);
-  }
-  .dark .liquid-panel {
-    background: hsl(240 6% 8% / 0.95);
-  }
-}
-
-/*
- * Navbar shine — the specular sweep that crosses the glass capsule once on load.
- *
- * Adapted from the Uiverse glass card's `::after` sweep. Two departures: it runs
- * ONCE rather than on a 10s infinite loop (a permanently animating highlight in
- * a persistent global nav is a compositing layer that never sleeps, and motion
- * in the corner of the eye on every page), and it is a soft-edged gradient
- * rather than a hard bar, so nothing about it reads as a seam.
- *
- * `fill-mode: both` holds it at the final keyframe — fully transparent, parked
- * off the right edge — so it leaves nothing behind once it has played.
- */
-@keyframes nav-shine {
-  0% {
-    transform: translateX(-140%) rotate(18deg);
-    opacity: 0;
-  }
-  15% {
-    opacity: 1;
-  }
-  70%,
-  100% {
-    transform: translateX(360%) rotate(18deg);
-    opacity: 0;
-  }
-}
-
-.nav-shine {
-  position: absolute;
-  top: -60%;
-  left: 0;
-  height: 220%;
-  width: 14%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    hsl(0 0% 100% / 0.75),
-    transparent
-  );
-  filter: blur(14px);
-  animation: nav-shine 2.6s cubic-bezier(0.4, 0, 0.2, 1) 0.5s 1 both;
-}
-
-/* On the dark substrate the sweep needs less brightness to read the same. */
-.dark .nav-shine {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    hsl(0 0% 100% / 0.5),
-    transparent
-  );
 }
 
 /* Honor reduced-motion everywhere, regardless of component-level handling */
@@ -429,12 +196,8 @@
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
-
-  /* The global rule above only shortens it; the sweep must not flash at all. */
-  .nav-shine {
-    display: none;
-  }
 }
+
 /*
  * Theme-change view transition — drives components/ui/animated-theme-toggler.
  *
@@ -451,151 +214,15 @@
 /*
  * Hold the new snapshot at its collapsed clip-path from the moment it is taken
  * until the JS animation picks it up. Without this the incoming theme paints
- * full-frame for a frame or two before the wipe starts — the toggler sets the
- * custom property and the data attribute for exactly this handoff.
+ * full-frame for a frame or two before the wipe starts.
  */
 html[data-magicui-theme-vt="active"]::view-transition-new(root) {
   clip-path: var(--magicui-theme-vt-clip-from, circle(0% at 50% 50%));
 }
 
-/*
- * The blanket reduced-motion rule above cannot reach these pseudo-elements
- * (`*` does not match them), so the reveal is neutralised explicitly. The
- * toggler is also handed duration 0 in that case, so the theme swaps instantly.
- */
+/* The blanket reduced-motion rule above cannot reach these pseudo-elements. */
 @media (prefers-reduced-motion: reduce) {
   html[data-magicui-theme-vt="active"]::view-transition-new(root) {
     clip-path: none;
-  }
-}
-/*
- * GlassSurface — vendored from React Bits, adapted in two ways:
- *
- * 1. `light-dark()` and `@media (prefers-color-scheme: dark)` are replaced with
- *    `.dark` selectors. This app switches themes by toggling a class on <html>,
- *    not via `color-scheme`, so the originals would have been stuck on their
- *    light branch no matter what the toggle said.
- * 2. The focus ring uses the app's own `--ring` token instead of Apple blue.
- */
-
-.glass-surface {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition: opacity 0.26s ease-out;
-}
-
-.glass-surface__filter {
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  z-index: -1;
-}
-
-.glass-surface__content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  border-radius: inherit;
-  position: relative;
-  z-index: 1;
-}
-
-/* --- SVG-filter path (Chromium) --- */
-
-.glass-surface--svg {
-  background: hsl(0 0% 100% / var(--glass-frost, 0));
-  backdrop-filter: var(--filter-id, url(#glass-filter)) saturate(var(--glass-saturation, 1));
-  box-shadow:
-    0 0 2px 1px color-mix(in oklch, black, transparent 85%) inset,
-    0 0 10px 4px color-mix(in oklch, black, transparent 90%) inset,
-    0px 4px 16px rgba(17, 17, 26, 0.05),
-    0px 8px 24px rgba(17, 17, 26, 0.05),
-    0px 16px 56px rgba(17, 17, 26, 0.05),
-    0px 4px 16px rgba(17, 17, 26, 0.05) inset,
-    0px 8px 24px rgba(17, 17, 26, 0.05) inset,
-    0px 16px 56px rgba(17, 17, 26, 0.05) inset;
-}
-
-.dark .glass-surface--svg {
-  background: hsl(0 0% 0% / var(--glass-frost, 0));
-  box-shadow:
-    0 0 2px 1px color-mix(in oklch, white, transparent 65%) inset,
-    0 0 10px 4px color-mix(in oklch, white, transparent 85%) inset,
-    0px 4px 16px rgba(17, 17, 26, 0.05),
-    0px 8px 24px rgba(17, 17, 26, 0.05),
-    0px 16px 56px rgba(17, 17, 26, 0.05),
-    0px 4px 16px rgba(17, 17, 26, 0.05) inset,
-    0px 8px 24px rgba(17, 17, 26, 0.05) inset,
-    0px 16px 56px rgba(17, 17, 26, 0.05) inset;
-}
-
-/* --- Fallback path (Safari, Firefox, no backdrop-filter) --- */
-
-.glass-surface--fallback {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px) saturate(1.8) brightness(1.1);
-  -webkit-backdrop-filter: blur(12px) saturate(1.8) brightness(1.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow:
-    0 8px 32px 0 rgba(31, 38, 135, 0.2),
-    0 2px 16px 0 rgba(31, 38, 135, 0.1),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 0 0 rgba(255, 255, 255, 0.2);
-}
-
-.dark .glass-surface--fallback {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px) saturate(1.8) brightness(1.2);
-  -webkit-backdrop-filter: blur(12px) saturate(1.8) brightness(1.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow:
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
-    inset 0 -1px 0 0 rgba(255, 255, 255, 0.1);
-}
-
-@supports not (backdrop-filter: blur(10px)) {
-  .glass-surface--fallback {
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow:
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
-      inset 0 -1px 0 0 rgba(255, 255, 255, 0.3);
-  }
-
-  .glass-surface--fallback::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: inherit;
-    z-index: -1;
-  }
-
-  .dark .glass-surface--fallback {
-    background: rgba(0, 0, 0, 0.4);
-  }
-
-  .dark .glass-surface--fallback::before {
-    background: rgba(255, 255, 255, 0.05);
-  }
-}
-
-.glass-surface:focus-visible {
-  outline: 2px solid hsl(var(--ring));
-  outline-offset: 2px;
-}
-
-/* The displacement filter is decorative; drop it when motion is unwelcome. */
-@media (prefers-reduced-motion: reduce) {
-  .glass-surface {
-    transition: none;
   }
 }

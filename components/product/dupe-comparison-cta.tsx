@@ -20,8 +20,8 @@ export function DupeComparisonCta({ dupeOf }: { dupeOf?: string[] }) {
     : "/dupe-finder";
 
   return (
-    <div className="rounded-lg border border-border bg-card p-5">
-      <p className="overline text-muted-foreground">Dupe Finder</p>
+    <div className="rounded-xl border border-border bg-card p-5 shadow-card">
+      <p className="overline">Dupe Finder</p>
       <p className="mt-2 text-base text-foreground">
         {primary ? (
           <>

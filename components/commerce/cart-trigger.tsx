@@ -21,17 +21,17 @@ export function CartTrigger({ className }: { className?: string }) {
       onClick={() => setOpen(true)}
       aria-label={count > 0 ? `Open bag, ${count} items` : "Open bag, empty"}
       className={cn(
-        "relative inline-flex size-11 items-center justify-center rounded-md text-muted-foreground",
-        "transition-colors duration-150 ease-premium hover:bg-secondary/60 hover:text-foreground",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+        "relative inline-flex size-10 items-center justify-center rounded-full text-muted-foreground",
+        "transition-colors duration-150 ease-premium hover:bg-secondary hover:text-foreground",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         className
       )}
     >
-      <ShoppingBag className="size-5" />
+      <ShoppingBag className="size-[18px]" strokeWidth={1.75} />
       {count > 0 && (
         <span
           aria-hidden
-          className="absolute right-1 top-1 inline-flex min-w-[1.125rem] items-center justify-center rounded-full bg-primary px-1 text-[0.625rem] font-medium leading-[1.125rem] text-primary-foreground"
+          className="tabular absolute right-0.5 top-0.5 inline-flex min-w-[1.125rem] items-center justify-center rounded-full bg-primary px-1 text-[0.625rem] font-semibold leading-[1.125rem] text-primary-foreground ring-2 ring-background"
         >
           {count > 99 ? "99+" : count}
         </span>

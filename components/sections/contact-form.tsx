@@ -73,7 +73,7 @@ export function ContactForm() {
       <div
         ref={confirmationRef}
         tabIndex={-1}
-        className="rounded-lg border border-border bg-card p-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="rounded-xl border border-border bg-card shadow-card p-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
         <h2 className="text-h5 font-semibold text-foreground">
           Message received

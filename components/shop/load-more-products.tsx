@@ -42,7 +42,7 @@ export function LoadMoreProducts({
       {items.length > 0 && (
         <Stagger
           as="ul"
-          className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:mt-5 xl:gap-5"
         >
           {items.map((product) => (
             <StaggerItem as="li" key={product.id} className="flex">

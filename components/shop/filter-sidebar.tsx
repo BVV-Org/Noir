@@ -85,7 +85,7 @@ export function FilterSidebar({
       {query && <input type="hidden" name="q" value={query} />}
       {sort !== "relevance" && <input type="hidden" name="sort" value={sort} />}
 
-      <div className="flex items-center gap-3 border-b border-border/60 py-4">
+      <div className="flex items-center gap-3 border-b border-border py-4">
         <Checkbox
           id="filter-stock"
           name="stock"
@@ -104,15 +104,15 @@ export function FilterSidebar({
           <details
             key={group.key}
             open={count > 0}
-            className="group border-b border-border/60"
+            className="group border-b border-border"
           >
             <summary
               className="flex cursor-pointer list-none items-center justify-between py-4 [&::-webkit-details-marker]:hidden"
             >
               <span className="flex items-center gap-2">
-                <span className="overline">{group.label}</span>
+                <span className="text-small font-medium text-foreground">{group.label}</span>
                 {count > 0 && (
-                  <span className="inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[0.625rem] font-medium leading-none text-primary-foreground tabular-nums">
+                  <span className="tabular inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[0.625rem] font-semibold leading-none text-primary-foreground">
                     {count}
                   </span>
                 )}
@@ -124,7 +124,7 @@ export function FilterSidebar({
               />
             </summary>
 
-            <div className="flex flex-col gap-3 pb-5 pt-1">
+            <div className="flex flex-col gap-2.5 pb-5 pt-1">
               {group.options.map((option) => {
                 const id = `filter-${group.key}-${option.value}`;
                 const checked = selected[group.key]?.includes(option.value);
@@ -141,10 +141,10 @@ export function FilterSidebar({
                     />
                     <Label
                       htmlFor={id}
-                      className="flex flex-1 cursor-pointer items-baseline justify-between gap-2 font-normal"
+                      className="flex flex-1 cursor-pointer items-baseline justify-between gap-2 font-normal text-muted-foreground transition-colors hover:text-foreground"
                     >
                       <span>{option.label}</span>
-                      <span className="text-caption tabular-nums text-muted-foreground">
+                      <span className="tabular text-caption text-muted-foreground">
                         {option.count}
                       </span>
                     </Label>
@@ -156,9 +156,9 @@ export function FilterSidebar({
         );
       })}
 
-      <details open={priceActive} className="group border-b border-border/60">
+      <details open={priceActive} className="group border-b border-border">
         <summary className="flex cursor-pointer list-none items-center justify-between py-4 [&::-webkit-details-marker]:hidden">
-          <span className="overline">Price</span>
+          <span className="text-small font-medium text-foreground">Price</span>
           <ChevronDown
             aria-hidden
             className="size-4 shrink-0 text-muted-foreground transition-transform duration-200 ease-premium group-open:rotate-180"

@@ -5,7 +5,7 @@ import { m, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 /**
- * ClipReveal — a signal-yellow sheet wipes off the content as it scrolls in.
+ * ClipReveal — a surface-tone sheet wipes off the content as it scrolls in.
  *
  * The sheet sits over the children at full scale and collapses toward the
  * top edge in proportion to scroll (scrub, not a one-shot), so the reveal
@@ -37,7 +37,7 @@ export function ClipReveal({
         <m.div
           aria-hidden
           style={{ scaleY }}
-          className="pointer-events-none absolute inset-0 z-10 origin-top rounded-lg bg-yellow"
+          className="pointer-events-none absolute inset-0 z-10 origin-top rounded-xl bg-muted"
         />
       )}
     </div>

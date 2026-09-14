@@ -37,7 +37,7 @@ export function PerformanceBar({
         <span id={labelId} className="text-small text-muted-foreground">
           {label}
         </span>
-        <span className="text-small font-medium tabular-nums text-foreground">
+        <span className="tabular text-small font-semibold text-foreground">
           {clamped}
         </span>
       </div>
@@ -49,7 +49,7 @@ export function PerformanceBar({
         aria-valuemin={0}
         aria-valuemax={100}
         aria-valuetext={`${clamped} out of 100`}
-        className="h-1 w-full overflow-hidden rounded-full bg-secondary"
+        className="h-1.5 w-full overflow-hidden rounded-full bg-secondary"
       >
         <m.div
           className="h-full rounded-full bg-primary"

@@ -32,7 +32,7 @@ export default function RootLoading() {
           {Array.from({ length: 3 }, (_, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-lg border border-border bg-card"
+              className="overflow-hidden rounded-xl border border-border bg-card shadow-card"
             >
               <Skeleton className="aspect-[4/3] rounded-none" />
               <div className="flex flex-col gap-3 p-6">

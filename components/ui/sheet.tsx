@@ -25,7 +25,7 @@ const SheetOverlay = React.forwardRef<
   <SheetPrimitive.Overlay
     ref={ref}
     className={cn(
-      "fixed inset-0 z-50 bg-background/80 backdrop-blur-sm",
+      "fixed inset-0 z-50 bg-black/40 backdrop-blur-[2px] dark:bg-black/60",
       "data-[state=open]:animate-in data-[state=open]:fade-in-0",
       "data-[state=closed]:animate-out data-[state=closed]:fade-out-0",
       className
@@ -37,7 +37,7 @@ SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
 
 const sheetVariants = cva(
   // 300ms slide sits inside the 250–350ms page-transition band.
-  "fixed z-50 flex flex-col gap-4 border-border bg-card p-6 transition ease-premium data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-300",
+  "fixed z-50 flex flex-col gap-4 border-border bg-card p-6 shadow-popover transition ease-premium data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-300",
   {
     variants: {
       side: {
@@ -78,9 +78,9 @@ const SheetContent = React.forwardRef<
       {!hideClose && (
         <SheetPrimitive.Close
           className={cn(
-            "absolute right-5 top-5 inline-flex size-11 items-center justify-center rounded-md text-muted-foreground",
-            "transition-colors duration-150 ease-premium hover:bg-secondary/60 hover:text-foreground",
-            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+            "absolute right-5 top-5 inline-flex size-9 items-center justify-center rounded-full text-muted-foreground",
+            "transition-colors duration-150 ease-premium hover:bg-secondary hover:text-foreground",
+            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
             "disabled:pointer-events-none"
           )}
         >

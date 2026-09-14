@@ -300,7 +300,7 @@ export function ScrollFrameHero({
         {/* Scroll affordance — only when scroll actually drives the frames. */}
         {scrub && (
           <div className="pointer-events-none absolute inset-x-0 bottom-8 flex justify-center">
-            <span className="overline text-white/60">Scroll</span>
+            <span className="text-caption font-medium text-white/50">Scroll</span>
           </div>
         )}
       </div>

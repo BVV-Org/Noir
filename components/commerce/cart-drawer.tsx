@@ -39,8 +39,11 @@ export function CartDrawer() {
 
   return (
     <Sheet open={isOpen} onOpenChange={setOpen}>
-      <SheetContent side="right" className="w-[min(92vw,28rem)] gap-0">
-        <SheetTitle className="font-display uppercase tracking-[0.2em]">
+      <SheetContent
+        side="right"
+        className="inset-y-2 right-2 h-auto w-[min(calc(100vw-1rem),28rem)] gap-0 rounded-xl border sm:max-w-none"
+      >
+        <SheetTitle className="text-h5 font-semibold">
           Your bag
         </SheetTitle>
         <SheetDescription className="sr-only">
@@ -67,7 +70,7 @@ export function CartDrawer() {
             <ul className="-mr-2 mt-8 flex flex-1 flex-col gap-6 overflow-y-auto pr-2">
               {lines.map((line) => (
                 <li key={line.id} className="flex gap-4">
-                  <div className="relative size-24 shrink-0 overflow-hidden rounded-md border border-border bg-background">
+                  <div className="relative size-24 shrink-0 overflow-hidden rounded-md bg-secondary">
                     {line.image && (
                       <Image
                         src={line.image.url}
@@ -86,7 +89,7 @@ export function CartDrawer() {
                           <SheetClose asChild>
                             <Link
                               href={`/products/${line.productHandle}`}
-                              className="hover:text-primary"
+                              className="transition-colors hover:text-muted-foreground"
                             >
                               {line.productTitle}
                             </Link>
@@ -96,7 +99,7 @@ export function CartDrawer() {
                           {line.variantTitle}
                         </p>
                       </div>
-                      <p className="shrink-0 font-system text-small tabular-nums text-foreground">
+                      <p className="tabular shrink-0 text-small font-semibold text-foreground">
                         {formatMoney(
                           line.lineTotal.amount,
                           line.lineTotal.currencyCode
@@ -105,7 +108,7 @@ export function CartDrawer() {
                     </div>
 
                     <div className="mt-auto flex items-center justify-between gap-3 pt-3">
-                      <div className="flex items-center rounded-md border border-border">
+                      <div className="flex items-center rounded-full bg-secondary">
                         <QuantityButton
                           label={`Decrease quantity of ${line.productTitle}`}
                           disabled={pending}
@@ -116,7 +119,7 @@ export function CartDrawer() {
 
                         <span
                           aria-live="polite"
-                          className="w-9 text-center text-small tabular-nums text-foreground"
+                          className="tabular w-7 text-center text-small font-medium text-foreground"
                         >
                           {line.quantity}
                         </span>
@@ -135,9 +138,9 @@ export function CartDrawer() {
                         disabled={pending}
                         onClick={() => removeItem(line.id)}
                         className={cn(
-                          "inline-flex size-11 items-center justify-center rounded-md text-muted-foreground",
-                          "transition-colors duration-150 ease-premium hover:bg-secondary/60 hover:text-destructive",
-                          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+                          "inline-flex size-9 items-center justify-center rounded-full text-muted-foreground",
+                          "transition-colors duration-150 ease-premium hover:bg-secondary hover:text-destructive",
+                          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
                           "disabled:pointer-events-none disabled:opacity-50"
                         )}
                       >
@@ -159,7 +162,7 @@ export function CartDrawer() {
                 <span className="text-small text-muted-foreground">
                   Subtotal
                 </span>
-                <span className="font-display text-h5 font-medium tabular-nums text-foreground">
+                <span className="tabular text-h5 font-semibold text-foreground">
                   {cart &&
                     formatMoney(
                       cart.cost.subtotal.amount,
@@ -222,9 +225,9 @@ function QuantityButton({
       disabled={disabled}
       onClick={onClick}
       className={cn(
-        "inline-flex size-11 items-center justify-center rounded-md text-muted-foreground",
+        "inline-flex size-9 items-center justify-center rounded-full text-muted-foreground",
         "transition-colors duration-150 ease-premium hover:text-foreground",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60",
         "disabled:pointer-events-none disabled:opacity-40"
       )}
     >

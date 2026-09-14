@@ -34,7 +34,7 @@ export function StickyAddToCart({
       aria-hidden={!scrolled}
       inert={!scrolled ? true : undefined}
       className={cn(
-        "fixed inset-x-0 z-40 border-t border-border/60 bg-background/90 backdrop-blur-md lg:hidden",
+        "fixed inset-x-0 z-40 border-t border-border bg-background/90 backdrop-blur-xl backdrop-saturate-150 lg:hidden",
         "bottom-[calc(3.5rem+env(safe-area-inset-bottom))]",
         "transition-[opacity,transform] duration-150 ease-premium",
         scrolled
@@ -47,7 +47,7 @@ export function StickyAddToCart({
           <p className="truncate text-small font-medium text-foreground">
             {product.title}
           </p>
-          <p className="font-system text-caption tabular-nums text-muted-foreground">
+          <p className="tabular text-caption text-muted-foreground">
             {variant
               ? `${variant.title} · ${formatMoney(variant.price.amount, variant.price.currencyCode)}`
               : formatMoney(product.price.amount, product.price.currencyCode)}

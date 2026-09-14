@@ -70,7 +70,7 @@ export function SearchBar({ initialQuery }: { initialQuery: string }) {
       </label>
       <Search
         aria-hidden
-        className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
+        className="pointer-events-none absolute left-4 top-1/2 z-10 size-4 -translate-y-1/2 text-muted-foreground"
       />
       <Input
         ref={inputRef}
@@ -80,7 +80,7 @@ export function SearchBar({ initialQuery }: { initialQuery: string }) {
         value={value}
         onChange={(event) => setValue(event.target.value)}
         placeholder="Search by name, house, or note"
-        className="pl-10 pr-10"
+        className="h-12 pl-11 pr-12 text-base"
       />
       {value && (
         <button
@@ -89,7 +89,7 @@ export function SearchBar({ initialQuery }: { initialQuery: string }) {
             setValue("");
             commit("");
           }}
-          className="absolute right-1 top-1/2 inline-flex size-9 -translate-y-1/2 items-center justify-center rounded-md text-muted-foreground transition-colors duration-150 ease-premium hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="absolute right-1.5 top-1/2 z-10 inline-flex size-9 -translate-y-1/2 items-center justify-center rounded-full text-muted-foreground transition-colors duration-150 ease-premium hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <X className="size-4" />
           <span className="sr-only">Clear search</span>

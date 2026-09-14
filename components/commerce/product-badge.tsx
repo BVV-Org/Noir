@@ -19,7 +19,7 @@ function resolve(product: Product): BadgeSpec | null {
     return { label: "Sold out", variant: "outline" };
   }
   if (product.flags.limitedDrop) {
-    return { label: "Limited", variant: "accent" };
+    return { label: "Limited", variant: "solid" };
   }
   if (product.flags.editorsPick) {
     return { label: "Editor's pick", variant: "default" };
