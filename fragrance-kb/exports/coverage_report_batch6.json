@@ -1,0 +1,60 @@
+{
+  "batch": 6,
+  "generated_at": "2026-07-18T07:25:03Z",
+  "brands_covered_cumulative": [
+    "Afnan",
+    "Lattafa",
+    "Rayhaan",
+    "Rasasi",
+    "Arabiyat Prestige",
+    "French Avenue",
+    "Aromatix × French Avenue",
+    "Armaf"
+  ],
+  "cumulative_fragrances_processed": 210,
+  "this_batch_fragrances": 20,
+  "reference_targets_total": 74,
+  "cumulative_relationships": 222,
+  "this_batch_relationships": 22,
+  "by_type_cumulative": {
+    "INSPIRED_BY": 94,
+    "ORIGINAL_DNA": 82,
+    "VERIFIED_CLONE": 19,
+    "SIMILAR_DNA": 17,
+    "HYBRID_DNA": 10
+  },
+  "by_type_this_batch": {
+    "INSPIRED_BY": 12,
+    "VERIFIED_CLONE": 7,
+    "HYBRID_DNA": 2,
+    "SIMILAR_DNA": 1
+  },
+  "verified_relationships_cumulative": 27,
+  "low_confidence_relationships_cumulative": 118,
+  "needs_review_relationships_cumulative": 144,
+  "fragrances_needing_manual_review_this_batch": [
+    "Armaf Club de Nuit Iconic",
+    "Armaf Club de Nuit Urban Man Elixir",
+    "Armaf Hunter Intense",
+    "Armaf Odyssey Aqua",
+    "Armaf Odyssey Homme",
+    "Armaf Odyssey Wild One",
+    "Armaf Ventana"
+  ],
+  "fragrances_awaiting_scent_data": [
+    "Rasasi Hawas Rouge",
+    "Rasasi Yanis 12:01 AM",
+    "Rayhaan Black",
+    "Rayhaan Cobra",
+    "Rayhaan Noor",
+    "Rayhaan Panther",
+    "Rayhaan Ruby",
+    "Rayhaan Sapphire",
+    "Rayhaan Topaze"
+  ],
+  "notes_catalogued": 245,
+  "accords_catalogued": 56,
+  "sources_catalogued": 258,
+  "duplicate_records_removed": 0,
+  "validation_issues": []
+}

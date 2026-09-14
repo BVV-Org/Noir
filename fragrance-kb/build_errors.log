@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/sessions/kind-relaxed-lovelace/mnt/outputs/build_batch1.py", line 756, in <module>
+    with open(SCHEMA) as f: cur.executescript(f.read())
+sqlite3.OperationalError: disk I/O error
