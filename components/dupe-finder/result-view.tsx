@@ -42,7 +42,7 @@ export function ResultView({
         initial={reduce ? false : { opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: EASE.signature }}
-        className="flex flex-col gap-5 rounded-xl border border-border bg-card p-5 sm:flex-row sm:items-center sm:p-6"
+        className="flex flex-col gap-5 rounded-xl border border-border bg-card p-5 shadow-card sm:flex-row sm:items-center sm:p-6"
       >
         <BottleArt
           swatch={swatchFor(original.id)}
@@ -53,21 +53,21 @@ export function ResultView({
           <h2 className="mt-1 text-h2">
             {original.name}
           </h2>
-          <p className="mt-1 font-mono text-caption uppercase tracking-[0.06em] text-muted-foreground">
+          <p className="mt-1.5 text-small text-muted-foreground">
             {[original.brand, original.concentration, original.category]
               .filter(Boolean)
               .join(" · ")}
           </p>
         </div>
         <div className="shrink-0 text-right">
-          <p className="font-display text-h3 leading-none text-foreground">{clones.length}</p>
-          <p className="font-mono text-caption uppercase tracking-[0.08em] text-muted-foreground">
+          <p className="tabular text-h3 font-semibold leading-none text-foreground">{clones.length}</p>
+          <p className="mt-1 text-caption text-muted-foreground">
             {clones.length === 1 ? "match" : "matches"}
           </p>
         </div>
       </m.header>
 
-      <div className="space-y-6">
+      <div className="space-y-4">
         {clones.map((card) => (
           <CloneCard key={card.relationshipId} card={card} />
         ))}

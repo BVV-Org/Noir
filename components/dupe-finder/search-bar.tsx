@@ -68,7 +68,7 @@ export function SearchBar({
     <div className="relative w-full">
       <div
         className={cn(
-          "flex items-center gap-3 rounded-full border border-border bg-background/70 backdrop-blur-xl transition-colors focus-within:border-foreground/40",
+          "flex items-center gap-3 rounded-full border border-border bg-card shadow-card transition-[border-color,box-shadow] focus-within:border-input focus-within:ring-4 focus-within:ring-ring/15",
           size === "lg" ? "h-14 px-5" : "h-12 px-4"
         )}
       >
@@ -112,7 +112,7 @@ export function SearchBar({
               setQuery("");
               inputRef.current?.focus();
             }}
-            className="grid size-7 shrink-0 place-items-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+            className="grid size-8 shrink-0 place-items-center rounded-full bg-secondary text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
           >
             <X className="size-4" aria-hidden />
           </button>
@@ -133,7 +133,7 @@ export function SearchBar({
             animate={{ opacity: 1, y: 0 }}
             exit={reduce ? undefined : { opacity: 0, y: -6 }}
             transition={{ duration: 0.16, ease: EASE.settle }}
-            className="absolute inset-x-0 top-[calc(100%+0.5rem)] z-30 overflow-hidden rounded-2xl border border-border bg-popover/95 p-1.5 shadow-xl backdrop-blur-xl"
+            className="absolute inset-x-0 top-[calc(100%+0.5rem)] z-30 overflow-hidden rounded-xl border border-border bg-popover p-1.5 text-left shadow-popover"
           >
             {suggestions.length === 0 ? (
               <li className="px-4 py-3 text-caption text-muted-foreground">
@@ -152,21 +152,21 @@ export function SearchBar({
                     choose(i);
                   }}
                   className={cn(
-                    "flex cursor-pointer items-center justify-between gap-3 rounded-xl px-4 py-2.5 transition-colors",
-                    i === active ? "bg-accent" : "bg-transparent"
+                    "flex cursor-pointer items-center justify-between gap-3 rounded-md px-3 py-2.5 transition-colors",
+                    i === active ? "bg-secondary" : "bg-transparent"
                   )}
                 >
                   <span className="min-w-0">
-                    <span className="block truncate text-sm text-foreground">
+                    <span className="block truncate text-small font-medium text-foreground">
                       {s.name}
                     </span>
-                    <span className="block truncate font-mono text-caption uppercase tracking-[0.06em] text-muted-foreground">
+                    <span className="block truncate text-caption text-muted-foreground">
                       {s.brand}
                     </span>
                   </span>
                   <span className="flex shrink-0 items-center gap-2">
                     {s.brandKind === "clone" && (
-                      <span className="rounded-full border border-border px-2 py-0.5 font-mono text-[0.55rem] uppercase tracking-[0.08em] text-muted-foreground">
+                      <span className="rounded-full bg-secondary px-2 py-0.5 text-caption font-medium text-secondary-foreground">
                         Dupe
                       </span>
                     )}

@@ -30,7 +30,7 @@ export function PerformancePanel({
         Performance
       </h2>
 
-      <div className="mt-8 grid gap-x-12 gap-y-6 sm:grid-cols-2">
+      <div className="mt-6 grid gap-x-10 gap-y-5 sm:grid-cols-2">
         {metrics.map(([key, label]) => (
           <PerformanceBar
             key={key}

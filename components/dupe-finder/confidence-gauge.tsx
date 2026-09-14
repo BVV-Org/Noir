@@ -57,7 +57,7 @@ export function ConfidenceGauge({
           r={r}
           fill="none"
           strokeWidth={stroke}
-          className="stroke-foreground/10"
+          className="stroke-secondary"
         />
         <m.circle
           cx={size / 2}
@@ -66,7 +66,7 @@ export function ConfidenceGauge({
           fill="none"
           strokeWidth={stroke}
           strokeLinecap="round"
-          stroke="hsl(var(--gold))"
+          stroke="hsl(var(--foreground))"
           strokeDasharray={c}
           initial={{ strokeDashoffset: reduce ? offset : c }}
           whileInView={{ strokeDashoffset: offset }}
@@ -76,11 +76,11 @@ export function ConfidenceGauge({
       </svg>
       <div className="absolute inset-0 grid place-items-center text-center">
         <div>
-          <div className="font-display text-[2rem] leading-none tabular-nums text-gold">
+          <div className="tabular text-[1.75rem] font-semibold leading-none tracking-[-0.04em] text-foreground">
             {display}
-            <span className="align-top text-base">%</span>
+            <span className="align-top text-small text-muted-foreground">%</span>
           </div>
-          <div className="mt-1 font-mono text-[0.58rem] uppercase tracking-[0.14em] text-muted-foreground">
+          <div className="mt-1 text-caption text-muted-foreground">
             {label}
           </div>
         </div>

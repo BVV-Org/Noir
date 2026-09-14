@@ -23,13 +23,13 @@ export function MetricBar({
   return (
     <div className={cn("space-y-1.5", className)}>
       <div className="flex items-baseline justify-between gap-3">
-        <span className="font-mono text-caption uppercase tracking-[0.08em] text-muted-foreground">
+        <span className="text-small text-muted-foreground">
           {label}
         </span>
-        <span className="font-mono text-caption tabular-nums text-gold">{pct}%</span>
+        <span className="tabular text-small font-semibold text-foreground">{pct}%</span>
       </div>
       <div
-        className="h-1.5 w-full overflow-hidden rounded-full bg-foreground/10"
+        className="h-1.5 w-full overflow-hidden rounded-full bg-secondary"
         role="meter"
         aria-valuenow={pct}
         aria-valuemin={0}
@@ -38,7 +38,7 @@ export function MetricBar({
       >
         <m.span
           aria-hidden
-          className="block h-full rounded-full bg-gold"
+          className="block h-full rounded-full bg-primary"
           initial={{ width: `${reduce ? pct : 0}%` }}
           whileInView={{ width: `${pct}%` }}
           viewport={{ once: true, margin: "0px 0px -40px 0px" }}

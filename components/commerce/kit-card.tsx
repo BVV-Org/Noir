@@ -28,9 +28,9 @@ export function KitCard({
     <Card
       as="article"
       interactive
-      className={cn("relative flex flex-col overflow-hidden", className)}
+      className={cn("relative flex flex-col p-2", className)}
     >
-      <div className="relative aspect-square overflow-hidden bg-background">
+      <div className="relative aspect-square overflow-hidden rounded-[16px] bg-secondary">
         {kit.image && (
           <Image
             src={kit.image.url}
@@ -39,19 +39,19 @@ export function KitCard({
             priority={priority}
             sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
             className={cn(
-              "object-cover transition-transform duration-150 ease-premium group-hover/card:scale-[1.02]",
-              !kit.availableForSale && "opacity-60"
+              "object-cover transition-transform duration-700 ease-premium group-hover/card:scale-[1.03]",
+              !kit.availableForSale && "opacity-50 grayscale"
             )}
           />
         )}
       </div>
 
-      <div className="flex flex-1 flex-col gap-3 p-6">
+      <div className="flex flex-1 flex-col gap-2 px-3 pb-3 pt-4">
         <p className="overline">{count} fragrances</p>
         <h3 className="text-h5 font-semibold text-foreground">
           <Link
             href={`/discovery-kits/${kit.handle}`}
-            className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none"
+            className="rounded-sm after:absolute after:inset-0 after:rounded-xl focus-visible:outline-none"
           >
             {kit.title}
           </Link>
@@ -59,7 +59,7 @@ export function KitCard({
         {kit.tagline && (
           <p className="text-small text-muted-foreground">{kit.tagline}</p>
         )}
-        <div className="mt-auto flex items-center justify-between gap-3 pt-2">
+        <div className="mt-auto flex items-center justify-between gap-3 pt-3">
           <PriceTag price={kit.price} />
           {!kit.availableForSale && <Badge variant="outline">Sold out</Badge>}
         </div>

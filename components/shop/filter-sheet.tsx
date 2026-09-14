@@ -42,7 +42,7 @@ export function FilterSheet(
       </SheetTrigger>
 
       <SheetContent side="left" className="w-[min(92vw,24rem)] overflow-y-auto">
-        <SheetTitle className="font-display uppercase tracking-[0.2em]">
+        <SheetTitle className="text-h5 font-semibold">
           Filters
         </SheetTitle>
         <SheetDescription className="sr-only">
