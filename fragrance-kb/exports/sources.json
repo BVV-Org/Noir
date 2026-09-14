@@ -1,0 +1,2324 @@
+[
+  {
+    "id": 13,
+    "url": "https://afnan.com/products/turathi-electric",
+    "domain": "afnan.com",
+    "title": null,
+    "source_type": "brand_official",
+    "tier": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 60,
+    "url": "https://www.lattafa-usa.com/products/asad-elixir",
+    "domain": "lattafa-usa.com",
+    "title": null,
+    "source_type": "brand_official",
+    "tier": 1,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 9,
+    "url": "https://www.parfumo.com/Perfumes/Afnan_Perfumes/9am-dive",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 12,
+    "url": "https://www.parfumo.com/Perfumes/Afnan_Perfumes/turathi-blue",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 16,
+    "url": "https://www.parfumo.com/Perfumes/Afnan_Perfumes/supremacy-not-only-intense",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 19,
+    "url": "https://www.parfumo.com/Perfumes/Afnan_Perfumes/Supremacy_Silver",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 25,
+    "url": "https://www.parfumo.com/Perfumes/Afnan_Perfumes/supremacy-in-oud",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 28,
+    "url": "https://www.parfumo.com/Perfumes/Afnan_Perfumes/Supremacy_in_Heaven",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 40,
+    "url": "https://www.parfumo.com/Perfumes/Afnan_Perfumes/abstract",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 66,
+    "url": "https://www.parfumo.com/Perfumes/Lattafa/oud-for-glory",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 74,
+    "url": "https://www.parfumo.com/Perfumes/Lattafa/al-nashama-caprice",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 86,
+    "url": "https://www.parfumo.com/Perfumes/rayhaan/imperia",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 99,
+    "url": "https://www.parfumo.com/Perfumes/rayhaan/corium",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 102,
+    "url": "https://www.parfumo.com/Perfumes/rayhaan/crimson",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 108,
+    "url": "https://www.parfumo.com/Perfumes/Rasasi/hawas-ice",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 113,
+    "url": "https://www.parfumo.com/Perfumes/Rasasi/hawas-eclat",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 122,
+    "url": "https://www.parfumo.com/Perfumes/Rasasi/La_Yuqawam_pour_Homme",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 125,
+    "url": "https://www.parfumo.com/Perfumes/Rasasi/La_Yuqawam_Ambergris_Showers",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 127,
+    "url": "https://www.parfumo.com/Perfumes/Rasasi/La_Yuqawam_Tobacco_Blaze",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 129,
+    "url": "https://www.parfumo.com/Perfumes/Rasasi/Daarej_pour_Homme",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 133,
+    "url": "https://www.parfumo.com/Perfumes/Rasasi/al-wisam-day",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 139,
+    "url": "https://www.parfumo.com/Perfumes/arabiyat-prestige/aariz-intense",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 142,
+    "url": "https://www.parfumo.com/Perfumes/arabiyat-prestige/marwa",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 160,
+    "url": "https://www.parfumo.com/Perfumes/arabiyat-prestige/raees-twilight-aura",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 165,
+    "url": "https://www.parfumo.com/Perfumes/french-avenue/royal-blend",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 179,
+    "url": "https://www.parfumo.com/Perfumes/french-avenue/pinnace-oryn",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 189,
+    "url": "https://www.parfumo.com/Perfumes/french-avenue/essence-de-blanc",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 191,
+    "url": "https://www.parfumo.com/Perfumes/french-avenue/miraj-absolu",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 194,
+    "url": "https://www.parfumo.com/Perfumes/french-avenue/moonstone-bleu",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 203,
+    "url": "https://www.parfumo.com/Perfumes/french-avenue/zenith-santal",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 206,
+    "url": "https://www.parfumo.com/Perfumes/french-avenue/zenith-deep",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 232,
+    "url": "https://www.parfumo.com/Perfumes/Armaf/club-de-nuit-sillage-eau-de-parfum",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 234,
+    "url": "https://www.parfumo.com/Perfumes/Armaf/club-de-nuit-milestone-eau-de-parfum",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 239,
+    "url": "https://www.parfumo.com/Perfumes/Armaf/club-de-nuit-iconic",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 250,
+    "url": "https://www.parfumo.com/Perfumes/Armaf/odyssey-wild-one",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 256,
+    "url": "https://www.parfumo.com/Perfumes/Armaf/tag-him-uomo-rosso",
+    "domain": "parfumo.com",
+    "title": null,
+    "source_type": "parfumo",
+    "tier": 2,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 1,
+    "url": "https://www.fragrantica.com/perfume/Afnan/9pm-65414.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 5,
+    "url": "https://www.fragrantica.com/perfume/Afnan/9-PM-Rebel-99238.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 6,
+    "url": "https://www.fragrantica.com/perfume/Afnan/9PM-Elixir-111894.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 7,
+    "url": "https://www.fragrantica.com/perfume/Afnan/9-PM-Night-Out-123313.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 8,
+    "url": "https://www.fragrantica.com/perfume/Afnan/9am-Dive-78611.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 11,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Turathi-Brown-84403.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 14,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Turathi-Electric-108244.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 15,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Supremacy-Not-Only-Intense-68271.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 18,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Supremacy-Silver-27352.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 22,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Supremacy-Collector-s-Edition-Pour-Homme-98689.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 26,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Supremacy-in-Oud-68283.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 27,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Supremacy-In-Heaven-70703.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 29,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Rare-Carbon-66627.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 30,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Rare-Reef-106835.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 33,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Historic-Sahara-109081.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 34,
+    "url": "https://www.fragrantica.com/news/Historic-Sahara-New-Fragrance-by-Afnan-23006.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 35,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Historic-Olmeda-75670.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 37,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Modest-Pour-Homme-Une-69256.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 39,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Portrait-Abstract-92432.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 41,
+    "url": "https://www.fragrantica.com/perfume/Afnan/Turathi-Blue-70839.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 49,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Khamrah-Dukhan-104529.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 54,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-72821.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 57,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-Bourbon-101124.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 58,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-Zanzibar-90713.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 59,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-Elixir-117616.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 61,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Fakhar-Black-70465.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 63,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Fakhar-Extrait-85092.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 65,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Oud-for-Glory-64948.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 68,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Amethyst-68214.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 71,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Liam-Blue-Shine-85096.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 72,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Liam-85097.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 73,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Al-Nashama-Caprice-89764.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 76,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Musamam-Black-Intense-119987.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 78,
+    "url": "https://www.fragrantica.com/news/LATTAFA-Musamam-Black-Intense-and-Cocoa-Pulse-by-Jordi-Fernandez-24070.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 79,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Qaed-Al-Fursan-67996.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 82,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Musamam-84720.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 83,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Rayhaan-Elixir-95265.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 85,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Imperia-107858.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 87,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Pacific-Aura-109709.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 89,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Pacific-99293.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 91,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Pacific-Aloha-135601.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 92,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Azul-135602.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 93,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Ocean-Rush-107857.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 94,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Lion-105031.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 96,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Tiger-112886.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 98,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Corium-97118.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 101,
+    "url": "https://www.fragrantica.com/perfume/Rayhaan/Crimson-112761.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 103,
+    "url": "https://www.fragrantica.com/designers/Rayhaan.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 104,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-72821.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 107,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Ice-89050.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 109,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Black-96817.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 111,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Fire-101665.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 112,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-For-Her-Eclat-112708.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 114,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Atlantis-112309.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 115,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Thunder-130938.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 117,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Overdose-134748.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 118,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Chrome-136922.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 120,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 121,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/La-Yuqawam-Homme-19668.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 124,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/La-Yuqawam-Ambergris-Showers-44896.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 126,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Tobacco-Blaze-21365.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 128,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Daarej-pour-Homme-19688.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 130,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Fattan-53484.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 132,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Al-Wisam-Day-19650.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 134,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Al-Wisam-Evening-19649.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 135,
+    "url": "https://www.fragrantica.com/perfume/Rasasi/Shuhrah-Pour-Homme-53578.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 137,
+    "url": "https://www.fragrantica.com/designers/Rasasi.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 138,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Aariz-Intense-103369.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 140,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Al-Noor-115515.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 141,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Marwa-107084.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 143,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Lamsat-Harir-48221.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 144,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Hamdan-The-Sheikh-103400.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 145,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Hamdan-The-Hero-103398.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 146,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Hamdan-The-Brave-103399.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 147,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Hypnotic-Amber-103366.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 149,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Hypnotic-Oud-103368.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 150,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/La-Di-Da-For-Her-115529.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 152,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 153,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Nashwa-103391.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 154,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat/Nashwa-Smoke-103394.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 156,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Nayel-Oud-103379.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 157,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Portrait-Azure-115534.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 158,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Portrait-Cafe-Noir-115536.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 159,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Raees-Twilight-Aura-115542.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 161,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Raees-Aurum-103370.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 162,
+    "url": "https://www.fragrantica.com/perfume/Arabiyat-Prestige/Safa-115550.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 163,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Royal-Blend-94022.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 166,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Royal-Blend-Nero-99800.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 167,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Royal-Blend-Sequoia-109710.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 168,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Liquid-Brun-94713.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 169,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Aether-94702.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 171,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Atlantis-Extrait-113595.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 172,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Spectre-Ghost-94697.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 174,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Spectre-Wraith-94699.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 176,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Pinnace-94701.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 177,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Pinnace-Noir-94700.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 178,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Pinnace-Oryn-101170.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 180,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Azzure-Oud-94714.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 182,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Cocoa-Morado-98886.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 183,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Royal-Blend-Bourbon-103478.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 184,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Royal-Blend-Vintage-103479.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 185,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Eclair-Affair-103338.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 186,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Luscious-94023.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 187,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Meringue-94024.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 188,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Essence-de-Blanc-95181.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 190,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Miraj-Absolu-94709.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 192,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Miraj-Exclusif-94710.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 193,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Moonstone-Bleu-100011.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 195,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Moonstone-Noire-100012.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 196,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Vulcan-Baie-110650.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 197,
+    "url": "https://www.fragrantica.com/news/Vulcan-Baie-by-French-Avenue-Review-23673.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 198,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Vulcan-Black-Friday-119220.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 200,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Zenith-Blue-106865.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 202,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Zenith-Santal-120869.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 204,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/ZENITH-TOBACCO-106863.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 205,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Zenith-Deep-120870.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 207,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Veneno-Scarlet-110648.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 209,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Essence-de-Matcha-98888.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 210,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Vulcan-Feu-105520.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 211,
+    "url": "https://www.fragrantica.com/designers/French-Avenue.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 212,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Veneno-105519.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 213,
+    "url": "https://www.fragrantica.com/perfume/French-Avenue/Veneno-Bianco-105518.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 214,
+    "url": "https://www.fragrantica.com/perfume/Aromatix-X-French-Avenue/Magnetiq-117529.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 215,
+    "url": "https://www.fragrantica.com/perfume/Aromatix-X-French-Avenue/Carnal-Desire-99331.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 216,
+    "url": "https://www.fragrantica.com/perfume/Aromatix-X-French-Avenue/Forbidden-Fruit-117531.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 217,
+    "url": "https://www.fragrantica.com/perfume/Aromatix-X-French-Avenue/Naughty-Dates-122285.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 218,
+    "url": "https://www.fragrantica.com/perfume/Aromatix-X-French-Avenue/Teas-Me-117532.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 219,
+    "url": "https://www.fragrantica.com/perfume/Aromatix-X-French-Avenue/Frostbite-123532.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 220,
+    "url": "https://www.fragrantica.com/perfume/Aromatix-X-French-Avenue/Platine-Blanc-106068.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 221,
+    "url": "https://www.fragrantica.com/perfume/Aromatix-X-French-Avenue/../../designers/Aromatix-X-French-Avenue.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 222,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Intense-Man-18406.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 227,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Intense-Man-Limited-Edition-Parfum-77861.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 229,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Precieux-I-93272.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 231,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Sillage-64105.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 233,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Milestone-64104.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 235,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Untold-78476.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 237,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Club-De-Nuit-Urban-Elixir-77860.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 241,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Blue-Iconic-78475.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 243,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Odyssey-Mandarin-Sky-83132.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 245,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Odyssey-Mega-Man-83133.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 246,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Odyssey-Aqua-Edition-83134.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 247,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Odyssey-Homme-64464.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 249,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Odyssey-Wild-One-Gold-Edition-83137.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 251,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Hunter-Intense-50327.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 253,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Hunter-Killer-Man-87527.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 255,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Tag-Him-Uomo-Rosso-90407.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 257,
+    "url": "https://www.fragrantica.com/perfume/Armaf/Aura-Fresh-84603.html",
+    "domain": "fragrantica.com",
+    "title": null,
+    "source_type": "fragrantica",
+    "tier": 3,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 4,
+    "url": "https://www.youtube.com/watch?v=A5UjXsSB8bk",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 20,
+    "url": "https://basenotes.com/threads/afnan-supremacy-silver-a-clone-of-basenotes-favourite-fragrance.382424/",
+    "domain": "basenotes.com",
+    "title": null,
+    "source_type": "community",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 24,
+    "url": "https://www.youtube.com/watch?v=Sym-M9qkuh4",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 32,
+    "url": "https://www.youtube.com/watch?v=sIyfR9_ecyw",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 43,
+    "url": "https://www.youtube.com/watch?v=_SVt5W-VWko",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 48,
+    "url": "https://www.youtube.com/watch?v=IZnCXFiLMQc",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 75,
+    "url": "https://www.youtube.com/watch?v=yHMMokwUecs",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 88,
+    "url": "https://www.youtube.com/watch?v=HHHdE_0r8wc",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 95,
+    "url": "https://www.youtube.com/watch?v=7fdUASQxDIQ",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 110,
+    "url": "https://www.youtube.com/watch?v=zo2ST82JoCI",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 123,
+    "url": "https://basenotes.com/fragrances/la-yuqawam-pour-homme-by-rasasi.26140514",
+    "domain": "basenotes.com",
+    "title": null,
+    "source_type": "community",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 136,
+    "url": "https://basenotes.com/fragrances/shuhrah-pour-homme-by-rasasi.26158834",
+    "domain": "basenotes.com",
+    "title": null,
+    "source_type": "community",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 148,
+    "url": "https://www.youtube.com/watch?v=NBOI3x5Gacw",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 151,
+    "url": "https://www.youtube.com/watch?v=GDeSW2T3VSw",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 223,
+    "url": "https://basenotes.com/fragrances/club-de-nuit-intense-for-men-by-armaf.26148985/reviews/",
+    "domain": "basenotes.com",
+    "title": null,
+    "source_type": "community",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 240,
+    "url": "https://www.youtube.com/watch?v=51MjytrMvnE",
+    "domain": "youtube.com",
+    "title": null,
+    "source_type": "youtube",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 252,
+    "url": "https://basenotes.com/threads/best-of-armaf-beside-club-nuit-club-nuit-intense-hunter.456195/",
+    "domain": "basenotes.com",
+    "title": null,
+    "source_type": "community",
+    "tier": 6,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 2,
+    "url": "https://www.fragrenza.com/blogs/fragrances/exploring-fragrances-similar-to-afnan-9pm-sweet-inviting-and-energizing-scents",
+    "domain": "fragrenza.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 3,
+    "url": "https://whatscent.app/magazine/afnan-9pm-review-similar",
+    "domain": "whatscent.app",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 10,
+    "url": "https://thesnifftest.co.uk/afnan/afnan-9am/",
+    "domain": "thesnifftest.co.uk",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 17,
+    "url": "https://www.fragrenza.com/blogs/fragrances/supremacy-not-only-intense-by-afnan-10-perfumes-similar-to",
+    "domain": "fragrenza.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 45,
+    "url": "https://www.intenseoud.com/blogs/news/kilian-angels-share-dupe-introducing-lattafa-khamrah",
+    "domain": "intenseoud.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 46,
+    "url": "https://scentclones.com/khamrah-vs-angels-share/",
+    "domain": "scentclones.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 47,
+    "url": "https://parfuminspirations.com/en/blogs/fragrance-inspirations/best-angels-share-kilian-dupe-khamrah-lattafa",
+    "domain": "parfuminspirations.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 50,
+    "url": "https://nearstore.com/blogs/reviews/lattafa-khamrah-review",
+    "domain": "nearstore.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 51,
+    "url": "https://brownedit.com/lattafa-khamrah-vs-qahwa-vs-dukhan-india/",
+    "domain": "brownedit.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 52,
+    "url": "https://scentclones.com/lattafa-khamrah-dukhan-review/",
+    "domain": "scentclones.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 53,
+    "url": "https://scentchronicles.com/lattafa-khamrah-buying-guide-2025-all-versions-compared/",
+    "domain": "scentchronicles.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 55,
+    "url": "https://signaturescentperfumes.blog/lattafa-asad-review/",
+    "domain": "signaturescentperfumes.blog",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 56,
+    "url": "https://scentclones.com/best-lattafa-perfumes/",
+    "domain": "scentclones.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 80,
+    "url": "https://thesnifftest.co.uk/lattafa-perfumes/lattafa-perfumes-maahir-legacy/",
+    "domain": "thesnifftest.co.uk",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 81,
+    "url": "https://bloomperfume.com/blogs/best-similar-1/maahir-legacy-by-lattafa-perfumes",
+    "domain": "bloomperfume.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 116,
+    "url": "https://ifragranceofficial.com/perfumes/hawas-thunder-rasasi/",
+    "domain": "ifragranceofficial.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 173,
+    "url": "https://www.fragrenza.com/blogs/fragrances/spectre-ghost-by-french-avenue-mysterious-woody-and-elegant-scents",
+    "domain": "fragrenza.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 199,
+    "url": "https://bloomperfume.com/blogs/new-similar/vulcan-black-friday-by-french-avenue",
+    "domain": "bloomperfume.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 236,
+    "url": "https://ifragranceofficial.com/armaf-club-de-nuit-untold-review/",
+    "domain": "ifragranceofficial.com",
+    "title": null,
+    "source_type": "database",
+    "tier": 7,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 21,
+    "url": "https://decantplanet.com/products/afnan-supremacy-silver-aventus-clone",
+    "domain": "decantplanet.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 23,
+    "url": "https://palette21.com/blogs/news/afnan-supremacy-collectors-edition-creed-clone",
+    "domain": "palette21.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 31,
+    "url": "https://rimalalmisk.com/products/afnan-rare-reef-louis-vuitton-pacific-chill-clone",
+    "domain": "rimalalmisk.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 36,
+    "url": "https://rimalalmisk.com/products/historic-olmeda-100ml-edp",
+    "domain": "rimalalmisk.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 38,
+    "url": "https://perfumiabd.com/afnan-modest-une-edp-for-men/",
+    "domain": "perfumiabd.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 42,
+    "url": "https://evoxshop.eu/en/blog/afnan-turathi-blue-an-alternative-to-tygar",
+    "domain": "evoxshop.eu",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 44,
+    "url": "https://www.tiktok.com/discover/what-is-afnan-9am-similar-to",
+    "domain": "tiktok.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 62,
+    "url": "https://goldnutrition.shop/products/lattafa-fakhar-black-yves-saint-laurent-y-edp-clone",
+    "domain": "goldnutrition.shop",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 64,
+    "url": "https://perfumesblend.com/en/lattafa-fakhar-gold-extrait-100ml---1-million-parfum-dupe-|-perfumes-blend/p1092924422",
+    "domain": "perfumesblend.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 67,
+    "url": "https://fragrance-dupes.com/catalogue/lattafa-badee-al-oud-oud-for-glory-initio-oud-for-greatness-clone/",
+    "domain": "fragrance-dupes.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 69,
+    "url": "https://www.amazon.com/Lattafa-Badee-Honor-Unisex-Parfum/dp/B0CFRHV1MX",
+    "domain": "amazon.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 70,
+    "url": "https://www.amazon.com/Lattafa-Perfumes-Badee-Glory-Sublime/dp/B0CBLBM9PV",
+    "domain": "amazon.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 77,
+    "url": "https://rimalalmisk.com/products/musamam",
+    "domain": "rimalalmisk.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 84,
+    "url": "https://theperfumesroom.com/top-10-rayhaan-perfumes-and-what-theyre-inspired-by/",
+    "domain": "theperfumesroom.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 90,
+    "url": "https://www.tiktok.com/discover/what-is-rayhaan-pacific-a-clone-of",
+    "domain": "tiktok.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 97,
+    "url": "https://www.tiktok.com/@fragranceknowledge/video/7456068369683369258",
+    "domain": "tiktok.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 100,
+    "url": "https://rimalalmisk.com/products/rayhaan-corium",
+    "domain": "rimalalmisk.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 105,
+    "url": "https://qamareperfumes.com/blogs/qamare-blog/rasasi-hawas-vs-creed-aventus-the-300-dupe-truth",
+    "domain": "qamareperfumes.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 106,
+    "url": "https://senseperfume.in/rasasi-hawas-clone/",
+    "domain": "senseperfume.in",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 119,
+    "url": "https://scentadvice.com/hawas-chrome-2026-rasasi/",
+    "domain": "scentadvice.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 131,
+    "url": "https://scentbuddy.blog/2026/03/15/rasasi-fattan-pour-homme-review/",
+    "domain": "scentbuddy.blog",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 155,
+    "url": "https://aromatick.com/products/arabiyat-nashwa-smoke-edp-onekh-clone-mens-cologne",
+    "domain": "aromatick.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 164,
+    "url": "https://www.scentonym.com/fragrance/french-avenue-royal-blend",
+    "domain": "scentonym.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 170,
+    "url": "https://fragrancelovers.com/products/french-avenue-by-fragrance-world-aether-greenly-dupe",
+    "domain": "fragrancelovers.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 175,
+    "url": "https://mysmellshop.com/products/french-avenue-spectre-wraith-edp-clone-black-phantom-by-kilian",
+    "domain": "mysmellshop.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 181,
+    "url": "https://rimalalmisk.com/products/french-avenue-azzure-aoud",
+    "domain": "rimalalmisk.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 201,
+    "url": "https://discoverydecants.com/products/french-avenue-zenith-blue",
+    "domain": "discoverydecants.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 208,
+    "url": "https://scentadvice.com/veneno-scarlet-2025-french-avenue/",
+    "domain": "scentadvice.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 224,
+    "url": "https://decantplanet.com/products/armaf-club-de-nuit-intense-man",
+    "domain": "decantplanet.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 225,
+    "url": "https://vivir.com/article/armaf-club-de-nuit-intense-man-edt-review",
+    "domain": "vivir.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 226,
+    "url": "https://www.myscentstories.com/perfumes/club-de-nuit-intense-man/",
+    "domain": "myscentstories.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 228,
+    "url": "https://aromatick.com/blogs/fragrance-reviews/why-armafs-limited-edition-is-the-best-creed-aventus-alternative",
+    "domain": "aromatick.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 230,
+    "url": "https://scentgrail.com/perfume-reviews/armaf-club-de-nuit-precieux-1-review/",
+    "domain": "scentgrail.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 238,
+    "url": "https://perfumenez.com/blogs/arabian/what-is-armaf-club-de-nuit-urban-man-elixir-a-clone-of",
+    "domain": "perfumenez.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 242,
+    "url": "https://fragplace.com/en-US/compare/1287-chanel-bleu-de-chanel-vs-1327-armaf-club-de-nuit-blue-iconic",
+    "domain": "fragplace.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 244,
+    "url": "https://www.jomashop.com/blog/articles/armaf-odyssey-designer-dupes",
+    "domain": "jomashop.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 248,
+    "url": "https://rimalalmisk.com/products/armaf-odyssey-homme-spicebomb-extreme-viktor-rolf-clone",
+    "domain": "rimalalmisk.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 254,
+    "url": "https://www.shopwithhustle.com/product/armaf-hunter-killer-3-4oz-edp-men-mancera-red-tobacco-clone/",
+    "domain": "shopwithhustle.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  },
+  {
+    "id": 258,
+    "url": "https://vivir.com/article/armaf-aura-fresh-review",
+    "domain": "vivir.com",
+    "title": null,
+    "source_type": "retailer",
+    "tier": 9,
+    "created_at": "2026-07-18T07:25:03Z"
+  }
+]

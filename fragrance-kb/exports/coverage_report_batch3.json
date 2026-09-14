@@ -1,0 +1,70 @@
+{
+  "batch": 3,
+  "generated_at": "2026-07-16T22:06:36Z",
+  "brands_covered_cumulative": [
+    "Afnan",
+    "Lattafa",
+    "Rayhaan",
+    "Rasasi",
+    "Arabiyat Prestige"
+  ],
+  "cumulative_fragrances_processed": 116,
+  "this_batch_fragrances": 30,
+  "reference_targets_total": 50,
+  "cumulative_relationships": 125,
+  "this_batch_relationships": 31,
+  "by_type_cumulative": {
+    "INSPIRED_BY": 53,
+    "ORIGINAL_DNA": 44,
+    "SIMILAR_DNA": 11,
+    "VERIFIED_CLONE": 11,
+    "HYBRID_DNA": 6
+  },
+  "by_type_this_batch": {
+    "ORIGINAL_DNA": 20,
+    "INSPIRED_BY": 9,
+    "SIMILAR_DNA": 2
+  },
+  "verified_relationships_cumulative": 19,
+  "low_confidence_relationships_cumulative": 65,
+  "needs_review_relationships_cumulative": 74,
+  "fragrances_needing_manual_review_this_batch": [
+    "Arabiyat Prestige Aariz",
+    "Arabiyat Prestige Aariz L'Absolu",
+    "Arabiyat Prestige Aristo",
+    "Arabiyat Prestige Ash'aa Amethyst",
+    "Arabiyat Prestige Ash'aa Blanc",
+    "Arabiyat Prestige Ash'aa Mauve",
+    "Arabiyat Prestige Ash'aa Neroli",
+    "Arabiyat Prestige Ash'aa Oud Noir",
+    "Arabiyat Prestige Bedour",
+    "Arabiyat Prestige Blueberry Musk",
+    "Arabiyat Prestige Cranberry Musk",
+    "Arabiyat Prestige Hamdan The Brave",
+    "Arabiyat Prestige Hypnotic Amber",
+    "Arabiyat Prestige Hypnotic Vanilla",
+    "Arabiyat Prestige Ishatar Amber Vanilla",
+    "Arabiyat Prestige Ishatar Citrus Oud",
+    "Arabiyat Prestige Ishatar Roses Vanilla",
+    "Arabiyat Prestige Kohl Luminous",
+    "Arabiyat Prestige Kohl Opulence",
+    "Arabiyat Prestige La Di Da For Him",
+    "Arabiyat Prestige Mahd Al Dhahab"
+  ],
+  "fragrances_awaiting_scent_data": [
+    "Rasasi Hawas Rouge",
+    "Rasasi Yanis 12:01 AM",
+    "Rayhaan Black",
+    "Rayhaan Cobra",
+    "Rayhaan Noor",
+    "Rayhaan Panther",
+    "Rayhaan Ruby",
+    "Rayhaan Sapphire",
+    "Rayhaan Topaze"
+  ],
+  "notes_catalogued": 189,
+  "accords_catalogued": 50,
+  "sources_catalogued": 152,
+  "duplicate_records_removed": 0,
+  "validation_issues": []
+}

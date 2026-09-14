@@ -1,0 +1,282 @@
+[
+  {
+    "id": 54,
+    "name": "aldehydic",
+    "slug": "aldehydic"
+  },
+  {
+    "id": 29,
+    "name": "almond",
+    "slug": "almond"
+  },
+  {
+    "id": 5,
+    "name": "amber",
+    "slug": "amber"
+  },
+  {
+    "id": 30,
+    "name": "ambroxan",
+    "slug": "ambroxan"
+  },
+  {
+    "id": 52,
+    "name": "animalic",
+    "slug": "animalic"
+  },
+  {
+    "id": 36,
+    "name": "apple",
+    "slug": "apple"
+  },
+  {
+    "id": 18,
+    "name": "aquatic",
+    "slug": "aquatic"
+  },
+  {
+    "id": 11,
+    "name": "aromatic",
+    "slug": "aromatic"
+  },
+  {
+    "id": 12,
+    "name": "boozy",
+    "slug": "boozy"
+  },
+  {
+    "id": 56,
+    "name": "caramel",
+    "slug": "caramel"
+  },
+  {
+    "id": 40,
+    "name": "cardamom",
+    "slug": "cardamom"
+  },
+  {
+    "id": 10,
+    "name": "cedar",
+    "slug": "cedar"
+  },
+  {
+    "id": 34,
+    "name": "chocolate",
+    "slug": "chocolate"
+  },
+  {
+    "id": 22,
+    "name": "chypre",
+    "slug": "chypre"
+  },
+  {
+    "id": 2,
+    "name": "cinnamon",
+    "slug": "cinnamon"
+  },
+  {
+    "id": 13,
+    "name": "citrus",
+    "slug": "citrus"
+  },
+  {
+    "id": 46,
+    "name": "clean",
+    "slug": "clean"
+  },
+  {
+    "id": 35,
+    "name": "coconut",
+    "slug": "coconut"
+  },
+  {
+    "id": 32,
+    "name": "coffee",
+    "slug": "coffee"
+  },
+  {
+    "id": 39,
+    "name": "creamy",
+    "slug": "creamy"
+  },
+  {
+    "id": 45,
+    "name": "earthy",
+    "slug": "earthy"
+  },
+  {
+    "id": 23,
+    "name": "floral",
+    "slug": "floral"
+  },
+  {
+    "id": 15,
+    "name": "fresh",
+    "slug": "fresh"
+  },
+  {
+    "id": 17,
+    "name": "fresh spicy",
+    "slug": "fresh-spicy"
+  },
+  {
+    "id": 7,
+    "name": "fruity",
+    "slug": "fruity"
+  },
+  {
+    "id": 28,
+    "name": "gourmand",
+    "slug": "gourmand"
+  },
+  {
+    "id": 26,
+    "name": "green",
+    "slug": "green"
+  },
+  {
+    "id": 53,
+    "name": "honey",
+    "slug": "honey"
+  },
+  {
+    "id": 21,
+    "name": "incense",
+    "slug": "incense"
+  },
+  {
+    "id": 42,
+    "name": "lavender",
+    "slug": "lavender"
+  },
+  {
+    "id": 27,
+    "name": "leather",
+    "slug": "leather"
+  },
+  {
+    "id": 43,
+    "name": "lychee",
+    "slug": "lychee"
+  },
+  {
+    "id": 37,
+    "name": "marine",
+    "slug": "marine"
+  },
+  {
+    "id": 47,
+    "name": "mineral",
+    "slug": "mineral"
+  },
+  {
+    "id": 41,
+    "name": "mint",
+    "slug": "mint"
+  },
+  {
+    "id": 14,
+    "name": "musk",
+    "slug": "musk"
+  },
+  {
+    "id": 20,
+    "name": "musky",
+    "slug": "musky"
+  },
+  {
+    "id": 51,
+    "name": "nutty",
+    "slug": "nutty"
+  },
+  {
+    "id": 24,
+    "name": "oud",
+    "slug": "oud"
+  },
+  {
+    "id": 19,
+    "name": "patchouli",
+    "slug": "patchouli"
+  },
+  {
+    "id": 8,
+    "name": "pineapple",
+    "slug": "pineapple"
+  },
+  {
+    "id": 50,
+    "name": "pistachio",
+    "slug": "pistachio"
+  },
+  {
+    "id": 6,
+    "name": "powdery",
+    "slug": "powdery"
+  },
+  {
+    "id": 49,
+    "name": "resinous",
+    "slug": "resinous"
+  },
+  {
+    "id": 31,
+    "name": "rose",
+    "slug": "rose"
+  },
+  {
+    "id": 25,
+    "name": "saffron",
+    "slug": "saffron"
+  },
+  {
+    "id": 16,
+    "name": "smoky",
+    "slug": "smoky"
+  },
+  {
+    "id": 55,
+    "name": "spicy",
+    "slug": "spicy"
+  },
+  {
+    "id": 44,
+    "name": "suede",
+    "slug": "suede"
+  },
+  {
+    "id": 1,
+    "name": "sweet",
+    "slug": "sweet"
+  },
+  {
+    "id": 38,
+    "name": "tea",
+    "slug": "tea"
+  },
+  {
+    "id": 33,
+    "name": "tobacco",
+    "slug": "tobacco"
+  },
+  {
+    "id": 48,
+    "name": "tropical",
+    "slug": "tropical"
+  },
+  {
+    "id": 4,
+    "name": "vanilla",
+    "slug": "vanilla"
+  },
+  {
+    "id": 3,
+    "name": "warm spicy",
+    "slug": "warm-spicy"
+  },
+  {
+    "id": 9,
+    "name": "woody",
+    "slug": "woody"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "batch": 1,
+  "generated_at": "2026-07-16T21:53:53Z",
+  "brands_covered_cumulative": [
+    "Afnan",
+    "Lattafa"
+  ],
+  "cumulative_fragrances_processed": 40,
+  "this_batch_fragrances": 40,
+  "reference_targets_total": 27,
+  "cumulative_relationships": 46,
+  "this_batch_relationships": 46,
+  "by_type_cumulative": {
+    "INSPIRED_BY": 24,
+    "SIMILAR_DNA": 7,
+    "HYBRID_DNA": 6,
+    "VERIFIED_CLONE": 6,
+    "ORIGINAL_DNA": 3
+  },
+  "by_type_this_batch": {
+    "INSPIRED_BY": 24,
+    "SIMILAR_DNA": 7,
+    "HYBRID_DNA": 6,
+    "VERIFIED_CLONE": 6,
+    "ORIGINAL_DNA": 3
+  },
+  "verified_relationships_cumulative": 13,
+  "low_confidence_relationships_cumulative": 13,
+  "needs_review_relationships_cumulative": 18,
+  "fragrances_needing_manual_review_this_batch": [
+    "Afnan 9AM",
+    "Afnan 9PM Elixir",
+    "Afnan 9PM Night Out",
+    "Afnan 9PM Rebel",
+    "Afnan Portrait Abstract",
+    "Afnan Turathi Blue",
+    "Afnan Turathi Electric",
+    "Lattafa Asad Elixir",
+    "Lattafa Bade'e Al Oud Sublime",
+    "Lattafa Eternal Oud",
+    "Lattafa Musamam Black Intense"
+  ],
+  "fragrances_awaiting_scent_data": [],
+  "notes_catalogued": 114,
+  "accords_catalogued": 44,
+  "sources_catalogued": 82,
+  "duplicate_records_removed": 0,
+  "validation_issues": []
+}

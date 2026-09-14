@@ -1,0 +1,66 @@
+{
+  "batch": 5,
+  "generated_at": "2026-07-18T07:17:26Z",
+  "brands_covered_cumulative": [
+    "Afnan",
+    "Lattafa",
+    "Rayhaan",
+    "Rasasi",
+    "Arabiyat Prestige",
+    "French Avenue",
+    "Aromatix × French Avenue"
+  ],
+  "cumulative_fragrances_processed": 190,
+  "this_batch_fragrances": 28,
+  "reference_targets_total": 67,
+  "cumulative_relationships": 200,
+  "this_batch_relationships": 28,
+  "by_type_cumulative": {
+    "INSPIRED_BY": 82,
+    "ORIGINAL_DNA": 82,
+    "SIMILAR_DNA": 16,
+    "VERIFIED_CLONE": 12,
+    "HYBRID_DNA": 8
+  },
+  "by_type_this_batch": {
+    "ORIGINAL_DNA": 14,
+    "INSPIRED_BY": 13,
+    "SIMILAR_DNA": 1
+  },
+  "verified_relationships_cumulative": 20,
+  "low_confidence_relationships_cumulative": 113,
+  "needs_review_relationships_cumulative": 135,
+  "fragrances_needing_manual_review_this_batch": [
+    "Aromatix × French Avenue Carnal Desire",
+    "Aromatix × French Avenue Forbidden Fruit",
+    "Aromatix × French Avenue Frostbite",
+    "Aromatix × French Avenue L'Absolu Noir",
+    "Aromatix × French Avenue Midnight Oud",
+    "Aromatix × French Avenue Naughty Dates",
+    "Aromatix × French Avenue Platine Blanc",
+    "Aromatix × French Avenue Teas Me",
+    "Aromatix × French Avenue Élara",
+    "French Avenue Essence de Matcha",
+    "French Avenue Veneno",
+    "French Avenue Veneno Bianco",
+    "French Avenue Vulcan Feu",
+    "French Avenue Vulcan Sable",
+    "French Avenue Zenith Vanilla"
+  ],
+  "fragrances_awaiting_scent_data": [
+    "Rasasi Hawas Rouge",
+    "Rasasi Yanis 12:01 AM",
+    "Rayhaan Black",
+    "Rayhaan Cobra",
+    "Rayhaan Noor",
+    "Rayhaan Panther",
+    "Rayhaan Ruby",
+    "Rayhaan Sapphire",
+    "Rayhaan Topaze"
+  ],
+  "notes_catalogued": 239,
+  "accords_catalogued": 55,
+  "sources_catalogued": 221,
+  "duplicate_records_removed": 0,
+  "validation_issues": []
+}
