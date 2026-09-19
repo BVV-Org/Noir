@@ -3,33 +3,28 @@ import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-/**
- * Button — pill geometry, 14px/500 sentence case.
- *
- * Every variant shares one shape and one type treatment and differs only in
- * tone, so a filled and a secondary button side by side read as siblings. The
- * filled ink block is the single high-emphasis treatment; nothing gets a
- * shadow — contrast does the lifting.
- */
 const buttonVariants = cva(
-  "inline-flex select-none items-center justify-center gap-2 whitespace-nowrap rounded-full text-small font-medium transition-[background-color,color,border-color,opacity,transform] duration-150 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  // Base: telemetry-layer type (mono caps), flat surfaces, visible focus.
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-mono text-overline font-bold uppercase tracking-[0.08em] transition-colors duration-150 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 select-none",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-accent/80 dark:hover:bg-accent",
+        // The ink block: theme-inverse fill, flips correctly in dark mode.
+        default: "bg-primary text-primary-foreground hover:bg-primary/85",
+        secondary:
+          "bg-secondary text-secondary-foreground hover:bg-secondary/70",
         outline:
-          "border border-border bg-background text-foreground hover:bg-secondary",
-        ghost: "bg-transparent text-foreground hover:bg-secondary",
+          "border border-foreground/40 bg-transparent text-foreground hover:border-foreground hover:bg-foreground/5",
+        ghost: "bg-transparent text-foreground hover:bg-accent",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        link: "h-auto rounded-sm px-0 text-foreground underline-offset-4 hover:underline active:scale-100",
+        link: "text-foreground underline-offset-4 hover:underline p-0 h-auto",
       },
       size: {
         sm: "h-9 px-3.5",
-        default: "h-10 px-4",
-        lg: "h-12 px-6 text-base",
-        icon: "size-10",
+        default: "h-11 px-5",
+        lg: "h-12 px-7",
+        icon: "h-11 w-11",
       },
     },
     defaultVariants: {

@@ -33,7 +33,7 @@ export function MobileBottomNav() {
     // four sides and would draw a hairline down the screen edges.
     <nav
       aria-label="Primary"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/85 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl backdrop-saturate-150 lg:hidden"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-border/60 bg-background/80 pb-[env(safe-area-inset-bottom)] backdrop-blur-md lg:hidden"
     >
       <ul className="flex items-stretch justify-around">
         {bottomNav.map((item) => {
@@ -48,12 +48,12 @@ export function MobileBottomNav() {
                   "flex min-h-[3.5rem] flex-col items-center justify-center gap-1 px-1 py-2",
                   "transition-colors duration-150 ease-premium",
                   active
-                    ? "text-foreground"
+                    ? "text-primary"
                     : "text-muted-foreground hover:text-foreground"
                 )}
               >
-                <Icon className="size-5 shrink-0" strokeWidth={active ? 2 : 1.75} aria-hidden />
-                <span className="text-[0.6875rem] font-medium leading-none">
+                <Icon className="size-5 shrink-0" aria-hidden />
+                <span className="font-mono text-[0.625rem] uppercase leading-none tracking-[0.08em]">
                   {item.label}
                 </span>
               </Link>

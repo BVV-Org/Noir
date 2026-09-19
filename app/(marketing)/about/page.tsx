@@ -125,7 +125,7 @@ export default async function AboutPage() {
       </Section>
 
       <Section spacing="sm">
-        <div className="flex flex-col items-start justify-between gap-6 rounded-xl border border-border bg-card shadow-card px-6 py-12 sm:px-10 lg:flex-row lg:items-center">
+        <div className="flex flex-col items-start justify-between gap-6 rounded-lg border border-border bg-card px-6 py-12 sm:px-10 lg:flex-row lg:items-center">
           <div className="max-w-xl">
             <h2 className="text-h3 font-semibold text-foreground">
               Start where everyone should

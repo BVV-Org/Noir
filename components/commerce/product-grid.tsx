@@ -37,7 +37,7 @@ const MAX_PRIORITY_IMAGES = 2;
  * swipe on a phone but keeps its grid on tablet/desktop.
  */
 const CONTAINER_CLASS = {
-  grid: "grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-5",
+  grid: "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
   rail: "scrollbar-none -mb-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4",
   "rail-mobile":
     "scrollbar-none -mb-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 " +

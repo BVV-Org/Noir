@@ -35,19 +35,15 @@ export function WishlistButton({
       }
       onClick={() => toggle(handle)}
       className={cn(
-        "inline-flex size-9 items-center justify-center rounded-full",
-        "bg-background/90 shadow-card backdrop-blur-sm",
-        "transition-[color,transform] duration-150 ease-premium hover:scale-105 active:scale-95",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
-        saved ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+        "inline-flex size-11 items-center justify-center rounded-full",
+        "bg-background/70 backdrop-blur-sm",
+        "transition-colors duration-150 ease-premium hover:bg-background/90",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+        saved ? "text-primary" : "text-muted-foreground hover:text-foreground",
         className
       )}
     >
-      <Heart
-        className="size-4"
-        strokeWidth={1.75}
-        fill={saved ? "currentColor" : "none"}
-      />
+      <Heart className="size-5" fill={saved ? "currentColor" : "none"} />
     </button>
   );
 }

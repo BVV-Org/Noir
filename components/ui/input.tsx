@@ -3,9 +3,7 @@ import { cn } from "@/lib/utils";
 import { SmoothCaretInput } from "@/components/ui/smooth-caret-input";
 
 /**
- * Input — a soft gray pill. No border at rest: the fill separates it from the
- * white surface beneath, and focus swaps the fill for a hairline plus ring.
- * 44px tall to satisfy touch targets.
+ * Input — a field on the dark surface. 44px tall to satisfy touch targets.
  *
  * Renders through `SmoothCaretInput`, so every field in the app gets the
  * spring-tracked caret. That primitive falls back to a plain input for types
@@ -19,10 +17,10 @@ const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
       type={type}
       wrapperClassName="w-full"
       className={cn(
-        "flex h-11 w-full rounded-full border border-transparent bg-secondary px-4 py-2 text-small text-foreground",
+        "flex h-11 w-full rounded-md border border-input bg-background px-3.5 py-2 text-small text-foreground",
         "placeholder:text-muted-foreground",
-        "transition-[background-color,border-color,box-shadow] duration-150 ease-premium hover:bg-accent/70",
-        "focus-visible:border-input focus-visible:bg-background focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/15 focus-visible:ring-offset-0",
+        "transition-colors duration-150 ease-premium hover:border-border/80",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         "disabled:cursor-not-allowed disabled:opacity-50",
         "aria-[invalid=true]:border-destructive aria-[invalid=true]:focus-visible:ring-destructive",
         className
@@ -40,10 +38,10 @@ const Textarea = React.forwardRef<
   <textarea
     ref={ref}
     className={cn(
-      "flex min-h-28 w-full rounded-lg border border-transparent bg-secondary px-4 py-3 text-small text-foreground",
+      "flex min-h-28 w-full rounded-md border border-input bg-background px-3.5 py-2.5 text-small text-foreground",
       "placeholder:text-muted-foreground",
-      "transition-[background-color,border-color,box-shadow] duration-150 ease-premium hover:bg-accent/70",
-      "focus-visible:border-input focus-visible:bg-background focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/15 focus-visible:ring-offset-0",
+      "transition-colors duration-150 ease-premium hover:border-border/80",
+      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
       "disabled:cursor-not-allowed disabled:opacity-50",
       "aria-[invalid=true]:border-destructive aria-[invalid=true]:focus-visible:ring-destructive",
       className

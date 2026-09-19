@@ -29,7 +29,7 @@ export function Reviews({ product }: { product: Product }) {
         Reviews
       </h2>
 
-      <div className="mt-6">
+      <div className="mt-8">
         <EmptyState
           icon={MessageSquare}
           title="No reviews yet"

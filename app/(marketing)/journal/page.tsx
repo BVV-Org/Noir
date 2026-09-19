@@ -125,11 +125,11 @@ function CategoryLink({
       href={href}
       aria-current={active ? "page" : undefined}
       className={cn(
-        "inline-flex h-9 items-center whitespace-nowrap rounded-full border px-3.5 text-small font-medium transition-colors duration-150 ease-premium",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+        "inline-flex min-h-11 items-center whitespace-nowrap rounded-full border px-4 text-small transition-colors duration-150 ease-premium",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         active
-          ? "border-primary bg-primary text-primary-foreground"
-          : "border-border bg-background text-muted-foreground hover:bg-secondary hover:text-foreground"
+          ? "border-primary bg-primary/10 text-primary"
+          : "border-border text-muted-foreground hover:border-border/80 hover:text-foreground"
       )}
     >
       {children}

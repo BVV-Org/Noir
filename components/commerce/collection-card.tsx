@@ -11,8 +11,8 @@ import { ParallaxMedia } from "@/components/motion/parallax-media";
  *
  * Wider than a product card and image-led: a collection is an idea, not an
  * object, so the type sits over the artwork rather than beneath it. The scrim is
- * a fixed ink gradient (not the theme background) so the white type holds its
- * contrast in both themes while the top of the artwork stays clean.
+ * a gradient rather than a flat overlay so the artwork stays legible at the top
+ * while the title keeps its contrast at the bottom.
  */
 export function CollectionCard({
   collection,
@@ -44,7 +44,7 @@ export function CollectionCard({
     <Card
       as="article"
       interactive
-      className={cn("relative overflow-hidden", className)}
+      className={cn("relative overflow-hidden border-0", className)}
     >
       <div className="relative aspect-[4/3] sm:aspect-[16/10]">
         {image && (
@@ -55,7 +55,7 @@ export function CollectionCard({
               fill
               priority={priority}
               sizes="(min-width: 1024px) 45vw, 90vw"
-              className="object-cover transition-transform duration-700 ease-premium group-hover/card:scale-[1.03]"
+              className="object-cover"
             />
           </ParallaxMedia>
         )}
@@ -63,32 +63,30 @@ export function CollectionCard({
         {/* Decorative: the heading below carries the meaning. */}
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+          className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"
         />
 
         <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-6">
           <div className="min-w-0">
             {typeof productCount === "number" && (
-              <p className="text-caption font-medium text-white/70">
+              <p className="overline">
                 {productCount} {productCount === 1 ? "fragrance" : "fragrances"}
               </p>
             )}
-            <h3 className="mt-1.5 text-h3 font-semibold text-white">
+            <h3 className="mt-2 text-h3 font-semibold text-foreground">
               {title}
             </h3>
             {subheadingText && (
-              <p className="mt-1.5 line-clamp-2 max-w-md text-small text-white/75">
+              <p className="mt-2 line-clamp-2 text-small text-muted-foreground">
                 {subheadingText}
               </p>
             )}
           </div>
 
-          <span
+          <ArrowRight
             aria-hidden
-            className="mb-1 grid size-10 shrink-0 place-items-center rounded-full bg-white text-black transition-transform duration-300 ease-premium group-hover/card:translate-x-0.5"
-          >
-            <ArrowRight className="size-4" />
-          </span>
+            className="mb-1 size-5 shrink-0 text-muted-foreground transition-transform duration-150 ease-premium group-hover/card:translate-x-1 group-hover/card:text-foreground"
+          />
         </div>
       </div>
 
@@ -98,7 +96,7 @@ export function CollectionCard({
       <Link
         href={`/collections/${handle}`}
         aria-label={title}
-        className="absolute inset-0 z-10 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        className="absolute inset-0 z-10 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       />
     </Card>
   );

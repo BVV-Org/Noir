@@ -97,7 +97,7 @@ export default async function ShopPage({
         <CollectionNav collections={collections} />
       </div>
 
-      <div className="mt-10 grid gap-10 lg:grid-cols-[15rem_1fr] lg:gap-10">
+      <div className="mt-10 grid gap-10 lg:grid-cols-[16rem_1fr] lg:gap-12">
         <aside className="hidden lg:block">
           <h2 className="sr-only">Filters</h2>
           <FilterSidebar

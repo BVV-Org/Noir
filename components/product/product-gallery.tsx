@@ -122,7 +122,7 @@ export function ProductGallery({
   return (
     <div className="flex flex-col gap-4">
       <div
-        className="relative aspect-[4/5] touch-pan-y select-none overflow-hidden rounded-xl bg-secondary"
+        className="relative aspect-[4/5] touch-pan-y select-none overflow-hidden rounded-lg border border-border bg-card"
         onPointerDown={onPointerDown}
         onPointerUp={onPointerUp}
         onPointerCancel={() => (pointerStartX.current = null)}
@@ -177,8 +177,8 @@ export function ProductGallery({
                 key={slide.kind === "video" ? slide.url : slide.image.url}
                 aria-hidden
                 className={cn(
-                  "h-1.5 rounded-full bg-white shadow-subtle transition-all duration-200 ease-premium",
-                  index === wrap(active) ? "w-5 opacity-100" : "w-1.5 opacity-60"
+                  "h-1.5 rounded-full bg-foreground transition-all duration-200 ease-premium",
+                  index === wrap(active) ? "w-4 opacity-90" : "w-1.5 opacity-40"
                 )}
               />
             ))}
@@ -191,7 +191,7 @@ export function ProductGallery({
           role="tablist"
           aria-label={`${title} media`}
           onKeyDown={onKeyDown}
-          className="flex gap-2"
+          className="flex gap-3"
         >
           {slides.map((slide, index) => {
             const thumb = slide.kind === "video" ? slide.poster : slide.image;
@@ -207,11 +207,11 @@ export function ProductGallery({
                 tabIndex={index === wrap(active) ? 0 : -1}
                 onClick={() => goTo(index)}
                 className={cn(
-                  "relative aspect-square w-20 overflow-hidden rounded-lg bg-secondary ring-offset-2 ring-offset-background transition-[opacity,box-shadow] duration-150 ease-premium",
-                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60",
+                  "relative aspect-square w-20 overflow-hidden rounded-md border transition-colors duration-150 ease-premium",
+                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
                   index === wrap(active)
-                    ? "ring-2 ring-foreground"
-                    : "opacity-70 hover:opacity-100"
+                    ? "border-primary"
+                    : "border-border hover:border-border/80"
                 )}
               >
                 {thumb && (

@@ -98,13 +98,20 @@ export function ShopMenu({
         aria-haspopup="menu"
         className={cn(
           triggerClassName,
-          "relative",
-          active || open
+          "relative py-2",
+          active
             ? "text-foreground"
             : "text-muted-foreground hover:text-foreground"
         )}
       >
         Shop
+        <span
+          aria-hidden
+          className={cn(
+            "absolute inset-x-0 -bottom-px h-px bg-foreground transition-opacity duration-150 ease-premium",
+            active || open ? "opacity-100" : "opacity-0"
+          )}
+        />
       </Link>
 
       <AnimatePresence>
@@ -120,7 +127,7 @@ export function ShopMenu({
             // crosses dead space on its way into the panel.
             className="absolute left-0 top-full z-50 pt-3"
           >
-            <div className="w-[20rem] overflow-hidden rounded-xl border border-border bg-popover p-1.5 shadow-popover">
+            <div className="w-[19rem] overflow-hidden rounded-lg border border-foreground/15 bg-background/95 p-1.5 shadow-xl backdrop-blur-md">
               {shopMenu.map((item, i) => (
                 <m.div
                   key={item.href}
@@ -137,22 +144,17 @@ export function ShopMenu({
                     href={item.href}
                     onClick={() => setOpen(false)}
                     className={cn(
-                      "group/item flex items-center justify-between gap-3 rounded-md px-3 py-2.5",
+                      "group/item flex items-center justify-between rounded-md px-3 py-2.5",
                       "transition-colors duration-150 ease-premium",
-                      "hover:bg-secondary focus-visible:bg-secondary focus-visible:outline-none"
+                      "hover:bg-accent focus-visible:bg-accent focus-visible:outline-none"
                     )}
                   >
-                    <span className="min-w-0">
-                      <span className="block text-small font-medium text-foreground">
-                        {item.label}
-                      </span>
-                      <span className="mt-0.5 block truncate text-caption text-muted-foreground">
-                        {item.blurb}
-                      </span>
+                    <span className="font-display text-h4 uppercase leading-none tracking-[0.04em] text-foreground">
+                      {item.label}
                     </span>
                     <span
                       aria-hidden
-                      className="translate-x-0 text-muted-foreground opacity-0 transition-all duration-200 ease-premium group-hover/item:translate-x-0.5 group-hover/item:opacity-100"
+                      className="translate-x-0 font-mono text-muted-foreground opacity-0 transition-all duration-200 ease-premium group-hover/item:translate-x-0.5 group-hover/item:opacity-100"
                     >
                       →
                     </span>
@@ -160,7 +162,7 @@ export function ShopMenu({
                 </m.div>
               ))}
 
-              <div className="mx-3 my-1.5 h-px bg-border" />
+              <div className="mx-3 my-1.5 h-px bg-foreground/10" />
 
               <Link
                 role="menuitem"
@@ -168,8 +170,12 @@ export function ShopMenu({
                 onClick={() => setOpen(false)}
                 className={cn(
                   "flex items-center justify-between rounded-md px-3 py-2",
-                  "text-small font-medium text-muted-foreground",
-                  "transition-colors duration-150 ease-premium hover:bg-secondary hover:text-foreground focus-visible:bg-secondary focus-visible:outline-none"
+                  // Deliberately NOT the mono/wide-tracked label treatment: at
+                  // this size that spacing is the generic-template tell. The
+                  // house display face, pulled tight, keeps it a sibling of the
+                  // three audience links above rather than a footnote.
+                  "font-display text-sm uppercase tracking-[-0.01em] text-muted-foreground",
+                  "transition-colors duration-150 ease-premium hover:bg-accent hover:text-foreground focus-visible:bg-accent focus-visible:outline-none"
                 )}
               >
                 All fragrances

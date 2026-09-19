@@ -76,7 +76,7 @@ export function ActiveFilters() {
           key={chip.label}
           href={chip.href}
           scroll={false}
-          className="inline-flex h-8 items-center gap-1.5 rounded-full border border-transparent bg-secondary px-3 text-caption font-medium text-foreground transition-colors duration-150 ease-premium hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:min-h-9"
+          className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-border bg-secondary/40 px-3 text-caption text-foreground transition-colors duration-150 ease-premium hover:border-border/80 hover:bg-secondary/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:min-h-9"
         >
           {chip.label}
           <X aria-hidden className="size-3.5 text-muted-foreground" />
@@ -88,7 +88,7 @@ export function ActiveFilters() {
         <Link
           href={clearHref}
           scroll={false}
-          className="ml-1 min-h-9 rounded-full px-2 text-caption text-muted-foreground underline-offset-4 transition-colors duration-150 ease-premium hover:text-foreground hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="ml-1 min-h-9 rounded-md px-2 text-caption text-muted-foreground underline-offset-4 transition-colors duration-150 ease-premium hover:text-foreground hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           Clear all
         </Link>

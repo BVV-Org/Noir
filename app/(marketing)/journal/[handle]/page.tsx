@@ -132,7 +132,7 @@ export default async function ArticlePage({
           </header>
 
           {article.heroImage && (
-            <div className="relative mt-14 aspect-[16/9] overflow-hidden rounded-xl bg-secondary">
+            <div className="relative mt-14 aspect-[16/9] overflow-hidden rounded-lg border border-border">
               <Image
                 src={article.heroImage.url}
                 alt={article.heroImage.altText}
@@ -153,7 +153,7 @@ export default async function ArticlePage({
              * accept untrusted input, sanitize here before rendering.
              */
             <div
-              className="mx-auto mt-16 max-w-2xl text-base text-muted-foreground [&_h2]:mb-4 [&_h2]:mt-12 [&_h2]:text-h4 [&_h2]:font-semibold [&_h2]:[&_h2]:text-foreground [&_p]:mb-6 [&_p]:leading-relaxed"
+              className="mx-auto mt-16 max-w-2xl text-base text-muted-foreground [&_h2]:mb-4 [&_h2]:mt-12 [&_h2]:font-display [&_h2]:text-h4 [&_h2]:font-semibold [&_h2]:[&_h2]:text-foreground [&_p]:mb-6 [&_p]:leading-relaxed"
               dangerouslySetInnerHTML={{ __html: article.bodyHtml }}
             />
           )}

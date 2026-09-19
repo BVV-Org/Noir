@@ -5,17 +5,17 @@ import { fontVariables } from "@/lib/fonts";
  * Pre-paint theme script. Reads the persisted choice (see
  * `components/providers/theme-provider.tsx`, storage key `nv-theme`) and
  * stamps `dark` on <html> before first paint, so there is no flash of the
- * wrong theme. Light is the default; only an explicit "dark" choice opts out.
- * Kept here as a plain string: a Server Component cannot import non-component
- * values from a "use client" module.
+ * wrong theme. Kept here as a plain string: a Server Component cannot import
+ * non-component values from a "use client" module.
  */
-const themeInitScript = `(function(){try{if(localStorage.getItem("nv-theme")==="dark")document.documentElement.classList.add("dark")}catch(e){}})();`;
+const themeInitScript = `(function(){try{var t=localStorage.getItem("nv-theme");if(t!=="light")document.documentElement.classList.add("dark")}catch(e){document.documentElement.classList.add("dark")}})();`;
 import { siteConfig } from "@/lib/config/site";
 import { Providers } from "@/components/providers";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { JsonLd } from "@/components/seo/json-ld";
+import { LiquidGlassFilter } from "@/components/ui/liquid-glass-filter";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/jsonld";
 import "./globals.css";
 
@@ -57,11 +57,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
-  ],
-  colorScheme: "light dark",
+  themeColor: "#e4e4e4",
+  colorScheme: "dark light",
 };
 
 export default function RootLayout({
@@ -76,10 +73,13 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         {/* Site-wide identity + the sitelinks search box target. Rendered once. */}
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
+        {/* One shared displacement filter for every `.liquid-glass` surface —
+            its map is a static asset, so no element needs its own copy. */}
+        <LiquidGlassFilter />
 
         <a
           href="#main-content"
-          className="sr-only z-50 rounded-full bg-primary px-4 py-2 text-small font-medium text-primary-foreground focus:not-sr-only focus:absolute focus:left-4 focus:top-4"
+          className="sr-only z-50 rounded-md bg-primary px-4 py-2 text-small font-medium text-primary-foreground focus:not-sr-only focus:absolute focus:left-4 focus:top-4"
         >
           Skip to content
         </a>

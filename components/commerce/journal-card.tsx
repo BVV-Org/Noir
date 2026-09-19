@@ -32,11 +32,11 @@ export function JournalCard({
     <Card
       as="article"
       interactive
-      className={cn("relative flex flex-col p-2", className)}
+      className={cn("relative flex flex-col overflow-hidden", className)}
     >
       <div
         className={cn(
-          "relative overflow-hidden rounded-[16px] bg-secondary",
+          "relative overflow-hidden bg-background",
           featured ? "aspect-[16/9] lg:aspect-[4/3]" : "aspect-[16/9]"
         )}
       >
@@ -51,12 +51,12 @@ export function JournalCard({
                 ? "(min-width: 1024px) 45vw, 90vw"
                 : "(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
             }
-            className="object-cover transition-transform duration-700 ease-premium group-hover/card:scale-[1.03]"
+            className="object-cover transition-transform duration-150 ease-premium group-hover/card:scale-[1.02]"
           />
         )}
       </div>
 
-      <div className="flex flex-1 flex-col gap-2 px-3 pb-3 pt-4">
+      <div className="flex flex-1 flex-col gap-3 p-6">
         {category && <p className="overline">{category}</p>}
 
         <h3
@@ -67,7 +67,7 @@ export function JournalCard({
         >
           <Link
             href={`/journal/${article.handle}`}
-            className="rounded-sm after:absolute after:inset-0 after:rounded-xl focus-visible:outline-none"
+            className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none"
           >
             {article.title}
           </Link>
@@ -82,7 +82,7 @@ export function JournalCard({
           {article.excerpt}
         </p>
 
-        <p className="mt-auto flex flex-wrap items-center gap-x-2 gap-y-1 pt-3 text-caption text-muted-foreground">
+        <p className="mt-auto flex flex-wrap items-center gap-x-2 gap-y-1 pt-2 text-caption text-muted-foreground">
           <time dateTime={article.publishedAt}>
             {formatDate(article.publishedAt)}
           </time>

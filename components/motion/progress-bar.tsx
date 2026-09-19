@@ -3,7 +3,7 @@
 import { m, useScroll, useSpring } from "framer-motion";
 
 /**
- * ProgressBar — a hairline of ink tracking page scroll progress.
+ * ProgressBar — a hairline of signal yellow tracking page scroll progress.
  *
  * Driven entirely by motion values; the tree never re-renders on scroll.
  * Kept under reduced motion: it communicates position, it does not move on
@@ -21,7 +21,7 @@ export function ProgressBar() {
     <m.div
       aria-hidden
       style={{ scaleX }}
-      className="fixed inset-x-0 top-0 z-50 h-px origin-left bg-foreground/80"
+      className="fixed inset-x-0 top-0 z-50 h-0.5 origin-left bg-yellow"
     />
   );
 }

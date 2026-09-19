@@ -8,13 +8,13 @@ import {
   type SectionData,
 } from "@/components/sections/section-renderer";
 
-/** Static map so Tailwind's compiler sees every rarity dot class. */
-const RARITY_DOT: Record<Rarity, string> = {
-  common: "bg-rarity-common",
-  rare: "bg-rarity-rare",
-  epic: "bg-rarity-epic",
-  legendary: "bg-rarity-legendary",
-  mythic: "bg-rarity-mythic",
+/** Static map so Tailwind's compiler sees every rarity text class. */
+const RARITY_TEXT: Record<Rarity, string> = {
+  common: "text-rarity-common",
+  rare: "text-rarity-rare",
+  epic: "text-rarity-epic",
+  legendary: "text-rarity-legendary",
+  mythic: "text-rarity-mythic",
 };
 
 /**
@@ -86,21 +86,21 @@ export default async function HomePage() {
       ))}
 
       {/*
-        The page's closing strip: the rarity ladder. Tier names are set large
-        in the interface face; each carries its tier dot — the scale IS the
-        content, so the hue is data, rationed to the dot. Classes are spelled
-        out because Tailwind cannot see interpolated names.
+        The page's one marquee: the rarity ladder as a closing brand strip.
+        Tier names carry their tier colors — the scale IS the content, so
+        the color is data, not decoration. Classes are spelled out because
+        Tailwind cannot see interpolated names.
       */}
-      <Marquee className="border-t border-border bg-surface py-10 sm:py-14">
+      <Marquee className="border-y border-foreground/15 py-8 sm:py-10">
         {RARITIES.map((tier) => (
-          <span key={tier} className="flex items-center gap-4">
-            <span
-              aria-hidden
-              className={cn("size-3 rounded-full", RARITY_DOT[tier])}
-            />
-            <span className="text-h2 font-semibold leading-none text-foreground">
-              {RARITY_LABELS[tier]}
-            </span>
+          <span
+            key={tier}
+            className={cn(
+              "font-display text-h2 uppercase leading-none",
+              RARITY_TEXT[tier]
+            )}
+          >
+            {RARITY_LABELS[tier]}
           </span>
         ))}
       </Marquee>

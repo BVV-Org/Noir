@@ -1,39 +1,30 @@
-import { Anton, Geist, Geist_Mono } from "next/font/google";
+import { Anton, Archivo, Sometype_Mono } from "next/font/google";
+import localFont from "next/font/local";
 
 /**
  * Self-hosted fonts via next/font — no external requests, no layout shift.
  *
- *   Interface / everything → Geist       (exposed as `--font-sans`)
- *   Tabular figures        → Geist Mono  (exposed as `--font-mono`)
- *   Hero headline only     → Anton       (exposed as `--font-display`)
+ *   Display / headings → Anton         (exposed as `--font-display`)
+ *   Body / UI          → Archivo       (exposed as `--font-sans`)
+ *   Labels / telemetry → Sometype Mono (exposed as `--font-mono`)
  *
- * One family carries the whole interface. Hierarchy comes from weight (400 /
- * 500 / 600) and tracking — tightened hard at display sizes (-0.05em), opened
- * slightly on small uppercase captions (+0.05em) — not from switching faces.
- * The previous system ran five voices at once (Anton, Archivo, Sometype Mono,
- * Ribes Black, and the OS face for prices), so every zone of a page spoke in a
- * different register and nothing read as the loudest.
+ * The telemetry face was Space Mono, which is the single most over-used
+ * "designer default" monospace — its quirky R/g/1 read as a stock choice
+ * rather than a decision, and it was what made the nav and menu labels feel
+ * generated. Sometype Mono is a humanist semi-mono: same technical, uppercase
+ * label register, but with even colour and calmer letterforms that hold up at
+ * 12px. It is the face lamalama.com uses for exactly this layer.
  *
- * Anton survives in exactly one place: the homepage "Enter the Vault" poster.
- * A single display moment against an otherwise quiet sans is a luxury pattern;
- * Anton as the default heading face was not.
+ * The system is Swiss-print brutalism: one monolithic condensed grotesque
+ * deployed huge and uppercase for structure, a plain grotesque for reading,
+ * and a monospace for the small uppercase metadata layer (nav, eyebrows,
+ * prices, tier labels). Anton ships a single 400 weight; hierarchy comes
+ * from scale, not weight.
  *
- * Geist Mono is not a label face here. It exists for figures that must align
- * — performance scores, similarity percentages — where proportional digits
- * would jitter.
+ * The CSS variables are consumed by tailwind.config.ts (`fontFamily.display`,
+ * `fontFamily.sans`, `fontFamily.mono`). Wire these onto <html> in
+ * app/layout.tsx.
  */
-export const fontSans = Geist({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-sans",
-});
-
-export const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-mono",
-});
-
 export const fontDisplay = Anton({
   subsets: ["latin"],
   display: "swap",
@@ -41,5 +32,39 @@ export const fontDisplay = Anton({
   weight: "400",
 });
 
+export const fontSans = Archivo({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+});
+
+export const fontMono = Sometype_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-mono",
+  weight: ["400", "500", "700"],
+});
+
+/**
+ * Ribes Black — the on-photograph button label (View product, Quick View).
+ *
+ * Luigi Gorlero / Collletttivo, SIL OFL 1.1, which permits web embedding and
+ * self-hosting; the licence travels with the file in `public/fonts/`.
+ *
+ * Self-hosted from the repo rather than fetched, so it behaves exactly like the
+ * three Google faces above: fingerprinted, preloaded, no external request, no
+ * layout shift. `.otf` rather than `.woff2` because that is the format shipped —
+ * at 14KB the compression difference is not worth a conversion toolchain.
+ *
+ * Declared at weight 900: this is a single-weight display cut, so asking for any
+ * other weight would only invite the browser to synthesise a fake bold.
+ */
+export const fontButton = localFont({
+  src: "../public/fonts/Ribes-Black.otf",
+  display: "swap",
+  variable: "--font-button",
+  weight: "900",
+});
+
 /** Combined class to apply all font variables on the root element. */
-export const fontVariables = `${fontSans.variable} ${fontMono.variable} ${fontDisplay.variable}`;
+export const fontVariables = `${fontDisplay.variable} ${fontSans.variable} ${fontMono.variable} ${fontButton.variable}`;

@@ -38,7 +38,7 @@ export function DiscoveryKitsStrip({
       <div className="lg:hidden">
         <Stagger
           as="ul"
-          className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {kits.map((kit) => (
             <StaggerItem as="li" key={kit.id} className="flex">
@@ -61,15 +61,14 @@ export function DiscoveryKitsStrip({
 
 /**
  * KitBanner — one kit at stage scale for the sticky stack. Same data as
- * KitCard, recomposed as a landscape plate: artwork behind a fixed ink scrim
- * (so the white type holds in both themes), the facts in the bottom row, the
- * whole card one stretched link.
+ * KitCard, recomposed as a landscape plate: artwork behind a theme-aware
+ * scrim, the facts in the bottom row, the whole card one stretched link.
  */
 function KitBanner({ kit }: { kit: Kit }) {
   const count = kit.productHandles.length;
 
   return (
-    <article className="relative h-[72vh] overflow-hidden rounded-xl border border-border bg-card shadow-card">
+    <article className="relative h-[72vh] overflow-hidden rounded-lg border border-border bg-card">
       {kit.image && (
         <Image
           src={kit.image.url}
@@ -83,13 +82,13 @@ function KitBanner({ kit }: { kit: Kit }) {
       {/* Decorative: the heading below carries the meaning. */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent"
       />
 
       <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-6 p-8 sm:p-10">
         <div className="min-w-0 max-w-2xl">
-          <p className="text-caption font-medium text-white/70">{count} fragrances</p>
-          <h3 className="mt-2 text-h2 text-white">
+          <p className="overline">{count} fragrances</p>
+          <h3 className="mt-3 text-h3 text-foreground">
             <Link
               href={`/discovery-kits/${kit.handle}`}
               className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none"
@@ -98,18 +97,13 @@ function KitBanner({ kit }: { kit: Kit }) {
             </Link>
           </h3>
           {kit.tagline && (
-            <p className="mt-3 max-w-md text-base text-white/75">
+            <p className="mt-3 max-w-md text-base text-muted-foreground">
               {kit.tagline}
             </p>
           )}
         </div>
 
-        <span className="rounded-full bg-white px-4 py-2 text-black">
-          <PriceTag
-            price={kit.price}
-            className="[&_*]:text-black [&_s]:text-black/50"
-          />
-        </span>
+        <PriceTag price={kit.price} size="lg" />
       </div>
     </article>
   );

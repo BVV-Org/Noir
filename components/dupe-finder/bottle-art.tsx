@@ -20,7 +20,7 @@ export function BottleArt({
   return (
     <div
       aria-hidden
-      className={cn("relative overflow-hidden rounded-md", className)}
+      className={cn("relative overflow-hidden rounded-lg", className)}
       style={{ background: `radial-gradient(120% 120% at 50% 18%, ${from}, ${to})` }}
     >
       <div className="absolute inset-0 grid place-items-center">
@@ -29,7 +29,7 @@ export function BottleArt({
         </div>
       </div>
       {label && (
-        <span className="absolute inset-x-0 bottom-0 truncate bg-gradient-to-t from-black/55 to-transparent px-2 pb-1.5 pt-6 text-center text-caption font-medium text-white/85">
+        <span className="absolute inset-x-0 bottom-0 truncate bg-gradient-to-t from-black/55 to-transparent px-2 pb-1.5 pt-6 text-center font-mono text-[0.6rem] uppercase tracking-[0.08em] text-white/85">
           {label}
         </span>
       )}

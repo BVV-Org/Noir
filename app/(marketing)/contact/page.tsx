@@ -33,7 +33,7 @@ export default function ContactPage() {
                 for every bottle.{" "}
                 <Link
                   href="/shop"
-                  className="text-foreground underline underline-offset-4 transition-colors hover:text-muted-foreground"
+                  className="text-foreground underline underline-offset-4 hover:text-primary"
                 >
                   Browse the catalogue
                 </Link>

@@ -44,8 +44,8 @@ export function VariantSelector({ product }: { product: Product }) {
       />
 
       <fieldset className="flex flex-col gap-3">
-        <legend className="mb-3 text-small font-medium text-foreground">Size</legend>
-        <div className="flex flex-wrap gap-2">
+        <legend className="mb-3 overline">Size</legend>
+        <div className="flex flex-wrap gap-3">
           {product.variants.map((option, index) => {
             const id = `variant-${option.id}`;
             const disabled = !option.availableForSale;
@@ -63,12 +63,12 @@ export function VariantSelector({ product }: { product: Product }) {
                 <label
                   htmlFor={id}
                   className={cn(
-                    "inline-flex h-10 min-w-16 cursor-pointer items-center justify-center rounded-full border px-4 text-small font-medium transition-colors duration-150 ease-premium",
-                    "peer-focus-visible:ring-2 peer-focus-visible:ring-ring/60 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-background",
-                    "peer-checked:border-primary peer-checked:bg-primary peer-checked:text-primary-foreground",
+                    "inline-flex min-h-11 cursor-pointer items-center rounded-md border px-5 text-small transition-colors duration-150 ease-premium",
+                    "peer-focus-visible:ring-2 peer-focus-visible:ring-ring peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-background",
+                    "peer-checked:border-primary peer-checked:bg-primary/10 peer-checked:text-primary",
                     disabled
                       ? "cursor-not-allowed border-border text-muted-foreground line-through opacity-60"
-                      : "border-border bg-background text-foreground hover:bg-secondary"
+                      : "border-border text-foreground hover:border-border/80"
                   )}
                 >
                   {option.title}
@@ -79,13 +79,13 @@ export function VariantSelector({ product }: { product: Product }) {
         </div>
       </fieldset>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-3">
         <AddToCartButton variant={variant} className="flex-1" />
         <BuyNowButton variant={variant} className="flex-1" />
         <WishlistButton
           handle={product.handle}
           title={product.title}
-          className="size-12 shrink-0 border border-border bg-background shadow-none"
+          className="shrink-0 border border-border bg-transparent"
         />
       </div>
 

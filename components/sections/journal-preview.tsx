@@ -29,7 +29,7 @@ export function JournalPreview({
           : undefined
       }
     >
-      <Stagger as="ul" className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+      <Stagger as="ul" className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <StaggerItem
           as="li"
           className={rest.length > 0 ? "flex lg:row-span-2" : "flex"}

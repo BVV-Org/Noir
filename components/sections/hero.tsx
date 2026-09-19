@@ -55,9 +55,8 @@ export function Hero({
           (the preloaded first frame is the stickiest to cache). v2 = 9 PM. */}
       <ScrollFrameHero frameCount={97} frameVersion="2">
         <MaskRise mode="mount" as="p">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3 py-1 text-caption font-medium text-white/80 backdrop-blur-md">
-            <span aria-hidden className="size-1.5 rounded-full bg-white/80" />
-            The Vault is open
+          <span className="overline tracking-[0.4em] text-white/70">
+            The Vault
           </span>
         </MaskRise>
 
@@ -67,10 +66,11 @@ export function Hero({
           and they settle into a single centred block. Character staggers run
           across each whole line, so the wave crosses the headline evenly.
 
-          Anton survives here and only here: the one poster moment on a site
-          otherwise set entirely in Geist, so the face is named explicitly
-          rather than inherited from the global heading rule. Sized locally so
-          the scrubbed bottle reads through the type.
+          Sized here rather than with the shared `text-display` token: the hero
+          sits over the scrubbed frames, and the token's 12.5vw fills the stage
+          edge to edge, leaving no bottle visible behind the type. This clamp is
+          a notch smaller so the frame reads through — and it stays local,
+          because `text-display` is also the About page's headline.
         */}
         {/*
           The headline letters are KineticText: each character thickens and
@@ -79,7 +79,7 @@ export function Hero({
           per-letter spans, which is why CharReveal's entrance no longer wraps
           this headline — both split the same text and cannot share it.
         */}
-        <h1 className="mt-6 font-display text-[clamp(3.5rem,10.5vw,11rem)] font-normal uppercase leading-[0.95] tracking-[-0.01em] text-white drop-shadow-2xl">
+        <h1 className="mt-6 text-[clamp(3.5rem,10.5vw,11rem)] uppercase leading-[0.95] tracking-[-0.01em] text-white drop-shadow-2xl">
           <KineticText text={lead} as="span" className="justify-center" />
           {payoff && (
             <KineticText text={payoff} as="span" className="justify-center" />
@@ -88,16 +88,17 @@ export function Hero({
 
         {section.subtitle && (
           <MaskRise mode="mount" delay={0.55} as="p" className="mt-8">
-            <span className="block max-w-lg text-lg text-white/75">
+            <span className="block max-w-xl text-lg text-white/85">
               {section.subtitle}
             </span>
           </MaskRise>
         )}
 
         {/*
-          The hero CTAs are the system's pills, inverted over the dark frames: a
-          solid paper primary and a frosted secondary. Interface type, not the
-          poster face — a button is a control, not a second headline.
+          The hero CTAs wear the headline's own type: Anton display, uppercase —
+          the same face as the headline above. Palette is inverted over the dark
+          frames for legibility: a solid white primary and a light outline
+          secondary.
 
           The buttons fade rather than travel, on a short curve: the primary
           action must never be animating away from a cursor, and it is clickable
@@ -109,7 +110,7 @@ export function Hero({
               <Magnetic>
                 <Link
                   href={section.ctaUrl}
-                  className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-base font-medium text-black transition-colors duration-200 hover:bg-white/90"
+                  className="inline-flex h-12 items-center justify-center rounded-[8px] bg-white px-8 font-display text-lg uppercase leading-none tracking-wide text-[#222] transition-colors duration-200 hover:bg-white/90"
                 >
                   {section.ctaLabel}
                 </Link>
@@ -117,7 +118,7 @@ export function Hero({
             )}
             <Link
               href="/discovery-kits"
-              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 text-base font-medium text-white backdrop-blur-md transition-colors duration-200 hover:bg-white/15"
+              className="inline-flex h-12 items-center justify-center rounded-[8px] bg-transparent px-8 font-display text-lg uppercase leading-none tracking-wide text-white transition-colors duration-200 hover:bg-white/10"
             >
               Start with samples
             </Link>

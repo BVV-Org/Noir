@@ -3,19 +3,21 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 /**
- * Card — the raised container: white paper, 24px radius, a hairline border
- * AND a whisper of elevation. The border defines the edge; the shadow only
- * says "this sits above the page". Neither is allowed to do the other's job.
+ * Card — the raised surface (DESIGN_SYSTEM.md §4).
  *
- * `interactive` lifts the card a couple of pixels and deepens the shadow on
- * hover. Transform rather than margin, so the lift never triggers layout.
+ * `interactive` adds the hover lift used by every card in the catalogue: a
+ * gentle scale (≤1.02 per the animation guidelines), a shadow, and a border
+ * that warms toward the foreground. Transform is used rather than `top`/margin
+ * so the lift never triggers layout, and the global reduced-motion rule zeroes
+ * the transition duration for anyone who asks.
  */
 const cardVariants = cva(
-  "rounded-xl border border-border bg-card text-card-foreground shadow-card",
+  // Flat print surface: hairline compartment, no soft elevation.
+  "rounded-lg border border-border bg-card text-card-foreground",
   {
     variants: {
       interactive: {
-        true: "group/card transition-[transform,box-shadow] duration-300 ease-premium hover:-translate-y-0.5 hover:shadow-lift focus-within:shadow-lift",
+        true: "group/card transition-[transform,border-color] duration-150 ease-premium hover:-translate-y-0.5 hover:border-foreground focus-within:border-foreground",
         false: "",
       },
     },
@@ -46,7 +48,7 @@ export function CardHeader({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className={cn("flex flex-col gap-1.5 p-5", className)} {...props} />
+    <div className={cn("flex flex-col gap-1.5 p-6", className)} {...props} />
   );
 }
 

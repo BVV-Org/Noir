@@ -72,7 +72,7 @@ export default async function KitPage({
 
       <Container className="py-10 sm:py-14">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="relative aspect-square overflow-hidden rounded-xl border border-border bg-card shadow-card">
+          <div className="relative aspect-square overflow-hidden rounded-lg border border-border bg-card">
             {kit.image && (
               <Image
                 src={kit.image.url}

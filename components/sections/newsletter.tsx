@@ -62,7 +62,7 @@ export function Newsletter({ section }: { section: HomepageSection }) {
   return (
     <section className="py-20 sm:py-28">
       <Container>
-        <div className="rounded-xl border border-border bg-card shadow-card px-6 py-14 sm:px-12">
+        <div className="rounded-lg border border-border bg-card px-6 py-14 sm:px-12">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="text-h2 font-semibold text-foreground">
               {section.title ?? "First access"}

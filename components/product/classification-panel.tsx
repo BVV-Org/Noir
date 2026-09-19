@@ -55,14 +55,14 @@ export function ClassificationPanel({
         Classification
       </h2>
 
-      <dl className="mt-6 divide-y divide-border">
+      <dl className="mt-8 divide-y divide-border border-y border-border">
         {rows.map((row) => (
           <div
             key={row.term}
-            className="flex items-center justify-between gap-6 py-3 first:pt-0 last:pb-0"
+            className="flex items-center justify-between gap-6 py-4"
           >
-            <dt className="text-small text-muted-foreground">{row.term}</dt>
-            <dd className="text-right text-small font-medium text-foreground">
+            <dt className="overline">{row.term}</dt>
+            <dd className="text-right text-small text-foreground">
               {row.value}
             </dd>
           </div>

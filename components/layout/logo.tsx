@@ -5,9 +5,9 @@ import { siteConfig } from "@/lib/config/site";
 /**
  * Logo — the Noir Vault wordmark.
  *
- * Type-only: the interface face at 600, pulled tight. A small solid ink mark
- * sits in front of it as the one piece of graphic identity — a closed vault
- * door reduced to a dot. Shared by the navbar and footer so the two can never
+ * Type-only, in the telemetry layer: bold mono caps with a registered-mark
+ * glyph doing structural duty, the way industrial print uses ® as a
+ * geometric element. Shared by the navbar and footer so the two can never
  * drift.
  */
 export function Logo({ className }: { className?: string }) {
@@ -16,18 +16,15 @@ export function Logo({ className }: { className?: string }) {
       href="/"
       aria-label={`${siteConfig.name}, home`}
       className={cn(
-        "inline-flex items-center gap-2 rounded-full text-[15px] font-semibold tracking-[-0.03em] text-foreground",
+        "inline-flex items-baseline gap-0.5 rounded-sm font-mono text-small font-bold uppercase tracking-[0.08em] text-foreground",
         "transition-opacity duration-150 ease-premium hover:opacity-70",
         className
       )}
     >
-      <span
-        aria-hidden
-        className="grid size-5 place-items-center rounded-full bg-foreground"
-      >
-        <span className="size-1.5 rounded-full bg-background" />
-      </span>
       Noir Vault
+      <span aria-hidden className="text-[0.65em] leading-none">
+        ®
+      </span>
     </Link>
   );
 }

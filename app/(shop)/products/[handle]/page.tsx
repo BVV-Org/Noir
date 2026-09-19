@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import type { Product } from "@/types";
 import { getProvider } from "@/lib/data";
 import { Container } from "@/components/layout/container";
-import { Card } from "@/components/ui/card";
 import { Section } from "@/components/layout/section";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { ProductBadge } from "@/components/commerce/product-badge";
@@ -86,33 +85,27 @@ export default async function ProductPage({
         />
       </Container>
 
-      <Container className="py-8 sm:py-10">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
-          {/* The gallery holds its place while the buying column scrolls past
-              it on desktop, so the bottle stays in view through the decision. */}
-          <div className="lg:sticky lg:top-24 lg:self-start">
-            <ProductGallery
-              images={product.images}
-              title={product.title}
-              videoUrl={product.heroVideoUrl}
-            />
-          </div>
+      <Container className="py-10 sm:py-14">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <ProductGallery
+            images={product.images}
+            title={product.title}
+            videoUrl={product.heroVideoUrl}
+          />
 
-          <div className="flex flex-col gap-8 lg:pt-4">
+          <div className="flex flex-col gap-8">
             <div>
-              <div className="flex flex-wrap items-center gap-2">
-                {product.brand && (
-                  <p className="text-small font-medium text-muted-foreground">
-                    {product.brand}
-                  </p>
-                )}
+              <div className="flex flex-wrap items-center gap-3">
+                {product.brand && <p className="overline">{product.brand}</p>}
                 <ProductBadge product={product} />
               </div>
 
-              <h1 className="mt-3 text-h2">{product.title}</h1>
+              <h1 className="mt-4 text-h1 font-semibold text-foreground">
+                {product.title}
+              </h1>
 
               {product.tagline && (
-                <p className="mt-3 text-lg text-muted-foreground">
+                <p className="mt-4 text-lg text-muted-foreground">
                   {product.tagline}
                 </p>
               )}
@@ -123,41 +116,30 @@ export default async function ProductPage({
             {/* Reassurance at the moment of decision — see lib/config/trust.ts. */}
             <TrustBar variant="compact" />
 
-            <div className="border-t border-border pt-8">
-              <h2 className="text-small font-medium text-foreground">
-                About this fragrance
-              </h2>
-              <p className="mt-3 text-base leading-7 text-muted-foreground">
-                {product.description}
-              </p>
-            </div>
+            <p className="text-base text-muted-foreground">
+              {product.description}
+            </p>
           </div>
         </div>
       </Container>
 
-      {/* The spec sheet: white cards floating on the surface band, one tone
-          off the page, so the data reads as a separate layer from the buy box. */}
-      <div className="mt-8 border-y border-border bg-surface py-12 sm:py-16">
-        <Container className="flex flex-col gap-4">
-          <div className="grid gap-4 lg:grid-cols-2">
-            <Card className="p-6 sm:p-8">
-              <PerformancePanel performance={product.performance} />
-            </Card>
-            <Card className="p-6 sm:p-8">
-              <ClassificationPanel
-                classification={product.classification}
-                releaseYear={product.releaseYear}
-              />
-            </Card>
-          </div>
-          <Card className="p-6 sm:p-8">
-            <NotesPyramid notes={product.notes} />
-          </Card>
-          <Card className="p-6 sm:p-8">
-            <Reviews product={product} />
-          </Card>
-        </Container>
-      </div>
+      <Container className="pb-8">
+        <div className="grid gap-16 border-t border-border pt-16 lg:grid-cols-2 lg:gap-20">
+          <PerformancePanel performance={product.performance} />
+          <ClassificationPanel
+            classification={product.classification}
+            releaseYear={product.releaseYear}
+          />
+        </div>
+      </Container>
+
+      <Container className="py-16">
+        <NotesPyramid notes={product.notes} />
+      </Container>
+
+      <Container className="pb-16">
+        <Reviews product={product} />
+      </Container>
 
       {similar.length > 0 && (
         <Section

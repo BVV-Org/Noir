@@ -40,12 +40,12 @@ export function MobileMenu() {
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger
         className={cn(
-          "inline-flex size-10 items-center justify-center rounded-full text-foreground lg:hidden",
-          "transition-colors duration-150 ease-premium hover:bg-secondary",
-          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          "inline-flex size-11 items-center justify-center rounded-md text-foreground lg:hidden",
+          "transition-colors duration-150 ease-premium hover:bg-secondary/60",
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         )}
       >
-        <Menu className="size-5" strokeWidth={1.75} />
+        <Menu className="size-5" />
         <span className="sr-only">Open menu</span>
       </SheetTrigger>
 
@@ -53,7 +53,9 @@ export function MobileMenu() {
         side="left"
         className="w-[min(88vw,22rem)] gap-0 sm:max-w-sm"
       >
-        <SheetTitle className="overline">Menu</SheetTitle>
+        <SheetTitle className="font-display uppercase tracking-[0.2em]">
+          Menu
+        </SheetTitle>
         <SheetDescription className="sr-only">
           {siteConfig.tagline}
         </SheetDescription>
@@ -68,11 +70,11 @@ export function MobileMenu() {
                     href={item.href}
                     aria-current={active ? "page" : undefined}
                     className={cn(
-                      "flex min-h-12 items-center border-b border-border py-3 text-h4 font-semibold",
+                      "flex min-h-11 items-center border-b border-border/60 py-3 font-display text-h4",
                       "transition-colors duration-150 ease-premium",
                       active
-                        ? "text-foreground"
-                        : "text-foreground/70 hover:text-foreground"
+                        ? "text-primary"
+                        : "text-foreground hover:text-primary"
                     )}
                   >
                     {item.label}
@@ -87,7 +89,7 @@ export function MobileMenu() {
                       <Link
                         href={sub.href}
                         className={cn(
-                          "flex min-h-11 items-center border-b border-border py-2.5 pl-4 text-small",
+                          "flex min-h-11 items-center border-b border-border/60 py-2.5 pl-4 font-mono text-caption uppercase tracking-[0.08em]",
                           "text-muted-foreground transition-colors duration-150 ease-premium hover:text-foreground"
                         )}
                       >
@@ -109,7 +111,7 @@ export function MobileMenu() {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "flex min-h-11 items-center text-small font-medium",
+                    "flex min-h-11 items-center font-mono text-caption uppercase tracking-[0.08em]",
                     "transition-colors duration-150 ease-premium",
                     active
                       ? "text-foreground"
