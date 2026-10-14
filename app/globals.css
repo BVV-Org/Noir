@@ -56,7 +56,7 @@
     --rarity-legendary: 38 70% 32%; /* amber ink */
     --rarity-mythic: 350 70% 38%; /* crimson ink */
 
-    /* Gold — the Dupe Finder's single highlight. Deepened here so it holds AA
+    /* Gold — Scent Match's single highlight. Deepened here so it holds AA
        contrast against the light substrate; the .dark override goes champagne. */
     --gold: 36 58% 32%;
     --gold-strong: 36 62% 26%;

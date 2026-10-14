@@ -6,15 +6,15 @@ import { EASE } from "@/lib/animations/config";
 import { cn } from "@/lib/utils";
 
 /**
- * ConfidenceGauge — the headline provenance-backed confidence, as a ring that
- * sweeps while a number counts up to meet it. The value comes straight from the
- * KB relationship (aggregated from attributed source claims), framed as
- * confidence rather than certainty.
+ * SimilarityRing — the top pick's match score: a thin gold arc that sweeps while
+ * the number counts up to meet it. Gold is the feature's one highlight colour
+ * (`--gold`), so it appears here and nowhere else on the page. The stroke is
+ * flat-ended and fine to sit with the site's hairline rules, not a soft dial.
  */
-export function ConfidenceGauge({
+export function SimilarityRing({
   value,
-  size = 132,
-  label = "Confidence",
+  size = 120,
+  label = "Match",
   className,
 }: {
   value: number;
@@ -23,7 +23,7 @@ export function ConfidenceGauge({
   className?: string;
 }) {
   const reduce = useReducedMotion();
-  const stroke = 9;
+  const stroke = 3;
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
   const clamped = Math.min(100, Math.max(0, value));
@@ -36,7 +36,7 @@ export function ConfidenceGauge({
       return;
     }
     const controls = animate(0, clamped, {
-      duration: 1,
+      duration: 1.2,
       ease: EASE.signature,
       onUpdate: (v) => setDisplay(Math.round(v)),
     });
@@ -45,19 +45,19 @@ export function ConfidenceGauge({
 
   return (
     <div
-      className={cn("relative grid place-items-center", className)}
+      className={cn("relative grid shrink-0 place-items-center", className)}
       style={{ width: size, height: size }}
       role="img"
       aria-label={`${label}: ${clamped} percent`}
     >
-      <svg width={size} height={size} className="-rotate-90">
+      <svg width={size} height={size} className="-rotate-90" aria-hidden>
         <circle
           cx={size / 2}
           cy={size / 2}
           r={r}
           fill="none"
           strokeWidth={stroke}
-          className="stroke-foreground/10"
+          className="stroke-foreground/15"
         />
         <m.circle
           cx={size / 2}
@@ -65,22 +65,26 @@ export function ConfidenceGauge({
           r={r}
           fill="none"
           strokeWidth={stroke}
-          strokeLinecap="round"
+          strokeLinecap="butt"
           stroke="hsl(var(--gold))"
           strokeDasharray={c}
           initial={{ strokeDashoffset: reduce ? offset : c }}
-          whileInView={{ strokeDashoffset: offset }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, ease: EASE.signature }}
+          animate={{ strokeDashoffset: offset }}
+          transition={{ duration: reduce ? 0 : 1.2, ease: EASE.signature }}
         />
       </svg>
       <div className="absolute inset-0 grid place-items-center text-center">
         <div>
-          <div className="font-display text-[2rem] leading-none tabular-nums text-gold">
+          <div
+            className="font-display tabular-nums leading-none text-gold"
+            style={{ fontSize: size * 0.3 }}
+          >
             {display}
-            <span className="align-top text-base">%</span>
+            <span style={{ fontSize: size * 0.14 }} className="align-top">
+              %
+            </span>
           </div>
-          <div className="mt-1 font-mono text-[0.58rem] uppercase tracking-[0.14em] text-muted-foreground">
+          <div className="mt-1.5 font-mono text-[0.6rem] uppercase tracking-[0.16em] text-muted-foreground">
             {label}
           </div>
         </div>

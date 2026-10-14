@@ -13,17 +13,10 @@ const nextConfig: NextConfig = {
   // Pin the file-tracing root to this project (a stray lockfile higher up the
   // tree would otherwise be inferred as the workspace root).
   outputFileTracingRoot: __dirname,
-  // The Dupe Finder reads the fragrance knowledge base from disk at request
-  // time. Next only bundles files it can statically trace, so every route that
-  // reads the KB must be told to ship the export JSON into its serverless
-  // function. The loader (lib/dupes/loader.ts) reads fragrance-kb/exports/*.json,
-  // so these globs must match that directory exactly — a mismatch ships no data
-  // and the route 500s in production. These three are the only KB readers.
-  outputFileTracingIncludes: {
-    "/dupe-finder": ["./fragrance-kb/exports/*.json"],
-    "/api/dupes/search": ["./fragrance-kb/exports/*.json"],
-    "/api/dupes/[fragranceId]": ["./fragrance-kb/exports/*.json"],
-  },
+  // No route reads the fragrance knowledge base (fragrance-kb/) at runtime while
+  // the Dupe Finder is retired. If a route starts reading it from disk again, it
+  // must be listed under `outputFileTracingIncludes` so Next ships the export
+  // JSON into that route's serverless function — untraced files 500 in prod.
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
